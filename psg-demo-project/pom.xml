@@ -32,6 +32,51 @@
         <!-- This controls which properties will be picked in multi-enviromment build -->
         <env>local</env>
     </properties>
+    
+    
+    <scm>
+      <connection>scm:git:git@github.com:lcabaceira/psg.git</connection>
+      <url>scm:git:git@github.com:lcabaceira/psg.git</url>
+      <developerConnection>scm:git:git@github.com:lcabaceira/psg.git</developerConnection>
+      <tag>HEAD</tag>
+    </scm>
+    
+    <build>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.0</version>
+          <configuration>
+            <source>1.6</source>
+            <target>1.6</target>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.4.2</version>
+          <configuration>
+            <arguments>-Ppurge</arguments>
+            <goals>deploy</goals>
+          </configuration>
+        </plugin>
+      </plugins>
+    </build>
+    
+    <distributionManagement>
+        <repository>
+          <id>psg-demo-release</id>
+          <url>dav:https://repository-lcabaceira.forge.cloudbees.com/lcabaceiraMavenRepo/</url>
+        </repository>
+        <snapshotRepository>
+          <id>psg-demo-snapshot</id>
+          <url>dav:https://repository-lcabaceira.forge.cloudbees.com/lcabaceiraMavenRepo/</url>
+        </snapshotRepository>
+    </distributionManagement>
+
+
+
 
    <!-- Here we realize the connection with the Alfresco selected platform (e.g.version and edition) -->
    <dependencyManagement>

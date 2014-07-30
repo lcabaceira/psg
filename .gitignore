@@ -1,0 +1,10 @@
+alf_data_dev
+**.iml
+**.iws
+**/overlays
+**/target
+.idea
+target
+**.log
+**.log*
+**/solr_home

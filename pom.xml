@@ -55,27 +55,36 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-release-plugin</artifactId>
-          <version>2.4.2</version>
+          <version>2.5</version>
           <configuration>
             <arguments>-Ppurge</arguments>
             <goals>deploy</goals>
           </configuration>
         </plugin>
+        
       </plugins>
+       <extensions>
+            <!-- Extension required to deploy a snapshot or a release to the CloudBees remote maven repository using Webdav -->
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-webdav</artifactId>
+                <version>1.0-beta-2</version>
+            </extension>
+        </extensions>
+        
     </build>
     
     <distributionManagement>
         <repository>
-          <id>psg-demo-release</id>
-          <url>dav:https://repository-lcabaceira.forge.cloudbees.com/lcabaceiraMavenRepo/</url>
+          <id>cloudbees-private-release-repository</id>
+          <url>dav:https://repository-maoo.forge.cloudbees.com/release/</url>
         </repository>
         <snapshotRepository>
-          <id>psg-demo-snapshot</id>
-          <url>dav:https://repository-lcabaceira.forge.cloudbees.com/lcabaceiraMavenRepo/</url>
+          <id>cloudbees-private-snapshot-repository</id>
+          <url>dav:https://repository-maoo.forge.cloudbees.com/release/</url>
         </snapshotRepository>
     </distributionManagement>
-
-
+    
 
 
    <!-- Here we realize the connection with the Alfresco selected platform (e.g.version and edition) -->
@@ -114,6 +123,9 @@
             <url>https://artifacts.alfresco.com/nexus/content/groups/public-snapshots</url>
         </repository>
     </repositories>
+    
+   
+        
   <modules>
     <module>amp</module>
     <module>alfresco</module>

@@ -59,7 +59,11 @@
           <configuration>
             <arguments>-Ppurge</arguments>
             <goals>deploy</goals>
+            <autoVersionSubmodules>true</autoVersionSubmodules>
           </configuration>
+          
+          
+           
         </plugin>
         
       </plugins>

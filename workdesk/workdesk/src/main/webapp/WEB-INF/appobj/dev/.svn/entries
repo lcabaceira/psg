@@ -1,49 +1,0 @@
-10
-
-dir
-38093
-https://svn.alfresco.com/repos/abs-owd_repos/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/dev
-https://svn.alfresco.com/repos/abs-owd_repos
-
-
-
-2014-06-05T07:03:36.373157Z
-37881
-ahaag
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-4a0a76e0-574f-d64f-9cee-6202afcc079f
-
-contractmanagement_dev
-dir
-
-ocmis_alfresco_x_ocmis_alfresco_dev
-dir
-
-ocmis_alfresco_x_ocmis_fncm5_dev
-dir
-
-opencmis_alfrescobpm_dev
-dir
-
-opencmis_fncm5_dev
-dir
-
-opencmis_prof_cmg_dev
-dir
-
-opencmis_prof_dev
-dir
-

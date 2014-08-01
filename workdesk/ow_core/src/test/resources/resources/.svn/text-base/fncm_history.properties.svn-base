@@ -1,9 +1,0 @@
-#FNCM History
-
-#BaseTest
-fncm_history.login=Administrator
-fncm_history.password=wewebu2007
-fncm_history.configDir=resources/fncm/
-fncm_history.configFile=owbootstrap_fncm.xml
-fncm_history.xml.bootstrap=bootstrap
-fncm_history.xml.subnode=EcmAdapter

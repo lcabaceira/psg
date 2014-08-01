@@ -1,3 +1,0 @@
-version=${pom.version}
-buildNumber=${buildNumber}
-edition=default.OwMainLayout.jsp.footer.development

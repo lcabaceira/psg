@@ -1,138 +1,0 @@
-10
-
-dir
-38093
-https://svn.alfresco.com/repos/abs-owd_repos/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis
-https://svn.alfresco.com/repos/abs-owd_repos
-
-
-
-2014-06-25T13:17:36.158562Z
-37972
-vhemmert
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-4a0a76e0-574f-d64f-9cee-6202afcc079f
-
-OwCMISSimpleDMSIDTest.java
-file
-
-
-
-
-2014-08-01T10:49:11.000000Z
-0820670f45abfa7ed71fbfe16d23f918
-2013-04-29T06:20:17.559667Z
-33256
-alha
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2119
-
-OwCMISTestFixture.java
-file
-
-
-
-
-2014-08-01T10:49:11.000000Z
-01a8b25f8849da2adb7674490d8ad8f0
-2013-02-27T16:24:33.364183Z
-32363
-boho
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-482
-
-alfresco
-dir
-
-converter
-dir
-
-field
-dir
-
-integration
-dir
-
-junit
-dir
-
-nativeapi
-dir
-
-object
-dir
-
-permission
-dir
-
-propertyclass
-dir
-
-search
-dir
-
-server
-dir
-
-users
-dir
-
-util
-dir
-
-viewer
-dir
-

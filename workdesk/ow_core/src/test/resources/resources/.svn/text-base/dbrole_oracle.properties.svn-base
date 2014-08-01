@@ -1,8 +1,0 @@
-#DB Role
-
-#BaseTest
-dbrole_oracle.login=Administrator
-dbrole_oracle.password=wewebu2007
-dbrole_oracle.configDir=resources/dbrole/
-dbrole_oracle.configFile=owbootstrap_dbrole_oracle.xml
-dbrole_oracle.xml.bootstrap=bootstrap

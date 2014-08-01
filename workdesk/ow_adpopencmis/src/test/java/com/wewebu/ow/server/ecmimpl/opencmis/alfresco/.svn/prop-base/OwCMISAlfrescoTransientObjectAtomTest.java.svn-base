@@ -1,9 +1,0 @@
-K 13
-svn:mergeinfo
-V 833
-/mowd/branches/DnDHtml5/trunk/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/alfresco/OwCMISAlfrescoBatchTransientObjectTest.java:32805-32879
-/mowd/branches/new_ldap/trunk/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/alfresco/OwCMISAlfrescoBatchTransientObjectTest.java:33303-33344
-/mowd/branches/new_workflow_api/trunk/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/alfresco/OwCMISAlfrescoBatchTransientObjectTest.java:34561-34579
-/mowd/branches/opencmis_lazyproploading/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/alfresco/OwCMISAlfrescoBatchTransientObjectTest.java:31389-31401
-/mowd/branches/share_like_DnD/trunk/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/alfresco/OwCMISAlfrescoBatchTransientObjectTest.java:32965-33005
-END

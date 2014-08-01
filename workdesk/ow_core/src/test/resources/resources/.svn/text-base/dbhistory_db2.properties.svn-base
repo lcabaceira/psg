@@ -1,9 +1,0 @@
-#DB History
-
-#BaseTest
-dbhistory_db2.login=Administrator
-dbhistory_db2.password=wewebu2007
-dbhistory_db2.configDir=resources/dbhistory/
-dbhistory_db2.configFile=owbootstrap_dbhistory_db2.xml
-dbhistory_db2.xml.bootstrap=bootstrap
-dbhistory_db2.xml.subnode=EcmAdapter

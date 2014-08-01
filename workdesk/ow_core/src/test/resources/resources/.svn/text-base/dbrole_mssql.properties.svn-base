@@ -1,8 +1,0 @@
-#DB Role
-
-#BaseTest
-dbrole_mssql.login=Administrator
-dbrole_mssql.password=wewebu2007
-dbrole_mssql.configDir=resources/dbrole/
-dbrole_mssql.configFile=owbootstrap_dbrole_mssql.xml
-dbrole_mssql.xml.bootstrap=bootstrap

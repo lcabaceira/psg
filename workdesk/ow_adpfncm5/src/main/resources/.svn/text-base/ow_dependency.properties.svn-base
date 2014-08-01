@@ -1,7 +1,0 @@
-needs.aspectjrt.jar=org.aspectj.internal.lang.annotation.ajcDeclareAnnotation
-needs.Jace.jar=com.filenet.api.core.ObjectStore
-needs.stax-api.jar=com.ibm.stax.Version
-needs.xlxpScanner.jar=com.ibm.xml.xlxp.api.event.ScannerEvent
-needs.xlxpScannerUtils.jar=com.ibm.xml.xlxp.scan.DocumentEntityScanner
-needs.pe-5.0.0.0.jar=filenet.sim.animationdp.impl2.AnimationCommand
-needs.pe3pt.jar=com.ibm.wsdl.ServiceImpl

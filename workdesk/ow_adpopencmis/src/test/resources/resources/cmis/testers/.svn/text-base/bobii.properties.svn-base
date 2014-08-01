@@ -1,5 +1,0 @@
-junit.bootstraps.resources=bootstraps_sava
-cmis.junit.admin.user=admin
-cmis.junit.admin.password=admin
-cmis.junit.ldap.user=JUnitTester
-cmis.junit.ldap.user.password=junit

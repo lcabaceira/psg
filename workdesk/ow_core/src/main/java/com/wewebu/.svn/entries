@@ -1,34 +1,0 @@
-10
-
-dir
-38093
-https://svn.alfresco.com/repos/abs-owd_repos/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu
-https://svn.alfresco.com/repos/abs-owd_repos
-
-
-
-2014-06-30T06:06:48.625404Z
-37989
-ahaag
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-4a0a76e0-574f-d64f-9cee-6202afcc079f
-
-ow
-dir
-
-service
-dir
-

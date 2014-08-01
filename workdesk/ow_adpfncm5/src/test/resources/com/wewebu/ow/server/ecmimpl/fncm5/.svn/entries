@@ -1,40 +1,0 @@
-10
-
-dir
-38093
-https://svn.alfresco.com/repos/abs-owd_repos/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/test/resources/com/wewebu/ow/server/ecmimpl/fncm5
-https://svn.alfresco.com/repos/abs-owd_repos
-
-
-
-2012-12-17T14:24:09.812528Z
-31415
-alha
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-4a0a76e0-574f-d64f-9cee-6202afcc079f
-
-bpm
-dir
-
-object
-dir
-
-search
-dir
-
-stress
-dir
-

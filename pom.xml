@@ -119,12 +119,12 @@
         -->
     <repositories>
         <repository>
-            <id>alfresco-public</id>
-            <url>https://artifacts.alfresco.com/nexus/content/groups/public</url>
+            <id>alfresco-private</id>
+            <url>https://artifacts.alfresco.com/nexus/content/groups/private</url>
         </repository>
         <repository>
-            <id>alfresco-public-snapshots</id>
-            <url>https://artifacts.alfresco.com/nexus/content/groups/public-snapshots</url>
+            <id>alfresco-private-snapshots</id>
+            <url>https://artifacts.alfresco.com/nexus/content/groups/private-snapshots</url>
         </repository>
     </repositories>
     

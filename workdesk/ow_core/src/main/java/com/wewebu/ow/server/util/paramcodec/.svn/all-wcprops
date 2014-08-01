@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/util/paramcodec
+END
+OwParameterMapCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/util/paramcodec/OwParameterMapCodec.java
+END
+OwParameterMap.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/util/paramcodec/OwParameterMap.java
+END
+OwAlphabetCoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/util/paramcodec/OwAlphabetCoder.java
+END
+OwAppCounterBag.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/util/paramcodec/OwAppCounterBag.java
+END
+OwNetworkAttributeBagCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/util/paramcodec/OwNetworkAttributeBagCodec.java
+END
+OwTransientCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/util/paramcodec/OwTransientCodec.java
+END
+OwAttributeBagCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/util/paramcodec/OwAttributeBagCodec.java
+END
+OwCookieStoreCodec.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/util/paramcodec/OwCookieStoreCodec.java
+END

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlugIn type="ow_docfunction">
+    <Name>E-mail Link</Name>
+    <id>com.wewebu.ow.owdocemaillink</id>
+    <Description>Create e-mail with link to object(s)</Description>
+    <Vendor>Alfresco Business Solutions</Vendor>
+    <Version>4.2.0</Version>
+    <ClassName>com.wewebu.ow.server.plug.owremote.OwRemoteControlDocumentFunction</ClassName>
+    <!-- optional small (16x16 pixels) icon for the plugin, leave empty to use default. -->
+    <icon />
+    <!-- optional small (24x24 pixels) icon for the plugin, leave empty to use default. -->
+    <iconbig />
+    <!-- Allow multiple document selection or just one single document -->
+    <Multiselect>true</Multiselect>
+    <!-- Display the plugin in the context menu. -->
+    <ContextMenu>true</ContextMenu>
+    <!-- Display in object editing dialogs like OwEditPropertiesDialog. -->
+    <ShowInEditViews>false</ShowInEditViews>
+    <!-- Use the latest version of document -->
+    <AlwaysUseLatestVersion>false</AlwaysUseLatestVersion>
+    <!-- Display the plugin next to object in a object listview. -->
+    <ObjectInstance>true</ObjectInstance>
+    <!-- Create a own column for plugin with given title, or display without columntitle. -->
+    <ColumnTitle />
+    <!-- Object types to work on as defined in OwObjectReference.OBJECT_TYPE_... -->
+    <objecttypes>
+      <type>OBJECT_TYPE_DOCUMENT</type>
+    </objecttypes>
+    <!-- Enable plugin only for the given object class names, leave empty to enable for all classes -->
+    <objectclasses>
+      <!--<name>document</name>-->
+    </objectclasses>
+    <LinkElements>
+		<view>viewX</view>
+		<viewcrypt>viewcryptX</viewcrypt>
+		<ctrlev>ctrlevX</ctrlev>
+	</LinkElements>
+  </PlugIn>

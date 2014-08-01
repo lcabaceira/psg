@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<storedsearch xmlns="http://filenet.com/namespaces/wcm/apps/1.0">
+	<version dtd="3.0" searchobject="3" />
+	<product name="Search Designer" version="3.0" />
+	<searchspec versionselection="inprocessversion">
+		<searchtype>
+			<template showandorconditions="true" showmaxrecords="true"
+				showoperators="true" />
+		</searchtype>
+		<objectstores mergeoption="union">
+			<objectstore id="{E2C5B7B7-D67E-41C1-B8FF-6D0DD8B9EAFE}"
+				name="P8ConfigObjectStore" />
+		</objectstores>
+		<searchcriteria>
+			<folders></folders>
+			<searchclauses>
+				<searchclause>
+					<select>
+						<selectprops>
+							<selectprop alignment="left" itemid="26" name="Către"
+								objecttype="document" sortlevel="0" sortorder="none" symname="To" />
+							<selectprop alignment="left" itemid="27" name="Simulare GUID"
+								objecttype="document" sortlevel="0" sortorder="none" symname="SimulationGUID" />
+							<selectprop alignment="left" itemid="28" name="Dată creare"
+								objecttype="document" sortlevel="0" sortorder="none" symname="DateCreated" />
+						</selectprops>
+					</select>
+					<from>
+						<class objecttype="document"  symname="Document"/>
+					</from>
+					<where>
+						<or>
+							<in>
+								<whereprop editproperty="editable" itemid="7" name="Către"
+									objecttype="document" symname="To">
+									<propdesc datatype="typestring" haschoices="false"
+										hasmarkings="false" symname="To" />
+								</whereprop>
+								<literal>S[{in1,in2,in3}]</literal>
+							</in>
+							<notin>
+								<whereprop editproperty="editable" itemid="7" name="Către"
+									objecttype="document" symname="To">
+									<propdesc datatype="typestring" haschoices="false"
+										hasmarkings="false" symname="To" />
+								</whereprop>
+								<literal>S[{notin1,notin2}]</literal>
+							</notin>
+							<isin>
+								<whereprop editproperty="editable" itemid="7" name="Titlu"
+									objecttype="document" symname="DocumentTitle">
+									<propdesc datatype="typestring" haschoices="false"
+										hasmarkings="false" symname="DocumentTitle" />
+								</whereprop>
+								<literal>S[{isin1,isin2,isin3}]</literal>
+							</isin>
+							<isnotin>
+								<whereprop editproperty="editable" itemid="7" name="Titlu"
+									objecttype="document" symname="DocumentTitle">
+									<propdesc datatype="typestring" haschoices="false"
+										hasmarkings="false" symname="DocumentTitle" />
+								</whereprop>
+								<literal>S[{ini1,ini2}]</literal>
+							</isnotin>
+						</or>
+					</where>
+					<subclasses>
+						<subclass editproperty="readonly" itemid="10" name="E-mail"
+							objecttype="document" symname="Email" />
+					</subclasses>
+				</searchclause>
+			</searchclauses>
+		</searchcriteria>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

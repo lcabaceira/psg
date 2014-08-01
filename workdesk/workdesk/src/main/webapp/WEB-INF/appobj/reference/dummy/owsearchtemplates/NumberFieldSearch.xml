@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="EvaluationPoints" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<where>
+				<and>
+					<in>
+						<whereprop editproperty="editable" symname="EvaluationPoints">
+						</whereprop>
+						<literal />
+					</in>
+				</and>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

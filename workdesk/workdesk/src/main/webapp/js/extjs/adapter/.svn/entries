@@ -1,0 +1,40 @@
+10
+
+dir
+38093
+https://svn.alfresco.com/repos/abs-owd_repos/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/adapter
+https://svn.alfresco.com/repos/abs-owd_repos
+
+
+
+2013-04-10T09:07:38.110763Z
+33031
+daco
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4a0a76e0-574f-d64f-9cee-6202afcc079f
+
+ext
+dir
+
+jquery
+dir
+
+prototype
+dir
+
+yui
+dir
+

@@ -1,0 +1,746 @@
+/* font-size */
+html{
+    font-size: 0.70em;
+    line-height: 1.2em;
+}
+html, textarea, input, .OwInputControl, select.OwInputfield_long, .DefaultInput, .x-form-field
+{
+    font-family: Open Sans, sans-serif;
+}
+#OwHeaderView_Logo1
+{
+	margin: 2px 14px;
+}
+/* **********************************************
+    Customize the navigation column
+************************************************* */
+#OwSubLayout_NAVIGATION,
+.com_wewebu_ow_RecordArchiv #OwSubLayout_Div #OwSubLayout_NAVIGATION,
+.OwRecordSubLayout_NAVIGATION .OwMainColumnHeader,
+#OwSubLayout_NAVIGATION #OwRecordPreviewPropertyView
+{
+    width: 235px;
+}
+*:first-child+html ul#OwSubNavigationView li a
+{
+    width: 223px; /* set the correct width for ie7, it must be 12px less then in other browsers */
+}
+*:first-child+html .OwSubLayoutDynamic_NAVIGATION ul#OwSubNavigationView li a
+{
+	width: auto; /* for dynamic subNavigation, use auto width */
+}
+
+*:first-child+html #OwSubLayout_NAVIGATION .OwTreeView
+{
+    width: 226px; /* set the correct with for ie7 */  
+}
+#OwSubLayout_Div,
+{
+	background-image: none;
+	border: 1px solid #ebebeb;
+	border-top: none;
+}
+#OwSubLayout_Div #OwSubLayout_NAVIGATION
+{
+	border-right: 3px solid #ebebeb;
+	border-top: 1px solid #8F9BAC;
+	padding: 0px;
+	min-height: 400px;
+}
+#OwSubLayout_Div #OwSubLayout_MAIN,
+.OwStandardDialog_MAIN #OwSubLayout_MAIN
+{
+    margin-left: 240px; /* set the left margin of the main content column */
+}
+
+/* define layouts without navigation here */
+.com_wewebu_ow_Help div#OwSubLayout_Div #OwSubLayout_MAIN,
+.com_wewebu_ow_Admin div#OwSubLayout_Div #OwSubLayout_MAIN,
+.com_wewebu_ow_Admin .OwStandardDialog_MAIN #OwSubLayout_MAIN,
+.com_wewebu_ow_RecordArchivRegister div#OwMainLayout_MAIN div#OwSubLayout_Div div.OwSubLayoutRegister_MAIN,
+.com_wewebu_ow_RecordArchivDossierRegister div#OwMainLayout_MAIN div#OwSubLayout_Div div.OwSubLayoutRegister_MAIN,
+.com_wewebu_ow_New div#OwSubLayout_Div #OwSubLayout_MAIN
+{
+    margin-left: 0;
+    background-color: white;
+}
+
+/* **********************************************
+    Customize the block label layout.
+    This is used for forms in table layout without 
+    using HTML tables (accessibility)
+************************************************* */
+.OwPropertyBlockLayout .OwPropertyLabel,
+form label.OwPropertyName,
+form .OwPropertyControlBlockLabelLayout label,
+form .blockLabel label
+{
+    width: 215px;
+}
+.OwNowrapLabel .OwPropertyLabel,
+form table.OwNowrapLabel td.OwPropertyName
+{
+    min-width: 215px;
+}
+*:first-child+html form table.OwNowrapLabel td.OwPropertyName label
+{
+    width: 215px;
+}
+
+/* the label width can be overridden in special views, 
+   e.g. in OwBPMWorkItemListView_SEARCH_CRITERIA */
+.OwBPMWorkItemListView_SEARCH_CRITERIA .OwNowrapLabel .OwPropertyLabel
+{
+    min-width: 120px;
+}
+
+/* hide elements */
+#OwStandardDialog #OwSubLayout_menu,
+.OwStandardDialog_MENU td span.OwMainMenuItem,
+#OwSubLayout_menu ul span  
+{
+    display: none;
+}
+#OwStandardDialog_Header h1 span.OwEditProperties_Versiontext,
+#OwStandardDialog_Header h1 span.OwEditProperties_Versionlinks 
+{
+    font-size: 0.6em;
+}
+.OwClipboardView,
+.OwDump,
+.OwEditPropertiesDialog_VersionAccessLink,
+.OwGeneralList_table thead td,
+.OwGeneralList_table thead th,
+.OwBPMWorkItemListView_SEARCH_CRITERIA_BUTTON,
+.OwBPMWorkItemListView_SEARCH_CRITERIA table,
+.OwBPMWorkItemListView_SEARCH_CRITERIA .OwInputControl,
+#OwHeaderView_Login,
+.OwInstructionName,
+.OwLoginView_languagepart,
+div.OwMainColumnHeader,
+div#OwMainFooter,
+.OwMainMenuItem,
+a.OwMainNavigationView_not_selected,
+a.OwMainNavigationView_selected,
+#OwObjectListViewFilterRow_Filter .OwInputControl,
+#OwObjectListViewFilterRow_Filter p,
+#OwObjectListViewFilterRow_Filter select,
+.OwObjectListViewThumbnails_table,
+.OwObjectPropertyView_PropList thead td,
+.OwObjectPropertyView_PropList thead th,
+.OwObjectPropertyView_Header td,
+.OwObjectPropertyView_Header th,
+.OwRecordPreviewPropertyView_PropertyName,
+#OwRecordSubLayoutRegister_NAVIGATION,
+.OwSimplePageSelector,
+.OwSimplePageSelectorImg,
+.OwSimplePageSelectorImg input[type="text"],
+.OwSubLayout_TITLE,
+.OwSubNavigationView_delimiter
+{
+    font-size: 1.0em;
+}
+.owButtonFile, .owButtons button, .owButtons input,
+input[type="button"], input[type="submit"], textarea,
+#owbody .x-form-field, #OwRecordPreviewPropertyView,
+.OwInputControl, #maxresultlistsizeId, .OwInputfield_long
+{
+    font-size: 1.0em;
+}
+#OwMainLayout_MAIN h2,
+.OwHelpTopic2,
+.OwObjectClassPreviewView_title,
+.OwSettingsSetView_subtitle,
+body.com_wewebu_ow_Settings #OwSubLayout_MAIN form .OwSettingsSetView_subtitle,
+#owexceptiondetails
+{
+    font-size: 1.2em;
+    line-height: 1.4em;
+}
+.OwHelpTopic1,
+#OwStandardDialog_Header h1
+{
+    font-size: 1.6em;
+    line-height: 1.8em;
+}
+#OwLoginView_title 
+{
+    font-size: 26px;
+    line-height: 30px;
+}
+.OwMimeItem:visited,
+.OwTaskTitle_text
+{
+    font-style: normal;
+}
+
+/* text decoration */
+a.OwChapter:hover,
+a.OwCopyRightInfo:hover,
+a.OwDragAndDropTarget,
+a.OwHelpLink:hover,
+.OwHelpView .OwHelpTopic1,
+.OwHelpTopic3,
+a.OwHotKeyBar:hover,
+#OwLoginView_LOCALS_REGION a:hover,
+a.OwMainMenuItem:hover,
+p#OwNextResults_page a
+.OwNumberBlockPageSelector_page a,
+.OwSubLayout_hotkey a:hover,
+div#OwMainFooter a
+{
+    text-decoration: underline;
+}
+.OwSubNavigationView_selected
+{
+	color: #000000;
+	text-decoration: underline;
+}
+.OwWarningText
+{
+    color: #555555;
+}
+.OwDragAndDropTarget,
+.OwGeneralAddItem,
+.OwMainMenuItem,
+.OwMessageBoxButton,
+.OwObjectClassPreviewView_property,
+.OwObjectClassPreviewView_description,
+.OwSmallSubMenuItem,
+.OwSubMenuItem,
+#OwSubLayout_menu,
+ul#OwSubNavigationView li span.OwSubNavigationView_inactive
+{
+    color: #999999;
+}
+a.OwDragAndDropTarget,
+a.OwEditPropertiesDialog_VersionAccessLink,
+a.OwGeneralAddItem,
+a.OwMainMenuItem,
+a.OwMessageBoxButton,
+p#OwNextResults_page a, 
+a.OwSmallSubMenuItem,
+.OwStandardDialog_Btn,
+a.OwSubMenuItem
+{
+    color: #1b1b60;
+}
+.OwNumberBlockPageSelector_page_selected,
+#OwRecordPreviewPropertyView td,
+.OwSubLayout_hotkey,
+p#OwNextResults_page span,
+.OwInstructionName  
+{
+    color: #333333;
+}
+a.OwEditPropertiesDialog_VersionAccessLink:hover,
+a.OwGeneralAddItem:hover,
+a.OwGeneralList_sort:hover,
+.OwHeaderView_Info:hover,
+a.OwMainNavigationView_selected:hover,
+a.OwMessageBoxButton:hover,
+p#OwNextResults_page a:hover,
+p#OwNextResults_page a:active,
+p#OwNextResults_page a:focus,
+.OwNumberBlockPageSelector_page a:hover,
+.OwNumberBlockPageSelector_page a:active,
+.OwNumberBlockPageSelector_page a:focus,
+a.OwSmallSubMenuItem:hover,
+a.OwStandardDialog_Btn:hover,
+a.OwSubNavigationView_not_selected:hover,
+a.OwSubNavigationView_selected:hover,
+a.OwSubMenuItem:hover
+{
+    color: #0000cc;
+}
+a.OwHotKeyBar,
+a.OwHelpLink,
+a.OwChapter
+{
+    color: #555555;
+    font-weight: normal;
+}
+a.OwMimeItem,
+.OwSubLayout_hotkey a 
+{
+    color: #3366cc;
+}
+.OwLoginView_languagepart,
+a.OwMimeItem:hover
+{
+    color: #0000aa;
+}
+#OwMainLayout_ERROR,
+#OwMainLayout_ERROR a 
+{
+    color: #cc0000;
+}
+.owButtons button,
+.owButtons input,
+.OwDragAndDropTarget ,
+.OwGeneralList_table *,
+.OwInfoBar,
+#OwLoginView,
+#OwNextResults_page, 
+div.OwNumberBlockPageSelector a,
+body.com_wewebu_ow_ClaimsProcessing #OwSubLayout_menu li a,
+body.com_wewebu_ow_fnbpm #OwSubLayout_menu li a,
+.OwObjectPropertyView_PropList thead td,
+.OwObjectPropertyView_PropList thead th,
+#OwRecordSubLayoutRegister_NAVIGATION a,
+#OwRecordSubLayout_SEARCHTEMPLATE button,
+#OwRecordSubLayout_SEARCHTEMPLATE input,
+#OwRecordSubLayout_SEARCHTEMPLATE option,
+#OwRecordSubLayout_SEARCHTEMPLATE select,
+#OwRecordSubLayout_SEARCHTEMPLATE textarea,
+.OwSmallSubMenuView_Box a, 
+.OwTreeView a
+{
+    color: #000000;
+}
+td.OwChapter,
+.OwHelpTopic1,
+td.OwHotKeyBar,
+.OwRecordTreeViewText,
+.OwSaveDlgObjectClassText,
+.OwSubLayout_hotkey_frame,
+.OwTreeViewText,
+.OwTreeViewTextSelected
+{
+    color: #003366;
+}
+.OwRecordTreeViewTextSelected,
+.OwSaveDlgObjectClassTextSelected
+{
+    color: #003366;
+    font-weight: bold;
+}
+a.OwEditPropertiesMimeItem
+{
+    color: #dddddd;
+}
+
+a.OwEditPropertiesMimeItem:hover,
+#OwHeaderView_Login span,
+#OwLoginView_title,
+#OwLoginView_title span,
+#OwLoginView_LOCALS_REGION *,
+#OwMainLayout_NAVIGATION a,
+div#OwMainFooter, 
+div#OwMainFooter a, 
+a.OwMainNavigationView_not_selected,
+#OwRecordSubLayoutRegister_NAVIGATION a.OwRegisterViewTextSelected,
+#OwRecordSubLayout_SEARCHTEMPLATE *,  
+.OwSmallSubNavigation #viewspace, 
+#OwStandardDialog_Header h1,
+#OwStandardDialog_Header h1 *,
+#OwStandardDialog_Header h1 .OwMimeItem,
+div.OwStandardDialog_TITLE,
+#OwSubLayout_menu ul li a
+{
+    color: #555555;
+}
+#OwHeaderView_Login a
+{
+	color: #3366cc;
+	text-decoration: underline;
+}
+#OwRecordSubLayoutRegister_NAVIGATION a:hover 
+{
+    color: #1a1e80;
+}
+.OwPropertyError
+{
+    color: #ff0000;
+}
+.OwAllFieldErrors
+{
+    color: #ff0000;
+}
+.OwResultListViewTitle,
+ul#OwSubNavigationView li a,
+ul#OwSubNavigationView li span.OwSubNavigationView_inactive
+{
+    color: #555555;
+}
+.OwHotKeyBar_delimiter, 
+#OwRecordPreviewPropertyView th,
+#OwRecordPreviewPropertyView td ,
+.OwSmallSubNavigation .OwSmallSubNavigation_disabled #text,
+.OwToolView .OwToolItem_description,
+.OwToolsView .OwToolsView_description{
+    color: #666666;
+}
+a.OwMainNavigationView_not_selected:hover   
+{
+    color: #eaeef3;
+}
+/* background-color */
+table.OwChapter,
+.OwMainLayout_MAIN,
+.OwDragAndDropTarget,
+.OwRecordSubLayout_SEARCHTEMPLATE,
+.OwStandardDialog
+{
+    background: #ECECEC;
+}
+.OwGeneralList_RowMarked
+{
+    background: #ffff80;
+}
+form textarea,
+form select,
+form input[type="text"],
+form input[type="password"],
+.OwGeneralList_RowEven,
+.OwHelpView,
+.OwObjectPropertyView,
+.OwObjectPropertyView_OddEven,
+.OwBlockEven,
+.OwObjectPropertyView_EvenRow,
+.OwSettingsSetView_PropertyRow_even,
+#OwMainLayout_MAIN .OwStandardDialog_MAIN,
+#OwRecordPreviewPropertyView
+{
+    background-color: #ffffff;
+}
+div.row.odd,
+.OwGeneralList_RowOdd,
+.OwObjectPropertyView_OddRow,
+.OwSettingsSetView_PropertyRow_odd,
+.OwBlockOdd
+{
+    background-color: #f6f6f6;
+}
+.OwObjectPropertyView_PropList .OwComplexPropertyControl,
+.OwObjectPropertyView_PropList .OwComplexPropertyControl_header,
+.OwObjectPropertyView_PropList .OwComplexPropertyControl .OwGeneralList_RowEven,
+.OwObjectPropertyView_PropList .OwComplexPropertyControl .OwGeneralList_RowOdd
+{
+    background-color: #e1e1e1;
+}
+
+.PriorityRuleStyle 
+{
+    background: #fff388;
+}
+.PriorityRuleStyleLow 
+{
+    background: #fffed1;
+}
+.PriorityRuleStyleMed 
+{
+    background: #fef1dc;
+}
+.PriorityRuleStyleHigh {
+    background: #ffe5e5;
+}
+
+.OwGeneralList_RowSelected,
+.OwObjectListViewThumbnails_divselected
+{
+    background: #e4edff;
+}
+.OwObjectPropertyView_Header
+{
+    background: #cccccc;
+}
+#OwNextResults_page,
+div.OwNumberBlockPageSelector,
+{
+    background-color: #f4f7fa; 
+}
+#OwObjectListViewFilterRow_Filter,
+#OwBPMWorkItemListView_SEARCH_CRITERIA_BOX,
+#OwBPMWorkItemListView_SEARCH_CRITERIA_BOX
+
+{
+    background-color: #ececec;
+}
+#OwLoginView_loginpart, #OwMainLayout_MAIN, .OwMainLayout_MAIN, #OwMainColumnHeader_CONTENTVIEW,
+body.com_wewebu_ow_Search #OwSubLayout_menu
+{
+    background: #fcfcfc;
+}
+.OwRegion_hotkey
+{
+	background-color: #ebebeb;
+}
+.OwResultListViewTitle
+{
+    background-color: #ececec;
+}
+#OwMainLayout_ERROR, .OwInfoBar,
+div.OwMainColumnHeader #OwObjectListButtonControlView a.OwObjectListViewControl_entry_selected img,
+div.OwMainColumnHeader #OwObjectListButtonControlView a.OwObjectListViewControl_entry_selected span
+{
+    background-color: #dde8ff;
+}
+.OwDragAndDropTarget 
+{
+    background-color: #b8cfe5;
+}
+#OwMainLayout_NAVIGATION ul li a:hover,
+#OwMainLayout_NAVIGATION ul li a:active,
+#OwMainLayout_NAVIGATION ul li a:focus
+{
+    background-color: #d9d9d9;
+    font-style: bold;
+    font-color: #000000;
+}
+td.OwMainNavigationView_not_selected
+{
+    background-color: #1f4b7b;
+}
+div.OwObjectClassView
+{
+    padding: 10px 12px;
+}
+#OwMainContent,
+.OwAllFieldErrors,
+.OwObjectListViewThumbnails_area,
+.OwHelpView .OwHelpView_Text,
+.com_wewebu_ow_New  .OwToolView,
+.com_wewebu_ow_Settings #OwSubLayout_MAIN,
+.com_wewebu_ow_Admin .OwStandardDialog_MAIN,
+.com_wewebu_ow_Admin #OwSubLayout_MAIN
+{
+    padding: 10px 12px;
+}
+.OwDocumentImportView_MAIN,
+.OwSaveDlgDocument_MAIN
+{
+    margin: 15px 12px;
+}
+#OwMainLayout_MAIN h2,
+#OwMainLayout_MAIN h3,
+#OwMainLayout_MAIN h4,
+.OwSubLayout_hotkey_frame,
+.block,
+.OwBlock,
+body fieldset
+{
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+/* Demo Pages - this styles are for the demo pages */
+#OwDemoForm
+{
+    background-color: white;
+    padding: 15px;
+}
+#OwDemoForm #OwDemoForm_Header
+{
+    overflow: hidden;
+    height: 70px;
+    border-bottom: 10px solid #ECECEC;
+    margin-bottom: 20px;
+}
+#OwDemoForm #OwDemoForm_Header h1
+{
+    font-size: 1.8em;
+    line-height: 1.3em;
+    width: 400px;
+    float: left;
+    font-weight: normal;
+}
+#OwDemoForm #OwDemoForm_Header img
+{
+    float: right;
+}
+#OwDemoForm .block
+{
+    border-bottom: solid 2px #ECECEC;
+    margin: 0;
+}
+#OwDemoForm .left,
+#OwDemoForm .right
+{
+    padding: 10px;
+}
+#OwDemoForm .left
+{
+    width: 200px;
+    float: left;
+    border-right: solid 2px #ECECEC;
+}
+#OwDemoForm .left h2
+{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+#OwDemoForm .OwFormTable_Column
+{
+    padding: 50px;
+    float: left;
+    margin-left: -2px;
+}
+#OwDemoForm .right
+{
+    float: left;
+    border-left: solid 2px #ECECEC;
+    margin-left: -2px;
+}
+#OwDemoForm .owdemoprop {
+	padding-top:0px;
+	padding-bottom:15px;
+}
+
+#OwDemoForm .info
+{
+    color: #888888;
+    margin-top: 5px;
+    display: block;
+    font-size: 0.8em;
+}
+#OwDemoForm td.OwPropertyName
+{
+    width: 100px;
+    padding-right: 10px; 
+}
+#OwDemoForm_Footer
+{
+    border-top: 10px solid #ECECEC;
+    margin-top: 20px;
+    padding-top: 10px;
+    overflow: hidden;
+}
+#OwDemoSearchForm #OwDemoSearchForm_Header
+{
+    overflow: hidden;
+}
+#OwDemoSearchForm #OwDemoSearchForm_Header h1
+{
+    font-size: 1.8em;
+    line-height: 1.3em;
+    float: left;
+    font-weight: normal;
+}
+#OwDemoSearchForm #OwDemoSearchForm_Header img
+{
+    float: right;
+    margin-bottom: 15px;
+}
+#OwDemoSearchForm  .info
+{
+    color: #888888;
+    margin-top: 10px;
+    font-size: 0.7em;
+}
+.com_wewebu_ow_Demo table
+{
+    width: 100%;
+}
+.com_wewebu_ow_Demo table td
+{
+    padding: 2px;
+}
+
+#OwMainLayout_NAVIGATION ul li.OwMainNavigationView_selected a, 
+#OwMainLayout_NAVIGATION ul li.OwMainNavigationView_notavailable a
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5e7ebb), color-stop(100%,#698cd1)); 
+    background-image: -webkit-linear-gradient(to bottom, #5e7ebb 0px, #698cd1 100%);
+    background-image: -moz-linear-gradient(to bottom, #5e7ebb 0px, #698cd1 100%);
+    /*background-image: -o-linear-gradient(to bottom, #5e7ebb 0px, #698cd1 100%);*/
+    background-image: -ms-linear-gradient(to bottom, #5e7ebb 0%, #698cd1 100%); /* IE10+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5e7ebb', endColorstr='#698cd1',GradientType=0 );
+    background-image: linear-gradient(to bottom, #5e7ebb 0%, #698cd1 100%);
+    color: #ffffff;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    margin-bottom: -1px;
+    position: relative;
+    text-decoration: underline;	
+}
+
+#OwMainLayout_MAIN
+{
+	border-color: #ffffff;
+}
+#grid-panel .x-panel-body
+{
+	border: none;
+	border-size: 0;
+}
+#OwMainLayout_clipboard a.OwMimeItem
+{
+	color: #555555;
+}
+.OwGeneralList_property
+{
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+}
+div#OwRecordPreviewPropertyView
+{
+	border-bottom: 3px solid #ebebeb;
+}
+img.OwFunctionIcon,
+td#MIME_TYPE_ICON img.OwMimeIcon
+{
+	padding: 2px;
+}
+.OwGeneralList_table td
+{
+	padding: 2px 2px 1px;
+}
+div#OwMainColumnHeader_PreviewPropertyView p.OwMaxMinButtonControlView a img
+{
+	padding: 5px;
+}
+#OwMainLayout_HEADER
+{
+	position: relative;
+}
+div.x-grid3-cell-inner.x-grid3-col-col0
+{
+	position: relative;
+}
+div.x-grid3-cell-inner.x-grid3-col-col0 div:last-child
+{
+	position: absolute;
+	right: 5px;
+}
+div.x-grid3-cell-inner.x-grid3-col-col0 div img.OwMimeIcon,
+div.x-grid3-cell-inner.x-grid3-col-col0 div a.OwMimeItem img.OwMimeIcon
+{
+	padding-left: 5px;
+}
+div#OwSubLayout_Div_Panel{
+	border-top-width:1px;
+	border-left-width:1px;
+	border-right-width:1px;
+	border-bottom-width:1px;
+    border-style:solid;
+	border-color: #ebebeb;
+}
+div.OwEditAspectView {
+margin: 15px 12px;
+}
+div.OwEditAspectView div.owButtons{
+padding-top: 5px;
+}
+.about-contributions {
+    overflow: hidden;
+    width:300px;
+    height:100px;    
+}
+td.shiftButtons {
+    text-align: center;
+}
+div#OwSubLayout_Div_Panel div.x-panel-body-noheader
+{
+    overflow: auto;	
+}
+div#OwSubLayout_Div_Panel div.x-panel-body-noheader > div#OwSubLayout_MAIN
+{
+	height: auto;
+	overflow: visible;
+}
+#OwMainLayout_MAIN_endstrip
+{
+	height: 0;
+	margin: 0;
+}

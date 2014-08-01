@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginDescriptor>
+<PlugIn type="plugin">
+  	<JspForm>Default.jsp</JspForm>  
+    <objectclasses>
+    </objectclasses>     
+            
+     <JspForms>
+     	<JspForm>
+     		<objectclasses>
+      				<name>Email</name>
+    		</objectclasses>
+     		<JspPage>Email.jsp</JspPage>
+     	</JspForm>
+     	 <JspForm>
+     		<objectclasses>
+      				<name>Invoice</name>
+      				<name>Employee</name>
+    		</objectclasses>
+     		<JspPage>InvoiceEmployee.jsp</JspPage>
+     	</JspForm>
+     </JspForms> 
+</PlugIn>
+</PluginDescriptor>

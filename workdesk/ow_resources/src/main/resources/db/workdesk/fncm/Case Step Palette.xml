@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE StepPaletteDefinition SYSTEM "spdef4.dtd">
+<StepPaletteDefinition ApiVersion="4.0"
+Origin="JavaAPI"
+
+	MaxStepId="2">
+		<CompoundStep
+			StepId="1"
+			Name="Component"
+			JoinType="or"
+			SplitType="or">
+			<Instruction
+				Id="2"
+				Action="execute">
+				<Expression Val="CE_Operations" />
+				<Expression Val="setStringProperty" />
+				<Expression Val="A1" />
+				<Expression Val="&quot;CASEREF&quot;" />
+				<Expression Val="F_WobNum+&quot;,&quot;+F_Subject" />
+			</Instruction>
+<ModelAttributes>
+	<ModelAttribute
+		Name="UI_StepType"
+		Type="int"
+		IsArray="false">
+			<Value Val="8"/>
+	</ModelAttribute>
+</ModelAttributes>
+		</CompoundStep>
+</StepPaletteDefinition>

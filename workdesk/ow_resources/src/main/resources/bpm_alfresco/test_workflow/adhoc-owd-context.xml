@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC '-//SPRING//DTD BEAN//EN' 'http://www.springframework.org/dtd/spring-beans.dtd'>
+<beans>
+ <bean id="myworkflows.workflowBootstrap" parent="workflowDeployer">
+   <property name="models">
+    <list>
+		<value>alfresco/extension/owdBPMModel.xml</value>
+	</list>
+   </property>
+   <property name="workflowDefinitions">
+      <props>      
+         <prop key="engineId">activiti</prop>     
+         <prop key="location">alfresco/extension/adhoc-owd.bpmn20.xml</prop>     
+         <prop key="mimetype">text/xml</prop>     
+         <prop key="redeploy">false</prop>
+      </props>
+   </property>
+ </bean> 
+</beans>

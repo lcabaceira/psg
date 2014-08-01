@@ -1,0 +1,260 @@
+<?xml version="1.0" ?>
+<bootstrap>
+
+        <EcmAdapter>
+                
+                <!--  
+                <ExternalCrossAdapter>
+            
+                    <XMapping>
+                    
+                        <usermappings>
+                            <usermap name="" group="">
+                                <user>Admin</user>
+                                <password>password</password>
+                            </usermap>
+                        </usermappings>
+
+                        <propertymappings>
+                            
+                            <propertymap name="DocumentTitle">ow_Filename</propertymap>
+                            <propertymap name="DateCreated">ow_Last-Modified</propertymap>
+                        
+                        </propertymappings>
+                        
+                    </XMapping>
+                    
+                    <XEcmAdapter>
+                        
+                        <ClassName>com.wewebu.ow.server.ecmimpl.owdummy.OwDummyNetwork</ClassName>
+                
+                        <Version>4.2.0</Version>
+    
+                        <Authentication mode="NONE"/>
+                                
+                    </XEcmAdapter>
+                    
+                </ExternalCrossAdapter>
+                -->
+                
+                <!-- use this adapter overload if you have defined a ExternalCrossAdapter
+                <ClassName>com.wewebu.ow.server.ecmimpl.fncm.OwFNCMCrossNetwork</ClassName>
+                -->
+                
+                <ClassName>com.wewebu.ow.server.ecmimpl.opencmis.OwCMISNetwork</ClassName>
+                
+                <adapterSessionConf>
+                    <entry key="com.wewebu.owd.objectclassfactory.classname">com.wewebu.ow.server.ecmimpl.opencmis.alfresco.OwCMISAlfrescoObjectClassFactory</entry>
+                </adapterSessionConf>
+                
+                <openCmisConf>
+                    <entry key="org.apache.chemistry.opencmis.objectfactory.classname">org.alfresco.cmis.client.impl.AlfrescoObjectFactoryImpl</entry>
+                </openCmisConf>
+
+                <Version>4.2.0</Version>
+ 
+                
+                <AtomPub>http://abs-alfone.alfresco.com:8080/alfresco/cmisatom</AtomPub>
+                <!-- 
+                <AtomPub>http://abs-alfone.alfresco.com:8080/alfresco/cmisatom</AtomPub>
+                -->
+
+                <DefaultObjectStore>Main Repository</DefaultObjectStore>
+
+                <RecordClasses optionid="">
+                        <RecordClassName>TestRecord1</RecordClassName>
+                </RecordClasses>
+
+                <SemiVirtualRecordClasses optionid="">
+                        <SemiVirtualRecordClassName virtualfolder="testsemivirtualfolder" folderclassname="EmployeeFolder" includephysicalchilds="true">
+                                <VirtualFolderProperty folderproperty="employee_number">employee_number</VirtualFolderProperty>
+                        </SemiVirtualRecordClassName>
+                </SemiVirtualRecordClasses>
+
+                <BPM optionid="">
+                    <ClassName>com.wewebu.ow.server.ecmimpl.alfresco.bpm.OwAlfrescoBPMRepository</ClassName>
+                    <BaseURL>http://abs-alfone.alfresco.com:8080/alfresco</BaseURL>
+                    <!--
+                    <BaseURL>http://abs-alfone.alfresco.com:8080/alfresco</BaseURL>
+                    -->
+                </BPM>
+
+                <PreferedPropertyOrder optionid="">
+                        <property>DocumentTitle</property>
+                        <property>FolderName</property>
+                        <property>DateCreated</property>
+                        <property>Creator</property>
+                </PreferedPropertyOrder>
+
+                <CreationInitialValues optionid="">
+                    <!-- ObjectClass name="TestDocument1">
+                        <Property name="TEST_STRING">hello, world!</Property>
+                        <Property name="TEST_DATE">{today}</Property>
+                    </ObjectClass
+-->
+                </CreationInitialValues>
+                
+                <NameProperties optionid="">
+                    <!-- ObjectClass name="TestDocument1">
+                        <NameProperty>DateLastModified</NameProperty>
+                    </ObjectClass
+-->
+                </NameProperties>
+
+                <PreferredPropertyType optionid="">
+                    <Property type="system">MimeType</Property>
+                </PreferredPropertyType>
+
+                <Authentication mode="ALFRESCO">
+                    <BaseURL>http://abs-alfone.alfresco.com:8080/alfresco</BaseURL>
+                </Authentication>
+                
+                <!--        
+                <Authentication mode="LDAP" recursionlevel="0">
+                    <java.naming.provider.url>ldap://abs-dbmssql.alfresco.com:389</java.naming.provider.url>
+                    <UsersDirectory>CN=Users,DC=wewebu-virtual,DC=local</UsersDirectory>
+                -->
+                    <!--<GroupsDirectory>CN=Builtin,DC=wewebu-virtual,DC=local</GroupsDirectory>-->
+                <!--
+                    <GroupsDirectory>CN=Users,DC=wewebu-virtual,DC=local</GroupsDirectory>
+                    <java.naming.factory.initial>com.sun.jndi.ldap.LdapCtxFactory</java.naming.factory.initial>
+                    <java.naming.security.authentication>simple</java.naming.security.authentication>
+                    <java.naming.security.principal>CN=Administrator,CN=Users,DC=wewebu-virtual,DC=local</java.naming.security.principal>
+                    <java.naming.security.credentials>#TO_BE_INSERTED_HERE#</java.naming.security.credentials>
+                    <loginQueryName>sAMAccountName</loginQueryName>
+                    <anonymousLogin>false</anonymousLogin>
+                </Authentication>
+                -->
+        </EcmAdapter>
+
+        <FieldManager>
+
+                <ClassName>com.wewebu.ow.server.app.OwStandardFieldManager</ClassName>
+
+                <Version>4.2.0</Version>
+
+                <!-- display choicelists as AJAX controls instead of comboboxes -->
+                <AdvancedChoiceLists>true</AdvancedChoiceLists>
+
+                <TextAreaThreshold>255</TextAreaThreshold>
+
+                <!-- 
+                    Day index at which the week should begin, 0-based (defaults to 0, which is Sunday)
+                    for DatePicker selection.
+                 -->
+                <DatePickerStartDay>1</DatePickerStartDay>
+
+                <FieldControls optionid="">
+
+
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlModifiedProperties" javatype="com.wewebu.ow.server.history.OwHistoryModifiedPropertyValue">
+                        </FieldControl>
+
+                        <!--
+                            com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDateControl 
+                                - allowNullValue - for "true" an empty entry (corresponding to a null value) is displayed in the drop down list when this field is rendered.  
+                         -->
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDateControl" javatype="com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDate" allowNullValue="true">
+                        </FieldControl>
+
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwNextDaysDateControl" javatype="com.wewebu.ow.server.fieldctrlimpl.OwNextDaysDate">
+                        </FieldControl>
+
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlObject" javatype="com.wewebu.ow.server.ecm.OwObject">
+                        </FieldControl>
+
+                        <FieldControl fieldclass="com.wewebu.ow.server.plug.owbpm.OwBPMParticipantPropertyControl" javatype="com.wewebu.ow.server.ecmimpl.fncm.bpm.OwFNBPMParticipantProperty">
+                        </FieldControl>
+
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlClass" javatype="com.wewebu.ow.server.ecm.OwClass">
+                        </FieldControl>
+
+                </FieldControls>
+
+        </FieldManager>
+
+        <HistoryManager>
+
+                <ClassName>com.wewebu.ow.server.historyimpl.simplehistory.OwSimpleHistoryManager</ClassName>
+
+                <Version>4.2.0</Version>
+                
+                <SessionEvents> 
+                    <Event  eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_VIEW" eventid="*"/>
+                    <Event  eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_EDIT" eventid="*"/>
+                </SessionEvents>
+                
+        </HistoryManager>
+
+
+
+        <RoleManager>
+
+                <ClassName>com.wewebu.ow.server.roleimpl.simplerole.OwSimpleRoleManager</ClassName>
+
+                <Version>4.2.0</Version>
+
+                <SiteAdmins>
+                            <user>Administrator</user>
+                </SiteAdmins>
+
+                <DesignName></DesignName>
+
+        </RoleManager>
+
+
+
+        <MandatorManager>
+
+                <ClassName>com.wewebu.ow.server.mandatorimpl.simplemandator.OwSimpleMandatorManager</ClassName>
+
+                <Version>4.2.0</Version>
+
+
+        </MandatorManager>
+
+
+        <UseJSDateControl>true</UseJSDateControl>
+
+
+        <DefaultFolderClass>Folder</DefaultFolderClass>
+
+        <ClientWildCardDefinitions optionid="">
+                <wc type="WILD_CARD_TYPE_MULTI_CHAR">*</wc>
+                <wc type="WILD_CARD_TYPE_SINGLE_CHAR">?</wc>
+        </ClientWildCardDefinitions>
+
+
+
+
+        <RecordClasses optionid="">
+                        <!-- RecordClassName>TestRecord1</RecordClassName -->
+        </RecordClasses>
+
+
+
+        <SSLMode>0</SSLMode>
+
+        <TempDir></TempDir>
+
+        <MessageBoxOnUserError>false</MessageBoxOnUserError>
+
+
+        <defaultlocal detectbrowserlocale="true">en</defaultlocal>
+
+        <availablelocals display='true'>
+                <lang icon="/images/lang/de.png" displayname="Deutsch">de</lang>
+                <lang icon="/images/lang/en.png" displayname="English">en</lang>
+                <lang icon="/images/lang/debugmode.png" displayname="Debug Mode (for developers only)">debugmode</lang>
+        </availablelocals>
+
+        <DefaultDataSource>
+            <JNDIName>java:/MSSQLDS</JNDIName>
+            <DriverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</DriverClassName>
+            <URL>jdbc:sqlserver://abs-dbmssql.alfresco.com:1433;DatabaseName=owdemo;</URL>
+            <User>owdemo</User>
+            <Password>wewebu2007</Password>
+        </DefaultDataSource>
+
+       <initparameter></initparameter>
+</bootstrap>

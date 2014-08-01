@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="checkedoutversion">
+		<!--
+			currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions
+		-->
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" />
+					<selectprop symname="D:owd:hrdocument.owd:documentPersonnelNumber" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="D:owd:hrdocument.owd:hrDocumentType" sortlevel="2" sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModificationDate" />
+					<selectprop symname="D:owd:hrdocument.owd:documentComment" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<where>
+				<eq>
+					<whereprop editproperty="editable" symname="D:owd:hrdocument.owd:documentPersonnelNumber">
+					</whereprop>
+					<literal />
+				</eq>
+				<like>
+					<whereprop editproperty="editable" symname="cmis:document.cmis:name">
+					</whereprop>
+					<literal />
+				</like>
+				<eq>
+					<whereprop editproperty="editable" symname="D:owd:hrdocument.owd:hrDocumentType">
+					</whereprop>
+					<literal />
+				</eq>
+				<between>
+					<whereprop editproperty="editable" symname="cmis:document.cmis:lastModificationDate">
+					</whereprop>
+					<literal />
+				</between>
+			</where>
+			<subclasses>
+				<subclass objecttype="document" symname="D:owd:hrdocument" />
+			</subclasses>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

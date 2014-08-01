@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data
+END
+StoreMgr.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/StoreMgr.js
+END
+Record.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/Record.js
+END
+DataField.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/DataField.js
+END
+Request.js
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/Request.js
+END
+MemoryProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/MemoryProxy.js
+END
+DataReader.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/DataReader.js
+END
+JsonReader.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/JsonReader.js
+END
+XmlStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/XmlStore.js
+END
+XmlWriter.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/XmlWriter.js
+END
+ArrayStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/ArrayStore.js
+END
+HttpProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/HttpProxy.js
+END
+DirectProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/DirectProxy.js
+END
+DataProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/DataProxy.js
+END
+Store.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/Store.js
+END
+Response.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/Response.js
+END
+ScriptTagProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/ScriptTagProxy.js
+END
+GroupingStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/GroupingStore.js
+END
+Tree.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/Tree.js
+END
+DataWriter.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/DataWriter.js
+END
+ArrayReader.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/ArrayReader.js
+END
+JsonWriter.js
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/JsonWriter.js
+END
+SortTypes.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/SortTypes.js
+END
+Api.js
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/Api.js
+END
+XmlReader.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/XmlReader.js
+END
+JsonStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/JsonStore.js
+END
+Types.js
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/Types.js
+END
+DirectStore.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/data/DirectStore.js
+END

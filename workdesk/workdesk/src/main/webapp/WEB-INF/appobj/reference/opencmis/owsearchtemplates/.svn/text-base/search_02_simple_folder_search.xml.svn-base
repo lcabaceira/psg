@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:folder.cmis:name" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="cmis:folder.cmis:lastModificationDate" sortlevel="2" sortorder="descending" />
+					<selectprop symname="cmis:folder.cmis:lastModifiedBy" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="folder" />
+			</from>
+			<where>
+				<and>
+					<like>
+						<whereprop editproperty="editable" symname="cmis:folder.cmis:name" />
+					</like>
+					<between>
+						<whereprop editproperty="editable" symname="cmis:folder.cmis:lastModificationDate" />
+					</between>
+					<like>
+						<whereprop editproperty="editable" symname="cmis:folder.cmis:lastModifiedBy" />
+					</like>
+				</and>
+			</where>
+			<subclasses>
+				<subclass objecttype="folder" name="Folder" symname="cmis:folder" />
+			</subclasses>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

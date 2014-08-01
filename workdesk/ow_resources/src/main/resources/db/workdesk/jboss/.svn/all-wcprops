@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/jboss
+END
+postgresql-ds.xml
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/jboss/postgresql-ds.xml
+END
+db2-ds.xml
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/jboss/db2-ds.xml
+END
+mysql-ds.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/jboss/mysql-ds.xml
+END
+oracle-ds.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/jboss/oracle-ds.xml
+END
+mssql-ds.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/jboss/mssql-ds.xml
+END

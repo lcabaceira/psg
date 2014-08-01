@@ -1,0 +1,9 @@
+#FNCM BPM
+
+#BaseTest
+fncm_bpm.login=Administrator
+fncm_bpm.password=wewebu2007
+fncm_bpm.configDir=resources/fncm/
+fncm_bpm.configFile=owbootstrap_fncm.xml
+fncm_bpm.xml.bootstrap=bootstrap
+fncm_bpm.xml.subnode=EcmAdapter

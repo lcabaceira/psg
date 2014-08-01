@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history
+END
+OwStandardHistoryObjectCreateEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwStandardHistoryObjectCreateEvent.java
+END
+OwHistoryManagerContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryManagerContext.java
+END
+OwSessionHistoryEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwSessionHistoryEntry.java
+END
+OwStandardSessionHistoryDeleteEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwStandardSessionHistoryDeleteEvent.java
+END
+OwSessionHistoryDeleteEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwSessionHistoryDeleteEvent.java
+END
+OwHistoryPropertyChangeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryPropertyChangeEvent.java
+END
+OwHistoryModifiedPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryModifiedPropertyValue.java
+END
+OwHistoryEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryEntry.java
+END
+OwStandardHistoryPropertyChangeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwStandardHistoryPropertyChangeEvent.java
+END
+OwStandardHistoryModifiedPropertyValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwStandardHistoryModifiedPropertyValue.java
+END
+OwHistoryObjectDeleteEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryObjectDeleteEvent.java
+END
+OwHistoryException.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryException.java
+END
+OwStandardHistoryEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwStandardHistoryEntry.java
+END
+OwHistoryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryManager.java
+END
+OwStandardHistoryObjectDeleteEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwStandardHistoryObjectDeleteEvent.java
+END
+OwHistoryAnnotationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryAnnotationEvent.java
+END
+OwHistoryObjectChangeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryObjectChangeEvent.java
+END
+OwTouchConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwTouchConfiguration.java
+END
+OwStandardHistoryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwStandardHistoryManager.java
+END
+OwStandardHistoryAnnotationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwStandardHistoryAnnotationEvent.java
+END
+OwStandardHistoryObjectChangeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwStandardHistoryObjectChangeEvent.java
+END
+OwHistoryObjectCreateEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/history/OwHistoryObjectCreateEvent.java
+END

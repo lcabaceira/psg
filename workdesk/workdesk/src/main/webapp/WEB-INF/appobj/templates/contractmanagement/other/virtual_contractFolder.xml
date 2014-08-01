@@ -1,0 +1,105 @@
+<?xml version="1.0" ?>
+<VirtualFolderDescription>
+
+	<!-- (optional) java class name of virtual folder factory to use. Leave 
+		empty to use standard: com.wewebu.ow.server.ecm.OwStandardVirtualFolderObjectFactory -->
+	<ClassName>com.alfresco.ow.contractmanagement.virtualfolder.OwContractManagementVirtualFolderObjectFactory</ClassName>
+
+	<root name="Contract" containsdocs="true">
+		<search versionselection="currentversion">
+			<!-- currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions -->
+			<objectstores mergeoption="union">
+				<objectstore name="Main Repository" />
+			</objectstores>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" />
+					<selectprop symname="P:cmg:asp_documentType.cmg:documentType" />
+					<selectprop symname="P:cmg:asp_documentStatus.cmg:documentStatus" />
+					<selectprop symname="cmis:document.cmis:creationDate" />
+					<selectprop symname="cmis:document.cmis:lastModificationDate" />
+					<selectprop symname="cmis:document.cmis:createdBy" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<subclasses>
+				<subclass editproperty="hidden" objecttype="document" symname="D:cmg:document" />
+			</subclasses>
+		</search>
+		<node name="Search in contract" mimetype="ow_folder/search" containsdocs="true">
+			<search versionselection="currentversion">
+				<objectstores mergeoption="none">
+					<objectstore name="Main Repository" />
+				</objectstores>
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:document.cmis:name" />
+						<selectprop symname="P:cmg:asp_documentType.cmg:documentType" />
+						<selectprop symname="P:cmg:asp_documentStatus.cmg:documentStatus" />
+						<selectprop symname="cmis:document.cmis:creationDate" />
+						<selectprop symname="cmis:document.cmis:lastModificationDate" />
+						<selectprop symname="cmis:document.cmis:createdBy" />
+					</selectprops>
+				</select>
+				<from>
+					<class symname="document" />
+				</from>
+				<where>
+					<and>
+						<cbr_in>
+							<whereprop editproperty="editable" symname="cmis:document.cmis:name" />
+						</cbr_in>
+						<eq>
+							<whereprop editproperty="editable" symname="P:cmg:asp_documentStatus.cmg:documentStatus" />
+						</eq>
+						<between>
+							<whereprop editproperty="editable" symname="cmis:document.cmis:creationDate" datemode="ignoretime" />
+							<literal />
+						</between>
+					</and>
+				</where>
+				<subclasses>
+					<subclass editproperty="hidden" objecttype="document" symname="D:cmg:document" />
+				</subclasses>
+			</search>
+		</node>
+		<reference name="Contract Partners" mimetype="ow_folder/partnerReferences" direction="OUTBOUND">
+			<linkclasses>
+				<name aspect="P:cmg:asp_contractors">R:cmg:partners</name>
+			</linkclasses>
+			<search versionselection="currentversion">
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:folder.cmis:name" />
+					</selectprops>
+				</select>
+			</search>
+		</reference>
+		<reference name="Responsible Persons" mimetype="ow_folder/responsiblePersonReferences" direction="OUTBOUND">
+			<linkclasses>
+				<name aspect="P:cmg:asp_contractors">R:cmg:responsiblePersons</name>
+			</linkclasses>
+			<search versionselection="currentversion">
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:folder.cmis:name" />
+					</selectprops>
+				</select>
+			</search>
+		</reference>
+		<reference name="Master Agreements" mimetype="ow_folder/masterAgreementReferences" direction="OUTBOUND">
+			<linkclasses>
+				<name aspect="P:cmg:asp_underlyingMasterAgreement">R:cmg:underlyingMasterAgreement</name>
+			</linkclasses>
+			<search versionselection="currentversion">
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:folder.cmis:name" />
+					</selectprops>
+				</select>
+			</search>
+		</reference>
+	</root>
+</VirtualFolderDescription>

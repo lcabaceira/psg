@@ -1,0 +1,226 @@
+<?xml version="1.0" ?>
+<VirtualFolderDescription>
+
+	<!--
+		(optional) java class name of virtual folder factory to use. Leave
+		empty to use standard:
+		com.wewebu.ow.server.ecm.OwStandardVirtualFolderObjectFactory
+	-->
+	<ClassName />
+
+	<root name="Dossiers" containsdocs="true">
+
+		<!-- Node contains a search template-->
+		<search versionselection="checkedoutversion">
+			<!--
+				currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions
+			-->
+
+			<from>
+				<class symname="document" />
+			</from>
+
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="HrDocument.DocumentPersonnelNumber" />
+					<selectprop symname="HrDocument.HrDocumentType" />
+					<selectprop symname="cmis:document.cmis:lastModificationDate" />
+				</selectprops>
+			</select>
+
+			<where>
+				<and>
+					<eq>
+						<whereprop editproperty="hidden" symname="HrDocument.DocumentPersonnelNumber">
+						</whereprop>
+						<literal />
+					</eq>
+					<eq>
+						<whereprop editproperty="hidden" symname="HrDocument.HrDocumentType">
+						</whereprop>
+						<literal />
+					</eq>
+				</and>
+			</where>
+			<subclasses>
+				<subclass objecttype="document" symname="HrDocument" />
+			</subclasses>
+
+		</search>
+
+		<node name="Terms of Employment" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="HrDocument.HrDocumentType">Terms of Employment</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Remuneration" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="HrDocument.HrDocumentType">Remuneration</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Employment History" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="HrDocument.HrDocumentType">Employment History</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Application Paper" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="HrDocument.HrDocumentType">Application Paper</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Certificate" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="HrDocument.HrDocumentType">Certificate</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Social Security" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="HrDocument.HrDocumentType">Social Security</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Sick Certificate" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="HrDocument.HrDocumentType">Sick Certificate</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Picture" containsdocs="true">
+			<!-- Node contains a search template-->
+			<search versionselection="checkedoutversion">
+				<!--
+					currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions
+				-->
+
+				<!-- objectstores mergeoption="none">
+					<objectstore name="Main Repository" />
+				</objectstores-->
+
+				<from>
+					<class symname="document" />
+				</from>
+
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+						<selectprop symname="HrDocument.DocumentPersonnelNumber" />
+						<selectprop symname="HrDocument.HrDocumentType" />
+						<selectprop symname="cmis:document.cmis:lastModificationDate" />
+					</selectprops>
+				</select>
+
+				<where>
+					<and>
+						<eq>
+							<whereprop editproperty="hidden" symname="HrDocument.DocumentPersonnelNumber">
+							</whereprop>
+							<literal />
+						</eq>
+						<neq>
+							<whereprop editproperty="hidden" symname="HrDocument.HrDocumentType">
+							</whereprop>
+							<literal>Terms of Employment</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="HrDocument.HrDocumentType">
+							</whereprop>
+							<literal>Remuneration</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="HrDocument.HrDocumentType">
+							</whereprop>
+							<literal>Employment History</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="HrDocument.HrDocumentType">
+							</whereprop>
+							<literal>Application Paper</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="HrDocument.HrDocumentType">
+							</whereprop>
+							<literal>Certificate</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="HrDocument.HrDocumentType">
+							</whereprop>
+							<literal>Social Security</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="HrDocument.HrDocumentType">
+							</whereprop>
+							<literal>Sick Certificate</literal>
+						</neq>
+					</and>
+				</where>
+
+				<subclasses>
+					<subclass objecttype="document" symname="HrDocument" />
+				</subclasses>
+
+			</search>
+
+		</node>
+		<node name="Document Types" containsdocs="true">
+            <!-- Node contains a search template-->
+			<search versionselection="checkedoutversion">
+                <!--
+                    currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions
+                -->
+
+				<!-- objectstores mergeoption="none">
+					<objectstore name="Main Repository" />
+				</objectstores-->
+
+				<from>
+					<class symname="document" />
+				</from>
+
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+						<selectprop symname="HrDocument.DocumentPersonnelNumber" />
+						<selectprop symname="HrDocument.HrDocumentType" />
+						<selectprop symname="cmis:document.cmis:lastModificationDate" />
+					</selectprops>
+				</select>
+
+				<where>
+					<and>
+						<eq>
+							<whereprop editproperty="editable" symname="HrDocument.HrDocumentType">
+							</whereprop>
+							<literal />
+						</eq>
+						<eq>
+							<whereprop editproperty="editable" symname="HrDocument.DocumentPersonnelNumber">
+							</whereprop>
+							<literal />
+						</eq>
+					</and>
+				</where>
+
+				<subclasses>
+					<subclass objecttype="document" symname="HrDocument" />
+				</subclasses>
+
+			</search>
+
+		</node>
+
+	</root>
+
+</VirtualFolderDescription>

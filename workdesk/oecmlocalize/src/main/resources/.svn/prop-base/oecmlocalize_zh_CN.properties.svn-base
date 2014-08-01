@@ -1,0 +1,18 @@
+K 13
+svn:mergeinfo
+V 1455
+/mowd/branches/DnDHtml5/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:32805-32879
+/mowd/branches/OWD-5341/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:36505-36550
+/mowd/branches/OWD-5345/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:36652-36675
+/mowd/branches/OWD-5357/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:37024-37047
+/mowd/branches/OWD-5414/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:36889-36903
+/mowd/branches/OWD-5432/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:37319-37401
+/mowd/branches/OWD-5457/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:37090-37112
+/mowd/branches/OWD-5491/TRUNK/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:37218-37245
+/mowd/branches/OWD-5585/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:37708-37725
+/mowd/branches/Thumbnails_SubpixelProblem/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:37510-37513
+/mowd/branches/new_ldap/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:33303-33344
+/mowd/branches/new_workflow_api/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:34561-34579
+/mowd/branches/opencmis_lazyproploading/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:31389-31401
+/mowd/branches/share_like_DnD/trunk/oecmlocalize/src/main/resources/oecmlocalize_zh.properties:32965-33005
+END

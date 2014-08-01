@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/object
+END
+OwCMISTransientObjectAtomTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/object/OwCMISTransientObjectAtomTest.java
+END
+OwCMISTransientObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/object/OwCMISTransientObjectTest.java
+END
+OwCMISTransientObjectSOAPTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/object/OwCMISTransientObjectSOAPTest.java
+END

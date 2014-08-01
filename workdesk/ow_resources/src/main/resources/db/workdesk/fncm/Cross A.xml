@@ -1,0 +1,47 @@
+<?xml version="1.0" ?>
+<storedsearch xmlns="http://filenet.com/namespaces/wcm/apps/1.0">
+	<searchspec versionselection="releasedversion">
+		
+
+		<!-- define the BPM queues to search in, pathname can be any combination of the following:
+
+				/ow_proxy/<Name> 	= proxy queue that show all workitems as a proxy
+				/ow_roster/<Name>	= roster queues, the overall queue
+				/ow_tracker/<Name>	= tracker queues to track workitems
+				/ow_user/<Name>		= user queues like InBox
+				/ow_public/<Name>	= public queues
+			
+		-->
+		<folders>
+			<folder pathname="\ow_public\QueueA" searchsubfolders="false" view="hidden"><objectstore id="BPM"/></folder>
+		</folders>
+		
+		<searchcriteria>
+			<searchclauses>
+				<searchclause>
+					<select>
+						<selectprops>
+							<selectprop datatype="java.lang.String" name="Schritt" symname="F_StepName" />
+							<selectprop datatype="java.util.Date" name="Eingangsdatum" symname="F_EnqueueTime" />
+						</selectprops>
+					</select>
+					<where>
+						<and>
+							<eq>
+								<whereprop editproperty="hidden" datatype="java.lang.String" name="Gruppenbox" symname="OW_GROUPBOX_NAME">
+								</whereprop>
+								<literal>Cross A</literal>
+							</eq>
+						</and>
+					</where>
+				</searchclause>
+			</searchclauses>
+		</searchcriteria>
+		<options maxrecords="100" />
+	</searchspec>
+
+	<!-- (optional) define a list or container names that the items in this container can be sent to, leave empty to use default -->
+	<BPMReassignContainerNames>
+
+	</BPMReassignContainerNames>
+</storedsearch>

@@ -1,0 +1,335 @@
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views
+END
+OwDirectInputPageSelectorComponentTextBased.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwDirectInputPageSelectorComponentTextBased.java
+END
+OwObjectListViewRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectListViewRow.java
+END
+OwVicinityPageSelectorComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwVicinityPageSelectorComponent.java
+END
+OwSplitObjectListDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwSplitObjectListDocument.java
+END
+OwObjectAccessRightsView.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectAccessRightsView.java
+END
+OwPageSelectorComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPageSelectorComponent.java
+END
+OwObjectListViewEXTJSGrid.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectListViewEXTJSGrid.java
+END
+OwObjectFiledRecordsView.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectFiledRecordsView.java
+END
+OwBatchPropertiesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwBatchPropertiesHandler.java
+END
+OwCheckInHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwCheckInHandler.java
+END
+OwUIGenericAccessRightsModul.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwUIGenericAccessRightsModul.java
+END
+OwStandardBatchPropertiesHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwStandardBatchPropertiesHandler.java
+END
+OwStandardCheckInHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwStandardCheckInHandler.java
+END
+OwObjectPropertyView.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectPropertyView.java
+END
+OwPrivilegeSetEditorDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPrivilegeSetEditorDocument.java
+END
+OwLaunchableWorkflowSelectionView.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwLaunchableWorkflowSelectionView.java
+END
+OwObjectClassPreviewView.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectClassPreviewView.java
+END
+OwAbstractDocumentImporterView.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwAbstractDocumentImporterView.java
+END
+OwToolViewItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwToolViewItem.java
+END
+OwObjectListViewFilterRow.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectListViewFilterRow.java
+END
+OwObjectLinksView.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectLinksView.java
+END
+OwPermissionsDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPermissionsDocument.java
+END
+OwSimplePageSelectorComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwSimplePageSelectorComponent.java
+END
+OwObjectListViewControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectListViewControl.java
+END
+OwMultipanelAccessRightsView.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwMultipanelAccessRightsView.java
+END
+OwNumberBlockPageSelectorComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwNumberBlockPageSelectorComponent.java
+END
+OwObjectHistoryView.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectHistoryView.java
+END
+OwObjectEditVersionsView.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectEditVersionsView.java
+END
+OwObjectListViewThumbnails.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectListViewThumbnails.java
+END
+OwPasteMetadataHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPasteMetadataHandler.java
+END
+OwPrivilegesView.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPrivilegesView.java
+END
+OwPolicyLevelView.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPolicyLevelView.java
+END
+OwObjectListViewCombined.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectListViewCombined.java
+END
+OwObjectListViewFilterEXTJSGrid.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectListViewFilterEXTJSGrid.java
+END
+OwStandardPasteMetadataHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwStandardPasteMetadataHandler.java
+END
+OwObjectLinksDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectLinksDocument.java
+END
+OwObjectPropertyFormularView.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectPropertyFormularView.java
+END
+OwObjectTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectTreeView.java
+END
+OwObjectListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectListView.java
+END
+OwPrivilegeSetEditor.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPrivilegeSetEditor.java
+END
+OwPrivilegesDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPrivilegesDocument.java
+END
+OwPolicyLevelDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPolicyLevelDocument.java
+END
+OwObjectListViewPluginCache.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectListViewPluginCache.java
+END
+OwAllLinksView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwAllLinksView.java
+END
+OwToolView.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwToolView.java
+END
+OwObjectClassProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectClassProcessor.java
+END
+OwObjectTreeViewEXTJS.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectTreeViewEXTJS.java
+END
+OwAddPrivilegeDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwAddPrivilegeDialog.java
+END
+OwTypedLinksView.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwTypedLinksView.java
+END
+OwObjectClassView.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectClassView.java
+END
+OwDirectInputPageSelectorComponent.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwDirectInputPageSelectorComponent.java
+END
+OwPageableView.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPageableView.java
+END
+OwPageableListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwPageableListView.java
+END
+OwObjectClassTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwObjectClassTreeView.java
+END
+OwSplitObjectListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/dmsdialogs/views/OwSplitObjectListView.java
+END

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1"
+						sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy"
+						sortlevel="2" sortorder="descending" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="cmis:document" />
+			</from>
+			<where>
+				<between>
+					<whereprop editproperty="editable"
+						symname="cmis:document.cmis:lastModificationTime" />
+					<literal>
+						<value_1>DT[2000-10-17T00:00:00.000Z]</value_1>
+						<value_2>DT[2011-10-17T07:15:00.000Z]</value_2>
+					</literal>
+				</between>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

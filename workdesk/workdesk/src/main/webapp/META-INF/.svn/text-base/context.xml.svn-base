@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context path="/workdesk" privileged="true" reloadable="true">
+
+    <Resource name="java:/HSQLDB"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="SA" 
+        password="" 
+        driverClassName="org.hsqldb.jdbcDriver"
+        url="jdbc:hsqldb:hsql://localhost:9001/owdemo"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+
+    <Resource name="java:/OracleDS"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="SYSTEM" 
+        password="wewebu2003" 
+        driverClassName="oracle.jdbc.driver.OracleDriver"
+        url="jdbc:oracle:thin:@abs-dboracle.alfresco.com:1521:LL"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+
+    <Resource name="java:/MSSQLDS"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="owdemo" 
+        password="wewebu2007" 
+        driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+        url="jdbc:sqlserver://abs-dbmssql.alfresco.com:1433;DatabaseName=owdemo;"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+
+    <Resource name="java:/DB2DS"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="db2admin"
+        password="wewebu2011"
+        driverClassName="com.ibm.db2.jcc.DB2Driver"
+        url="jdbc:db2://abs-ibmcm842.alfresco.com:50000/OWDDB"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+
+    <Resource name="java:/MySQLDS"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="root" 
+        password="" 
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://localhost:3306/owd"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+      
+    <!-- Localhost -->
+	<!--
+    <Resource name="java:/PostgreSQLDS" 
+    	auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"  
+        driverClassName="org.postgresql.Driver"
+        url="jdbc:postgresql://localhost:5432/owd"
+        username="owdemo" 
+        password="owdemo"
+        removeAbandoned="true" 
+        maxActive="30" 
+        maxIdle="10"
+		maxWait="1000"
+		removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+	-->
+	
+	<!-- Contract Management -->	
+    <Resource name="java:/PostgreSQLDS"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="owdemo"
+        password="owdemo"
+        driverClassName="org.postgresql.Driver"
+        url="jdbc:postgresql://abs-alfonecmg.alfresco.com:5432/owd?autoReconnect=true"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"
+        validationQuery="select 1"/>
+
+</Context>

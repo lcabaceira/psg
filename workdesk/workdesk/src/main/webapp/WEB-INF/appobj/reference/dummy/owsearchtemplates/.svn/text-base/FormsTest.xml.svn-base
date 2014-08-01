@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="ow_Filename" />
+					<selectprop symname="ow_Last-Modified" />
+					<selectprop symname="ow_Filesize" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<where>
+				<and>
+					<like>
+						<whereprop uniquename='name' editproperty="editable" symname="ow_Filename">
+						</whereprop>
+						<literal />
+					</like>
+					<like>
+						<whereprop uniquename='size' allowwildcard="true" editproperty="editable" symname="ow_Filesize">
+						</whereprop>
+						<literal />
+					</like>
+
+					<gte>
+						<whereprop uniquename='date1' editproperty="editable" symname="ow_Last-Modified">
+						</whereprop>
+						<literal />
+					</gte>
+					<lte>
+						<whereprop uniquename='date2' editproperty="editable" symname="ow_Last-Modified">
+						</whereprop>
+						<literal />
+					</lte>
+
+				</and>
+			</where>
+			<layout>
+
+				&#60;div id='OwDemoSearchForm'&#62;
+				&#60;img src='{#ow_designurl#}/images/plug/owdemo/alfresco.png' alt='' /&#62;
+
+				&#60;div id='OwDemoSearchForm_MAIN'&#62;
+				&#60;p&#62;This is a search template with extended layout. The searchcriteria is not
+				displayed in a fixed order but can be configured in an easy configurable Layout.
+				&#60;/p&#62;
+				&#60;h2&#62;Search for documents&#60;/h2&#62;
+				&#60;table class='OwNowrapLabel'&#62;
+
+				&#60;tr&#62;
+
+				&#60;td
+				class='OwPropertyName'&#62;Name:&#60;br /&#62;&#60;span class='info'&#62;Fill in a document name&#60;/span&#62;&#60;/td&#62;&#60;td class='DefaultInput'&#62; {#name#} {#ow_err_name#}&#60;/td&#62;
+
+				&#60;/tr&#62;
+
+				&#60;tr&#62;
+
+				&#60;td class='OwPropertyName'&#62;Size:&#60;br /&#62;&#60;span class='info'&#62;Fill in the document size&#60;/span&#62;&#60;/td&#62;&#60;td class='DefaultInput'&#62; {#size#} {#ow_inst_size#}
+				{#ow_err_size#}&#60;/td&#62;
+
+				&#60;/tr&#62;
+
+				&#60;/tr&#62;
+
+				&#60;tr&#62;
+
+				&#60;td class='OwPropertyName'&#62;Changes from:&#60;br /&#62;&#60;span class='info'&#62;Fill in a time period&#60;/span&#62;&#60;/td&#62;&#60;td
+				class='DefaultInput OwPropertyControl'&#62;
+				&#60;div class='owInlineControls'&#62;
+				{#date1#} &#60;span &#62;{#ow_err_date1#}&#60;/span&#62;
+				&#60;span &#62;bis&#60;/span&#62;
+				{#date2#} &#60;span &#62;{#ow_err_date2#}&#60;/span&#62;
+				&#60;/div&#62;
+				&#60;/td&#62;
+
+				&#60;/tr&#62;
+
+				&#60;/table&#62;
+				&#60;p&#62;
+				Layouts are assigned to the search template and are configured in the XML template.
+				&#60;/p&#62;
+				&#60;/div&#62;
+				&#60;/div&#62; </layout>
+
+		</searchclauses>
+
+		<options maxrecords="100" />
+
+	</searchspec>
+</storedsearch>

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/converter
+END
+OwCMISValueConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/converter/OwCMISValueConverter.java
+END
+OwCMISIdObjectConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/converter/OwCMISIdObjectConverter.java
+END
+OwP8CMISIDDMSIDConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/converter/OwP8CMISIDDMSIDConverter.java
+END
+OwCMISDateConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/converter/OwCMISDateConverter.java
+END
+OwCMISSameTypeConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/converter/OwCMISSameTypeConverter.java
+END
+OwCMISIDDMSIDConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/converter/OwCMISIDDMSIDConverter.java
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/csqlc
+END
+OwCSQLCException.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/csqlc/OwCSQLCException.java
+END
+OwSQLEntitiesResolver.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/csqlc/OwSQLEntitiesResolver.java
+END
+OwCSQLCProcessor.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/csqlc/OwCSQLCProcessor.java
+END

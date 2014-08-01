@@ -1,0 +1,18 @@
+K 13
+svn:mergeinfo
+V 1623
+/mowd/branches/DnDHtml5/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:32805-32879
+/mowd/branches/OWD-5341/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:36505-36550
+/mowd/branches/OWD-5345/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:36652-36675
+/mowd/branches/OWD-5357/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:37024-37047
+/mowd/branches/OWD-5414/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:36889-36903
+/mowd/branches/OWD-5432/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:37319-37401
+/mowd/branches/OWD-5457/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:37090-37112
+/mowd/branches/OWD-5491/TRUNK/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:37218-37245
+/mowd/branches/OWD-5585/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:37708-37725
+/mowd/branches/Thumbnails_SubpixelProblem/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:37510-37513
+/mowd/branches/new_ldap/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:33303-33344
+/mowd/branches/new_workflow_api/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:34561-34579
+/mowd/branches/opencmis_lazyproploading/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:31389-31401
+/mowd/branches/share_like_DnD/trunk/oecmcustomlocalize/src/main/resources/oecmcustomlocalize_ro.properties:32965-33005
+END

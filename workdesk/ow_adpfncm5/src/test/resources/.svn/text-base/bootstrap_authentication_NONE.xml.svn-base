@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bootstrap>
+	<login>
+		<username>P8Admin</username>
+		<password>IBMFileNetP8</password>
+	</login>
+	<EcmAdapter>
+
+		<ClassName>com.wewebu.ow.server.ecmimpl.fncm5.OwFNCM5Network</ClassName>
+
+		<Version>4.2.0</Version>
+		<ConnectionURL>http://abs-fncm52.alfresco.com:9080/wsi/FNCEWS40MTOM/</ConnectionURL>
+		<jaasContext>FileNetP8WSI</jaasContext>
+		<!-- For jboss don't forget to set in the login-conf.xml the correct dependency 
+			<application-policy name="FileNetP8WSI"> <authentication> <login-module code="com.filenet.api.util.WSILoginModule" 
+			flag="required" /> </authentication> </application-policy> -->
+
+		<DefaultObjectStore>P8ConfigObjectStore</DefaultObjectStore>
+
+		<RecordClasses optionid="">
+			<RecordClassName>TestRecord1</RecordClassName>
+		</RecordClasses>
+
+		<SemiVirtualRecordClasses optionid="">
+			<SemiVirtualRecordClassName virtualfolder="testsemivirtualfolder"
+				folderclassname="EmployeeFolder" includephysicalchilds="true">
+				<VirtualFolderProperty folderproperty="employee_number">employee_number
+				</VirtualFolderProperty>
+			</SemiVirtualRecordClassName>
+		</SemiVirtualRecordClasses>
+		<EvaluateReferentialContainmentRelationship>true</EvaluateReferentialContainmentRelationship> 
+		<!-- <CaseObjectRefPropertyName></CaseObjectRefPropertyName> -->
+		<BPM optionid="">
+			 <!-- RouterURL>rmi://abs-dbmssql.alfresco.com:32771/vwrouter</RouterURL  -->
+			 <ConnectionPointName>P8ConnPt1</ConnectionPointName>
+			 <DefaultObjectStoreLookup>DemoStore1</DefaultObjectStoreLookup>
+			 <ProxyRouting>false</ProxyRouting>
+			 <DefaultResource></DefaultResource>
+			 <WorkplaceRedirectURL>http://abs-dbmssql.alfresco.com/Workplace</WorkplaceRedirectURL>
+			 <ExternalAttachmentProperties>
+			         <property></property>
+             </ExternalAttachmentProperties>
+        </BPM>
+
+		<PreferedPropertyOrder optionid="">
+			<property>DocumentTitle</property>
+			<property>FolderName</property>
+			<property>DateCreated</property>
+			<property>Creator</property>
+		</PreferedPropertyOrder>
+
+		<CreationInitialValues optionid="">
+			<ObjectClass name="Email">
+				<Property name="EmailSubject">hello, world!</Property>
+				<Property name="SentOn">{today}</Property>
+			</ObjectClass>
+		</CreationInitialValues>
+
+		<NameProperties optionid="">
+			<ObjectClass name="TestDocument1">
+				<NameProperty>DateLastModified</NameProperty>
+			</ObjectClass>
+		</NameProperties>
+
+		<PreferredPropertyType optionid="">
+			<Property type="system">MimeType</Property>
+		</PreferredPropertyType>
+
+		<Authentication mode="NONE" />
+		<!-- <Authentication mode="LDAP" recursionlevel="0"> <java.naming.provider.url>ldap://abs-dbmssql.alfresco.com:389</java.naming.provider.url> 
+			<UsersDirectory>DC=wewebu-virtual,DC=local</UsersDirectory> <GroupsDirectory>CN=Users,DC=wewebu-virtual,DC=local</GroupsDirectory> 
+			<java.naming.factory.initial>com.sun.jndi.ldap.LdapCtxFactory</java.naming.factory.initial> 
+			<java.naming.security.authentication>simple</java.naming.security.authentication> 
+			<java.naming.security.principal>CN=Administrator,CN=Users,DC=wewebu-virtual,DC=local</java.naming.security.principal> 
+			<java.naming.security.credentials>#TO_BE_INSERTED_HERE#</java.naming.security.credentials> 
+			<loginQueryName>sAMAccountName</loginQueryName> <anonymousLogin>false</anonymousLogin> 
+			< ! - - <AttributeNameObjectGUID>objectGUID</AttributeNameObjectGUID> <AttributeNameMemberOf>memberof</AttributeNameMemberOf> 
+			<AttributeNameLongName>name</AttributeNameLongName> <AttributeNameShortName>samAccountName</AttributeNameShortName> 
+			- - > </Authentication> -->
+
+		<!-- should the document-classes be cached per user or global over the 
+			application - default value is true - true ==> document-classes are cached 
+			in application context false ==> document-classes are cached in session context 
+			<use-document-class-caching>true</use-document-class-caching> -->
+
+		<!-- <AnnotationSecurity type="UseAnnotationClass | InheritFromDocument" 
+			/> InheritFromDocument - use document permissions for annotation UseAnnotationClass 
+			- using the default permissions for annotation class, as defined in FNCM 
+			<AnnotationSecurity type="InheritFromDocument" /> -->
+		<!-- The name of the folder inside the /ow_app/ folder of the ECM System 
+			where User-defined preferences are stored default value "owpreferences" (also 
+			when the tag is missing) -->
+		<UserDefinedPreferencesFolder>owpreferences</UserDefinedPreferencesFolder>
+
+		<!-- The DB table name used by the <DefaultDataSource> for attribute bag 
+			persistency. default name is OW_ATTRIBUTE_BAG -->
+		<DbAttributeBagTableName>OW_ATTRIBUTE_BAG</DbAttributeBagTableName>
+
+	</EcmAdapter>
+	
+	<HistoryManager>
+
+        <ClassName>com.wewebu.ow.server.ecmimpl.fncm5.OwFNCM5HistoryManager</ClassName>
+
+        <Version>4.2.0</Version>
+
+        <BPMHistoryManager>
+
+            <ClassName>com.wewebu.ow.server.ecmimpl.fncm5.bpm.OwFNBPM5HistoryManager</ClassName>
+
+            <Version>4.2.0</Version>
+                       
+            <SessionEvents> 
+                <Event  eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_VIEW" eventid="*"/>
+                <Event  eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_EDIT" eventid="*"/>
+            </SessionEvents>
+                    
+        </BPMHistoryManager>
+               
+        <SessionEvents> 
+            <Event  eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_VIEW" eventid="*"/>
+            <Event  eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_EDIT" eventid="*"/>
+        </SessionEvents>
+                
+    </HistoryManager>
+    
+    <RoleManager>
+
+		<ClassName>com.wewebu.ow.server.roleimpl.simplerole.OwSimpleRoleManager</ClassName>
+		
+		<Version>4.2.0</Version>
+
+		<SiteAdmins>
+		    	<user>Administrator</user>
+		    	<user>cn=P8Admin,o=sample</user>
+		</SiteAdmins>
+
+		<DesignName></DesignName>
+
+	</RoleManager>
+    
+</bootstrap>

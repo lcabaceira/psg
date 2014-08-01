@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/event
+END
+OwEventManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/event/OwEventManager.java
+END
+OwEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/event/OwEvent.java
+END

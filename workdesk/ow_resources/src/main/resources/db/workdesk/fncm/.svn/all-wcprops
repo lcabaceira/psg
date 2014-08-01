@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm
+END
+Case Step Palette.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/Case%20Step%20Palette.xml
+END
+testvirtualfolder.xml
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/testvirtualfolder.xml
+END
+history_db.xml
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/history_db.xml
+END
+P8ObjectStoreInitial.xml
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/P8ObjectStoreInitial.xml
+END
+history_fnbpm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/history_fnbpm.xml
+END
+history_fncm.xml
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/history_fncm.xml
+END
+Cross A.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/Cross%20A.xml
+END
+Cross B.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/Cross%20B.xml
+END
+Cross C.xml
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/Cross%20C.xml
+END
+Restart_FN_Process_services.bat
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/Restart_FN_Process_services.bat
+END
+TestWorkflowA.pep
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/TestWorkflowA.pep
+END
+case.pep
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/case.pep
+END
+bpmtestcrossview.xml
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/bpmtestcrossview.xml
+END
+TestWorkflowB.pep
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/fncm/TestWorkflowB.pep
+END

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="checkedoutversion">
+        <!--
+            currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions
+        -->
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:folder.cmis:name" />
+					<selectprop symname="F:owd:dossier.owd:dossierPersonnelNumber" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="F:owd:dossier.owd:lastName" />
+					<selectprop symname="F:owd:dossier.owd:firstName" />
+					<selectprop symname="F:owd:dossier.owd:dossierStatus" />
+					<selectprop symname="F:owd:dossier.owd:dossierComment" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="folder" />
+			</from>
+			<where>
+
+				<in>
+					<whereprop editproperty="editable" symname="F:owd:dossier.owd:knowledge" />
+				</in>
+                    
+                    <!-- Following operators can be used too for multivalue fields --> 
+                    <!--
+                    <notin>
+                        <whereprop editproperty="editable" symname="F:owd:dossier.owd:knowledge" />
+                    </notin>
+                    <isin>
+                        <whereprop editproperty="editable" symname="F:owd:dossier.owd:knowledge" />
+                    </isin>
+                    <isnotin>
+                        <whereprop editproperty="editable" symname="F:owd:dossier.owd:knowledge" />
+                    </isnotin>
+                     -->
+
+			</where>
+			<subclasses>
+				<subclass objecttype="folder" symname="F:owd:dossier" />
+			</subclasses>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

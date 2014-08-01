@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/build/mobileworkdesk
+END
+create_war_readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/build/mobileworkdesk/create_war_readme.txt
+END
+create_mobileworkdesk_war.sh
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/build/mobileworkdesk/create_mobileworkdesk_war.sh
+END
+create_mobileworkdesk_war.bat
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/build/mobileworkdesk/create_mobileworkdesk_war.bat
+END

@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<storedsearch>
+	<version dtd="3.0" searchobject="3" />
+	<product name="Search Designer" version="3.0" />
+	<searchspec versionselection="releasedversion">
+		<searchtype>
+			<template showandorconditions="true" showmaxrecords="true" showoperators="true" />
+		</searchtype>
+		<searchcriteria>
+			<searchclauses>
+				<searchclause>
+					<select>
+						<selectprops>
+							<selectprop alignment="center" sortlevel="1" sortorder="ascending" symname="ow_Filename" />
+							<selectprop alignment="right" sortlevel="2" sortorder="descending" symname="ow_Last-Modified" />
+							<selectprop alignment="leftnowrap" symname="Address" />
+						</selectprops>
+					</select>
+					<from>
+						<class symname="document" />
+					</from>
+					<where>
+						<eq>
+							<whereprop editproperty="editable" symname="ow_Filename">
+							</whereprop>
+							<literal />
+						</eq>
+					</where>
+					<subclasses></subclasses>
+				</searchclause>
+			</searchclauses>
+		</searchcriteria>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

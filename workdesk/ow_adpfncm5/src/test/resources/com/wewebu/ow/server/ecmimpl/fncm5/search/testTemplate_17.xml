@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<storedsearch xmlns="http://filenet.com/namespaces/wcm/apps/1.0">
+    <searchspec versionselection="releasedversion">
+        <searchtype>
+            <template showandorconditions="false" showmaxrecords="false"
+                showoperators="false" />
+        </searchtype>
+        <searchcriteria>
+            <searchclauses>
+                <searchclause>
+                    <select>
+                        <selectprops>
+                            <selectprop symname="DocumentTitle" sortlevel="1" sortorder="ascending" />
+                            <selectprop symname="DateCreated" />
+                        </selectprops>
+                    </select>
+                    <from>
+                        <class symname="document" />
+                    </from>
+                    <where>
+                        <eq>
+                            <whereprop editproperty="editable" symname="DocumentTitle" />
+                            <literal>S[woohoo]</literal>
+                        </eq>
+                    </where>
+                    <subclasses>
+                        <subclass editproperty="editable" name="SimpleDoc" objecttype="document" symname="Document" />
+                        <subclass editproperty="editable" includesubclasses="true" name="eMail" objecttype="document" symname="Email" />
+                    </subclasses>
+                </searchclause>
+            </searchclauses>
+        </searchcriteria>
+        <options maxrecords="100" />
+    </searchspec>
+</storedsearch>

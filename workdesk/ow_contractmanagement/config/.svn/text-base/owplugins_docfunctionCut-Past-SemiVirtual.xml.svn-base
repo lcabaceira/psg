@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PluginDescriptor>
+
+<!-- ====================================================
+
+		PLUGIN-CLASS: [...owdoccopy.OwRecordFunctionPaste]
+		
+		eFile plugin that pastes the object in the clipboard into the selected folder.
+		
+		You can filter the object types that the plugin will paste.
+
+	===================================================== -->
+  <PlugIn type="ow_recordfunction">
+    <Name>Paste</Name>
+    <id>com.wewebu.ow.owdocpaste</id>
+    <Description>Paste objects from clipboard to currently opened folder</Description>
+    <Vendor>Alfresco Business Solutions</Vendor>
+    <Version>4.2.0</Version>
+    <!--ClassName>com.wewebu.ow.server.plug.owdoccopy.OwRecordFunctionPaste</ClassName-->
+	<ClassName>com.wewebu.serviceassets.ow.server.plug.owdoccopy.OwRecordFunctionPastToSemiVirtualSubFolder</ClassName>
+    <!-- optional small (16x16 pixels) icon for the plugin, leave empty to use default. -->
+    <icon />
+    <!-- optional small (24x24 pixels) icon for the plugin, leave empty to use default. -->
+    <iconbig />
+    <!-- insert mode reference (OwRecordFunctionPaste.INSERT_MODE_REFERENCE )
+			or physical copy (OwRecordFunctionPaste.INSERT_MODE_PHYSICALCOPY) -->
+    <InsertMode>INSERT_MODE_REFERENCE</InsertMode>
+    <!-- Enable plugin only for the given object class names of the parent, leave empty to enable for all classes -->
+    <objectclasses>
+      <name />
+    </objectclasses>
+    <!-- Object types of the clipboard items to work on as defined in OwObjectReference.OBJECT_TYPE_... 
+			If Empty, works on all object types. -->
+    <pasteitemobjecttypes>
+      <type>OBJECT_TYPE_DOCUMENT</type>
+      <type>OBJECT_TYPE_FOLDER</type>
+    </pasteitemobjecttypes>
+    
+    <!-- If attribute includechildren="true" parameter mapping is also done for all child objects
+    	like documents, folders, custom objects. -->
+    <ParameterMapping includechildren="true">
+      <!-- 
+            Define parent properties based values for the  properties  of the newly created object
+            through <Map> definitions.
+            A map definition consist of an equation between a property from the newly created object(left-side) 
+            and an expression based on properties from the parent object (right-side).
+            Object reference, zero indexed array elements and complex properties references are supported
+            in the right side expression.
+            
+            CMIS specifics: 
+            The right side expression colon ( : ) and dot ( . ) occurrences must be escaped. 
+            Non qualified property names can be used.
+                
+            Examples:
+            
+            Simple mapping
+            <Map>owd:topic=cm\:description</Map>
+            
+            Object reference 
+            <Map>owd:topic=cm\:aspect\.cm\:topic</Map>
+            
+            Array reference 
+            <Map>owd:topic=cm\:descriptions[1]</Map>
+            -->
+      <!--<Map>owd:topic=cm\:description.cm\:topic</Map>-->
+    </ParameterMapping>
+  </PlugIn>
+
+<!-- ====================================================
+
+		PLUGIN-CLASS: [...owdoccopy.OwDocumentFunctionCut]
+
+		Document plugin that is used to Cut objects.
+		When invoked, it will place a reference of the object in the clipboard
+		and mark it for cut.
+		A following paste operation will then insert the clipboard object
+		and remove it from its origin.
+
+		Note: This DocumentFunction is not available in the Search ResultListView
+
+	===================================================== -->
+  <PlugIn type="ow_docfunction">
+    <Name>Cut</Name>
+    <id>com.wewebu.ow.owdoccut</id>
+    <Description>Cut and copy to clipboard</Description>
+    <Vendor>Alfresco Business Solutions</Vendor>
+    <Version>4.2.0</Version>
+    <ClassName>com.wewebu.serviceassets.ow.server.plug.owdoccopy.OwDocumentFunctionCutFromSemiVirtualRootFolder</ClassName>
+    <!-- optional small (16x16 pixels) icon for the plugin, leave empty to use default. -->
+    <icon />
+    <!-- optional small (24x24 pixels) icon for the plugin, leave empty to use default. -->
+    <iconbig />
+    <!-- Allow multiple document selection or just one single document -->
+    <Multiselect>true</Multiselect>
+    <!-- Display the plugin in the context menu. -->
+    <ContextMenu>true</ContextMenu>
+    <!-- Display in object editing dialogs like OwEditPropertiesDialog. -->
+    <ShowInEditViews>false</ShowInEditViews>
+    <!-- Display the plugin next to object in a object listview. -->
+    <ObjectInstance>true</ObjectInstance>
+    <!-- Create a own column for plugin with given title, or display without columntitle. -->
+    <ColumnTitle />
+    <!-- (optional) Define the physical folder object from which the documents in virtual folder should be cut.
+    		If the parent of a document is a virtual folder, the defined physical folder is used as parent for cut operation.
+			If the parent is an physical folder, the defined parameter will not be applied;  instead the real physical parent will be used.
+    		Can be one of the following:
+            - PATH      e.g.:       /DevStore1/      (root of OS "DevStore1")
+            - PATH      e.g.:       /DevStore1/MyFolder/ (some subfolder within OS "DevStore1")
+            - DMSID     e.g.:       dmsid=100005
+            - UseSingleRoot :		Use the common single root folder of all cut out objects.
+         -->
+    <SemiVirtualRootFolder>/DevStore1/MySemiVirtualRootFolder/</SemiVirtualRootFolder>
+    
+    <!-- Object types to work on as defined in OwObjectReference.OBJECT_TYPE_... -->
+    <objecttypes>
+      <type>OBJECT_TYPE_DOCUMENT</type>
+    </objecttypes>
+    <!-- Enable plugin only for the given object class names, leave empty to enable for all classes -->
+    <objectclasses>
+      <!--<name>document</name>-->
+    </objectclasses>
+  </PlugIn>
+  
+</PluginDescriptor>  

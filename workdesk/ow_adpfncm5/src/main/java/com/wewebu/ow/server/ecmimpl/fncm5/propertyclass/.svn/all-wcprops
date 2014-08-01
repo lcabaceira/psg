@@ -1,0 +1,257 @@
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass
+END
+OwFNCM5IdTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5IdTemplate.java
+END
+OwFNCM5TemplatePropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5TemplatePropertyClass.java
+END
+OwFNCM5NumericDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5NumericDescription.java
+END
+OwFNCM5IdDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5IdDefinition.java
+END
+OwFNCM5EnginePropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5EnginePropertyClass.java
+END
+OwFNCM5DoubleTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5DoubleTemplate.java
+END
+OwFNCM5StringTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5StringTemplate.java
+END
+OwFNCM5DateTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5DateTemplate.java
+END
+OwFNCM5ObjectDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5ObjectDescription.java
+END
+OwFNCM5PropertyClassFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5PropertyClassFactory.java
+END
+OwFNCM5StringDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5StringDefinition.java
+END
+OwFNCM5DoubleDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5DoubleDefinition.java
+END
+OwFNCM5IntegerTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5IntegerTemplate.java
+END
+OwFNCM5DateDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5DateDefinition.java
+END
+OwFNCM5ByteDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5ByteDescription.java
+END
+OwFNCM5IntegerDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5IntegerDefinition.java
+END
+OwFNCM5DefinitionPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5DefinitionPropertyClass.java
+END
+OwFNCM5StringBasedDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5StringBasedDescription.java
+END
+OwFNCM5VirtualBinding.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5VirtualBinding.java
+END
+OwFNCM5ObjectTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5ObjectTemplate.java
+END
+OwFNCM5StringDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5StringDescription.java
+END
+OwFNCM5DoubleDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5DoubleDescription.java
+END
+OwFNCM5BooleanDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5BooleanDescription.java
+END
+OwFNCM5ObjectDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5ObjectDefinition.java
+END
+OwFNCM5DefaultPropertyClassFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5DefaultPropertyClassFactory.java
+END
+OwFNCM5NumericTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5NumericTemplate.java
+END
+OwFNCM5EngineBinding.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5EngineBinding.java
+END
+OwFNCM5PropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5PropertyClass.java
+END
+OwFNCM5BooleanTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5BooleanTemplate.java
+END
+OwFNCM5IdDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5IdDescription.java
+END
+OwFNCM5ClassPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5ClassPropertyClass.java
+END
+OwFNCM5NumericDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5NumericDefinition.java
+END
+OwFNCM5DescriptionPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5DescriptionPropertyClass.java
+END
+OwFNCM5StringBasedTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5StringBasedTemplate.java
+END
+OwFNCM5BooleanDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5BooleanDefinition.java
+END
+OwFNCM5PropertyOperators.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5PropertyOperators.java
+END
+OwFNCM5ByteTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5ByteTemplate.java
+END
+OwFNCM5ContextPropertyClassFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5ContextPropertyClassFactory.java
+END
+OwFNCM5StringBasedDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5StringBasedDefinition.java
+END
+OwFNCM5IntegerDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5IntegerDescription.java
+END
+OwFNCM5ByteDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5ByteDefinition.java
+END
+OwFNCM5DateDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpfncm5/src/main/java/com/wewebu/ow/server/ecmimpl/fncm5/propertyclass/OwFNCM5DateDescription.java
+END

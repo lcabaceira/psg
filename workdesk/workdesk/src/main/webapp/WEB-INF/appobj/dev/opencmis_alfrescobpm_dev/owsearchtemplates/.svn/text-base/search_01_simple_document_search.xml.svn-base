@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModificationDate" sortlevel="2" sortorder="descending" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<where>
+				<and>
+					<like>
+						<whereprop editproperty="editable" symname="cmis:document.cmis:name" />
+					</like>
+					<between>
+						<whereprop editproperty="editable" symname="cmis:document.cmis:lastModificationDate" />
+					</between>
+					<like>
+						<whereprop editproperty="editable" symname="cmis:document.cmis:lastModifiedBy" />
+					</like>
+				</and>
+			</where>
+			<subclasses>
+				<subclass objecttype="document" name="Document" symname="cmis:document" />
+			</subclasses>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

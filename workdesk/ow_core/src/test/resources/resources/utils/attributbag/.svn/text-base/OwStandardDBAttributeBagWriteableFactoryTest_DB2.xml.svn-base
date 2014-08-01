@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<bootstrap>
+
+	<DefaultDataSource>
+		<JNDIName>java:/DB2DS</JNDIName>
+        <!--  Configuration for Type2 drivers : IBM CM 8.3.x VM -->
+        <!--
+        <DriverClassName>COM.ibm.db2.jdbc.app.DB2Driver</DriverClassName>
+        <URL>jdbc:db2:OWD</URL>
+        -->
+        <!--  Configuration for Type4 drivers : IBM CM 8.3.x VM -->
+        <!-- 
+        <DriverClassName>com.ibm.db2.jcc.DB2Driver</DriverClassName>
+        <URL>jdbc:db2://192.168.1.154:50000/OWD</URL>
+        <User>ICMADMIN</User>
+        <Password>password</Password>
+         -->
+         <!--  Configuration for Type4 drivers : IBM CM 8.4.x VM -->
+        <DriverClassName>com.ibm.db2.jcc.DB2Driver</DriverClassName>
+        <URL>jdbc:db2://abs-ibmcm842.alfresco.com:50000/OWDDB</URL>
+        <User>db2admin</User>
+        <Password>wewebu2011</Password>     
+	</DefaultDataSource>
+
+</bootstrap>
+

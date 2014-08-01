@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth
+END
+OwCMISCredentials.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISCredentials.java
+END
+OwCMISAlfrescoCredentials.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISAlfrescoCredentials.java
+END
+OwCMISDefaultAuthenticationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISDefaultAuthenticationProvider.java
+END
+OwCMISAuthenticationFactoryAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISAuthenticationFactoryAuthenticator.java
+END
+OwCMISLDAPAuthenticationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISLDAPAuthenticationProvider.java
+END
+OwCMISLDAPCredentialsAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISLDAPCredentialsAuthenticator.java
+END
+OwCMISLDAPCredentials.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISLDAPCredentials.java
+END
+OwCMISAlfrescoAuthenticationProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISAlfrescoAuthenticationProvider.java
+END
+OwCMISAbstractAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISAbstractAuthenticator.java
+END
+OwCMISAlfrescoCredentialsAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISAlfrescoCredentialsAuthenticator.java
+END
+OwCMISCredentialsAuthenticator.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISCredentialsAuthenticator.java
+END
+OwCMISAuthenticationInterceptor.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/auth/OwCMISAuthenticationInterceptor.java
+END

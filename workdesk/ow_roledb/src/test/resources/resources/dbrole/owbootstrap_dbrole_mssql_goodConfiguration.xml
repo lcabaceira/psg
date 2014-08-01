@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<bootstrap>
+
+	<EcmAdapter>
+		<ClassName>com.wewebu.ow.server.ecmimpl.owdummy.OwDummyNetwork</ClassName>
+		<Version>2.5.3</Version>
+		<Authentication mode="NONE"/>		
+	</EcmAdapter>
+
+
+	<HistoryManager>
+		<ClassName>com.wewebu.ow.server.historyimpl.simplehistory.OwSimpleHistoryManager</ClassName>
+		<Version>2.5.3</Version>
+		
+		<SessionEvents> 
+			<Event eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_VIEW" eventid="*">
+				/images/plug/owtouch/eye.png
+			</Event>
+			<Event eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_EDIT" eventid="*">
+				/images/plug/owtouch/pencil2.png
+			</Event>
+		</SessionEvents>
+		
+	</HistoryManager>
+
+
+	<RoleManager>
+		<ClassName>com.wewebu.ow.server.roleimpl.dbrole.OwDBRoleManager</ClassName>
+		<Version>2.5.3</Version>
+		<DesignName></DesignName>
+		<AvailableDesigns>
+            <Design displayName="Alfresco Workdesk 4.1 Design">default41</Design>
+		</AvailableDesigns>
+        <SchemeVersion>3</SchemeVersion>
+		<SecurityAdmin pluginid="com.wewebu.ow.Task.admin">
+		    	<User>Administrator</User>
+		</SecurityAdmin>
+		<MasterRoles enable="false">
+			<MasterRoleGroup name="???">
+				<Role>???</Role>
+				<Role>???</Role>
+			</MasterRoleGroup>
+		</MasterRoles>
+		<ConfigCategories>ROLE_CATEGORY_PLUGIN,ROLE_CATEGORY_VIRTUAL_QUEUE,ROLE_CATEGORY_SEARCH_TEMPLATE</ConfigCategories>
+	</RoleManager>
+
+
+	<MandatorManager>
+		<ClassName>com.wewebu.ow.server.ecmimpl.owdummy.OwDummyMandatorManager</ClassName>
+		<Version>2.5.3</Version>
+	</MandatorManager>
+
+
+	<DefaultDataSource>
+		<JNDIName>java:/MSSQLDS</JNDIName>
+		<DriverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</DriverClassName>
+		<URL>jdbc:sqlserver://abs-dbmssql.alfresco.com:1433;DatabaseName=owdemo;</URL>
+		<User>owdemo</User>
+		<Password>wewebu2007</Password>
+	</DefaultDataSource>
+
+	<initparameter>
+
+
+
+	</initparameter>
+
+</bootstrap>

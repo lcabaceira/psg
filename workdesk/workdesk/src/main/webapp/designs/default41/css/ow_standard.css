@@ -1,0 +1,717 @@
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, form, fieldset, input, textarea, p, blockquote, table, th, td
+{
+    margin: 0;
+    padding: 0;
+}
+br,
+div.OwBlock
+{
+	display: table;
+    clear: both;
+    overflow: hidden;
+}
+fieldset > br,
+#OwSubLayout_Div br
+{
+	clear: right;
+}
+/* Please verify a unique solution */
+.com_wewebu_ow_Help #OwSubLayout_Div br
+{
+	clear: none;
+}
+table{
+    border-collapse: collapse;
+}
+fieldset table
+{
+	width: 100%;
+}
+fieldset legend
+{
+	padding: 5px;
+}
+
+table, td, th 
+{
+    text-align: left;
+    vertical-align: top;
+}
+a
+{
+    text-decoration: none;
+}
+form input[type="button"],
+form input[type="submit"],
+form input[type="reset"]
+{
+    padding: 0 2px;    
+    color: #000;
+}
+form input[type="text"],
+form input[type="password"]
+{
+    padding: 1px 3px;
+    height: 18px;
+}
+form input[type="file"]{
+    padding: 1px 3px;
+    border: 1px solid #B5B8C8;
+}
+form textarea,
+form select,
+form input[type="text"],
+form input[type="password"]
+{
+    border: 1px solid #B5B8C8;
+}
+form input[type="text"]:focus,
+form input[type="password"]:focus,
+form select:focus,
+form textarea:focus
+{
+    border: 1px solid #777777;
+}
+form select.OwInputfield_long
+{
+    width: 204px;
+}
+form input.OwInputfield_long
+{
+    width: 200px;
+}
+form .OwInputfield_minWidth
+{
+    width: auto;
+    min-width: 200px;
+}
+form textarea
+{
+	padding: 1px 3px;
+}
+ul.list
+{
+	list-style: circle inside;
+	margin: 0 0 10px 10px;
+}
+
+.nowrap
+{
+    white-space: nowrap;
+}
+.align-right
+{
+    text-align: right;
+}
+.align-center
+{
+	text-align: center;
+}
+.break 
+{
+    clear: both;
+    display: block;
+}
+.OwObjectListDelimiter,
+.OwWorkItemListViewAttachmentDelimiter
+{
+    height: 1px;
+    background: #ddddee;
+    padding: 0px;
+}
+.accessibility,
+.hidden
+{
+    display: none;	
+}
+fieldset.accessibility
+{
+	display: block;
+	border: none;
+}
+.OwInstructionName 
+{
+    color: #666;
+    display: inline;
+    float: left;
+    padding: 2px 5px;
+}
+p.OwEmptyTextMessage,
+span.OwEmptyTextMessage
+{
+    display: block;
+}
+.OwEmptyTextMessage
+{
+	float: left;
+	padding-left: 15px;
+	padding-top: 15px;
+}
+.OwLaunchableWorkflowSelection .OwEmptyTextMessage{
+	padding: 0 0 15px 15px;
+}
+.arrow-label
+{
+    background: transparent url(../images/navigate_right_blue.gif) no-repeat scroll left center;
+    display: block;
+    padding: 5px 0 3px 20px;
+    float: left;
+}
+/* set global width: 100% */
+table.OwChapter,
+.OwGeneralList_table,
+.OwHelpTopic1,
+.OwMainColumnHeader table,
+.OwMainLayout,
+td.OwLoginView_languagepart,
+.OwLoginView_loginpart,
+.OwObjectPropertyView,
+.OwObjectPropertyView_PropList,
+#OwRecordPreviewPropertyView table,
+.OwSmallSubNavigation, 
+.OwSublayout_ContentContainer,
+.OwSubLayout_hotkey_frame,
+.OwSubLayout_MAIN,
+#OwSubLayout_NAVIGATION_IEColumnFix,
+.OwStandardDialog,
+.OwTaskTitle_Table
+{
+    width: 100%;
+}
+div#OwSubLayout_Div_Panel #OwSubLayout_MAIN 
+{
+    margin-left: 0;
+    background-color: white;
+    height: 100%;
+    overflow:auto;
+}
+div#OwSubLayout_Div_Panel div.OwObjectPropertiesView {
+	overflow:auto;
+} 
+ 
+div#OwSubLayout_Div_Panel #OwSubLayout_NAVIGATION {
+	width:auto;
+	overflow:auto;
+	float:none;
+}
+.OwRecordSubLayoutDynamic_NAVIGATION {
+    width: auto;
+    float: none;
+    overflow: auto;
+}
+.OwObjectPropertyView {
+	position:relative;
+	overflow:auto;
+}
+
+#OwMainLayout 
+{
+    height: auto;
+    min-height: 100%;
+    z-index: 1;
+    position: relative;
+}
+
+.OwMainLayout_HEADER
+{       
+    height: 63px;
+}
+#OwHeaderView_Logo 
+{
+    white-space: nowrap;
+}
+#OwHeaderView_Logo1 
+{
+    margin: 12px 14px 0 20px;
+}
+#OwHeaderView_Logo2 
+{
+    position: relative;
+    top: -2px;
+}
+#OwHeaderView_Logo3 
+{
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+}
+#OwHeaderView_Login 
+{
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    font-weight: normal;
+}
+.OwHeaderView_Info,
+.OwHeaderView_middle
+{
+    text-align: right;
+}
+
+#OwMainLayout_NAVIGATION 
+{
+    /*border-top: 1px solid #b7b7b7;*/
+    padding: 0;
+    position: relative;
+    background: #b7b7b7 url(../images/OwGuiLayout/bg_mainnav.gif) repeat-x scroll left top;
+    width: 100%; 
+}
+#OwMainLayout_NAVIGATION:after 
+{
+    content: "."; 
+    display: block; 
+    height: 0; 
+    clear: both; 
+    visibility: hidden;
+}
+#OwMainLayout_NAVIGATION .OwMainLayout_edge 
+{
+    position: absolute;
+    top: 0;
+    height: 3px;
+    width: 3px;
+    background-repeat: no-repeat;
+}
+#OwMainLayout_NAVIGATION .OwMainLayout_topLeft 
+{
+    left: -1px;
+    background-image: url(../images/OwGuiLayout/edge_lefttop_mainnav.gif);
+}
+#OwMainLayout_NAVIGATION .OwMainLayout_topRight 
+{
+    right: -1px;
+    background-image: url(../images/OwGuiLayout/edge_righttop_mainnav.gif);
+}
+#OwMainLayout_NAVIGATION ul 
+{
+    margin: 0 10px;
+}
+#OwMainLayout_NAVIGATION ul li 
+{
+    float: left;
+    margin: 1px -2px -1px 0;
+    white-space: normal;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #fbfbfb;
+}
+#OwMainLayout_NAVIGATION ul li a 
+{
+    position: relative;
+    display: block;
+    float: left;
+    background: #ececec url(../images/OwGuiLayout/bg_mainnav.gif) repeat-x scroll 0 -1px;
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    padding: 6px 12px 6px;
+}
+#OwMainLayout_NAVIGATION ul li a:hover
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EFEFEF), color-stop(100%,#D7D7D7));     
+    background-image: -webkit-linear-gradient(to top, #EFEFEF 15%, #d7d7d7 100%);
+    background-image: -moz-linear-gradient(to top, #EFEFEF 15%, #d7d7d7 100%);
+    background-image: -ms-linear-gradient(to top, #EFEFEF 15%, #d7d7d7 100%); /* IE10+ */
+    background-image: linear-gradient(to top, #EFEFEF 15%, #d7d7d7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', endColorstr='#f0f0f0',GradientType=0 );
+}
+#OwMainLayout_NAVIGATION ul li a:active,
+#OwMainLayout_NAVIGATION ul li a:focus {
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0F0), color-stop(100%,#F7F7F7)); 
+	background-image: -webkit-linear-gradient(to top, #F0F0F0 10%, #F7F7F7 100%);
+    background-image: -moz-linear-gradient(to top, #F0F0F0 10%, #F7F7F7 100%);
+    background-image: -ms-linear-gradient(to top, #F0F0F0 10%, #F7F7F7 100%); /* IE10+ */
+    background-image: linear-gradient(to top, #F0F0F0 10%, #F7F7F7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#f0f0f0',GradientType=0 );
+    padding: 6px 11px 4px 13px;
+    margin-bottom: -1px;
+    -moz-outline: none;
+    outline: none;
+    outline: expression(hideFocus='true'); 
+}
+#OwMainLayout_NAVIGATION ul li.OwMainNavigationView_selected 
+#OwMainLayout_NAVIGATION ul li.OwMainNavigationView_notavailable
+{
+    border-bottom-color: #000;
+    border-bottom: 1px solid #ffffff;
+}
+#OwMainLayout_NAVIGATION ul li.OwMainNavigationView_selected a,
+#OwMainLayout_NAVIGATION ul li.OwMainNavigationView_notavailable a  
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#d7d7d7)); 	
+    background-image: -webkit-linear-gradient(to bottom, #f0f0f0 0%, #d7d7d7 100%);
+    background-image: -moz-linear-gradient(to bottom, #f0f0f0 0%, #d7d7d7 100%);
+    background-image: -ms-linear-gradient(to bottom, #f0f0f0 0%, #d7d7d7 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom, #f0f0f0 0%, #d7d7d7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#d7d7d7',GradientType=0 );
+    border-right: 1px solid #ffffff;
+    border-left: 1px solid #ffffff;
+    margin-bottom: -1px;
+    position: relative;
+    text-decoration: underline;
+}
+td.OwMainNavigationView_selected,
+td.OwMainNavigationView_not_selected
+{        
+    background-repeat: repeat-x;
+    background-position: left bottom;
+    border: 1px solid #fff;
+    border-bottom: 0;
+    padding: 5px 10px;
+    width: 60px;
+    height: 20px;
+    text-align: center;
+    background-color: #EAEEF3;
+}
+#OwMainLayout_NAVIGATION .OwMainNavigationView_notavailable
+{
+    padding: 12px 12px 12px;
+}
+#OwMainLayout_NAVIGATION .OwMainNavigationView_notavailable img{
+	margin: 0 5px -3px 0;
+}
+a.OwMainNavigationView_not_selected,
+a.OwMainNavigationView_selected
+{
+    white-space: nowrap; 
+}
+.OwMainLayout_NAVIGATION
+{
+    padding-left: 10px;
+}
+.OwMainNavigationView_delimiter
+{
+    width: 3px;    
+}
+
+#OwMainLayout_MAIN
+{
+    border: solid #ececec;
+    border-width: 0 2px;
+}
+
+#OwMainLayout_MAIN_endstrip 
+{
+    position: relative;
+    height: 11px;
+    margin: 0 3px;
+}
+#OwMainLayout_MAIN_endstrip .OwMainLayout_edge 
+{
+    height: 13px;
+    width: 9px;
+    position: absolute;
+    bottom: -1px;
+}
+#OwMainLayout_MAIN_endstrip .OwMainLayout_bottomLeft 
+{
+    left: -4px;    
+    background-image: url(../images/OwGuiLayout/bg_endstrip_leftbottom.gif);
+}
+#OwMainLayout_MAIN_endstrip .OwMainLayout_bottomRight 
+{
+    right: -4px;    
+    background-image: url(../images/OwGuiLayout/bg_endstrip_rightbottom.gif);
+}
+
+#OwMainLayout_ERROR 
+{
+    position: relative;
+    background: transparent url(../images/error.png) no-repeat scroll 10px 6px;
+    padding: 5px;
+    padding-left: 30px;
+}
+#OwMainLayout_ERROR .OwErrorStack 
+{
+    border: none;
+    padding: 1px 5px;
+    overflow-x: auto;
+}
+.OwErrorStack 
+{
+    display: block;
+    color: #cc0000;
+    border-top: 1px solid #8f9bac;
+    border-bottom: 1px solid #787895;
+    padding: 4px 10px;
+}
+
+#OwMaximizedLayout_MAIN 
+{
+    background: #fff url(../images/OwGuiLayout/bg_columnheader.gif) repeat-x scroll left top;
+    padding: 0;
+    min-height: 90%;
+    border: 1px solid #1c257a;
+}
+
+#OwSubLayout_NAVIGATION
+{
+    vertical-align: top;
+}
+#OwSubLayout_Div
+{
+	overflow: hidden;
+    height: 100%;
+	background: white url(../images/OwGuiLayout/bg_sublayout_navigation.gif) repeat-y scroll left top;
+	border: 3px double #cccccc;
+	padding-left: 1px;
+}
+*:first-child+html #OwSubLayout_NAVIGATION
+{
+    width: auto;
+}
+#OwSubLayout_Div #OwSubLayout_NAVIGATION
+{
+	float: left;
+	padding-right: 5px; 
+}
+.com_wewebu_ow_RecordArchiv #OwSubLayout_Div #OwSubLayout_NAVIGATION
+{
+	padding-right: 0;
+}
+.OwRecordSubLayout_NAVIGATION .OwMainColumnHeader
+{
+    height: 26px;
+    padding: 0;
+    border-right-width: 0; 
+}
+
+#OwSubLayout_Div #OwSubLayout_MAIN,
+#OwMainLayout_MAIN .OwStandardDialog_MAIN,
+.com_wewebu_ow_New #OwSubLayout_MAIN
+{
+	border-width: 1px 0 0 0;
+	min-height: 400px;
+	overflow: auto;
+}
+.OwSublayout_ContentContainer {
+    overflow: auto;
+}
+*:first-child+html #OwSubLayout_MAIN td
+{
+    height: 18px;
+}
+#OwSubLayout_menu 
+{
+    min-height: 32px;
+    position: relative;
+}
+#OwSubLayout_menu ul  
+{
+    padding: 4px 10px;
+    position: relative;
+    overflow: hidden;
+}
+#OwSubLayout_menu ul img 
+{
+    vertical-align: -6px;
+    margin-right: 16px;
+}
+#OwSubLayout_menu ul p,
+#OwSubLayout_menu ul applet 
+{
+    display: inline;
+    height: 26px;
+    width: 28px;
+    vertical-align: top;
+    margin-bottom: -4px;
+}
+#OwSubLayout_menu ul applet{
+    width: auto;
+}
+#OwSubLayout_menu ul li{
+	display: inline;
+}
+#OwSubLayout_menu ul li a 
+{
+    white-space: nowrap;
+}
+#OwSubLayout_menu ul li span 
+{
+    padding-right: 2px;
+}
+#OwSubLayout_menu ul li span.OwFunctionBigIcon,
+#OwSubLayout_menu ul li span.OwFunctionIcon
+{    
+    display: block;
+    width: 24px;
+    height: 24px;
+    float: left;
+    padding-right: 0px;
+    margin-right: 16px;
+}
+#OwSubLayout_menu ul li span.OwFunctionIcon
+{
+	width: 16px;
+	height: 16px;
+	margin-right: 0;
+}
+.OwSubLayout_hotkey 
+{
+    border-top: 1px solid #fff;
+    padding: 5px 12px;
+    background-image: url(../images/OwGuiLayout/bg_recordview.gif);
+    background-position: center center;
+    position: relative;
+    top: 1px;
+}
+.OwSubLayout_hotkey a 
+{
+    font-weight: normal;
+    text-decoration: none;
+}
+
+div#OwMainFooter 
+{
+    text-align: right;
+    background-color: transparent;
+}
+#OwMainFooter a.version
+{
+    color: transparent;
+    text-decoration: none;
+}
+#OwMainFooter .OwCopyRightInfo 
+{
+    color: #b8b8b8;
+    font-size: 0.9em;
+    padding: 1px 25px 0 0;
+}
+#OwMainFooter .OwMainFooter_Deco 
+{
+	float: left;
+}
+#OwMainFooter .OwMainFooter_Keyinfo 
+{
+    cursor: pointer;
+    float: right;
+    padding-right: 5px;
+}
+#owkeyinfo
+{
+    padding: 5px;
+}
+#owkeyinfo dt,
+#owkeyinfo dd
+{
+    padding: 3px 0;
+}
+#owkeyinfo dt
+{
+	clear: left;
+	width: 150px;
+}
+#owkeyinfo dd
+{
+    clear: right;
+    float: left;
+    margin: -18px 0 0 150px;
+}
+
+/* Highlight for Main Navigation Menu Item */
+body.com_wewebu_ow_ClaimsProcessing #OwMainLayout_NAVIGATION ul li.OwMainNavigationView_selected a,
+body.com_wewebu_ow_fnbpm #OwMainLayout_NAVIGATION ul li.OwMainNavigationView_selected a 
+{
+    background-image: url(../images/OwGuiLayout/bg_mainnav_link_active_orange.gif);
+    background-color: #ce6a07;
+    border-bottom-color: #9b4d07;
+    border-right-color: #b35c06;
+    border-left-color: #e09908;
+}
+/* Function Menu Bar for "Search" */
+body.com_wewebu_ow_Search #OwSubLayout_menu 
+{
+    background-image: url(../images/OwGuiLayout/bg_function_menu_green.gif);    
+    background-color: #5a9488;
+}
+/* Function Menu Bar */
+body.com_wewebu_ow_ClaimsProcessing #OwSubLayout_menu,
+body.com_wewebu_ow_fnbpm #OwSubLayout_menu 
+{
+    background-image: url(../images/OwGuiLayout/bg_function_menu_orange.gif);    
+    background-color: #eda954;
+    border-top: 1px solid #9999b0;
+}
+/* Highlight for Sub Navigation "Search": body.com_wewebu_ow_Search*/
+ul#OwSubNavigationView li.OwSubNavigationView_selected a 
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#d7d7d7));     
+    background-image: -webkit-linear-gradient(to bottom, #f0f0f0 0px, #d7d7d7 100%);
+    background-image: -moz-linear-gradient(to bottom, #f0f0f0 0px, #d7d7d7 100%);
+    background-image: -ms-linear-gradient(to bottom, #f0f0f0 0%, #d7d7d7 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom, #f0f0f0 0%, #d7d7d7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#d7d7d7',GradientType=0 );
+    color: inherit;
+}
+/* Highlight for Sub Navigation */
+body.com_wewebu_ow_ClaimsProcessing ul#OwSubNavigationView li.OwSubNavigationView_selected a,
+body.com_wewebu_ow_fnbpm ul#OwSubNavigationView li.OwSubNavigationView_selected a 
+{
+    background-image: url(../images/OwGuiLayout/bg_subnav_item_active_orange.gif);
+    background-color: #d3e0f0;
+    color: inherit;
+}
+body.com_wewebu_ow_ClaimsProcessing ul#OwSubNavigationView li.OwSubNavigationView_selected a:active,
+body.com_wewebu_ow_ClaimsProcessing ul#OwSubNavigationView li.OwSubNavigationView_selected a:focus,
+body.com_wewebu_ow_fnbpm ul#OwSubNavigationView li.OwSubNavigationView_selected a:active,
+body.com_wewebu_ow_fnbpm ul#OwSubNavigationView li.OwSubNavigationView_selected a:focus 
+{
+    background-image: url(../images/OwGuiLayout/bg_subnav_item_active_orange_down.gif);
+}
+/* form settings */
+.OwSettingsSetView_PropertyRow_even td,
+.OwSettingsSetView_PropertyRow_odd td,
+.com_wewebu_ow_Settings .OwPropertyBlock,
+.com_wewebu_ow_RecordSearch #OwSubLayout_MAIN .OwObjectPropertyView td,
+.OwObjectPropertyView_PropList td,
+.OwObjectPropertyView_PropList th,
+.OwAccessRights .OwGeneralList_table th,
+.OwAccessRights .OwGeneralList_table td,
+div.OwCMISPrivilegeSetEditor th,
+div.OwCMISPrivilegeSetEditor td,
+div.OwCMISAccessRightsModule.OwUIAccessRightsModul th,
+div.OwCMISAccessRightsModule.OwUIAccessRightsModul td,
+div.Privileges th, div.Privileges td, div.SaveBtn
+{
+    padding: 5px;
+}
+.com_wewebu_ow_Settings #OwSubLayout_MAIN td .OwPropertyControl td,
+.com_wewebu_ow_Settings #OwSubLayout_MAIN .OwObjectPropertyView td,
+.com_wewebu_ow_RecordSearch #OwSubLayout_MAIN .OwPropertyControl td,
+.com_wewebu_ow_New #OwMainLayout_MAIN .OwPropertyControl td,
+.com_wewebu_ow_Search #OwMainLayout_MAIN .OwPropertyControl td,
+.OwSearchCriteriaView td,
+.DefaultInput .OwPropertyControl td,
+.OwFormTable td,
+.OwGeneralList_table td
+{
+    padding: 1px 0px;
+}
+.OwUIAccessRightsModul th {
+    border-bottom: 1px groove #BBBCCE;
+    font-weight: bold;
+    padding: 5px;
+    background: #F4F7FA;
+}
+tr.EvenRow
+{
+}
+tr.OddRow
+{
+    background: #EEEEEE;
+}
+.OwPluginKeyBoardMaping
+{
+	clear: both;
+}
+.OwPluginKeyBoardMaping div
+{
+    float: left;
+}
+.OwPluginKeyBoardMaping span.empty
+{
+	padding: 0px 10px;
+}
+.OwPluginKeyBoardMaping > div > img
+{
+    padding-top: 2px;
+}

@@ -1,0 +1,95 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets
+END
+OwDragDropContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwDragDropContent.java
+END
+OwAbstractUpload.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwAbstractUpload.java
+END
+OwGetContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwGetContent.java
+END
+OwInitialisingContextListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwInitialisingContextListener.java
+END
+OwServerContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwServerContext.java
+END
+OwConfigurationInitialisingContextListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwConfigurationInitialisingContextListener.java
+END
+OwStandardRoleManagerInitialisingContextListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwStandardRoleManagerInitialisingContextListener.java
+END
+OwRequestListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwRequestListener.java
+END
+OwRenditionServlet.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwRenditionServlet.java
+END
+OwLogoutSessionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwLogoutSessionListener.java
+END
+OwGetPropertyContent.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwGetPropertyContent.java
+END
+OwServletFilter.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwServletFilter.java
+END
+OwMultifileDownload.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwMultifileDownload.java
+END
+OwServletBaseInitializer.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwServletBaseInitializer.java
+END
+OwUsageSessionListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/servlets/OwUsageSessionListener.java
+END

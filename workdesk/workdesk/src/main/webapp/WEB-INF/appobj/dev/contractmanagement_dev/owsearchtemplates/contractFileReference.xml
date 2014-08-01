@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+	<!-- currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions -->
+			<objectstores mergeoption="union">
+				<objectstore name="Main Repository" />
+			</objectstores>
+			<searchcriteria>
+				<folders>
+					<folder pathname="/Sites/contractmanagement/documentLibrary/Contracts"
+						searchsubfolders="true" view="hidden">
+						<objectstore name="Main Repository" />
+					</folder>
+				</folders>
+				<searchclauses>
+					<select>
+						<selectprops>
+							<selectprop symname="P:cmg:asp_contractID.cmg:contractID" />
+						</selectprops>
+					</select>
+					<from>
+						<class symname="folder" />
+					</from>
+					<where>
+						<and>
+							<eq>
+								<whereprop editproperty="editable" symname="P:cmg:asp_contractID.cmg:contractID" />
+								<literal />
+							</eq>
+						</and>
+					</where>
+					
+					<!-- Define the path to a JSP page used for rendering out the search 
+						template, specified relative to OpenWorkdesk´s used design folder, e.g. <jsppage>demo/JspFormularTest.jsp</jsppage> -->
+					<jsppage />
+					
+					<!-- Optional block to render a search field for content based fulltext 
+						search, which will search for hits in XML based indexed document content. 
+						This block only works in search templates and does not work to build virtual 
+						folder structures! -->
+					<!-- 
+					<veritycontent>
+						<verityitem editproperty="editable" groupaction="any">
+							<usertext />
+							<verityitemdata>
+								<verityany>
+									<verityunit />
+								</verityany>
+							</verityitemdata>
+						</verityitem>
+					</veritycontent>
+					-->
+					<subclasses>
+						<subclass objecttype="folder" name="Folder" symname="F:cmg:contract" />
+					</subclasses>
+				</searchclauses>
+				<options maxrecords="1000" />
+			</searchcriteria>
+	</searchspec>
+</storedsearch>

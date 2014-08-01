@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+
+		<!-- define the BPM queues to search in, pathname can be any combination of the following:
+
+				/ow_proxy/<Name> 	= proxy queue that show all workitems as a proxy
+				/ow_roster/<Name>	= roster queues, the overall queue
+				/ow_tracker/<Name>	= tracker queues to track workitems
+				/ow_user/<Name>		= user queues like InBox
+				/ow_public/<Name>	= public queues
+			
+		-->
+		<folders>
+			<folder pathname="\ow_public\Kreditberechnung" searchsubfolders="false" view="hidden"><objectstore id="BPM"/></folder>
+		</folders>
+		
+		<searchcriteria>
+			<searchclauses>
+				<searchclause>
+					<select>
+						<selectprops>
+							<selectprop name="Name" datatype="java.lang.String" symname="F_StepName" />
+							<selectprop name="Name" datatype="java.lang.String" symname="F_CreateTime" />
+						</selectprops>
+					</select>
+					<where>
+						<and>
+							<like>
+								<whereprop editproperty="editable" name="Titel" datatype="java.lang.String" symname="F_Subject">
+								</whereprop>
+								<literal>{userid}</literal>
+							</like>
+						</and>
+					</where>
+				</searchclause>
+			</searchclauses>
+		</searchcriteria>
+		<options maxrecords="100" />
+	</searchspec>
+
+	<!-- (optional) define a list or container names that the items in this container can be sent to, leave empty to use default -->
+	<BPMReassignContainerNames>
+
+		<Name>testview</Name>		
+		<Name>testview2</Name>		
+
+	</BPMReassignContainerNames>
+</storedsearch>

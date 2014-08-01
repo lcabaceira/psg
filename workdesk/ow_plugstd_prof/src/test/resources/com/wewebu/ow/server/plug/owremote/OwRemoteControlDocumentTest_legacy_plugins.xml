@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PlugIn type="ow_master">
+	<Name>Remote Control</Name>
+	<id>com.wewebu.ow.RemoteControl</id>
+	<Description>Interface to Alfresco Workdesk, which allows executing distinct functions via URL</Description>
+	<Vendor>Alfresco Business Solutions</Vendor>
+	<Version>4.0.1</Version>
+	<ClassName>com.wewebu.ow.server.plug.owremote.OwRemoteControlDocument
+	</ClassName>
+	<Encrypturl>false</Encrypturl>
+</PlugIn>

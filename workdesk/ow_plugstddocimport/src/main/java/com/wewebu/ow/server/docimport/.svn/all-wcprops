@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstddocimport/src/main/java/com/wewebu/ow/server/docimport
+END
+OwNoContentDocumentImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstddocimport/src/main/java/com/wewebu/ow/server/docimport/OwNoContentDocumentImporter.java
+END
+OwLocalFileDocumentImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstddocimport/src/main/java/com/wewebu/ow/server/docimport/OwLocalFileDocumentImporter.java
+END
+OwNoContentDocumentImportItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstddocimport/src/main/java/com/wewebu/ow/server/docimport/OwNoContentDocumentImportItem.java
+END
+OwNoContentDocumentImporterView.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstddocimport/src/main/java/com/wewebu/ow/server/docimport/OwNoContentDocumentImporterView.java
+END
+OwLocalFileDocumentImporterView.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstddocimport/src/main/java/com/wewebu/ow/server/docimport/OwLocalFileDocumentImporterView.java
+END

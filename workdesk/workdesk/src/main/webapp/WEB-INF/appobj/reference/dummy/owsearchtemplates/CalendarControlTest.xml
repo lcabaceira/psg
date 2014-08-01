@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="ow_Filename" />
+					<selectprop symname="ow_Last-Modified" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<where>
+				<and>
+					<gte>
+						<whereprop editproperty="editable" overridedatatype="com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDate" symname="DateOfBirth">
+						</whereprop>
+						<literal />
+					</gte>
+					<lte>
+						<whereprop editproperty="editable" overridedatatype="com.wewebu.ow.server.fieldctrlimpl.OwNextDaysDate" symname="DateOfBirth">
+						</whereprop>
+						<literal />
+					</lte>
+				</and>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

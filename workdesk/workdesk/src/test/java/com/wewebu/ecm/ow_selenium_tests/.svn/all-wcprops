@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/test/java/com/wewebu/ecm/ow_selenium_tests
+END
+OwWebEditPropertiesTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/test/java/com/wewebu/ecm/ow_selenium_tests/OwWebEditPropertiesTest.java
+END
+CreateNewFolderTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/test/java/com/wewebu/ecm/ow_selenium_tests/CreateNewFolderTest.java
+END
+Environment.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/test/java/com/wewebu/ecm/ow_selenium_tests/Environment.java
+END
+BaseSeleniumTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/test/java/com/wewebu/ecm/ow_selenium_tests/BaseSeleniumTest.java
+END

@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord
+END
+OwRecordSearchTemplateView.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordSearchTemplateView.java
+END
+OwRecordSetView.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordSetView.java
+END
+OwRecordView.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordView.java
+END
+OwRecordRecordFunctionDnDView.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordRecordFunctionDnDView.java
+END
+OwRecordTreeView.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordTreeView.java
+END
+OwRecordPreviewPropertyView.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordPreviewPropertyView.java
+END
+OwRecordRecordFunctionView.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordRecordFunctionView.java
+END
+OwRecordContentView.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordContentView.java
+END
+OwRecordDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordDocument.java
+END
+OwRecordSubLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugrecord/src/main/java/com/wewebu/ow/server/plug/owrecord/OwRecordSubLayout.java
+END

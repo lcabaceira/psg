@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testData>
+	<testGetSafeBooleanValue>
+		<boolean>true</boolean>
+		<boolean>false</boolean>
+		<boolean></boolean>
+		<boolean>xse</boolean>
+	</testGetSafeBooleanValue>
+	
+</testData>

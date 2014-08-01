@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+		     <folders>
+                <folder pathname="/root/myfolder" searchsubfolders="true" view="hidden">
+                    <objectstore id="RID" name="R"/>
+                </folder>
+                <folder pathname="/root/myfolder2" searchsubfolders="false" view="hidden">
+                    <objectstore id="RID" name="R"/>
+                </folder>
+                <folder pathname="/" searchsubfolders="true" view="hidden">
+                    <objectstore id="RID" name="R"/>
+                </folder>
+            </folders>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy" sortlevel="2" sortorder="descending"/>
+				</selectprops>
+			</select>
+			<from>
+				<class symname="cmis:document" />
+			</from>
+			<where>
+				<eq>
+					<whereprop editproperty="editable" symname="cmis:document.cmis:name"/>
+   			       	<literal>S[myname]</literal>
+				</eq>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

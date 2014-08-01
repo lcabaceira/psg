@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="ow_Filename" />
+					<selectprop symname="ow_Last-Modified" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<where>
+				<and>
+					<like>
+						<whereprop editproperty="editable" symname="ow_Filename">
+						</whereprop>
+						<literal />
+					</like>
+					<eq>
+						<whereprop editproperty="editable" symname="ow_Filename">
+						</whereprop>
+						<literal />
+					</eq>
+					<between>
+						<whereprop datemode="ignoretime" editproperty="editable" symname="ow_Last-Modified">
+						</whereprop>
+						<literal>
+							<value_1>2003-06-06T15:47:00+01:00</value_1>
+							<value_2>2007-06-16T15:47:00+01:00</value_2>
+						</literal>
+					</between>
+					<eq>
+						<whereprop datemode="usetime" editproperty="editable" symname="ow_Last-Modified">
+						</whereprop>
+						<!-- yyyy-MM-dd'T'HH:mm:ss.S'Z'Z -->
+						<literal>2000-06-06T15:47:00+01:00</literal>
+					</eq>
+				</and>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

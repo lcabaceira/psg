@@ -1,0 +1,49 @@
+10
+
+dir
+38093
+https://svn.alfresco.com/repos/abs-owd_repos/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/bpm
+https://svn.alfresco.com/repos/abs-owd_repos
+
+
+
+2013-06-12T15:22:12.411787Z
+33832
+vahe
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4a0a76e0-574f-d64f-9cee-6202afcc079f
+
+ow_cross
+dir
+
+ow_launch
+dir
+
+ow_proxy
+dir
+
+ow_public
+dir
+
+ow_roster
+dir
+
+ow_tracker
+dir
+
+ow_user
+dir
+

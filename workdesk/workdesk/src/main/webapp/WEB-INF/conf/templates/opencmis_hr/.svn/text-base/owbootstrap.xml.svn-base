@@ -1,0 +1,1095 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Alfresco Workdesk
+Copyright (c) Alfresco Software, Inc. All Rights Reserved.
+-->
+<bootstrap>
+
+<!-- ==========================================================================
+
+        Content Management Interoperability Services (CMIS)
+
+===============================================================================
+
+		DEPLOYMENT GUIDE
+_______________________________________________________________________________
+
+        Application Objects
+
+                Application Objects like searchtemplates or virtual folders are stored at this location:
+
+                /ow_app/
+                        /other                    history searches, virtual folders
+                        /owsearchtemplates        search templates for search plugin, defined with <SearchTemplates>
+                        /recordtemplates          record templates
+
+        Configuration help:
+
+                <ExternalCrossAdapter>
+                        Define a external cross adapter for federation.
+                                
+                        <XEcmAdapter>
+                            Insert the contents of the external <EcmAdapter> node here.
+
+                            This setting is only available with the OwCMISCrossNetwork adapter specified in <ClassName>.
+                            OwCMISCrossNetwork is more an example adapter for federation
+                            and should be subclassed to tailor your needs.
+
+                            See also <ExternalAttachmentProperties>.
+                                
+                        <XMapping>  Define mapping to use for the embedded adapter.
+                            <usermappings>  Define the login mappings.
+                                <usermap name="" group="">  Define a login mapping. Attribute name for a username, attribute group for a group name.
+                                                        If both are empty, specifies the default mapping to use.
+                                    <user>username</user>           The username
+                                    <password>password</password>   and password to use in the embedded adapter.
+                                </usermap>
+                                ...
+                            </usermappings>
+
+                            <propertymappings>  Define mapping of property symbol names.
+                                <propertymap name="symbol name to map">symbolname of embedded adapter</propertymap> Define a symbolname mapping
+                                ...
+                            </propertymappings>
+                        
+                        </XMapping>        
+
+				<IDDMSIDConverterClass>
+						Specifies the class name of the ECM ID to AWD DMSID converter class.
+						The specified class must be assignable from com.wewebu.ow.server.ecmimpl.opencmis.converter.OwCMISIDDMSIDConverter.
+						If missing the com.wewebu.ow.server.ecmimpl.opencmis.converter.OwCMISIDDMSIDConverter will be used for ID conversion.
+						The following converter classes are delivered by default:
+						
+						- com.wewebu.ow.server.ecmimpl.opencmis.converter.OwCMISIDDMSIDConverter (default CMIS converter)
+						
+						- com.wewebu.ow.server.ecmimpl.opencmis.converter.OwP8CMISIDDMSIDConverter (converter for CMIS IBM FileNet P8 5.x)
+
+                <BPM>
+                        Configuration of Alfresco Workflow (BPM)
+                        default: com.wewebu.ow.server.ecmimpl.alfresco.bpm.OwAlfrescoBPMRepository
+
+				<VirtualFoldersContainer>
+						Defines the adapter specific container location. 
+						The specified location contains only virtual folder definition objects.
+						If missing the legacy default /other will be used when searching for virtual folders.
+
+                <SemiVirtualRecordClasses>
+                        Specifies a list of folder class names to be used as semi virtual
+                        folders.
+
+                        virtualfolder         = the searchtemplate of the virtual folder structure
+                                                for folders at level 2 and deeper
+                        folderclassname       = the name of the folder class to be used as semi
+                                                virtual folder
+                        includephysicalchilds = "true" or "false". Determines if existing physical
+                                                folders are also supposed to appear in the directory
+                                                structure at level 2 and deeper
+                        searchSubstructure    = "true" or "false". Determines if search path is only                      
+                                                the semi-virtual physical root folder (=false) or even
+                                                the physical substructure of the semi-virtual physical
+                                                root folder
+
+                        <VirtualFolderProperty>
+
+                                Define a list of virtual folder properties, whereas the property (search criterion) 
+                                value will be mapped to the value of a corresponding physical folder property.
+
+                                folderproperty    = is the symbolic name of the property of the physical
+                                                    folder
+
+                                By default searches defined in a search template for a semivirtual eFile refer to all the contents in the underlying repository.
+                                Also, objects, which are created in the context of a semivirtual eFile, will be filed at root level of the repository.
+                                With the optional setting
+                                
+                                <VirtualFolderProperty folderproperty="OW_ObjectPath">OwSearchPath</VirtualFolderProperty>
+                                
+                                the search focus is limited to just the physical root folder of the eFile.
+                                This setting also causes the physical root folder to become the destination for all object-related operations on the eFile
+                                which require a physical destination folder (create, paste).
+
+                <PreferedPropertyOrder>
+                        Define a list of properties in the order they should be displayed.
+
+                <CreationInitialValues>
+	                    List of initial values for Properties per object class overriding the P8 default values.
+	                    You have to create an ObjectClass tag for each object class you wish to override the default
+	                    P8 behavior for.
+
+	                    <ObjectClass name="....">
+	
+	                        Defines the initial property values for one object class identified by its symbolic name.
+	                        You have to define a Property tag for each property you wish to define the initial value.
+	
+	                        <Property name="...">value</Property>
+	
+	                            Defines the initial value for one property identified by its symbolic name of that
+	                            object class.
+	                            NOTE FOR DATE VALUES:
+	                            You have to define date values always as yyyy-MM-dd'T'HH:mm:ssZ, e.g. 2007-06-06T15:47:00+02:00
+	                            or as yyyy-MM-dd'T'HH:mm:ss.S'Z'Z, e.g. 2007-06-06T15:47:00.799+02:00.
+	                            The keyword "{today}" (without quotes) can be used for the current Date / Time.
+
+                <PreferredPropertyType>
+	                    Override ECM's classification of system / user properties and define for each property
+	                    whether it should be treated as system or as user property
+
+	                    <Property type="system|user">....</Property>
+	                        Defines that the property identified by its symbolic name should be treated as "system"
+	                        or as "user" property.
+       		
+        		<DefaultVersionHandling>
+	                    Defines native versionable CMIS object conversion to AWD object based on context and version.  
+
+	                	<FolderChildren>
+	                		Defines default native versionable CMIS folder children conversion to AWD object and version.
+	                		Can be one of 
+	                			preserve	= 	native children versions will be used
+	                			normalize	=   versions will be converted to AWD versions using the configured version model.
+	                							The Standard Version Model will convert any checked out version to the latest 
+	                							version and will not convert non-checked out versions. 	    
+
+                <Authentication>
+                        Used for additional LDAP authentication (e.g. for role management)
+                                mode="NONE" : use only native API (adaptor) capabilities
+                                mode="LDAP" : LDAP is only used to retrieve group membership information for role management. 
+                                              Authentication is performed solely by the repository.
+                                mode="ALFRESCO" : Users and Groups are retrieved from Alfresco using the REST API.
+
+                                recursionlevel=<integer> :
+                                    This attribute is used to resolve Groups in Groups relationship. 
+                                     e.g. LDAP tree: 
+                                     workdesk(objectClass: posixGroup )
+                                     hr(objectClass: posixGroup, memberOf: workdesk)
+                                     cr(objectClass: posixGroup, memberOf: workdesk)
+                                      
+                                     If recursionlevel = 0 then groups hr and cr will not be looked up.
+                                     If recursionlevel >= 1 then groups hr and cr will be looked up.
+
+                <UserDefinedPreferencesFolder>
+                        The name of the folder where user-defined preferences are stored,
+                        default value "owpreferences" (even when the tag is missing)
+
+                <DbAttributeBagTableName catalog="" schema="">
+                        The DB table name used by the <DefaultDataSource> for attribute bag persistency.
+                        default name is OW_ATTRIBUTE_BAG.
+                        
+                        catalog - The name of the catalog where the table is defined. Can be left out if the default catalog should be used.
+                        schema - the name of the schema where the table is defined. Can be left out if the default schema should be used.
+
+                <AuthInterceptor>
+                        Authentication interceptor node for defining own interceptor during authentication process,
+                        class must implement com.wewebu.ow.server.ecmimpl.opencmis.auth.OwCMISAuthenticationInterceptor.
+
+                <UserOperationListeners>
+                        The node <UserOperationListeners> specifies factories of type <ContextBasedFactory>, used to log user
+                        operations to a log file or a database. Currently only a user login operation can be logged by using either
+                        OwDbUserOperationListenerFactory or OwLogUserOperationListenerFactory, but the current implementation could
+                        be extended to log also other user operations, like user logout or starting/stopping of other user operations.
+              
+                <CSQLCProcessorClass>
+                        Special CSQLCProcessor for extended Alfresco content search abilities,
+                        use together with Alfresco repository only.
+
+=========================================================================== -->
+
+<!-- ============================================================
+    SELECTIVE AND PLACEHOLDER CONFIGURATION (optional)
+    Please read the documentation carefully if you want to use this feature.
+    =============================================================
+    
+    All scalar tags directly beneath the <bootstrap> tag
+    support mandator configuration placeholder's, i.e.: {$<Placeholdername>}.
+        
+    Most scalar tags directly beneath the <EcmAdapter>,<FieldManager>,<RoleManager> and <HistoryManager> tag 
+    support mandator configuration placeholder's, i.e.: {$<Placeholdername>}.
+        
+    The following attributes support mandator configuration placeholder's, i.e.: {$<Placeholdername>}
+        
+    Tags with attribute "optionid" support selective configuration.
+
+    optionid         An option ID attribute if you define several options for a single configuration node.
+                     The ID is selected in the rolemanager via selective configuration.
+                     Leave empty if you do not have options.
+                        
+=========================================================================== -->
+
+		<EcmAdapter>
+                <!--
+                <ExternalCrossAdapter/>
+                -->
+                
+                <!-- use this adapter overload if you have defined a ExternalCrossAdapter
+                <ClassName>com.wewebu.ow.server.ecmimpl.cmis.OwCMISCrossNetwork</ClassName>-->
+
+                <!-- only for Apache Chemistry OpenCMIS (opencmis.OwCMISNetwork) implementation (new) -->
+                <ClassName>com.wewebu.ow.server.ecmimpl.opencmis.OwCMISNetwork</ClassName>
+
+                <adapterSessionConf>
+                    <entry key="com.wewebu.owd.objectclassfactory.classname">com.wewebu.ow.server.ecmimpl.opencmis.alfresco.OwCMISAlfrescoObjectClassFactory</entry>
+                </adapterSessionConf>
+                
+                <openCmisConf>
+                    <!--  see http://chemistry.apache.org/java/developing/dev-session-parameters.html for more OpenCMIS Session Parameters -->
+                    <entry key="org.apache.chemistry.opencmis.objectfactory.classname">org.alfresco.cmis.client.impl.AlfrescoObjectFactoryImpl</entry>
+                    <entry key="org.apache.chemistry.opencmis.binding.connecttimeout">10000</entry><!-- in ms -->
+                    <entry key="org.apache.chemistry.opencmis.binding.readtimeout">10000</entry><!-- in ms -->
+                </openCmisConf>
+
+                <!-- <AtomPub>http://abs-alfone.alfresco.com:8080/alfresco/cmisatom</AtomPub> -->
+                <AtomPub>http://localhost:8080/alfresco/cmisatom</AtomPub>
+
+                <!-- Enter the WSDL location for the config of your local Alfresco System -->
+				<!--
+				<WSDLRepository>http://localhost:8080/alfresco/cmisws/RepositoryService?wsdl</WSDLRepository>
+				<WSDLNavigation>http://localhost:8080/alfresco/cmisws/NavigationService?wsdl</WSDLNavigation>
+				<WSDLObject>http://localhost:8080/alfresco/cmisws/ObjectService?wsdl</WSDLObject>
+				<WSDLMultifiling>http://localhost:8080/alfresco/cmisws/MultiFilingService?wsdl</WSDLMultifiling>
+				<WSDLDiscovery>http://localhost:8080/alfresco/cmisws/DiscoveryService?wsdl</WSDLDiscovery>
+				<WSDLVersioning>http://localhost:8080/alfresco/cmisws/VersioningService?wsdl</WSDLVersioning>
+				<WSDLRelationship>http://localhost:8080/alfresco/cmisws/RelationshipService?wsdl</WSDLRelationship>
+				<WSDLPolicy>http://localhost:8080/alfresco/cmisws/PolicyService?wsdl</WSDLPolicy>
+                <WSDLACL>http://localhost:8080/alfresco/cmisws/ACLService?wsdl</WSDLACL>
+				-->
+
+                <!--
+                <IDDMSIDConverterClass>com.wewebu.ow.server.ecmimpl.opencmis.converter.OwCMISIDDMSIDConverter</IDDMSIDConverterClass>
+                -->
+
+                <Version>4.2.0</Version>
+
+                <DefaultObjectStore>Main Repository</DefaultObjectStore>
+
+                <!--
+                <VirtualFoldersContainer>other</VirtualFoldersContainer>
+                -->
+				
+				<SemiVirtualRecordClasses optionid="">
+							<SemiVirtualRecordClassName virtualfolder="dossiertemplate.xml" folderclassname="F:owd:dossier" includephysicalchilds="true" searchSubstructure="false">    
+                            <VirtualFolderProperty folderproperty="F:owd:dossier.owd:dossierPersonnelNumber">D:owd:hrdocument.owd:documentPersonnelNumber</VirtualFolderProperty>
+                            <VirtualFolderProperty folderproperty="OW_ObjectPath">OwSearchPath</VirtualFolderProperty>
+                        </SemiVirtualRecordClassName>
+                </SemiVirtualRecordClasses>
+                
+				<!-- Application object location e.g.
+					WEB-INF/appobj/templates/opencmis_hr/
+					or
+					d:/apache-tomcat-7.0.33/webapps/workdesk/WEB-INF/appobj/templates/opencmis_hr/
+				-->
+                <OwApplicationObjectBaseDir>WEB-INF/appobj/templates/opencmis_hr/</OwApplicationObjectBaseDir>
+                
+                <PreferedPropertyOrder optionid="">
+                        <property>cmis:name</property>
+                        <property>cmis:lastModifiedBy</property>
+                        <property>cmis:creationDate</property>
+                        <property>cmis:createdBy</property>
+                </PreferedPropertyOrder>
+
+                <CreationInitialValues optionid="">
+                    <!-- ObjectClass name="D:owtest:testDocument">
+                        <Property name="D:owtest:testDocument.owtest:DocString">hello, world!</Property>
+                        <Property name="P:owtest:Aspect.owtest:aspDate">{today}</Property>
+                    </ObjectClass -->
+                </CreationInitialValues>
+
+                <PreferredPropertyType optionid="">
+                    <Property type="system">cmis:path</Property>
+                    <Property type="system">cmis:allowedChildObjectTypeIds</Property>
+                    <Property type="system">cmis:baseTypeId</Property>
+                    <Property type="system">cmis:isImmutable</Property>
+                    <Property type="system">cmis:checkinComment</Property>
+                    <Property type="system">cmis:isVersionSeriesCheckedOut</Property>
+                    <Property type="system">cmis:isLatestMajorVersion</Property>
+                    <Property type="system">cmis:isMajorVersion</Property>
+                    <Property type="system">cmis:versionSeriesCheckedOutBy</Property>
+                    <Property type="system">cmis:versionSeriesCheckedOutId</Property>
+                    <Property type="system">cmis:isLatestVersion</Property>
+                    <Property type="system">cmis:changeToken</Property>
+                    <Property type="system">cmis:versionLabel</Property>
+                    <Property type="system">cmis:contentStreamId</Property>
+                    <Property type="system">cmis:versionSeriesId</Property>
+                    <Property type="system">cmis:parentId</Property>
+                    <Property type="system">cmis:objectId</Property>
+                    <Property type="system">cmis:objectTypeId</Property>
+                    <Property type="system">cmis:contentStreamLength</Property>
+                    
+                    <!-- Alfresco specific -->
+                    <Property type="system">cm:workingCopyMode</Property>
+                    <Property type="system">cm:owner</Property>
+                </PreferredPropertyType>
+
+				<DefaultVersionHandling>
+                	<FolderChildren>preserve</FolderChildren>
+                	<!--FolderChildren>normalize</FolderChildren-->
+                </DefaultVersionHandling>
+
+                <Authentication mode="NONE"/>
+
+		        <!-- ALFRESCO -->
+		        <!--
+		        <Authentication mode="ALFRESCO">
+		            <BaseURL>http://localhost:8080/alfresco</BaseURL>
+                    <!- - 
+                       default configuration for REST service communication (optional):
+                       
+                       <FindGroupsURI>/service/api/groups?shortNameFilter=%s</FindGroupsURI>
+                       <FindUserURI>/service/api/people?filter=%s</FindUserURI>
+                       <UserInfoURI>/service/api/people/%s?groups=true</UserInfoURI>
+                    - ->
+		        </Authentication>
+		        -->
+
+			    <!-- AD LDAP -->
+                <!--
+                <Authentication mode="LDAP" recursionlevel="1">
+                      <java.naming.provider.url>ldap://localhost:389</java.naming.provider.url>
+                      <UsersDirectory>CN=Users,DC=wewebu-virtual,DC=local</UsersDirectory>
+                      <GroupsDirectory>CN=Users,DC=wewebu-virtual,DC=local</GroupsDirectory>
+                      <java.naming.factory.initial>com.sun.jndi.ldap.LdapCtxFactory</java.naming.factory.initial>
+                      <java.naming.security.authentication>simple</java.naming.security.authentication>
+                      <java.naming.security.principal>CN=Administrator,CN=Users,DC=wewebu-virtual,DC=local</java.naming.security.principal>
+                      <java.naming.security.credentials>#TO_BE_INSERTED_HERE#</java.naming.security.credentials>
+                      <loginQueryName>sAMAccountName</loginQueryName>
+                      <anonymousLogin>false</anonymousLogin>
+                      < !- -
+                      <LdapCountLimit>100</LdapCountLimit>
+                      <AttributeNameObjectGUID>objectGUID</AttributeNameObjectGUID>
+                      <AttributeNameMemberOf>memberof</AttributeNameMemberOf>
+                      <AttributeNameLongName>name</AttributeNameLongName>
+                      <AttributeNameShortName>samAccountName</AttributeNameShortName>
+                      - - >
+                </Authentication>
+		        -->
+
+              <!-- OpenLDAP -->
+              <!--
+              <Authentication mode="LDAP" recursionlevel="1">
+                  <java.naming.provider.url>ldap://localhost:389</java.naming.provider.url>
+                  <SchemaInterpreter>com.wewebu.ow.server.util.ldap.OwStandardSchemaInterpreter</SchemaInterpreter>
+
+                  <UsersDirectory>ou=people,dc=alfresco,dc=local</UsersDirectory>
+                  <GroupsDirectory>ou=groups,dc=alfresco,dc=local</GroupsDirectory>
+
+                  <java.naming.factory.initial>com.sun.jndi.ldap.LdapCtxFactory</java.naming.factory.initial>
+                  <java.naming.security.authentication>simple</java.naming.security.authentication>
+                  <java.naming.security.principal>cn=Manager,dc=alfresco,dc=local</java.naming.security.principal>
+                  <java.naming.security.credentials>#TO_BE_INSERTED_HERE#</java.naming.security.credentials>
+                  <loginQueryName>uid</loginQueryName>
+                  <anonymousLogin>false</anonymousLogin>
+
+                  <GroupsObjectClass>groupOfNames</GroupsObjectClass>
+                  <GroupReferenceAttribute>member</GroupReferenceAttribute>
+                  <UserGroupReference>!</UserGroupReference>
+                  <!- -
+                  <uid>uidNumber</uid>
+                  <LdapCountLimit>100</LdapCountLimit>
+                  <AttributeNameObjectGUID>objectGUID</AttributeNameObjectGUID>
+                  <AttributeNameMemberOf>memberof</AttributeNameMemberOf>
+                  <AttributeNameLongName>name</AttributeNameLongName>
+                  <AttributeNameShortName>samAccountName</AttributeNameShortName>
+                  - ->
+              </Authentication>
+              -->
+
+              <!-- The name of the folder where user-defined preferences are stored,
+                   default value "owpreferences" (even when the tag is missing)
+              -->
+              <UserDefinedPreferencesFolder>owpreferences</UserDefinedPreferencesFolder>
+
+              <!-- The DB table name used by the <DefaultDataSource> for attribute bag persistency.
+                   default name is OW_ATTRIBUTE_BAG
+              -->
+              <DbAttributeBagTableName>OW_ATTRIBUTE_BAG</DbAttributeBagTableName>
+
+              <!-- Authentication Interceptor - provided example is an implementation of the OAuth V2.0 handler (Alfresco Cloud) -->
+              <!--
+              <AuthInterceptor className="com.wewebu.ow.server.ecmimpl.opencmis.alfresco.OwCMISAlfrescoOAuthInterceptor">
+                    <CallbackUrl>[web-app URL, e.g. http://localhost:8080/workdesk]</CallbackUrl>
+                    <ClientId>[client ID, e.g. l7xxd0e3a672a2f146e3a3675324b5fc43f1]</ClientId>
+                    <ClientSecrete>[client secrete/key, e.g. 22090fe58a45426fb4c83c55e3113ac2]</ClientSecrete>
+                    <GrantUrl>https://api.alfresco.com/auth/oauth/versions/2/authorize</GrantUrl>
+              </AuthInterceptor>
+              -->
+
+			  <!-- The node <UserOperationListeners> specifies factories of type <ContextBasedFactory>, used to log user
+			 	   operations to a log file or a database. Currently only a user login operation can be logged by using either
+			 	   OwDbUserOperationListenerFactory or OwLogUserOperationListenerFactory, but the current implementation could
+			 	   be extended to log also other user operations, like user logout or starting/stopping of other user operations.
+			  -->
+			  <!--
+			   <UserOperationListeners>
+			 	  <ContextBasedFactory className="com.wewebu.ow.server.app.OwDbUserOperationListenerFactory"/>
+			 	  <ContextBasedFactory className="com.wewebu.ow.server.app.OwLogUserOperationListenerFactory"/>
+			   </UserOperationListeners>
+			  -->
+
+			  <!-- Special CSQLCProcessor for extended Alfresco content search abilities, use together with Alfresco repository only -->
+              <!--
+			   <CSQLCProcessorClass>com.wewebu.ow.server.ecmimpl.opencmis.alfresco.OwCMISAlfrescoCSQLCProcessor</CSQLCProcessorClass>
+              -->
+        </EcmAdapter>
+
+        <FieldManager>
+
+                <ClassName>com.wewebu.ow.server.app.OwStandardFieldManager</ClassName>
+
+                <Version>4.2.0</Version>
+
+                <TextAreaThreshold>255</TextAreaThreshold>
+                <DefaultStringMaxSize>254</DefaultStringMaxSize>
+
+				<!-- 
+					Day index at which the week should begin, 0-based (defaults to 0, which is Sunday)
+					for DatePicker selection.
+			     -->
+				<DatePickerStartDay>1</DatePickerStartDay>
+
+                <FieldControls optionid="">
+
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlModifiedProperties" javatype="com.wewebu.ow.server.history.OwHistoryModifiedPropertyValue">
+                        </FieldControl>
+
+						<!--
+							com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDateControl 
+								- allowNullValue - for "true" an empty entry (corresponding to a null value) is displayed in the drop down list when this field is rendered.  
+						 -->
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDateControl" javatype="com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDate" allowNullValue="true">
+                        </FieldControl>
+
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwNextDaysDateControl" javatype="com.wewebu.ow.server.fieldctrlimpl.OwNextDaysDate">
+                        </FieldControl>
+
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlObject" javatype="com.wewebu.ow.server.ecm.OwObject">
+                        </FieldControl>
+
+                        <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlClass" javatype="com.wewebu.ow.server.ecm.OwClass">
+                        </FieldControl>
+
+						<FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlNote" objecttype="D:owd:hrdocument.owd:documentComment" >
+						</FieldControl>
+
+						<FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlNote" objecttype="F:owd:dossier.owd:dossierComment" >
+						</FieldControl>
+
+						<FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlImage" objecttype="F:owd:dossier.owd:dossierPicture" >
+						</FieldControl>
+
+                </FieldControls>
+
+        </FieldManager>
+
+
+<!-- ==========================================================================
+
+	DB HISTORY MANAGER
+	
+===============================================================================
+
+        Configuration help:
+        
+			<DbTableName>
+					The DB table name used by the <DefaultDataSource> for History Manager. 
+					default name is OW_HISTORY        
+
+			<HistorizeProperties>
+                        true:        The modified properties are written and read from the history table
+                        false:  The modified properties are ignored
+
+
+               <Filter eventFilterClass="[fully-qualified filter class name]">
+		            Configure the events which should not be tracked by defining a
+		            filter.
+		            
+		            attributes:
+		              eventFilterClass     The name of an com.wewebu.ow.server.historyimpl.dbhistory.OwEventFilter
+		                                   implementing class.
+		                                   The parameter is not mandatory , if it is missing
+		                                   a default filter will be used.
+		                                   Example : eventFilterClass ="com.wewebu.ow.server.historyimpl.dbhistory.OwHistoryEventFilter"
+
+                        <Type>
+                                You may filter the following event types:
+                                HISTORY_EVENT_TYPE_PLUGIN_INVOKE_UI   : Invoked plugin events,
+                                        which do not modify anything
+                                HISTORY_EVENT_TYPE_PLUGIN_INVOKE_VIEW : Invoked plugin events,
+                                        which view objects
+                                HISTORY_EVENT_TYPE_PLUGIN_INVOKE_EDIT : Invoked plugin events,
+                                        which edit objects
+                                HISTORY_EVENT_TYPE_PLUGIN_DSPATCH     : Generated when dispatch
+                                        function is called e.g. when a folder is opened in the
+                                        RecordManager
+                                HISTORY_EVENT_TYPE_ECM                : Generated for login or
+                                        search events
+                                HISTORY_EVENT_TYPE_OBJECT             :
+                                HISTORY_EVENT_TYPE_PROPERTY           :
+                                HISTORY_EVENT_TYPE_VERSION            :
+                                HISTORY_EVENT_TYPE_GENERIC            :
+
+                        <Status>
+                                You may filter the following event states:
+                                        HISTORY_STATUS_OK     : Event was finished successfully
+                                        HISTORY_STATUS_FAILED : Event failed
+                                        HISTORY_STATUS_CANCEL : Event was canceled
+                                        HISTORY_STATUS_BEGIN  : Event started; there will be an
+                                                additional ok, failed, or cancel event
+
+                        <EventId>
+                                You may filter event IDs. Event IDs are for example plugin IDs
+                                which can be found in the owplugins.xml configuration file.
+
+					<SessionEvents> - optional
+						Configure the events types and event ID to be stored in memory.
+			
+					<Event  eventtype="HISTORY_EVENT_TYPE_... | number | *" eventid="pluginid | *"/>
+				
+						eventtype - 
+							The event type can either be a String as defined in the integer 
+							HISTORY_EVENT_TYPE_... constants of OwEventManager or a integer number 
+							representing the event type or a "*". In the case of a String, the according number
+							is determined using reflection. A "*" represents all event types.
+				
+						eventid - 
+							The event ID can either be a string representing the ID as defined with HISTORY_EVENT_ID_... 
+							in OwEventManager, a String representing a plugin ID or a "*". 
+							A "*" represents all event IDs (it's not recommended, use specific ID instead).
+							
+                        e.g.
+                        <Event eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_VIEW" eventid="<plugin_id>"/>
+                        <Event eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_EDIT" eventid="<plugin_id>"/>
+
+=========================================================================== -->
+<!--
+	<HistoryManager>
+
+		<ClassName>com.wewebu.ow.server.historyimpl.dbhistory.OwDBHistoryManager</ClassName>
+
+		<Version>4.2.0</Version>
+
+		<DbTableName>OW_HISTORY</DbTableName>
+
+		<HistorizeProperties>false</HistorizeProperties>
+
+		<Filter>
+			<Type>HISTORY_EVENT_TYPE_PLUGIN_INVOKE_UI</Type>
+			<Type>HISTORY_EVENT_TYPE_ECM</Type>
+			
+			<Status>HISTORY_STATUS_OK</Status>
+			
+			<EventId>com.wewebu.ow.owdocprops</EventId>
+		</Filter>
+		
+		<SessionEvents></SessionEvents>
+
+	</HistoryManager>
+-->
+
+
+<!-- ==========================================================================
+
+	SIMPLE HISTORY MANAGER
+
+===============================================================================-->
+	
+	<HistoryManager>
+
+		<ClassName>com.wewebu.ow.server.historyimpl.simplehistory.OwSimpleHistoryManager</ClassName>
+
+		<Version>4.2.0</Version>
+			
+		<SessionEvents></SessionEvents>
+
+	</HistoryManager> 
+
+
+<!-- ==========================================================================
+
+	DB ROLE MANAGER 
+	(Roles can be defined with the OwDBRoleManager)
+
+===============================================================================
+
+	Configuration help:
+	
+   		<DbTableName>
+			The DB table name used by the <DefaultDataSource> for Role Manager. 
+			default name is OW_ROLE
+
+		<SecurityAdmin pluginid="[id of plugin to enable for Security Admin]">
+			<User>[user1]</User>
+			<User>[user2]</User>
+			<Group>[usergroup1]</Group>
+			<Group>[usergroup2]</Group>
+			...
+		</SecurityAdmin>
+			Name of user(s) who act as Role-Administrator and can
+			always edit roles.
+			Beware of case sensitivity! The user names have to be
+			spelled exactly as defined in LDAP!
+					
+		<DesignName>
+			Name of the design that should always be used. 
+			Leave empty to switch design by the role or the jsppage
+			(e.g. http.../ow/<designname>.jsp opens the <designname> design).
+			
+		<AvailableDesigns>
+		    <Design displayname="...">[designname]</Design>
+		</AvailableDesigns>
+		    List of designs available for role configuration.
+		    
+		<SchemeVersion>
+		    Version of the database scheme, which must be 3 in the current version.
+
+        <MasterRoles>
+            List of Masterroles that the user may select from. Each Masterrole
+            may consist of several roles. If a user is member of multiple roles
+            the currently selected Masterrole acts as a filter for those roles.
+            That means AWD treats the user as if he was member only of the roles
+            of the current Masterrole AND the roles not covered by any of the
+            Masterroles at all!
+            
+            <MasterRoleGroup>
+                The first <MasterRoleGroup> in this list is used as the
+                bootstrap Masterrole when a user logs in to AWD. Also, every
+                user has to have access to the "ow_app" master plugin in
+                order to read the startup role.
+                Thus, please make sure that the role filter of the first
+                <MasterRoleGroup> does not limit the users roles to a
+                situation where the user does not have access to the
+                "ow_app" plugin!
+                If parameter memberOfAll is set to true, user must be part
+                of every configured <Role> to access the MasterRoleGroup.
+                If parameter memberOfAll is set to false, user must be part
+                of one of the configured <Role>s to access the MasterRoleGroup.
+
+			<ConfigCategories>
+				List of categories that are available to be configured in Administration page,
+				separated by comma(,). The names inside this element must be the name of the 
+				java field representing categories, from com.wewebu.ow.server.role.OwRoleManager interface.
+			
+				Available options are: 
+						ROLE_CATEGORY_PLUGIN, 
+						ROLE_CATEGORY_VIRTUAL_QUEUE,  
+						ROLE_CATEGORY_SEARCH_TEMPLATE,
+						ROLE_CATEGORY_STANDARD_FUNCTION,
+						ROLE_CATEGORY_DESIGN,
+						ROLE_CATEGORY_SELECTIVE_CONFIGURATION,
+						ROLE_CATEGORY_OBJECT_CLASSES, 
+						ROLE_CATEGORY_INDEX_FIELDS,
+						ROLE_CATEGORY_STARTUP_FOLDER,
+                        ROLE_CATEGORY_VIRTUAL_FOLDER,
+                        ROLE_CATEGORY_BPM_PROCESS_DEFINITION.
+				Configuration with other names will throw an exception. 
+
+                ROLE_CATEGORY_STARTUP_FOLDER and ROLE_CATEGORY_VIRTUAL_FOLDER can only be used with Mobile Workdesk Server.
+
+                If this element is not empty, the list of categories shown in the Administration page is filtered, 
+				only the categories specified in this element will be available. The others categories cannot be
+				configured in the Administration page and the access to the resources for these categories is 
+				always allowed.
+				
+				Example:
+					<ConfigCategories>ROLE_CATEGORY_PLUGIN, ROLE_CATEGORY_SEARCH_TEMPLATE</ConfigCategories>
+					
+					With this configuration, only the access to plugins and search template can be edited, 
+					the access to the resources for the others categories is allowed by default.
+
+			<DefaultApplication>
+				Optional default (non-integrated) application configuration.
+				Allows the configuration of id and name (as localized label) of the default application.
+				If missing default values are set to AWD and AWD.name respectively.
+				
+				Example:
+					<DefaultApplication id="AWD" name="AWD.name"/>
+			
+			<IntegratedApplications>
+				Optional role management configuration for integrated applications.
+				Allows integrated applications (e.g. Mobile Workdesk) to be configured in the Administration page.
+				Each integrated application is configured using an <Application> element with id and
+				name (as localized label) attributes set.
+				Each application requires a database table name set through the <DbTableName> element and available
+				categories (see the above definition of <ConfigCategories>).
+				   
+				Example:
+					<IntegratedApplications>
+						<Application id="MWD" name="MWD.name">
+							<DbTableName>MW_ROLE</DbTableName>
+							<ConfigCategories>
+								  ROLE_CATEGORY_SEARCH_TEMPLATE,
+			                  	  ROLE_CATEGORY_VIRTUAL_FOLDER,
+			                  	  ROLE_CATEGORY_STARTUP_FOLDER
+							</ConfigCategories>
+						</Application>
+					</IntegratedApplications>
+=========================================================================== -->
+<!-- 
+	<RoleManager>
+
+		<ClassName>com.wewebu.ow.server.roleimpl.dbrole.OwDBRoleManager</ClassName>
+		
+		<Version>4.2.0</Version>
+
+		<DbTableName>OW_ROLE</DbTableName>
+
+		<DesignName>default41</DesignName>
+		
+        <AvailableDesigns>
+            <Design displayName="Alfresco Workdesk 4.1 Design">default41</Design>
+        </AvailableDesigns>
+
+        <SchemeVersion>3</SchemeVersion>
+		
+		<SecurityAdmin pluginid="com.wewebu.ow.Admin">
+		    	<User>Administrator</User>
+		    	<User>admin</User>
+		</SecurityAdmin>
+
+		<MasterRoles enable="false">
+			
+			<MasterRoleGroup name="???" memberOfAll="true">
+				<Role>???</Role>
+				<Role>???</Role>
+			</MasterRoleGroup>
+
+		</MasterRoles>
+		
+		<ConfigCategories>ROLE_CATEGORY_PLUGIN,
+		                  ROLE_CATEGORY_SEARCH_TEMPLATE,
+		                  ROLE_CATEGORY_STANDARD_FUNCTION,
+		                  ROLE_CATEGORY_BPM_PROCESS_DEFINITION
+		</ConfigCategories>
+		
+	</RoleManager>
+-->
+
+
+<!-- ==========================================================================
+
+	SIMPLE ROLE MANAGER
+	(Allows everything for all users)
+	
+===============================================================================
+
+	Configuration help:
+		    
+		<SiteAdmins>
+			List of users that act as site administrators and can edit sitesettings.			
+	
+		<DesignName>
+			Name of the design that should always be used. 
+			Leave empty to switch design by the role or the jsppage
+			(e.g. http.../ow/<designname>.jsp opens the <designname> design).
+			
+=========================================================================== -->
+
+	<RoleManager>
+
+		<ClassName>com.wewebu.ow.server.roleimpl.simplerole.OwSimpleRoleManager</ClassName>
+
+		<Version>4.2.0</Version>
+
+		<SiteAdmins>
+		    	<user>Administrator</user>
+		    	<user>admin</user>
+		</SiteAdmins>
+
+		<DesignName>default41</DesignName>
+
+	</RoleManager>
+
+
+<!-- ==========================================================================
+
+	SIMPLE MANDATOR MANAGER 
+		
+=========================================================================== -->
+
+	<MandatorManager>
+
+		<ClassName>com.wewebu.ow.server.mandatorimpl.simplemandator.OwSimpleMandatorManager</ClassName>
+		
+		<Version>4.2.0</Version>
+		
+	</MandatorManager>
+	
+	
+
+<!-- ==========================================================================
+
+	COMMON SETTINGS
+
+=========================================================================== -->
+
+	<!-- Use the JavaScript Data Control rather than HTML comboboxes for date selection. -->
+    <UseJSDateControl>true</UseJSDateControl>
+
+
+<!-- ==========================================================================
+    The name of the datasource to be used as a default for components that need
+    a table space.
+=========================================================================== -->
+
+	<!-- DefaultDataSource>
+		<JNDIName>java:/HSQLDB</JNDIName>
+	</DefaultDataSource -->
+
+	<!-- DefaultDataSource>
+		<JNDIName>java:/OracleDS</JNDIName>
+	</DefaultDataSource -->
+
+	<!-- DefaultDataSource>
+		<JNDIName>java:/MSSQLDS</JNDIName>
+	</DefaultDataSource -->
+
+	<!-- DefaultDataSource>
+		<JNDIName>java:/DB2DS</JNDIName>
+	</DefaultDataSource -->			
+
+	<!-- DefaultDataSource>
+		<JNDIName>java:/MySQLDS</JNDIName>
+	</DefaultDataSource -->
+	
+    <!-- DefaultDataSource>
+        <JNDIName>java:/PostgreSQLDS</JNDIName>
+    </DefaultDataSource> -->
+
+
+<!-- ==========================================================================
+	Classname of a the default folder, used to create simple folders.
+=========================================================================== -->
+	<DefaultFolderClass>cmis:folder</DefaultFolderClass>
+
+
+<!-- ==========================================================================
+	Client wildcard definitions
+	Each entry represents a wildcard that can be used in the client application
+	and will automatically translate to the native wildcard in the repository.
+	
+	tags:
+		<wc>		Wildcardentry with wildcard character
+		
+	attributes:
+		type		The wildcard type as defined in OwWildCardDefinition.WILD_CARD_TYPE_...
+					can be the fieldname or a number
+	
+=========================================================================== -->
+	<ClientWildCardDefinitions optionid="">
+		<wc type="WILD_CARD_TYPE_MULTI_CHAR">*</wc>
+		<wc type="WILD_CARD_TYPE_SINGLE_CHAR">?</wc>
+	</ClientWildCardDefinitions>
+
+
+<!-- ==========================================================================
+	List of classnames, which act as records:
+    Specifies a list of folder class names in order to resolve the containment
+	relationship between documents and records (visible in document properties
+	-> files tab).
+	Default: Configure the folder class names of all your physical and semi-
+	virtual records here.
+=========================================================================== -->
+	<RecordClasses optionid="">
+		<RecordClassName>F:owd:dossier</RecordClassName>
+	</RecordClasses>
+
+
+<!-- ==========================================================================
+	HTTP settings
+=========================================================================== -->
+	<!-- SSL Mode
+             0 : none
+             1 : ssl session enforced -->
+
+	<SSLMode>0</SSLMode>
+
+
+<!-- ==========================================================================
+    The temp directory (e.g. used for document upload). Define a path absolute or relative 
+    to the deployment, but be sure the path is assigned to a folder with read/write right.
+    If the tempDir location does not exist, Alfresco Workdesk will try to create and use it. 
+    
+    sample definition absolute: 
+      Win:  <TempDir>C:/Temp/</TempDir>
+      Unix: <TempDir>/usr/tmp</TempDir>
+      
+    sample definition relative to deployment:
+        <TempDir>../../Temp/</TempDir>
+        
+    If no temporary directory is defined, we use the environment information/properties (java.io.tmpdir)
+    to get the location of server or OS temp dir. If this variable is also empty the 
+    deployment location is used as temporary directory.        
+=========================================================================== -->
+	<TempDir></TempDir>
+
+
+<!-- ==========================================================================
+    Exception handling behavior 
+    true = display messagebox when user causes an error, false = show default exception
+=========================================================================== -->
+	<MessageBoxOnUserError>false</MessageBoxOnUserError>
+
+
+<!-- ==========================================================================
+    Session cookie names used by Alfresco Workdesk
+    The default configuration is the following:
+    	<SessionCookieNames>
+        	<Name>JSESSIONID</Name>
+	        <Name>ECLIENTJSESSIONID</Name>
+    	    <Name>LtpaToken</Name>
+        	<Name>LtpaToken2</Name>
+	    </SessionCookieNames>
+    This configuration set is also used as fallback, if the node is missing at all. 
+    The <Name> list can be extended with your required session cookie names for SSO,LTPA,etc... 
+=========================================================================== -->
+    <SessionCookieNames>
+        <Name>JSESSIONID</Name>
+        <Name>ECLIENTJSESSIONID</Name>
+        <Name>LtpaToken</Name>
+        <Name>LtpaToken2</Name>
+    </SessionCookieNames>
+
+
+<!-- ==========================================================================
+	Local language settings
+=========================================================================== -->
+	<!-- The default language
+	
+		detectbrowserlocale		Detect the language of the users browser, default = true.
+			true = override defaultlocal
+			false = use defaultlocal     
+	-->
+	<defaultlocal detectbrowserlocale="true">en</defaultlocal>
+
+    <!-- The available language which the user can select from (must be installed with resource bundle) -->
+    <availablelocals display='true'>
+        <lang displayname="English">en</lang>
+        <lang displayname="Français">fr</lang>
+        <lang displayname="Deutsch">de</lang>
+        <lang displayname="Español">es</lang>
+        <lang displayname="Italiano">it</lang>
+        <lang displayname="日本語">ja</lang>
+        <lang displayname="简体中文">zh_CN</lang>
+        <!-- <lang displayname="Debug Mode (for developers only)">debugmode</lang> -->
+    </availablelocals>
+
+ 	<!-- The available localization files (must be installed with resource bundle) -->
+	<availablelocalizeFiles>
+		<!-- <localizeFile fileName="choiceLists"/> -->
+	</availablelocalizeFiles>
+
+
+<!-- ==========================================================================
+    URL parameter codec configuration. The URL parameter codec is used 
+    to shorten AWD URLs by encoding URL parameter into a shorter parameter set 
+    that relies on internally stored cookies.
+    
+    tags:
+    
+    URLLifeTime
+        Configures the amount of time an encoded URL parameter map is valid.
+        After that the parameter map is considered expired and links that rely
+        on are considered out of date / expired and will not produce the desired response.
+        Attributes :
+            days    = days until the parameter map expires considering the URL parameter map encoding time  
+            hours   = hours until the parameter map expires considering the URL parameter map encoding time
+            minutes = minutes until the parameter map expires considering the URL parameter map encoding time                               
+            seconds = seconds until the parameter map expires considering the URL parameter map encoding time
+       Example: 
+        
+        The encoded parameter maps will expire after 2 days and 12 hours from the moment they are created : 
+        <URLLifeTime days="2" hours="12"/>
+        
+   AttributeBags
+        Configures the attribute bag storage name for the parameters maps.
+        In order to prevent name conflicts in attribute bags usage unique bag names prefixes should 
+        be specified here.
+        Attributes :
+            codecprefix     = a string prefix to be used in codec internal bag names
+            cookieprefix    = a string prefix to be used in codec internal bag names that will store
+                                cookie based parameter maps
+            user            = user to be used when storing codec attribute bags
+        Example :
+        <AttributeBags codecprefix="c_cod_bag_" cookieprefix="c_cc_"  user="OW_GLOBAL"/>
+             
+   URLParameter 
+        The parameter map codec encodes a parameter map into another parameter map containing
+        one cookie defining parameter.  
+        Attributes :
+            name = string name of the URL parameter
+        Example :
+        <URLParameter name="cp"/>
+=========================================================================== -->
+    <URLParameterCodec>
+        <URLLifeTime days="1825"/>
+        <AttributeBags codecprefix="pc_master_bag_" cookieprefix="pc_c_"  user="OW_GLOBAL"/>
+        <URLParameter name="cp"/> 
+    </URLParameterCodec>
+
+
+<!-- ====================================================================== 
+	Class name for combobox renderer component.
+	Available class names:
+		com.wewebu.ow.server.app.OwExtJSComboboxRenderer 	- ExtJS based combobox renderer.
+		com.wewebu.ow.server.app.OwClassicComboboxRenderer 	- Classic HTML combobox renderer. 
+=========================================================================== --> 		
+	<ComboboxRendererClassName>com.wewebu.ow.server.app.OwExtJSComboboxRenderer</ComboboxRendererClassName>
+
+
+<!-- ======================================================================
+	Ajax Layout configuration node
+		UseDynamicSplit - if true, the separation bar between 
+			navigation pane and main pane can be moved
+		AttributeBagPrefix - the prefix for attribute bag used for saving the separation bar position.
+=========================================================================== -->
+	<AjaxLayout>
+		<UseDynamicSplit>true</UseDynamicSplit>
+		<AttributeBagPrefix>layout_bag_id_</AttributeBagPrefix>
+	</AjaxLayout>
+
+
+<!-- ======================================================================
+    Ajax grid column information persistence configuration node.
+    The ajax grid is configured using the com.wewebu.ow.server.dmsdialogs.views.OwObjectListViewEXTJSGrid
+    RecordDocument view class.
+    Column information consists of column size and column order in the ajax grid  header.
+    
+    The boolean value of this configuration indicates the following:
+    
+    - true  : column information is stored using the currently configured attribute bag support 
+              which can be DB based or the "Transient (in memory) implementation" 
+              
+    - false : column information is stored using the the "Transient" (in memory) attribute bag implementation
+              regardless of the DefaultDataSource configuration element
+              
+     See also the attribute bag and the DefaultDataSource configuration element documentation.
+     
+     The default StoreExtJSColumnInfo configuration value is false.
+     
+     Switching the parameter to true might require an increase in the AttributeBag DB column size.  
+=========================================================================== -->
+	<StoreExtJSColumnInfo>false</StoreExtJSColumnInfo>
+
+
+<!-- ======================================================================
+	 Use this configuration option, if the application server is located behind a reverse proxy
+     or a load balancer and the servername, port or application context path is different from 
+     what the actual client sees.
+=========================================================================== -->
+    <!-- 
+    <UrlOverwrite>
+        <Server>http://servername</Server>
+        <Base>http://servername/workdesk</Base>
+    </UrlOverwrite> 
+    -->
+    
+<!-- ======================================================================
+    The globalParameters are used to set global parameters that can be used inside 
+    the application, e.g. plugins, java code, UI, extensions...
+      AllowChangePassword   - activates the change password functionality
+      EcmBaseUrl            - URL used for Rest-calls, contains the root URL to 
+                                the Alfresco system used for 
+                              Rest functions: Renditions, Records Management....    
+=========================================================================== -->    
+   <globalParameters>
+       <!-- <param name="AllowChangePassword">true</param> -->
+       <param name="EcmBaseUrl">http://localhost:8080/alfresco</param>
+   </globalParameters>
+
+</bootstrap>

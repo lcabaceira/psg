@@ -1,0 +1,242 @@
+/******************************************************************************
+Alfresco Workdesk Key Parser
+Copyright (c) Alfresco Software, Inc. All Rights Reserved.
+********************************************************************************/
+
+options {
+  JAVA_UNICODE_ESCAPE = true;
+  ERROR_REPORTING = false;
+  STATIC = false;
+  COMMON_TOKEN_ACTION = false;
+  JDK_VERSION = "1.5";
+}
+
+PARSER_BEGIN(OwKeyParser)
+
+package com.wewebu.ow.server.plug.efilekey.parser;
+import com.wewebu.ow.server.plug.efilekey.pattern.*;
+import java.util.*;
+
+import java.io.*;
+
+/**
+ *<p>
+ * Key Language Parser.
+ *</p>
+ *
+ *<p><font size="-2">
+ * Alfresco Workdesk<br/>
+ * Copyright (c) Alfresco Software, Inc. All Rights Reserved.
+ *</font></p>
+ *@since 3.1.0.0
+ */
+public class OwKeyParser
+{
+    /*public static OwExprExpression parse(String expressionString_p) throws ParseException
+    {
+        OwExprParser parser = new OwExprParser(new StringReader(expressionString_p));
+        OwExprExpression expression = parser.ExprExpression();
+        return expression;
+    }*/
+}
+
+PARSER_END(OwKeyParser)
+
+/* ERROR */
+
+JAVACODE
+void error_skipto(int kind) {
+  ParseException e = generateParseException();  // generate the exception object.
+ 
+  //System.out.println(e.getMessage()+(exprException_p!=null?exprException_p.getMessage():""));  // print the error message
+  Token t;
+  do {
+    t = getNextToken();
+  } while (t.kind != kind);
+    // The above loop consumes tokens all the way up to a token of
+    // "kind".  We use a do-while loop rather than a while because the
+    // current token is the one immediately before the erroneous token
+    // (in our case the token immediately before what should have been
+    // "if"/"while".
+}
+
+
+/* WHITE SPACE */
+
+SKIP :
+{
+  " "
+| "\t"
+| "\n"
+| "\r"
+| "\f"
+}
+
+/* COMMENTS */
+
+MORE :
+{
+  <"/**" ~["/"]> { input_stream.backup(1); } : IN_FORMAL_COMMENT
+|
+  "/*" : IN_MULTI_LINE_COMMENT
+}
+
+SPECIAL_TOKEN :
+{
+  <SINGLE_LINE_COMMENT: "//" (~["\n", "\r"])* ("\n" | "\r" | "\r\n")?>
+}
+
+<IN_FORMAL_COMMENT>
+SPECIAL_TOKEN :
+{
+  <FORMAL_COMMENT: "*/" > : DEFAULT
+}
+
+<IN_MULTI_LINE_COMMENT>
+SPECIAL_TOKEN :
+{
+  <MULTI_LINE_COMMENT: "*/" > : DEFAULT
+}
+
+<IN_FORMAL_COMMENT,IN_MULTI_LINE_COMMENT>
+MORE :
+{
+  < ~[] >
+}
+
+/* RESERVED WORDS AND LITERALS */
+
+TOKEN :
+{
+< NULL: "null" >
+| < TRUE: "true" >
+| < FALSE: "false" >
+| < AND: "and" >
+| < OR: "or" >
+| < XOR: "xor" >
+|< NOT: "not">
+}
+
+/* LITERALS */
+
+TOKEN :
+{
+ 
+ < STRING_LITERAL:
+      "\""
+      ( <CHAR> | <SPECIAL_CHAR> )*
+      "\""
+  >
+}
+
+/* IDENTIFIERS */
+
+TOKEN :
+{
+  < PROPERTY_NAME: <CHAR> ("." | "\\" | ":" | "_" | <QCHAR>)* >
+|
+  < #CHAR:
+      [  
+      	 "a"-"z",
+         "A"-"Z",
+         "0"-"9"
+      ]
+  >
+|
+ < #QCHAR:
+      <CHAR>
+      |
+      [  
+         "[",
+         "]"
+      ]
+  >
+|
+  < #SPECIAL_CHAR:
+      ["_", "-", "/", "#", ".", ":", ";", "§", "$"]   >
+| 
+  < USER_DEFINED_SEQUENCE: ( <CHAR> | <SPECIAL_CHAR>)+ >
+}
+
+/***********************************************
+ * THE KEY  LANGUAGE GRAMMAR STARTS HERE       *
+ ***********************************************/
+
+/*
+ * Expression syntax follows.
+ */
+OwKeyPatternImpl readPatterns(): 
+{
+	List patterns = null;
+}
+{
+	patterns = patterns()
+	{
+		return new OwKeyPatternImpl(patterns);
+	}		
+}
+List patterns(): 
+{
+   List rightSidePatterns=new LinkedList();
+   OwSingleKeyPattern pattern;
+}
+{
+    pattern=keyPattern() [ rightSidePatterns=patterns()]
+    {
+        rightSidePatterns.add(0,pattern);
+        return rightSidePatterns;
+    }
+}
+OwSingleKeyPattern keyPattern():
+{
+Token fkToken=null;
+OwMetadataReference reference=null;
+OwSingleKeyPattern keyPattern=null;
+}
+{
+    (	fkToken=<USER_DEFINED_SEQUENCE>
+    |
+    	fkToken=<PROPERTY_NAME>
+    |
+    	reference=propertyReference())
+    
+    {
+        if (keyPattern==null)
+        {
+            keyPattern = new OwSingleKeyPattern();
+        }
+        if (reference!=null)
+        { 
+        keyPattern.setReference(reference);
+        }
+        if (fkToken!=null) 
+        {
+        	keyPattern.setPrefix(fkToken.image);
+        }
+        return keyPattern;
+    }
+}
+
+OwMetadataReference propertyReference():
+{
+     
+    Token propertyName;
+    OwMetadataFormatterImpl formatter = null;
+}
+{
+    "{"
+        propertyName=<PROPERTY_NAME> 
+        ["," formatter=formatter() ]
+    "}"
+    {return new OwMetadataReference(propertyName.image,formatter);}
+ 
+}
+
+
+OwMetadataFormatterImpl formatter():
+{
+    Token patternToken;
+}
+{
+    patternToken=<STRING_LITERAL>{return new OwMetadataFormatterImpl(patternToken.image);}
+}

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="LastName" />
+					<selectprop symname="FirstName" />
+					<selectprop symname="FaxNumber" />
+					<selectprop symname="DateOfBirth" />
+					<selectprop symname="Image" />
+				</selectprops>
+			</select>
+			<where>
+				<and>
+					<like>
+						<whereprop editproperty="editable" symname="LastName" />
+						<literal>%</literal>
+					</like>
+					<eq>
+						<whereprop datemode="ignoretime" editproperty="editable" symname="DateOfBirth" />
+						<literal />
+					</eq>
+				</and>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

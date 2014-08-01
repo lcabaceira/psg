@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>mowd</artifactId>
+		<groupId>com.wewebu.ecm</groupId>
+		<version>4.2.0</version>
+		<relativePath>../</relativePath>
+	</parent>
+	<groupId>com.wewebu.ecm</groupId>
+	<artifactId>ow_roledb</artifactId>
+	<version>4.2.0</version>
+	<name>Database Role Manager</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>3.8.1</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.wewebu.ecm</groupId>
+			<artifactId>ow_core</artifactId>
+			<version>4.2.0</version>
+			<scope>compile</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>com.wewebu.ecm</groupId>
+			<artifactId>ow_core</artifactId>
+			<version>4.2.0</version>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.wewebu.ecm</groupId>
+			<artifactId>ow_dev</artifactId>
+			<version>4.2.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- JDNI libs -->
+		<dependency>
+			<groupId>com.microsoft</groupId>
+			<artifactId>mssqlserver</artifactId>
+			<version>1.0</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Microsoft SQL Server JDBC Driver 3.0 -->
+		<dependency>
+			<groupId>com.microsoft</groupId>
+			<artifactId>sqljdbc4</artifactId>
+			<version>3.0.1301.101</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- Oracle Database 10g Release 2 (10.2.0.5) JDBC Drivers  -->
+		<dependency>
+			<groupId>com.oracle</groupId>
+			<artifactId>ojdbc14</artifactId>
+			<version>10.2.0.5</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>simple-jndi</groupId>
+			<artifactId>simple-jndi</artifactId>
+			<version>0.11.2</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm</groupId>
+			<artifactId>db2jcc</artifactId>
+			<version>8.4.02.300</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.ibm</groupId>
+			<artifactId>db2jcc_license_cu</artifactId>
+			<version>8.4.02.300</version>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.9</version>
+				<configuration>
+					<argLine>-Xms512m -Xmx1024m</argLine>
+					<skipTests>${skipTests}</skipTests>
+					<forkMode>always</forkMode>
+                    <includes>
+                        <include>**/OwCCDBRoleTests.*</include>
+                    </includes>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	<organization>
+		<name>Alfresco Business Solutions</name>
+		<url>http://www.alfresco.com</url>
+	</organization>
+</project>

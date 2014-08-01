@@ -1,0 +1,59 @@
+* html body.owBody
+{
+    height: 100%;
+}
+* html #OwMainLayout 
+{
+    position: static;
+}
+* html #OwMainLayout_MAIN_endstrip .OwMainLayout_edge 
+{
+    bottom: -2px;
+}
+* html #OwMaximizedLayout_MAIN 
+{
+    height: 90%;
+}
+* html td.OwSubLayoutRegister_MAIN 
+{
+    height: 94%;
+}
+* html #OwSubLayout_menu 
+{
+    height: 10px;
+    height: 32px;
+}
+* html #OwSubLayout_menu ul li 
+{
+    margin-right: 8px;
+}
+* html div#OwMainFooter 
+{
+    width: 100%;
+}
+* html .OwPropertyBlockLayout .OwPropertyBlock
+{
+   clear: both;
+}
+* html #OwStandardDialog_Header 
+{
+    height: 1px;
+}
+* html .OwGeneralList_table thead th, 
+* html .OwGeneralList_table thead td 
+{
+    padding: 1px 0 2px;
+}
+* html #OwLoginView_title span 
+{
+    top: 9px;
+    right: 29px;
+}
+* html #OwSubLayout_MAIN div.OwMainColumnHeader .OwMaxMinButtonControlView 
+{
+    padding-bottom: 0;
+}
+* html input.x-tbar-page-number
+{
+    margin-top: 2px;
+}

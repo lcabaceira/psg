@@ -1,0 +1,131 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass
+END
+OwCMISResourceObjectClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISResourceObjectClassImpl.java
+END
+OwCMISResourceObjectClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISResourceObjectClass.java
+END
+OwCMISFolderClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISFolderClassImpl.java
+END
+OwCMISFolderClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISFolderClass.java
+END
+OwCMISPolicyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISPolicyClassImpl.java
+END
+OwCMISDomainFolderClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISDomainFolderClassImpl.java
+END
+OwCMISPolicyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISPolicyClass.java
+END
+OwCMISDomainFolderClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISDomainFolderClass.java
+END
+OwCMISNativeObjectClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISNativeObjectClass.java
+END
+OwCMISRelationshipClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISRelationshipClassImpl.java
+END
+OwCMISRelationshipClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISRelationshipClass.java
+END
+OwCMISAbstractNativeObjectClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISAbstractNativeObjectClass.java
+END
+OwCMISAbstractSessionObjectClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISAbstractSessionObjectClass.java
+END
+OwCMISDocumentClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISDocumentClassImpl.java
+END
+OwCMISDocumentClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISDocumentClass.java
+END
+OwCMISSessionObjectClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISSessionObjectClass.java
+END
+OwCMISObjectClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISObjectClass.java
+END
+OwCMISPropertySorter.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISPropertySorter.java
+END
+OwCMISAbstractObjectClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISAbstractObjectClass.java
+END
+OwCMISQueryResultConverterImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISQueryResultConverterImpl.java
+END
+OwCMISQueryResultConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/objectclass/OwCMISQueryResultConverter.java
+END

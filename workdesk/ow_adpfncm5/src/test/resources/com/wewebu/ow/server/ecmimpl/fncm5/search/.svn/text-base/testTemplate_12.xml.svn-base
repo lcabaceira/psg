@@ -1,0 +1,42 @@
+<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchtype>
+			<template showandorconditions="false" showmaxrecords="false"
+				showoperators="false" />
+		</searchtype>
+		<objectstores mergeoption="union">
+			<objectstore name="P8ConfigObjectStore" />
+		</objectstores>
+		<searchcriteria>
+			<searchclauses>
+				<searchclause>
+					<select>
+						<selectprops>
+							<selectprop symname="From" />
+						</selectprops>
+					</select>
+
+					<objectstores mergeoption="union">
+						<objectstore name="P8ConfigObjectStore"  />
+					</objectstores>
+
+					<from>
+						<class symname="Email" />
+					</from>
+					
+
+					<where>
+						<and>
+							<eq>
+								<whereprop editproperty="editable" symname="From" />
+								<literal>S[Test'Test'']</literal>
+							</eq>
+						</and>
+					</where>
+				</searchclause>
+			</searchclauses>
+		</searchcriteria>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

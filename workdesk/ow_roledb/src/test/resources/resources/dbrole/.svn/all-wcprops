@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_roledb/src/test/resources/resources/dbrole
+END
+owplugins.xml
+K 25
+svn:wc:ra_dav:version-url
+V 116
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_roledb/src/test/resources/resources/dbrole/owplugins.xml
+END
+owbootstrap_dbrole_mssql_goodConfiguration.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_roledb/src/test/resources/resources/dbrole/owbootstrap_dbrole_mssql_goodConfiguration.xml
+END
+owbootstrap_dbrole_oracle.xml
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_roledb/src/test/resources/resources/dbrole/owbootstrap_dbrole_oracle.xml
+END
+owmimetable.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_roledb/src/test/resources/resources/dbrole/owmimetable.xml
+END
+owbootstrap_dbrole_db2.xml
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_roledb/src/test/resources/resources/dbrole/owbootstrap_dbrole_db2.xml
+END
+owbootstrap.xml
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_roledb/src/test/resources/resources/dbrole/owbootstrap.xml
+END
+owbootstrap_dbrole_mssql.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_roledb/src/test/resources/resources/dbrole/owbootstrap_dbrole_mssql.xml
+END

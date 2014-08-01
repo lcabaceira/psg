@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/repos/abs-owd_repos/!svn/ver/37995/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/applets/clientservices
+END
+commons-logging-1.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37995/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/applets/clientservices/commons-logging-1.1.1.jar
+END
+commons-codec-1.4.jar
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/abs-owd_repos/!svn/ver/37995/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/applets/clientservices/commons-codec-1.4.jar
+END
+ow_clientservices.jar
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/abs-owd_repos/!svn/ver/37995/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/applets/clientservices/ow_clientservices.jar
+END
+httpclient-4.1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/abs-owd_repos/!svn/ver/37995/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/applets/clientservices/httpclient-4.1.1.jar
+END
+httpcore-4.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37995/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/applets/clientservices/httpcore-4.1.jar
+END

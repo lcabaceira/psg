@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Context path="mobileworkdesk" privileged="true" reloadable="true">
+
+    <!--
+    <Resource name="java:/OracleDS"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="-insert-your-username-here-" 
+        password="-insert-your-password-here-" 
+        driverClassName="oracle.jdbc.driver.OracleDriver"
+        url="jdbc:oracle:thin:@-insert-your-servername-here-:1521:-insert-your-database-here-"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+     -->
+
+    <!--     
+    <Resource name="java:/MSSQLDS"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="-insert-your-username-here-" 
+        password="-insert-your-password-here-" 
+        driverClassName="com.microsoft.sqlserver.jdbc.SQLServerDriver"
+        url="jdbc:sqlserver://-insert-your-servername-here-:1433;DatabaseName=-insert-your-database-here-;"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+     -->
+
+    <!--
+    <Resource name="java:/DB2DS"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="-insert-your-username-here-"
+        password="-insert-your-password-here-"
+        driverClassName="com.ibm.db2.jcc.DB2Driver"
+        url="jdbc:db2://-insert-your-servername-here-:50000/-insert-your-database-here-"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+     -->
+
+    <!--
+    <Resource name="java:/MySQLDS"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="-insert-your-username-here-"
+        password="-insert-your-password-here-"
+        driverClassName="com.mysql.jdbc.Driver"
+        url="jdbc:mysql://-insert-your-servername-here-:3306/-insert-your-database-here-?autoReconnect=true"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"
+        validationQuery="select 1"/>           
+     -->
+
+    <!--
+    <Resource name="java:/HSQLDB"
+        auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory"
+        username="-insert-your-username-here-" 
+        password="-insert-your-password-here-" 
+        driverClassName="org.hsqldb.jdbcDriver"
+        url="jdbc:hsqldb:hsql://-insert-your-servername-here-:9001/-insert-your-database-here-"
+        maxWait="1000"
+        removeAbandoned="true"
+        maxActive="30"
+        maxIdle="10"
+        removeAbandonedTimeout="60"
+        logAbandoned="true"/>
+    -->
+
+	<!-- 
+    <Resource name="java:/PostgreSQLDS" 
+    	auth="Container"
+        type="javax.sql.DataSource"
+        factory="org.apache.tomcat.dbcp.dbcp.BasicDataSourceFactory" 
+        driverClassName="org.postgresql.Driver"
+        url="jdbc:postgresql://-insert-your-servername-here-:5432/-insert-your-database-here-"
+        username="-insert-your-username-here-" 
+        password="-insert-your-password-here-" 
+        removeAbandoned="true"
+        maxActive="30" 
+        maxIdle="10"
+		maxWait="1000"
+		removeAbandonedTimeout="60"
+		logAbandoned="true"/>           
+     -->
+
+</Context>

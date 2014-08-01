@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mime optionid="" type="testMIME" autoviewermode="1">
+    <viewerservlet>http://someHost:1111/dmsid={dmsid}</viewerservlet>
+</mime>

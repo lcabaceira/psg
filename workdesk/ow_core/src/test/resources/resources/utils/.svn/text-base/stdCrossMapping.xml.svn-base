@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- we starting from the XMapping node, not from the EcmAdapter node  -->
+<XMapping>
+               
+   <usermappings>
+      <usermap name="User" group="">
+         <user>User</user>
+         <password>UserPassword</password>
+      </usermap>
+      <usermap name="" group="UserGroup">
+         <user>UserGroup</user>
+         <password>UserGroupPassword</password>
+      </usermap>
+   </usermappings>
+
+   <propertymappings>
+     <propertymap name="DocumentTitle">ow_Filename</propertymap>
+     <propertymap name="DateCreated">ow_Last-Modified</propertymap>
+   </propertymappings>
+</XMapping>

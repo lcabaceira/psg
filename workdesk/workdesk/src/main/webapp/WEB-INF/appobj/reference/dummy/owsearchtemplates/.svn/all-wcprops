@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates
+END
+eFileSearch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates/eFileSearch.xml
+END
+NumberFieldSearch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates/NumberFieldSearch.xml
+END
+JspFormsTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates/JspFormsTest.xml
+END
+MultipleClassSearch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates/MultipleClassSearch.xml
+END
+FormsTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates/FormsTest.xml
+END
+SortColumnsTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates/SortColumnsTest.xml
+END
+CalendarControlTest.xml
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates/CalendarControlTest.xml
+END
+DocumentSearch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates/DocumentSearch.xml
+END
+ReadonlyDocumentsearch.xml
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/WEB-INF/appobj/reference/dummy/owsearchtemplates/ReadonlyDocumentsearch.xml
+END

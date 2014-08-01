@@ -1,0 +1,8 @@
+K 13
+svn:mergeinfo
+V 454
+/mowd/branches/opencmis_lazyproploading/ow_core/src/main/java/com/wewebu/ow/server/field/OwExpressionPriorityRule.java:31389-31401
+/ow_core/branches/dnd_no_refresh/trunk/src/com/wewebu/ow/server/field/OwExpressionPriorityRule.java:23747-23788
+/ow_core/branches/extjs31/trunk/src/com/wewebu/ow/server/field/OwExpressionPriorityRule.java:14662-15121
+/ow_core/branches/extjstree/trunk/src/com/wewebu/ow/server/field/OwExpressionPriorityRule.java:19359-19564
+END

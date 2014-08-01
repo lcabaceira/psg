@@ -1,0 +1,45 @@
+<?xml version="1.0" ?>
+<storedsearch xmlns="http://filenet.com/namespaces/wcm/apps/1.0">
+	<searchspec versionselection="releasedversion">
+		<searchtype>
+			<template showandorconditions="false" showmaxrecords="false"
+				showoperators="false" />
+		</searchtype>
+		<objectstores mergeoption="union">
+			<objectstore name="P8ConfigObjectStore" />
+		</objectstores>
+		<searchcriteria>
+			<searchclauses>
+				<searchclause>
+					<select>
+						<selectprops>
+							<selectprop symname="DateCreated"  sortlevel="1" sortorder="descending"/>
+						</selectprops>
+					</select>
+					<from>
+						<class objecttype="folder" symname="Folder" />
+						<class objecttype="document" symname="Document" />
+					</from>
+					<where>
+						<or>
+								<between>
+									<whereprop editproperty="editable" symname="DateCreated" />
+									<literal>
+										<value_1>DT[2000-10-17T00:00:00.000+03:00]</value_1>
+										<value_2>DT[2010-10-17T07:35:22.345+03:00]</value_2>
+									</literal>
+								</between>
+						</or>
+					</where>
+					<subclasses>
+						<subclass editproperty="editable" itemid="6" name="Document"
+							objecttype="document" symname="Document" />
+						<subclass editproperty="editable" itemid="6" name="Folder"
+							objecttype="folder" symname="Folder" />
+					</subclasses>
+				</searchclause>
+			</searchclauses>
+		</searchcriteria>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

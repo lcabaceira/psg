@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/util/loader
+END
+OwLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/util/loader/OwLoader.java
+END
+OwSingeltonLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/util/loader/OwSingeltonLoader.java
+END
+OwClassInstanceLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/util/loader/OwClassInstanceLoader.java
+END
+OwLoaderProxyHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/util/loader/OwLoaderProxyHandler.java
+END

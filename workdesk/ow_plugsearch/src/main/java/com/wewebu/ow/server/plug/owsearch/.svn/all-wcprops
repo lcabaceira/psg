@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugsearch/src/main/java/com/wewebu/ow/server/plug/owsearch
+END
+OwSearchTemplateView.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugsearch/src/main/java/com/wewebu/ow/server/plug/owsearch/OwSearchTemplateView.java
+END
+OwSearchDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugsearch/src/main/java/com/wewebu/ow/server/plug/owsearch/OwSearchDocument.java
+END
+OwResultListView.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugsearch/src/main/java/com/wewebu/ow/server/plug/owsearch/OwResultListView.java
+END
+OwSearchView.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugsearch/src/main/java/com/wewebu/ow/server/plug/owsearch/OwSearchView.java
+END

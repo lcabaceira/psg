@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owsettings
+END
+OwSettingsView.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owsettings/OwSettingsView.java
+END
+OwSettingsSetView.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owsettings/OwSettingsSetView.java
+END
+OwSettingsDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owsettings/OwSettingsDocument.java
+END

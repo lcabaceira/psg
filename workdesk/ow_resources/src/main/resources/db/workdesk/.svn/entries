@@ -1,0 +1,46 @@
+10
+
+dir
+38093
+https://svn.alfresco.com/repos/abs-owd_repos/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk
+https://svn.alfresco.com/repos/abs-owd_repos
+
+
+
+2014-05-22T13:21:21.911257Z
+37751
+vhemmert
+has-props
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+4a0a76e0-574f-d64f-9cee-6202afcc079f
+
+fncm
+dir
+
+jboss
+dir
+
+lib
+dir
+
+scripts
+dir
+
+tomcat
+dir
+
+tomcat.contractmanagement
+dir
+

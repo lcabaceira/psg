@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/designs/default41/customJsp/ManagementApproval
+END
+ApprovalProcessRejected.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/designs/default41/customJsp/ManagementApproval/ApprovalProcessRejected.jsp
+END
+StartApprovalProcess.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/designs/default41/customJsp/ManagementApproval/StartApprovalProcess.jsp
+END
+DecisionWF.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/designs/default41/customJsp/ManagementApproval/DecisionWF.jsp
+END
+ApprovalProcessCompleted.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/designs/default41/customJsp/ManagementApproval/ApprovalProcessCompleted.jsp
+END
+ApprovalProcessApproved.jsp
+K 25
+svn:wc:ra_dav:version-url
+V 156
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/designs/default41/customJsp/ManagementApproval/ApprovalProcessApproved.jsp
+END

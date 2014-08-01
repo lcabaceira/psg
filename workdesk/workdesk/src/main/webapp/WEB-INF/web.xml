@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--DOCTYPE web-app	PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"	"http://java.sun.com/dtd/web-app_2_3.dtd"-->
+
+<web-app id="WebApp" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" version="2.4">                          
+
+<!-- ..........................................................................................
+	Location of the configuration files
+.......................................................................................... -->
+  
+	<!-- Use OwResourceFilePath param for distributed deployment or to handle multiple configurations
+	
+		This setting points to the configuration files, if left empty the files are directly located in ../WEB-INF/
+		
+		configuration files are:
+		
+			owbootstrap.xml
+			owplugins.xml
+			owmimetable.xml
+			mimetypes.properties (optional)
+			log4j.properties, log4j.xml
+
+		There are 3 possible values:
+		
+		param-value:	A fully specified path to a folder containing the configurations files.
+						The syntax is <fullpath>
+						
+						E.g.: d:\temp\conf\
+						
+						or
+						
+						A subdirectory within the deployment structure.
+						The syntax is deploy#<subdir>
+						
+						E.g.: deploy#WEB-INF/conf/reference/opencmis
+						
+						or
+						
+						A subdirectory within the deployment structure either within
+						WEB-INF/classes or packed in WEB-INF/lib. 
+						The syntax is lib#<subdir>
+						
+						E.g.: lib#conf/reference/opencmis
+							  (your config files could be in WEB-INF/classes/conf/reference/opencmis...)
+						
+						==> use this option if you want to deploy Alfresco Workdesk in a packed war archive
+							and your Application Server doesn't implement ServletContext.getRealPath()
+						    e.g. Bea WebLogic.
+						    Currently dummy-adapter doesn't work with this option.
+						  
+		Available Configurations:
+		
+			There are several preconfigured configurations available for reference and testing.
+			
+			NOTE: The delivered configurations are only demonstrations
+			      and need to be tailored to your environment.
+	-->
+	
+	<!-- context-param id="WorkdeskApplicationId">
+        <param-name>WorkdeskApplicationId</param-name>
+        <param-value>AWD</param-value>
+    </context-param-->
+
+	<context-param id="OwResourceFilePath">
+        <param-name>OwResourceFilePath</param-name>
+
+        <!-- Configuration "contractmanagement": Workdesk Contract Management Solution with OpenCMIS adapter. -->
+        <param-value>deploy#WEB-INF/conf/templates/contractmanagement</param-value>
+
+        <!-- Configuration "dummy": Test environment with full functionality and dummy adapter. (Developer package only) -->
+        <!-- <param-value>deploy#WEB-INF/conf/reference/dummy</param-value> -->
+
+        <!-- Configuration OpenCMIS: Apache Chemistry OpenCMIS (opencmis.OwCMISNetwork) implementation -->
+        <!-- <param-value>deploy#WEB-INF/conf/reference/opencmis</param-value> -->
+              
+        <!-- Configuration OpenCMIS: Apache Chemistry OpenCMIS (opencmis.OwCMISNetwork) implementation
+                                    + Sample Application - Human Resources Application -->
+        <!-- <param-value>deploy#WEB-INF/conf/templates/opencmis_hr</param-value> -->
+
+        <!-- Configuration "fncm5": Example with FileNet P8 5.x adapter. -->
+        <!-- <param-value>deploy#WEB-INF/conf/reference/fncm5</param-value> -->
+	</context-param>
+
+    <!-- use OwResourceFilePathEnvironmentVarName to retrieve the path to the configuration
+         from a System.properties() environment variable instead reading it out of this file.
+         
+         If set, this path override the OwResourceFilePath param.
+
+         Please see the documentation of OwResourceFilePath for general configuration documentation.
+    -->    
+    <!-- 
+    <context-param id="OwResourceFilePathEnvironmentVarName">
+        <param-name>OwResourceFilePathEnvironmentVarName</param-name>
+        <param-value>my.system.properties.config.var</param-value>
+    </context-param> 
+    -->
+    	
+<!-- ..........................................................................................
+    AWD Filters
+.......................................................................................... -->
+
+	<filter>
+	    <filter-name>ow_main_filter</filter-name>
+	    <filter-class>com.wewebu.ow.server.servlets.OwServletFilter</filter-class>
+	</filter>
+
+<!-- ..........................................................................................
+    NTLM authentication
+.......................................................................................... -->
+
+    <!-- uncomment this for NTLM authentication, needs jcifs-1.2.9.jar -->
+    <!-- 
+    <filter>
+        <filter-name>NtlmHttpFilter</filter-name>
+        <filter-class>jcifs.http.NtlmHttpFilter</filter-class>
+    
+        <init-param>
+            <param-name>jcifs.netbios.wins</param-name>
+            <param-value>192.168.1.10</param-value>
+        </init-param>
+        <init-param>
+            <param-name>jcifs.smb.client.domain</param-name>
+            <param-value>MY-DOMAIN</param-value>
+        </init-param>
+        <init-param>
+            <param-name>jcifs.smb.client.username</param-name>
+            <param-value>MY-USER</param-value>
+        </init-param>
+        <init-param>
+            <param-name>jcifs.smb.client.password</param-name>
+            <param-value>MY-PASSWORD</param-value>
+        </init-param>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>NtlmHttpFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+    </filter-mapping>
+    -->
+
+<!-- ..........................................................................................
+    AWD Filter mappings
+.......................................................................................... -->
+
+	<filter-mapping>
+	    <filter-name>ow_main_filter</filter-name>
+	    <url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+<!-- ..........................................................................................
+	Session listener
+.......................................................................................... -->
+
+	<!-- activates the usage counter: DO NOT activate it is reserved for future use -->
+	<!--
+	<listener>
+	    <listener-class>com.wewebu.ow.server.servlets.OwUsageSessionListener</listener-class>
+	</listener>
+	-->
+
+	<!-- end session and log out upon time out, comment in if needed, is also used to delete the temp (upload) folders -->
+	<listener>
+		<listener-class>com.wewebu.ow.server.servlets.OwLogoutSessionListener</listener-class>
+	</listener>
+
+	<!-- initializes the bootstrap application data and loggers -->
+	<listener>
+		<listener-class>com.wewebu.ow.server.servlets.OwConfigurationInitialisingContextListener</listener-class>
+	</listener>
+
+	<!-- initializes the role manager application data -->
+	<listener>
+		<listener-class>com.wewebu.ow.server.servlets.OwStandardRoleManagerInitialisingContextListener</listener-class>
+	</listener>
+
+	<!-- Listener for pre- and post-processing of requests -->
+	<listener>
+		<listener-class>com.wewebu.ow.server.servlets.OwRequestListener</listener-class>
+	</listener>
+
+<!-- ..........................................................................................
+	Servlets
+.......................................................................................... -->
+
+    <!-- used to retrieve a content from the back-end -->
+	<servlet id="Servlet_1">
+		<servlet-name>getContent</servlet-name>
+		<servlet-class>com.wewebu.ow.server.servlets.OwGetContent</servlet-class>
+	</servlet>
+	
+    <!-- IBM FileNet P8 Advanced Document Viewing only (deprecated) -->
+    <!-- Use the following Servlet for IBM FileNet P8 5.x onwards -->
+    <!--  
+    <servlet id="Servlet_2">
+        <servlet-name>setFNCMDaejaViewerAnnotation</servlet-name>
+        <servlet-class>com.wewebu.ow.server.ecmimpl.fncm5.viewer.OwFNCM5AdvAnnotServlet</servlet-class>
+    </servlet>
+    --> 	
+	
+	<!-- IBM FileNet P8 Daeja Viewer only -->
+	<!-- Use the following Servlet for IBM FileNet P8 5.x onwards -->
+    <!--
+	   <servlet id="Servlet_3">
+        <servlet-name>getFNCMDaejaAnnotationSecurity</servlet-name> 
+        <servlet-class>com.wewebu.ow.server.ecmimpl.fncm5.viewer.OwFNCM5AnnotSecurityServlet</servlet-class> 
+    </servlet>
+    -->
+    
+	<!-- used for the Drag and Drop applet -->
+	<servlet id="Servlet_5">
+		<servlet-name>dragdropcontent</servlet-name>
+		<servlet-class>com.wewebu.ow.server.servlets.OwDragDropContent</servlet-class>
+	</servlet>
+	
+	
+	<!-- used for "Send as E-mail Attachment" and "Download as ZIP" -->
+	<servlet id="Servlet_9">
+		<display-name>Servlet for zipped Multifile Download </display-name>
+		<servlet-name>multifileDownload</servlet-name>
+		<servlet-class>com.wewebu.ow.server.servlets.OwMultifileDownload</servlet-class>
+		<init-param>
+			<description>how to handle a single file for download: true = zipped (default), false = unzipped.</description>
+			<param-name>single_file_zipped</param-name>
+			<param-value>false</param-value>
+		</init-param>
+		<init-param>
+			<description>name of the file to be downloaded.</description>
+			<param-name>download_file_name</param-name>
+			<param-value>Download.zip</param-value>
+		</init-param>
+		<init-param>
+			<description>Encoding to use for filenames, default encoding UTF-8.</description>
+			<param-name>file_name_encoding</param-name>
+			<param-value>Cp850</param-value>
+		</init-param>
+	</servlet> 
+
+    <!-- used to retrieve the content from a property -->
+    <!-- 
+    <servlet id="Servlet_10">
+        <servlet-name>getPropertyContent</servlet-name> 
+        <servlet-class>com.wewebu.ow.server.servlets.OwGetPropertyContent</servlet-class>
+        <init-param>
+            <description>default resource to be served if an error occurs or the property is not accessible</description>           
+            <param-name>default_resource</param-name>
+            <param-value>/designs/default41/images/OwObjectListView/nothumbnail.png</param-value>
+        </init-param>
+        
+        <init-param>
+            <description>default resource content type</description>           
+            <param-name>default_resource_content_type</param-name>
+            <param-value>image/gif</param-value>
+        </init-param> 
+    </servlet>
+    -->
+
+	<servlet id="Rendition">
+	   <servlet-name>rendition</servlet-name>
+	   <servlet-class>com.wewebu.ow.server.servlets.OwRenditionServlet</servlet-class>
+	   <init-param>
+            <param-name>noContentImage</param-name>
+            <param-value>../../designs/default41/images/thumbnails/thumbnail_placeholder_noContent.png</param-value>
+        </init-param>
+        <init-param>
+            <param-name>errorImage</param-name>
+            <param-value>../../designs/default41/images/thumbnails/error_thumb.png</param-value>
+        </init-param>
+        <init-param>
+            <param-name>folderImage</param-name>
+            <param-value>../../designs/default41/images/thumbnails/thumb_folder.png</param-value>
+        </init-param>
+	</servlet>
+<!-- ..........................................................................................
+    Servlet mapping
+.......................................................................................... -->
+
+    <!-- servlet-mapping used to retrieve a content from the back-end -->
+	<servlet-mapping id="ServletMapping_1">
+		<servlet-name>getContent</servlet-name>
+		<url-pattern>/getContent/*</url-pattern>
+	</servlet-mapping>
+	
+    <!-- IBM FileNet P8 only, for Daeja Viewer -->
+	<!-- 
+	<servlet-mapping id="ServletMapping_2">
+		<servlet-name>setFNCMDaejaViewerAnnotation</servlet-name> 
+		<url-pattern>/setFNCMDaejaViewerAnnotation/*</url-pattern> 
+	</servlet-mapping>
+	-->
+	
+    <!-- IBM FileNet P8 Daeja Viewer only -->
+    <!--
+	<servlet-mapping id="ServletMapping_3">
+		<servlet-name>getFNCMDaejaAnnotationSecurity</servlet-name> 
+		<url-pattern>/getFNCMDaejaAnnotationSecurity/*</url-pattern> 
+	</servlet-mapping>
+	-->
+	
+	<!-- servlet-mapping used for the Drag and Drop applet -->
+	<servlet-mapping id="ServletMapping_5">
+		<servlet-name>dragdropcontent</servlet-name>
+		<url-pattern>/dragdropcontent/*</url-pattern>
+	</servlet-mapping>
+
+	<!-- servlet-mapping used for "Send as E-mail Attachment" and "Download as Zip" -->
+	<servlet-mapping id="ServletMapping_9">
+		<servlet-name>multifileDownload</servlet-name>
+		<url-pattern>/multifileDownload/*</url-pattern>
+	</servlet-mapping>
+  	
+  	<!-- servlet-mapping used to retrieve the content from a property -->
+  	<!--
+  	<servlet-mapping id="ServletMapping_10">
+        <servlet-name>getPropertyContent</servlet-name> 
+        <url-pattern>/getPropertyContent/*</url-pattern> 
+    </servlet-mapping>
+    -->
+
+    <!-- servlet-mapping used for rendition/thumbnails -->
+    <servlet-mapping id="Mapping_Rendition">
+    	<servlet-name>rendition</servlet-name>
+    	<url-pattern>/rendition/*</url-pattern>
+    </servlet-mapping>
+
+
+<!-- ..........................................................................................
+	HTTP Settings
+.......................................................................................... -->
+
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
+
+	<welcome-file-list>
+		<welcome-file>default41.jsp</welcome-file>
+	</welcome-file-list>
+
+<!-- ..........................................................................................
+    Container based login
+.......................................................................................... -->
+    <!-- uncomment this to activate container based authentication.
+     CBA is only supported for FileNet P8 v4 and IBM CM 8 on IBM WebSphere -->
+    <!--
+    <security-constraint>
+        <web-resource-collection>
+            <web-resource-name>AWD</web-resource-name>
+            <description>Alfresco Workdesk</description>
+            <url-pattern>/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <role-name>All Authenticated</role-name>
+        </auth-constraint>
+        <user-data-constraint>
+            <description>User data constraints</description>
+            <transport-guarantee>NONE</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+
+    <login-config>
+        <auth-method>BASIC</auth-method>
+        <realm-name>workdesk</realm-name>
+    </login-config>
+
+    <security-role>
+        <description>All Authenticated</description>
+        <role-name>All Authenticated</role-name>
+    </security-role>
+    -->
+</web-app>

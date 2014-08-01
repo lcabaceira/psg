@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Alfresco Workdesk
+Copyright (c) Alfresco Software, Inc. All Rights Reserved.
+-->
+<mimetable>
+  <!-- ============================================================
+	SELECTIVE AND PLACEHOLDER CONFIGURATION (optional)
+	Please read the documentation carefully if you want to use this feature.
+	=============================================================
+	
+	All scalar tags directly beneath the <mime> tags support mandator configuration placeholder's,
+	i.e.: {$<Placeholdername>}.
+		
+
+	All MIME tags support selective configuration via the "optionid" attribute.
+
+    optionid         An option ID attribute if you define several options for a single configuration node.
+                     The ID is selected in the rolemanager via selective configuration.
+                     Leave empty if you do not have options.
+						
+	============================================================================================
+	
+	Default and specific MIME types:
+	"ow_default/<object_type>"
+		used for default object types like: OBJECT_TYPE_DOCUMENT, OBJECT_TYPE_FOLDER, OBJECT_TYPE_CUSTOM...
+	"ow_customobject/<symbolic_name>"
+		used for custom objects, for a certain object class
+	"ow_folder/<symbolic_name>"
+		used for specific folders, for a certain object class
+	
+	============================================================================================
+	
+	For each mimetype define a MIME section <mime nocontentcheck="true | false" type="<mimetype>">
+	Within the mimesection define an icon as well as an open action, using the following nodes / attributes:
+	
+	
+	Attributes of <mime...> node
+	============================================================================================
+	
+	optionid			An option ID if you define several options for a single mimetype.
+						The ID is selected in the rolemanager via selective configuration.
+						Leave empty if you do not have mimetype options.
+	
+	nocontentcheck  	true  = show link always	even if document has no content.
+						false = check for content on document (default).
+
+
+	autoviewermode		5	= call given java script statement
+									
+						4	= use a new viewer for each new document try to arrange for comparison or do not arrange
+							  equal documents share one viewer.
+									
+						3   = use a new viewer for each new document and autoarrange browser and viewer.
+							  equal documents share one viewer.
+										  
+						2  	= use one single viewer for each document and autoarrange browser and viewer.
+									
+						1  	= use application default for viewer mode
+									
+						0  	= open link in new browser without autoarrange (default).
+
+					
+					
+	Subnodes of <mime...> node
+	============================================================================================
+					
+	<icon>			The icon to display for this type.
+					This tag supports mandator configuration placeholder's, i.e.: {$<Placeholdername>}
+					
+	<openicon>		(optional) For treeviews, you can also specify a openicon.
+					This tag supports mandator configuration placeholder's, i.e.: {$<Placeholdername>}
+					
+	<dwlurl>		(optional) Override the pattern where the content can be uploaded. 
+					E.g. to get it from external servers.
+					If undefined the following default pattern is used:
+					
+						"{baseurl}getContent?dmsid={dmsid}&#38;page={page}&#38;cttyp={contenttype}"
+
+					This tag supports mandator configuration placeholder's, i.e.: {$<Placeholdername>}
+
+	Available open actions (choose one for each mimetype):
+	============================================================================================
+		
+	<viewerservlet>		URL to upload and display the object, usually the getContent servlet.
+
+				You can use the following placeholders to construct a URL:
+
+                {serverurl}             Base-URL of the server, e.g.: http://localhost/
+                {baseurl}               Base-URL of the server and deployment, e.g.: http://localhost/ow/                                    
+				{dmsid}					The DMSID of the object
+				{pagecount}				The number of pages in the object
+				{page}					The page number to display in the viewer
+				{contenttype}			The requested content type as defined in OwContentCollection
+				{dwlurl}				The default URL where the content can be uploaded. 
+				{securitytoken}			An ECM specific security token to enable SSO for deep links.
+				{securitytokenenc}		An encoded ECM specific security token to enable SSO for deep links.
+				{prop:<PropertyName>}	An encoded (URL-encoded) property from the object
+				{prop~<PropertyName>}   An encoded (JavaScript-encoded) property from the object
+				{prop#<PropertyName>}	An unencoded property from the object (should not be use, because of client-side script injection)
+    
+	<eventhandler type="class | id" openrecord="true | false" >	
+	
+						The ID of  Masterplugin document class, which should receive the open request.
+						This will call onDispatch in the Masterplugin.
+						
+						If type="class" 
+									A masterplugin class will be used to identify the plugin, 
+									the first found will be used.
+									
+						If type="id" (default) 
+									A masterplugin document ID ("[PluginID].Doc") will be used to identify the plugin.
+									
+						If openrecord="true"
+									Opens the Record (like defined RecordClassName) 
+									where the object belongs to (complete folder tree).
+									
+						If openrecord="false"
+									Opens the object directly.
+
+	<documentfunction>	The ID of a documentfunction plugin which should open the object
+-->
+  <!-- Default mimetypes (used if mimetype is undefined) -->
+  <!-- Default mimetype for OBJECT_TYPE_DOCUMENT -->
+  <mime optionid="" type="ow_default/OBJECT_TYPE_DOCUMENT" autoviewermode="1">
+    <icon>doc.png</icon>
+    <openicon />
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <!-- Default mimetype for OBJECT_TYPE_LINK (a.k.a. Relationship, Association) -->
+  <mime optionid="" type="ow_default/OBJECT_TYPE_LINK">
+    <icon>object_link.png</icon>
+    <openicon />
+  </mime>
+  <!-- CMIS root domain folder  -->
+  <mime optionid="" type="ow_root/cmis_domain">
+    <icon>cmis/root.png</icon>
+    <openicon>cmis/root.png</openicon>
+  </mime>
+  <mime optionid="" type="ow_root/cmis_domain_cross">
+    <icon>cmis/crossroot.png</icon>
+    <openicon>cmis/crossroot.png</openicon>
+  </mime>
+  <!-- CMIS root domain folder  -->
+  <mime optionid="" type="ow_root/cmis_obst">
+    <icon>cmis/cmis_os.png</icon>
+    <openicon>cmis/cmis_os.png</openicon>
+  </mime>
+  <!-- Default mimetype for OBJECT_TYPE_FOLDER -->
+  <mime optionid="" type="ow_default/OBJECT_TYPE_FOLDER">
+    <icon>folder.png</icon>
+    <openicon>folder_open.png</openicon>
+    <!-- <eventhandler type="id">com.wewebu.ow.Record.Doc</eventhandler> -->
+    <eventhandler type="class" openrecord="true">com.wewebu.ow.server.plug.owrecord.OwRecordDocument</eventhandler>
+  </mime>
+  <mime optionid="" type="ow_default/OBJECT_TYPE_VIRTUAL_FOLDER">
+    <icon>folder.png</icon>
+    <openicon>folder_open.png</openicon>
+    <eventhandler type="class" openrecord="true">com.wewebu.ow.server.plug.owrecord.OwRecordDocument</eventhandler>
+  </mime>
+  <!-- Default mimetype for OBJECT_TYPE_HISTORY -->
+  <mime optionid="" type="ow_default/OBJECT_TYPE_HISTORY">
+    <icon>history.png</icon>
+  </mime>
+  <!-- Default mimetype for OBJECT_TYPE_CUSTOM -->
+  <mime optionid="" type="ow_default/OBJECT_TYPE_CUSTOM">
+    <icon>custom.png</icon>
+  </mime>
+  <!-- Default mimetype for a specific ow_folder -->
+  <mime optionid="" type="ow_folder/OwFileSystemDirectory">
+    <icon>folder.png</icon>
+    <openicon>folder_open.png</openicon>
+    <!-- <eventhandler type="id">com.wewebu.ow.Record.Doc</eventhandler> -->
+    <eventhandler type="class" openrecord="true">com.wewebu.ow.server.plug.owrecord.OwRecordDocument</eventhandler>
+  </mime>
+  <!-- Default mimetype for specific custom object -->
+  <!-- 
+	<mime optionid="" type="ow_customobject/[symbolic_name]">
+		<icon>custom.png</icon>
+		<eventhandler type="id">com.wewebu.ow.Record.Doc</eventhandler>
+	</mime>
+	 -->
+  <!-- image/mapping-->
+  <mime optionid="" type="image/tiff" autoviewermode="0">
+    <icon>image_tiff.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="image/bmp">
+    <icon>image_bmp.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="image/jpeg">
+    <icon>image_jpeg.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="image/png">
+    <icon>image_png.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="image/gif">
+    <icon>image_gif.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="text/url">
+    <icon>text_url.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="text/xml">
+    <icon>xml.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <!-- Office  mimetypes -->
+  <mime optionid="" type="text/plain" autoviewermode="2">
+    <icon>text_plain.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/msoutlook">
+    <icon>application_msoutlook.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/msexcel" autoviewermode="0">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.ms-excel" autoviewermode="0">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/mspowerpoint" autoviewermode="0">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.ms-powerpoint" autoviewermode="0">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/msword" autoviewermode="0">
+    <icon>application_msword.png</icon>
+    <!-- Standard link -->
+    <!-- <viewerservlet>{dwlurl}</viewerservlet> -->
+    <!-- Link for "document title" properties in office window title -->
+    <viewerservlet>{baseurl}getContent/{prop:cmis:document.cmis:name}?dmsid={dmsid}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.ms-word" autoviewermode="0">
+    <icon>application_msword.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.openxmlformats-officedocument.wordprocessingml.document" autoviewermode="0">
+    <icon>application_msword.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" autoviewermode="0">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.openxmlformats-officedocument.presentationml.presentation" autoviewermode="0">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/pdf">
+    <icon>application_pdf.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <!-- Office mimetypes to be opened with Alfresco Office Workdesk -->
+  <!--
+  <mime optionid="" type="application/msexcel" autoviewermode="5">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','{dmsid}','{prop#OW_ObjectName}',false,'.xls');</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.ms-excel" autoviewermode="5">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','{dmsid}','{prop#OW_ObjectName}',false,'.xls');</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/mspowerpoint" autoviewermode="5">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','{dmsid}','{prop#OW_ObjectName}',false,'.ppt');</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.ms-powerpoint" autoviewermode="5">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','{dmsid}','{prop#OW_ObjectName}',false,'.ppt');</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/msword" autoviewermode="5">
+    <icon>application_msword.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','{dmsid}','{prop#OW_ObjectName}',false,'.doc');</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.ms-word" autoviewermode="5">
+    <icon>application_msword.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','{dmsid}','{prop#OW_ObjectName}',false,'.doc');</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.openxmlformats-officedocument.wordprocessingml.document" autoviewermode="5">
+    <icon>application_msword.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','{dmsid}','{prop#OW_ObjectName}',false,'.docx');</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" autoviewermode="5">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','{dmsid}','{prop#OW_ObjectName}',false,'.xlsx');</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/vnd.openxmlformats-officedocument.presentationml.presentation" autoviewermode="5">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','{dmsid}','{prop#OW_ObjectName}',false,'.pptx');</viewerservlet>
+  </mime>
+  <mime optionid="" type="OwObjectEditVersionsView:application/msexcel" autoviewermode="5">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','exact{dmsid}','{prop#OW_ObjectName}',true,'.xls');</viewerservlet>
+  </mime>
+  <mime optionid="" type="OwObjectEditVersionsView:application/vnd.ms-excel" autoviewermode="5">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','exact{dmsid}','{prop#OW_ObjectName}',true,'.xls');</viewerservlet>
+  </mime>
+  <mime optionid="" type="OwObjectEditVersionsView:application/mspowerpoint" autoviewermode="5">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','exact{dmsid}','{prop#OW_ObjectName}',true,'.ppt');</viewerservlet>
+  </mime>
+  <mime optionid="" type="OwObjectEditVersionsView:application/vnd.ms-powerpoint" autoviewermode="5">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','exact{dmsid}','{prop#OW_ObjectName}',true,'.ppt');</viewerservlet>
+  </mime>
+  <mime optionid="" type="OwObjectEditVersionsView:application/msword" autoviewermode="5">
+    <icon>application_msword.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','exact{dmsid}','{prop#OW_ObjectName}',true,'.doc');</viewerservlet>
+  </mime>
+  <mime optionid="" type="OwObjectEditVersionsView:application/vnd.ms-word" autoviewermode="5">
+    <icon>application_msword.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','exact{dmsid}','{prop#OW_ObjectName}',true,'.doc');</viewerservlet>
+  </mime>
+  <mime optionid="" type="OwObjectEditVersionsView:application/vnd.openxmlformats-officedocument.wordprocessingml.document" autoviewermode="5">
+    <icon>application_msword.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','exact{dmsid}','{prop#OW_ObjectName}',true,'.docx');</viewerservlet>
+  </mime>
+  <mime optionid="" type="OwObjectEditVersionsView:application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" autoviewermode="5">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','exact{dmsid}','{prop#OW_ObjectName}',true,'.xlsx');</viewerservlet>
+  </mime>
+  <mime optionid="" type="OwObjectEditVersionsView:application/vnd.openxmlformats-officedocument.presentationml.presentation" autoviewermode="5">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>openOfficeDocument('{serverurl}officeworkdesk','exact{dmsid}','{prop#OW_ObjectName}',true,'.pptx');</viewerservlet>
+  </mime>
+  -->
+  <!-- Workflow mimetypes -->
+  <mime optionid="" type="ow_workitem/item">
+    <icon>bpm/workitem_standardproc.png</icon>
+    <documentfunction>com.wewebu.owbpm.StandardProcessor</documentfunction>
+  </mime>
+  <mime optionid="" type="ow_workitem/poolitem">
+    <icon>bpm/pooledtask.png</icon>
+    <documentfunction>com.wewebu.owbpm.StandardProcessor</documentfunction>
+  </mime>
+  <mime optionid="" type="ow_workitemcontainer/user">
+    <icon>bpm/userqueue.png</icon>
+    <openicon>bpm/userqueue.png</openicon>
+  </mime>
+  <mime optionid="" type="ow_workitemcontainer/pooleduser">
+    <icon>bpm/pooledtask.png</icon>
+    <openicon>bpm/pooledtask.png</openicon>
+  </mime>
+  <mime optionid="" type="audio/mp4">
+    <icon>music.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="video/quicktime">
+    <icon>movie.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+</mimetable>
+

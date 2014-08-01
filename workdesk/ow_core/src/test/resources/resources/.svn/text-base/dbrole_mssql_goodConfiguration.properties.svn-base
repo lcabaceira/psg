@@ -1,0 +1,8 @@
+#DB Role
+
+#BaseTest
+dbrole_mssql_goodConfiguration.login=Administrator
+dbrole_mssql_goodConfiguration.password=wewebu2007
+dbrole_mssql_goodConfiguration.configDir=resources/dbrole/
+dbrole_mssql_goodConfiguration.configFile=owbootstrap_dbrole_mssql_goodConfiguration.xml
+dbrole_mssql_goodConfiguration.xml.bootstrap=bootstrap

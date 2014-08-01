@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass
+END
+OwCMISNativePropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISNativePropertyClass.java
+END
+OwCMISDecimalPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISDecimalPropertyClass.java
+END
+OwCMISAbstractNativePropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISAbstractNativePropertyClass.java
+END
+OwCMISDecimalPropertyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISDecimalPropertyClassImpl.java
+END
+OwCMISIdPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISIdPropertyClass.java
+END
+OwCMISDateTimePropertyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISDateTimePropertyClassImpl.java
+END
+OwCMISDateTimePropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISDateTimePropertyClass.java
+END
+OwCMISIdPropertyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISIdPropertyClassImpl.java
+END
+OwCMISPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISPropertyClass.java
+END
+OwCMISAbstractPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISAbstractPropertyClass.java
+END
+OwCMISClassDescriptionPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISClassDescriptionPropertyClass.java
+END
+OwCMISPathPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISPathPropertyClass.java
+END
+OwCMISAbstractStoredPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISAbstractStoredPropertyClass.java
+END
+OwCMISObjectNamePropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISObjectNamePropertyClass.java
+END
+OwCMISHtmlPropertyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISHtmlPropertyClassImpl.java
+END
+OwCMISHtmlPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISHtmlPropertyClass.java
+END
+OwCMISVirtualPropertyClassProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISVirtualPropertyClassProxy.java
+END
+OwCMISBoundVirtualPropertyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 178
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISBoundVirtualPropertyClassImpl.java
+END
+OwCMISBoundVirtualPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISBoundVirtualPropertyClass.java
+END
+OwCMISStoredVirtualPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISStoredVirtualPropertyClass.java
+END
+OwCMISBooleanPropertyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISBooleanPropertyClassImpl.java
+END
+OwCMISBooleanPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISBooleanPropertyClass.java
+END
+OwCMISUriPropertyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISUriPropertyClassImpl.java
+END
+OwCMISUriPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISUriPropertyClass.java
+END
+OwCMISLinkVirtualIdPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISLinkVirtualIdPropertyClass.java
+END
+OwCMISVersionSeriesPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISVersionSeriesPropertyClass.java
+END
+OwCMISPropertyClassProxy.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISPropertyClassProxy.java
+END
+OwCMISIntegerPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISIntegerPropertyClass.java
+END
+OwCMISIntegerPropertyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 173
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISIntegerPropertyClassImpl.java
+END
+OwCMISDelegateVirtualPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 177
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISDelegateVirtualPropertyClass.java
+END
+OwCMISStringPropertyClassImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISStringPropertyClassImpl.java
+END
+OwCMISStringPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISStringPropertyClass.java
+END
+OwCMISVirtualPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 169
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/propertyclass/OwCMISVirtualPropertyClass.java
+END

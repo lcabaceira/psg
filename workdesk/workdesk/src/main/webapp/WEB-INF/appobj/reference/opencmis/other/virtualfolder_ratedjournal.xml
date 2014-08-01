@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" ?>
+<VirtualFolderDescription>
+
+	<!-- (optional) java class name of virtual folder factory to use. Leave empty to use standard: com.wewebu.ow.server.ecm.OwStandardVirtualFolderObjectFactory -->
+	<ClassName />
+
+	<root name="Rated Journal" containsdocs="true">
+		<search versionselection="currentversion">
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" />
+					<selectprop symname="D:owd:article.owd:rating" />
+					<selectprop symname="D:owd:article.owd:author" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<where>
+				<and>
+					<gt>
+						<whereprop editproperty="editable" symname="D:owd:article.owd:rating" />
+						<literal />
+					</gt>
+					<lt>
+						<whereprop editproperty="editable" symname="D:owd:article.owd:rating" />
+						<literal />
+					</lt>
+					<eq>
+						<whereprop editproperty="hidden" symname="D:owd:article.owd:topic" />
+						<literal />
+					</eq>
+				</and>
+			</where>
+			<subclasses>
+				<subclass editproperty="hidden" name="Article" objecttype="document" symname="D:owd:article" />
+			</subclasses>
+		</search>
+		<node name="Phisycs" containsdocs="true">
+			<refinecriteria>
+				<literal symname="D:owd:article.owd:topic">physics</literal>
+			</refinecriteria>
+		</node>
+		<node name="Computer Science" containsdocs="true">
+			<refinecriteria>
+				<literal symname="D:owd:article.owd:topic">computerscience</literal>
+			</refinecriteria>
+		</node>
+		<node name="All" containsdocs="true">
+			<refinecriteria>
+				<literal symname="D:owd:article.owd:topic"></literal>
+			</refinecriteria>
+		</node>
+	</root>
+
+</VirtualFolderDescription>

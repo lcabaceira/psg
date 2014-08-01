@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_clientservices/src/main/java/com/wewebu/ow/clientservices/utils
+END
+OwProgressBar.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_clientservices/src/main/java/com/wewebu/ow/clientservices/utils/OwProgressBar.java
+END
+OwRfc2047Decoder.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_clientservices/src/main/java/com/wewebu/ow/clientservices/utils/OwRfc2047Decoder.java
+END
+OwFileNameSanitizer.java
+K 25
+svn:wc:ra_dav:version-url
+V 148
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_clientservices/src/main/java/com/wewebu/ow/clientservices/utils/OwFileNameSanitizer.java
+END
+OwProgressMonitorListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_clientservices/src/main/java/com/wewebu/ow/clientservices/utils/OwProgressMonitorListener.java
+END
+OwProgressBarPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_clientservices/src/main/java/com/wewebu/ow/clientservices/utils/OwProgressBarPanel.java
+END
+OwProgressMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_clientservices/src/main/java/com/wewebu/ow/clientservices/utils/OwProgressMonitor.java
+END
+OwHttpFileDownload.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_clientservices/src/main/java/com/wewebu/ow/clientservices/utils/OwHttpFileDownload.java
+END

@@ -1,0 +1,537 @@
+<?xml version="1.0" ?>
+<bootstrap>
+
+
+	<!--
+		============================================================ SELECTIVE
+		AND PLACEHOLDER CONFIGURATION (optional) Please read the documentation
+		carefully if you want to use this feature.
+		============================================================= All
+		scalar tags directly benath the <bootstrap> tag support mandator
+		configuration placeholder's, i.e.: {$<Placeholdername>}. Most scalar
+		tags directly benath the <EcmAdapter>,<FieldManager>,<RoleManager> and
+		<HistoryManager> tag support mandator configuration placeholder's,
+		i.e.: {$<Placeholdername>}. The following attributes support mandator
+		configuration placeholder's, i.e.: {$<Placeholdername>} - Tags with
+		attribute "optionid" support selective configuration. optionid An
+		option ID attribute if you define several options for a single
+		configuration node. The ID is selected in the rolemanager via
+		selective configuration. Leave empty if you do not have options.
+
+		===========================================================================
+	-->
+
+
+	<!--
+		==========================================================================
+		DUMMY ADAPTER DEPLOYMENT GUIDE
+		===============================================================================
+
+		Additional Libraries: none
+
+		===========================================================================
+	-->
+
+	<EcmAdapter>
+
+		<ClassName>com.wewebu.ow.server.ecmimpl.owdummy.OwDummyNetwork
+		</ClassName>
+
+		<Version>4.2.0</Version>
+
+		<Authentication mode="NONE" />
+		<!--
+			<Authentication mode="LDAP" recursionlevel="0">
+			<java.naming.provider.url>ldap://abs-dbmssql.alfresco.com:389</java.naming.provider.url>
+			<UsersDirectory>CN=Users,DC=wewebu-virtual,DC=local</UsersDirectory>
+		-->
+		<!--
+			<GroupsDirectory>CN=Builtin,DC=wewebu-virtual,DC=local</GroupsDirectory>
+		-->
+		<!--
+			<GroupsDirectory>CN=Users,DC=wewebu-virtual,DC=local</GroupsDirectory>
+			<java.naming.factory.initial>com.sun.jndi.ldap.LdapCtxFactory</java.naming.factory.initial>
+			<java.naming.security.authentication>simple</java.naming.security.authentication>
+			<java.naming.security.principal>CN=Administrator,CN=Users,DC=wewebu-virtual,DC=local</java.naming.security.principal>
+			<java.naming.security.credentials>#TO_BE_INSERTED_HERE#</java.naming.security.credentials>
+			<loginQueryName>sAMAccountName</loginQueryName>
+			<anonymousLogin>false</anonymousLogin> </Authentication>
+		-->
+
+	</EcmAdapter>
+
+	<FieldManager>
+
+		<ClassName>
+			com.wewebu.ow.server.ecmimpl.owdummy.ui.OwDummyFieldManager
+		</ClassName>
+
+		<Version>4.2.0</Version>
+
+		<!-- display choicelists as AJAX controls instead of comboboxes -->
+		<AdvancedChoiceLists>{$AdvancedChoiceLists}
+		</AdvancedChoiceLists>
+
+		<!--
+			string properties: threshold of string length for a textarea, below
+			this threshold a textfield is rendered
+		-->
+		<TextAreaThreshold>255</TextAreaThreshold>
+
+		<!--
+			Day index at which the week should begin, 0-based (defaults to 0,
+			which is Sunday) for DatePicker selection.
+		-->
+		<DatePickerStartDay>1</DatePickerStartDay>
+
+		<FieldControls optionid="B">
+
+			<FieldControl
+				fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDateControl"
+				javatype="com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDate">
+			</FieldControl>
+
+			<FieldControl
+				fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwNextDaysDateControl"
+				javatype="com.wewebu.ow.server.fieldctrlimpl.OwNextDaysDate">
+			</FieldControl>
+
+			<FieldControl
+				fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlClass"
+				javatype="com.wewebu.ow.server.ecm.OwClass">
+			</FieldControl>
+
+		</FieldControls>
+
+		<FieldControls optionid="">
+
+			<FieldControl
+				fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlModifiedProperties"
+				javatype="com.wewebu.ow.server.history.OwHistoryModifiedPropertyValue">
+			</FieldControl>
+
+			<FieldControl
+				fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlObject"
+				javatype="com.wewebu.ow.server.ecm.OwObject">
+			</FieldControl>
+
+			<FieldControl
+				fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDateControl"
+				javatype="com.wewebu.ow.server.fieldctrlimpl.OwLastDaysDate">
+			</FieldControl>
+
+			<FieldControl
+				fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwNextDaysDateControl"
+				javatype="com.wewebu.ow.server.fieldctrlimpl.OwNextDaysDate">
+			</FieldControl>
+
+			<FieldControl
+				fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlClass"
+				javatype="com.wewebu.ow.server.ecm.OwClass">
+			</FieldControl>
+
+		</FieldControls>
+
+	</FieldManager>
+
+	<HistoryManager>
+
+		<ClassName>com.wewebu.ow.server.ecmimpl.owdummy.OwDummyHistoryManager
+		</ClassName>
+
+		<Version>4.2.0</Version>
+
+		<SessionEvents>
+			<Event eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_VIEW"
+				eventid="*">
+				/images/plug/owtouch/eye.png
+			</Event>
+			<Event eventtype="HISTORY_EVENT_TYPE_PLUGIN_INVOKE_EDIT"
+				eventid="*">
+				/images/plug/owtouch/pencil2.png
+			</Event>
+		</SessionEvents>
+
+	</HistoryManager>
+
+
+
+
+
+	<RoleManager>
+
+		<ClassName>com.wewebu.ow.server.ecmimpl.owdummy.OwDummyRoleManager
+		</ClassName>
+
+		<Version>4.2.0</Version>
+
+		<MasterRoles enable="true">
+
+			<MasterRoleGroup name="Administrator">
+				<Role>Administrators</Role>
+				<Role>Users</Role>
+			</MasterRoleGroup>
+
+			<MasterRoleGroup name="A">
+				<Role>Users</Role>
+				<Role>Application_A</Role>
+			</MasterRoleGroup>
+
+			<MasterRoleGroup name="B">
+				<Role>Users</Role>
+				<Role>Application_B</Role>
+			</MasterRoleGroup>
+
+			<MasterRoleGroup name="Guest">
+				<Role>Guest</Role>
+			</MasterRoleGroup>
+
+		</MasterRoles>
+
+	</RoleManager>
+
+
+
+
+
+
+	<!--
+		==========================================================================
+		SIMPLE ROLE MANAGER (Allows everything for alll users) DEPLOYMENT
+		GUIDE
+		===============================================================================
+
+		Additional Libraries: none
+		_______________________________________________________________________________
+
+		Configurationhelp: <DesignName> Name of the design that should always
+		be used. Leave empty to switch design by the role or the jsppage (e.g.
+		http.../ow/<designname>.jsp opens the <designname> design).
+
+		<AvailableDesigns> <Design displayname="...">[designname]</Design>
+		</AvailableDesigns> List of designs available for role configuration.
+
+		<SiteAdmins> List of users that act as site administrators and can
+		edit sitesettings.
+
+
+		===========================================================================
+	-->
+	<!--
+		<RoleManager>
+
+		<ClassName>com.wewebu.ow.server.roleimpl.simplerole.OwSimpleRoleManager</ClassName>
+
+		<Version>4.2.0</Version> <SiteAdmins> <user>Administrator</user>
+		</SiteAdmins> <DesignName></DesignName> <AvailableDesigns> <Design
+		displayName="Alfresco Workdesk 4.x Design">default41</Design> <Design
+		</AvailableDesigns> </RoleManager>
+	-->
+
+
+
+
+
+
+
+
+
+	<!--
+		==========================================================================
+		DB ROLE MANAGER 
+		(Roles can be defined with the OwDBRoleManager)
+		===============================================================================
+
+		Additional Libraries: none
+		_______________________________________________________________________________
+
+		Configurationhelp: <SecurityAdmin pluginid="[id of plugin to enable
+		for Security Admin]"> <User>[user1]</User> <User>[user2]</User>
+		<Group>[usergroup1]</Group> <Group>[usergroup2]</Group> ...
+		</SecurityAdmin> Name of user(s) who act as Role-Administrator and can
+		always edit roles. Beware of case sensitivity! The user names have to
+		be spelled exactly as defined in LDAP! <DesignName> Name of the design
+		that should always be used. Leave empty to switch design by the role
+		or the jsppage (e.g. http.../ow/<designname>.jsp opens the
+		<designname> design). <AvailableDesigns> <Design
+		displayname="...">[designname]</Design> </AvailableDesigns> List of
+		designs available for role configuration. <SchemeVersion> Version of
+		the database scheme. since OpenWordesk 2.5.0 Version 3 since OpenWordesk 2.2.0 Version
+		2 < OpenWorkdesk 2.2.0 Version 1 The scheme Version can be update from 1 to 2
+		and form 2 to 3 by the delivered update scripts. For description about
+		the differences of the scheme Version, please read the release notes.
+		ATTENTION:Updtes on Oracle SQL server an additional trigger have to be
+		created, to still be able modifying the access rights. You can find
+		all required scripts to create the SQL tables in the /db/scripts
+		folder of your AWD release. <MasterRoles> List of Masterroles that the
+		user may select from. Each Masterrole may consist of several roles. If
+		a user is member of multiple roles the currently selected Masterrole
+		acts as a filter for those roles. That means AWD treats the user as if
+		he was member only of the roles of the current Masterrole AND the
+		roles not covered by any of the Masterroles at all! IMPORTANT: The
+		first <MasterRoleGroup> in this list is used as the bootstrap
+		Masterrole when a user logs in to OWD. Also, every user has to have
+		access to the "ow_app" master plugin in order to read the startup
+		role. Thus, please make sure that the role filter of the first
+		<MasterRoleGroup> does not limit the users roles to a situation where
+		the user does not have access to the "ow_app" plugin!
+
+		===========================================================================
+	-->
+
+	<!--
+		<RoleManager>
+
+		<ClassName>com.wewebu.ow.server.roleimpl.dbrole.OwDBRoleManager</ClassName>
+
+		<Version>4.2.0</Version> <DesignName></DesignName> <AvailableDesigns>
+		<Design displayName="Alfresco Workdesk 4.x Design">default41</Design>
+		</AvailableDesigns> <SchemeVersion>2</SchemeVersion> <SecurityAdmin
+		pluginid="com.wewebu.ow.Admin"> <User>Administrator</User>
+		</SecurityAdmin> <MasterRoles enable="false"> <MasterRoleGroup
+		name="???"> <Role>???</Role> <Role>???</Role> </MasterRoleGroup>
+
+		</MasterRoles> </RoleManager>
+	-->
+
+
+
+	<!--
+		==========================================================================
+		SIMPLE MANDATOR MANAGER DEPLOYMENT GUIDE
+		===============================================================================
+
+		Additional Libraries: none
+		_______________________________________________________________________________
+
+		Configurationhelp:
+
+
+
+		===========================================================================
+	-->
+
+
+	<MandatorManager>
+
+		<ClassName>
+			com.wewebu.ow.server.ecmimpl.owdummy.OwDummyMandatorManager
+		</ClassName>
+
+		<Version>4.2.0</Version>
+
+
+	</MandatorManager>
+
+
+
+
+
+
+
+	<!--
+		==========================================================================
+		COMMON SETTINGS DEPLOYMENT GUIDE
+		===========================================================================
+	-->
+
+	<!--
+		========== Use the JavaScript Data Control rather than HTML comboboxes
+		for date selection. ===========
+	-->
+
+	<UseJSDateControl>{$UseJSDateControl}
+	</UseJSDateControl>
+
+	<!--
+		========== The name of the datasource to be used as a default for
+		components that need a table space. ===========
+	-->
+
+	<!--
+		DefaultDataSource> <JNDIName>java:/MSSQLDS</JNDIName>
+		</DefaultDataSource
+	-->
+
+	<!--
+		DefaultDataSource> <JNDIName>java:/AccessDS</JNDIName>
+		</DefaultDataSource
+	-->
+
+	<!--
+		DefaultDataSource> <JNDIName>java:/MySQLDS</JNDIName>
+		</DefaultDataSource
+	-->
+
+
+	<!--
+		========== Classname of a the default folder, used to create simple
+		folders. ===========
+	-->
+
+	<DefaultFolderClass>Folder</DefaultFolderClass>
+
+
+	<!--
+		========== Client wildcard definitions Each entry represents a
+		wildcard that can be used in the client application and will
+		automatically translate to the native wildcard in the repository.
+
+		tags: <wc> Wildcardentry with wildcard character attributes: type The
+		wildcard type as defined in OwWildCardDefinition.WILD_CARD_TYPE_...
+		can be the fieldname or a number ===========
+	-->
+
+	<ClientWildCardDefinitions optionid="B">
+		<wc type="WILD_CARD_TYPE_MULTI_CHAR">%%%</wc>
+		<wc type="WILD_CARD_TYPE_SINGLE_CHAR">?</wc>
+	</ClientWildCardDefinitions>
+
+	<ClientWildCardDefinitions optionid="">
+		<wc type="WILD_CARD_TYPE_MULTI_CHAR">*</wc>
+		<wc type="WILD_CARD_TYPE_SINGLE_CHAR">?</wc>
+	</ClientWildCardDefinitions>
+
+	<!--
+		========== List of classnames, which act as records. DON'T FORGET TO
+		CONFIGURE IN ADAPTER AS WELL! ===========
+	-->
+
+	<RecordClasses optionid="">
+		<RecordClassName>OwFileSystemRecordRootDirectory
+		</RecordClassName>
+	</RecordClasses>
+
+
+
+	<!-- ==========
+	HTTP settings
+=========== -->
+
+	<!-- SSL Mode
+		0 : none
+		1 : ssl session enforced -->
+
+	<SSLMode>0</SSLMode>
+
+
+
+	<!--
+		========== The temp directory (e.g. used for document upload). Define
+		a path absolute or relative to the deployment, but be sure the path is
+		assigned to a folder with read/write right. If the tempDir location,
+		but not exist we will try to create and use it. sample definition
+		absolute: Win: <TempDir>C:/Temp/</TempDir> Unix:
+		<TempDir>/usr/tmp</TempDir> sample definition relative to deployment:
+		<TempDir>../../Temp/</TempDir If no temporary directory is defined, we
+		use the environment information/properties (java.io.tmpdir) to get the
+		location of server or OS temp dir. If this variable is also empty the
+		deployment location is used as temporary directory. ===========
+	-->
+	<TempDir></TempDir>
+
+
+
+	<!--
+		========== Exception handling behavior true = display messagebox when
+		user causes an error, false = show default exception ==========
+	-->
+	<MessageBoxOnUserError>false</MessageBoxOnUserError>
+
+
+
+	<!-- ==========
+	Local language settings
+=========== -->
+
+	<!--
+		The default language detectbrowserlocale Detect the language of the
+		users browser, default = true. true = override defaultlocal false =
+		use defaultlocal
+	-->
+	<defaultlocal detectbrowserlocale="true">en</defaultlocal>
+
+	<!--
+		The available language which the user can select from (must be
+		installed with resource bundle)
+	-->
+	<availablelocals display='true'>
+		<lang icon="/images/lang/de.png" displayname="Deutsch">de</lang>
+		<lang icon="/images/lang/en.png" displayname="English">en</lang>
+		<lang icon="/images/lang/debugmode.png" displayname="Debug Mode (for developers only)">debugmode</lang>
+	</availablelocals>
+
+
+
+
+	<!--
+		==========================================================================
+		DB HISTORY MANAGER DEPLOYMENT GUIDE
+		===============================================================================
+
+		Additional Libraries: none
+		_______________________________________________________________________________
+
+		Configurationhelp: <HistorizeProperties> true: The modified properties
+		are written and read from the history table false: The modified
+		properties are ignored <Filter eventFilterClass="[fully-qualified
+		filter class name]"> Configure the events which should not be tracked
+		by defining a filter. attributes: eventFilterClass The name of an
+		com.wewebu.ow.server.historyimpl.dbhistory.OwEventFilter implementing
+		class. The parameter is not mandatory , if it is missing a default
+		filter will be used. Example : eventFilterClass
+		="com.wewebu.ow.server.historyimpl.dbhistory.OwHistoryEventFilter"
+
+
+
+
+		<Type> You may filter the following event types:
+		HISTORY_EVENT_TYPE_PLUGIN_INVOKE_UI : Invoked plugin events, which do
+		not modify anything HISTORY_EVENT_TYPE_PLUGIN_INVOKE_VIEW : Invoked
+		plugin events, which view objects
+		HISTORY_EVENT_TYPE_PLUGIN_INVOKE_EDIT : Invoked plugin events, which
+		edit objects HISTORY_EVENT_TYPE_PLUGIN_DSPATCH : Generated when
+		dispatch function is called e.g. when a folder is opened in the
+		RecordManager HISTORY_EVENT_TYPE_ECM : Generated for login or search
+		events HISTORY_EVENT_TYPE_OBJECT : HISTORY_EVENT_TYPE_PROPERTY :
+		HISTORY_EVENT_TYPE_VERSION : HISTORY_EVENT_TYPE_GENERIC : <Status> You
+		may filter the following event stati: HISTORY_STATUS_OK : Event was
+		finished successfully HISTORY_STATUS_FAILED : Event failed
+		HISTORY_STATUS_CANCEL : Event was canceled HISTORY_STATUS_BEGIN :
+		Event started; there will be an additional ok, failed, or cancel event
+
+		<EventId> You may filter event ids. Event IDs are for example plugin
+	 IDs which can be found in the owplugins.xml configuration file.
+
+		===========================================================================
+	-->
+
+	<!--
+		<HistoryManager>
+
+		<ClassName>com.wewebu.ow.server.historyimpl.dbhistory.OwDBHistoryManager</ClassName>
+
+		<Version>4.2.0</Version>
+
+		<HistorizeProperties>false</HistorizeProperties> <Filter>
+		<Type>HISTORY_EVENT_TYPE_PLUGIN_INVOKE_UI</Type>
+		<Type>HISTORY_EVENT_TYPE_ECM</Type> <Status>HISTORY_STATUS_OK</Status>
+
+		<EventId>com.wewebu.ow.owdocprops</EventId> </Filter>
+
+		</HistoryManager>
+	-->
+
+    <DefaultDataSource>
+		<JNDIName>java:/MSSQLDS</JNDIName>
+		<DriverClassName>com.microsoft.sqlserver.jdbc.SQLServerDriver</DriverClassName>
+		<URL>jdbc:sqlserver://abs-dbmssql.alfresco.com:1433;DatabaseName=owdemo;</URL>
+		<User>owdemo</User>
+		<Password>wewebu2007</Password>
+	</DefaultDataSource>
+	
+	<initparameter />
+
+</bootstrap>
+
+

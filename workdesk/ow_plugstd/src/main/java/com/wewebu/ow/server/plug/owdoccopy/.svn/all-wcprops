@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owdoccopy
+END
+OwDocumentFunctionCopy.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owdoccopy/OwDocumentFunctionCopy.java
+END
+OwCommandAddToClipboard.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owdoccopy/OwCommandAddToClipboard.java
+END
+OwClipboardMoveOperation.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owdoccopy/OwClipboardMoveOperation.java
+END
+OwDocumentFunctionCut.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owdoccopy/OwDocumentFunctionCut.java
+END
+OwDocumentFunctionAddToClipboard.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owdoccopy/OwDocumentFunctionAddToClipboard.java
+END
+OwRecordFunctionPaste.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owdoccopy/OwRecordFunctionPaste.java
+END
+OwRecordFunctionMove.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd/src/main/java/com/wewebu/ow/server/plug/owdoccopy/OwRecordFunctionMove.java
+END

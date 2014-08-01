@@ -1,0 +1,149 @@
+<?xml version="1.0" ?>
+<configuration>
+	<mapping>
+		<network dmsPrefix="ocmis">
+			<service class="com.wewebu.ow.server.ecmimpl.opencmis.wd.service.OwAlfrescoCMISRenditionService">
+				<property name="renditionKindMapping">
+					<map>
+						<entry key="cmis:thumbnail">
+							<list>
+								<value>doclib</value>
+							</list>
+						</entry>
+						<entry key="alf:webpreview">
+							<list>
+							    <value>imgpreview</value>
+							    <value>webpreview</value>
+							</list>
+						</entry>
+                        <entry key="image/jpeg">
+                            <list>
+                                <value>imgpreview</value>
+                            </list>
+                        </entry>
+                        <entry key="application/x-shockwave-flash">
+                            <list>
+                                <value>webpreview</value>
+                                <value>imgpreview</value>
+                            </list>
+                        </entry>
+					</map>
+				</property>
+			</service>
+		</network>
+		<network dmsPrefix="owdm">
+			<service class="com.wewebu.service.rendition.impl.OwSymbolicRenditionService">
+				<thumbnails>
+					<thumbnail mime="unknown"
+						image="../../designs/default41/images/thumbnails/thumbnail_placeholder_unknown.png" />
+					<thumbnail mime="application/msword"
+						image="../../designs/default41/images/thumbnails/thumb_mswordx.png" />
+					<thumbnail mime="application/msexcel"
+						image="../../designs/default41/images/thumbnails/thumbnail_placeholder_sheet.png" />
+					<thumbnail mime="application/pdf"
+						image="../../designs/default41/images/thumbnails/thumbnail_placeholder_text.png" />
+					<thumbnail mime="image/tiff"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />
+                    <thumbnail mime="image/bmp"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />
+                    <thumbnail mime="image/jpeg"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />                          	
+                    <thumbnail mime="image/png"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />  						
+                    <thumbnail mime="image/gif"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />  						
+                    <thumbnail mime="text/url"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_code.png" />
+                    <thumbnail mime="text/html"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_code.png" />                            
+                    <thumbnail mime="text/xml"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_code.png" />                          
+                    <thumbnail mime="text/plain"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_text.png" />                          
+                    <thumbnail mime="application/msoutlook"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_mail.png" />                         
+                    <thumbnail mime="application/vnd.ms-excel"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_sheet.png" />                          
+                    <thumbnail mime="application/mspowerpoint"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_presentation.png" />                          
+                    <thumbnail mime="application/vnd.ms-powerpoint"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_presentation.png" />                          
+                    <thumbnail mime="application/vnd.ms-word"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_document.png" />                          
+                    <thumbnail mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_document.png" />
+                    <thumbnail mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_sheet.png" />                            
+                    <thumbnail mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_presentation.png" />                          
+                    <thumbnail mime="audio/mp4"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_audio.png" />                          
+                    <thumbnail mime="video/quicktime"
+                        image="../../designs/default41/images/thumbnails/thumbnail_placeholder_video.png" />  						
+				</thumbnails>
+			</service>
+		</network>
+	</mapping>
+	<fallback-service class="com.wewebu.service.rendition.impl.OwSymbolicRenditionService">
+		<thumbnails>
+            <thumbnail mime="unknown"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_unknown.png" />
+			<thumbnail mime="application/msword"
+				image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_document.png" />
+            <thumbnail mime="application/msexcel"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_sheet.png" />
+            <thumbnail mime="application/pdf"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_text.png" />
+            <thumbnail mime="image/tiff"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />
+            <thumbnail mime="image/bmp"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />
+            <thumbnail mime="image/jpeg"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />                            
+            <thumbnail mime="image/png"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />                        
+            <thumbnail mime="image/gif"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_image.png" />                        
+            <thumbnail mime="text/html"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_code.png" />  
+            <thumbnail mime="text/url"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_code.png" />  
+            <thumbnail mime="text/xml"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_code.png" />                          
+            <thumbnail mime="text/plain"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_text.png" />                          
+            <thumbnail mime="application/msoutlook"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_mail.png" />                         
+            <thumbnail mime="application/vnd.ms-excel"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_sheet.png" />                          
+            <thumbnail mime="application/mspowerpoint"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_presentation.png" />                          
+            <thumbnail mime="application/vnd.ms-powerpoint"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_presentation.png" />                          
+            <thumbnail mime="application/vnd.ms-word"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_document.png" />                          
+            <thumbnail mime="application/vnd.openxmlformats-officedocument.wordprocessingml.document"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_document.png" />
+            <thumbnail mime="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_sheet.png" />                            
+            <thumbnail mime="application/vnd.openxmlformats-officedocument.presentationml.presentation"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_presentation.png" />                          
+            <thumbnail mime="audio/mp4"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_audio.png" />                          
+            <thumbnail mime="video/quicktime"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_video.png" /> 
+            <thumbnail mime="video/x-msvideo"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_video.png" /> 
+            <thumbnail mime="video/mpeg"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_video.png" /> 
+            <thumbnail mime="video/ogg"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_video.png" /> 
+            <thumbnail mime="video/webm"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_video.png" /> 
+            <thumbnail mime="video/x-matroska"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_video.png" /> 
+            <thumbnail mime="video/x-ms-wmv"
+                image="/../../designs/default41/images/thumbnails/thumbnail_placeholder_video.png" />
+		</thumbnails>
+	</fallback-service>
+</configuration>

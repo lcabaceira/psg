@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="OW_HIST_Name" />
+					<selectprop symname="OW_HIST_Type" />
+					<selectprop symname="OW_HIST_Time" />
+					<selectprop symname="OW_HIST_Status" />
+					<selectprop symname="OW_HIST_User" />
+					<selectprop symname="OW_HIST_Summary" />
+				</selectprops>
+			</select>
+			<where>
+				<and>
+					<like>
+						<whereprop editproperty="editable" symname="OW_HIST_Type">
+						</whereprop>
+						<literal />
+					</like>
+
+					<gte>
+						<whereprop editproperty="editable" symname="OW_HIST_Time">
+						</whereprop>
+						<literal />
+					</gte>
+					<lte>
+						<whereprop editproperty="editable" symname="OW_HIST_Time">
+						</whereprop>
+						<literal />
+					</lte>
+				</and>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

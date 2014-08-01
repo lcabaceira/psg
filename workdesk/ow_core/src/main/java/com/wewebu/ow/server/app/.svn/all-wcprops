@@ -1,0 +1,563 @@
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app
+END
+OwContextBasedUOListenerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwContextBasedUOListenerFactory.java
+END
+OwMenuView.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMenuView.java
+END
+OwAttrBagBasedUserOperationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwAttrBagBasedUserOperationListener.java
+END
+OwMultiViewNavigation.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMultiViewNavigation.java
+END
+OwClientRefreshContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwClientRefreshContext.java
+END
+OwUserOperationExecutor.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwUserOperationExecutor.java
+END
+OwLoginView.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwLoginView.java
+END
+OwExtJSComboboxRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwExtJSComboboxRenderer.java
+END
+OwGlobalParametersConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwGlobalParametersConfiguration.java
+END
+OwSettingsProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSettingsProperty.java
+END
+OwAppVersion.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwAppVersion.java
+END
+OwConfigDump.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwConfigDump.java
+END
+OwAbstractToolExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwAbstractToolExtension.java
+END
+OwDocumentImportItemContentCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDocumentImportItemContentCollection.java
+END
+OwInfoView.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwInfoView.java
+END
+OwSettingsSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSettingsSet.java
+END
+OwLogUserOperationListenerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwLogUserOperationListenerFactory.java
+END
+OwDefaultComboModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDefaultComboModel.java
+END
+OwEditablePropertyString.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwEditablePropertyString.java
+END
+OwAboutMessageHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwAboutMessageHelper.java
+END
+OwObjectSequenceDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwObjectSequenceDialog.java
+END
+OwMainAppContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMainAppContext.java
+END
+OwClipboard.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwClipboard.java
+END
+OwClassicComboboxRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwClassicComboboxRenderer.java
+END
+OwDefaultComboItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDefaultComboItem.java
+END
+OwMasterDocument.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMasterDocument.java
+END
+OwDispatchCodes.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDispatchCodes.java
+END
+OwFieldManagerControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwFieldManagerControl.java
+END
+OwSubLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSubLayout.java
+END
+OwUserOperationListenerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwUserOperationListenerFactory.java
+END
+OwComboboxRendererFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwComboboxRendererFactory.java
+END
+OwFieldManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwFieldManager.java
+END
+OwDocumentImportItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDocumentImportItem.java
+END
+OwDocumentImporterCallback.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDocumentImporterCallback.java
+END
+OwDocumentFunctionCall.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDocumentFunctionCall.java
+END
+OwStandardDocumentImportItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwStandardDocumentImportItem.java
+END
+OwUserSelectDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwUserSelectDialog.java
+END
+OwUpdateCodes.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwUpdateCodes.java
+END
+OwFieldManagerException.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwFieldManagerException.java
+END
+OwSearchCriteriaView.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSearchCriteriaView.java
+END
+OwScript.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwScript.java
+END
+OwMimeManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMimeManager.java
+END
+OwUserOperationDispatch.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwUserOperationDispatch.java
+END
+OwConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwConfiguration.java
+END
+OwMainLayout.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMainLayout.java
+END
+OwComboboxRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwComboboxRenderer.java
+END
+OwUserOperationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwUserOperationListener.java
+END
+OwGlobalRegistryContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwGlobalRegistryContext.java
+END
+OwUserOperationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwUserOperationEvent.java
+END
+OwSmallSubMenuView.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSmallSubMenuView.java
+END
+OwMainMenuView.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMainMenuView.java
+END
+OwComboModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwComboModel.java
+END
+OwInsertLabelHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwInsertLabelHelper.java
+END
+OwFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwFunction.java
+END
+OwDbUserOperationListenerFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDbUserOperationListenerFactory.java
+END
+OwToolExtension.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwToolExtension.java
+END
+OwPlugin.java
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwPlugin.java
+END
+OwMaxMinButtonControlView.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMaxMinButtonControlView.java
+END
+OwMainRoleManagerContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMainRoleManagerContext.java
+END
+OwComboItem.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwComboItem.java
+END
+OwMultipleSelectionCall.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMultipleSelectionCall.java
+END
+OwWindowPositions.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwWindowPositions.java
+END
+OwSubNavigationView.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSubNavigationView.java
+END
+OwHelpDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwHelpDialog.java
+END
+OwEditablePropertyDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwEditablePropertyDate.java
+END
+OwMasterView.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMasterView.java
+END
+OwSequenceView.java
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSequenceView.java
+END
+OwStandardSequenceDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwStandardSequenceDialog.java
+END
+OwStandardDialog.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwStandardDialog.java
+END
+OwMessageBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMessageBox.java
+END
+OwSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSettings.java
+END
+OwEcmUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwEcmUtil.java
+END
+OwPluginKeyBoardMaping.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwPluginKeyBoardMaping.java
+END
+OwClipboardContentOwField.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwClipboardContentOwField.java
+END
+OwAppEdition.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwAppEdition.java
+END
+OwDynamicLayoutSettings.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDynamicLayoutSettings.java
+END
+OwClipboardException.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwClipboardException.java
+END
+OwEditableProperty.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwEditableProperty.java
+END
+OwDocumentImportItemContentElement.java
+K 25
+svn:wc:ra_dav:version-url
+V 143
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDocumentImportItemContentElement.java
+END
+OwSettingsPropertyControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSettingsPropertyControl.java
+END
+OwSubMenuView.java
+K 25
+svn:wc:ra_dav:version-url
+V 122
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwSubMenuView.java
+END
+OwDocumentFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDocumentFunction.java
+END
+OwMainNavigationView.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwMainNavigationView.java
+END
+OwBaseComboboxRenderer.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwBaseComboboxRenderer.java
+END
+OwLogBasedUserOperationListener.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwLogBasedUserOperationListener.java
+END
+OwStandardFieldManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwStandardFieldManager.java
+END
+OwJspFormConfigurator.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwJspFormConfigurator.java
+END
+OwClipboardContentOwWorkitem.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwClipboardContentOwWorkitem.java
+END
+OwFieldManagerComboModel.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwFieldManagerComboModel.java
+END
+OwDocumentImporter.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwDocumentImporter.java
+END
+OwClipboardView.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwClipboardView.java
+END
+OwClipboardContentOwObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwClipboardContentOwObject.java
+END
+OwRecordFunction.java
+K 25
+svn:wc:ra_dav:version-url
+V 125
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/app/OwRecordFunction.java
+END

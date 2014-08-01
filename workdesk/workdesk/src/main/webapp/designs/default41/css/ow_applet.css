@@ -1,0 +1,12 @@
+.OwDragAndDropTarget
+{
+	color: #000;
+	background-color: #ffffff;
+}
+
+.OwDragDropAppletContent
+{
+	font: menu;
+	text-align: left;
+	vertical-align: top;
+}

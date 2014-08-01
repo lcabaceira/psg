@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy" sortlevel="2" sortorder="descending"/>
+				</selectprops>
+			</select>
+			<from>
+				<class symname="cmis:document" />
+			</from>
+			<where>
+				<and>
+					<eq>
+						<whereprop editproperty="editable" symname="cmis:document.cmis:name"/>
+    			       	<literal></literal>
+					</eq>
+					<eq>
+                        <whereprop editproperty="editable" symname="cmis:document.cmis:name"/>
+                        <literal>S[yourname]</literal>
+                    </eq>
+                    <or>
+                        <eq>
+                            <whereprop editproperty="editable" symname="cmis:document.cmis:name"/>
+                            <literal>S[hisname]</literal>
+                        </eq>
+                        <eq>
+                            <whereprop editproperty="editable" symname="cmis:document.cmis:name"/>
+                            <literal>S[ourname]</literal>
+                        </eq>
+                    </or>
+				</and>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

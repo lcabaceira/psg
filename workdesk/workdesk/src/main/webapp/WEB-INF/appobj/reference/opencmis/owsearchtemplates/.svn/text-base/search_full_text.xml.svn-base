@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy" sortlevel="2" sortorder="descending" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="cmis:document" />
+			</from>
+			<where>
+				<and>
+					<eq>
+						<whereprop editproperty="editable" symname="cmis:document.cmis:name" />
+						<literal />
+					</eq>
+					<!-- only supported with the extended SQL processor see owbootstrap.xml 
+					<cbr_all>
+						<whereprop editproperty="editable" symname="OW_ObjectName" />
+						<literal/>
+					</cbr_all>
+                    <cbr_in>
+                        <whereprop editproperty="editable" symname="cmis:document.cmis:name" />
+                        <literal/>
+                    </cbr_in> 
+                    -->
+				</and>
+			</where>
+			<veritycontent>
+				<verityitem editproperty="editable" groupaction="any">
+					<usertext />
+					<verityitemdata>
+						<verityany>
+							<verityunit />
+						</verityany>
+					</verityitemdata>
+				</verityitem>
+			</veritycontent>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

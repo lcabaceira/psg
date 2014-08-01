@@ -1,0 +1,56 @@
+<?xml version="1.0" ?>
+<VirtualFolderDescription>
+
+	<!-- (optional) java class name of virtual folder factory to use. Leave 
+		empty to use standard: com.wewebu.ow.server.ecm.OwStandardVirtualFolderObjectFactory -->
+	<ClassName />
+
+	<root name="Contract" containsdocs="true">
+		<search versionselection="currentversion">
+			<!-- currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions -->
+			<objectstores mergeoption="union">
+				<objectstore name="Main Repository" />
+			</objectstores>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:folder.cmis:name" />
+					<selectprop symname="cmis:folder.cmis:creationDate" />
+					<selectprop symname="cmis:folder.cmis:createdBy" />
+					<selectprop symname="P:cmg:asp_contractorIDs.cmg:contractorID" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="folder" />
+			</from>
+		</search>
+		<node name="Contractor" containsdocs="true">
+			<search versionselection="currentversion">
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:folder.cmis:name" />
+						<selectprop symname="cmis:folder.cmis:creationDate" />
+						<selectprop symname="cmis:folder.cmis:createdBy" />
+						<selectprop symname="P:cmg:asp_contractorIDs.cmg:contractorID" />
+					</selectprops>
+				</select>
+				<from>
+					<class symname="folder" />
+				</from>
+				<where>
+					<and>
+						<eq>
+							<whereprop editproperty="editable"
+								symname="P:cmg:asp_contractorIDs.cmg:contractorID" />
+							<literal />
+						</eq>
+						
+					</and>
+				</where>
+				<subclasses>
+					<subclass editproperty="hidden" name="Folder"
+						objecttype="folder" symname="F:cmg:contract" />
+				</subclasses>
+			</search>
+		</node>
+	</root>
+</VirtualFolderDescription>

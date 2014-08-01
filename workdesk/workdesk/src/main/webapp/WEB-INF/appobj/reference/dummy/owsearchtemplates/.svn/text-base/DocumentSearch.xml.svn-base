@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="ow_Filename" />
+					<selectprop symname="FirstName" />
+					<selectprop symname="ow_Last-Modified" />
+					<selectprop symname="ow_Filesize" />
+					<selectprop symname="Address" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<where>
+				<and>
+					<like>
+						<whereprop editproperty="editable" allowwildcard="true" symname="FirstName">
+						</whereprop>
+						<literal>{userid}</literal>
+					</like>
+
+					<like>
+						<whereprop editproperty="editable" allowwildcard="true" symname="FirstName">
+						</whereprop>
+						<literal>{AE901EAC-BF45-449A-9572-B09F0466066A}</literal>
+					</like>
+
+					<like>
+						<whereprop editproperty="editable" allowwildcard="true" symname="FirstName">
+						</whereprop>
+						<literal>\{Escape test}</literal>
+					</like>
+
+					<gte>
+						<whereprop datemode="ignoretime" editproperty="editable" symname="ow_Last-Modified">
+						</whereprop>
+						<literal>{today}</literal>
+					</gte>
+					<lte>
+						<whereprop datemode="usetime" editproperty="editable" symname="ow_Last-Modified">
+						</whereprop>
+						<literal />
+					</lte>
+				</and>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

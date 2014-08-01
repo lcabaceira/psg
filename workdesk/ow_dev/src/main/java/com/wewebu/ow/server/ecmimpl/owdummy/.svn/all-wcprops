@@ -1,0 +1,137 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy
+END
+OwDummyResource.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyResource.java
+END
+OwDummyNetwork.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyNetwork.java
+END
+OwDummyWorkitemRepository.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyWorkitemRepository.java
+END
+OwDummyMandatorManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyMandatorManager.java
+END
+OwDummyObjectFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyObjectFactory.java
+END
+OwDummyLaunchWorkitemContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 150
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyLaunchWorkitemContainer.java
+END
+OwDummyWorkitem.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyWorkitem.java
+END
+OwDummySearchTemplate.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummySearchTemplate.java
+END
+OwDummyMandator.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyMandator.java
+END
+OwDummyComplexAddressPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyComplexAddressPropertyClass.java
+END
+OwDummyObjectLinkClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyObjectLinkClass.java
+END
+OwDummyHistoryEntry.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyHistoryEntry.java
+END
+OwDummyComplexPersonPropertyClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyComplexPersonPropertyClass.java
+END
+OwDummyWorkflowDescription.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyWorkflowDescription.java
+END
+OwDummyWorkitemContainer.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyWorkitemContainer.java
+END
+OwDummyCredentials.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyCredentials.java
+END
+OwDummyFileObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyFileObject.java
+END
+OwDummyObjectLink.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyObjectLink.java
+END
+OwDummyUserInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyUserInfo.java
+END
+OwDummyHistoryManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyHistoryManager.java
+END
+OwDummyRoleManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyRoleManager.java
+END
+OwDummyImageFileObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 142
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dev/src/main/java/com/wewebu/ow/server/ecmimpl/owdummy/OwDummyImageFileObject.java
+END

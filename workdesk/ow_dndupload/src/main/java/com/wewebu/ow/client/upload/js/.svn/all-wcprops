@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dndupload/src/main/java/com/wewebu/ow/client/upload/js
+END
+OwJSObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dndupload/src/main/java/com/wewebu/ow/client/upload/js/OwJSObject.java
+END
+OwJSUploader.java
+K 25
+svn:wc:ra_dav:version-url
+V 132
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dndupload/src/main/java/com/wewebu/ow/client/upload/js/OwJSUploader.java
+END
+OwJSDNDPlatform.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dndupload/src/main/java/com/wewebu/ow/client/upload/js/OwJSDNDPlatform.java
+END
+OwJSprogressMonitor.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dndupload/src/main/java/com/wewebu/ow/client/upload/js/OwJSprogressMonitor.java
+END
+OwJSTransferFile.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dndupload/src/main/java/com/wewebu/ow/client/upload/js/OwJSTransferFile.java
+END
+OwJSDataTransfer.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dndupload/src/main/java/com/wewebu/ow/client/upload/js/OwJSDataTransfer.java
+END
+OwErrorMessageBox.java
+K 25
+svn:wc:ra_dav:version-url
+V 137
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dndupload/src/main/java/com/wewebu/ow/client/upload/js/OwErrorMessageBox.java
+END
+OwJSDropTarget.java
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_dndupload/src/main/java/com/wewebu/ow/client/upload/js/OwJSDropTarget.java
+END

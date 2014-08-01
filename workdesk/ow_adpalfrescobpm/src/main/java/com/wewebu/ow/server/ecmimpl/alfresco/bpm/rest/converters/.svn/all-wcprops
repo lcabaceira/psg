@@ -1,0 +1,47 @@
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpalfrescobpm/src/main/java/com/wewebu/ow/server/ecmimpl/alfresco/bpm/rest/converters
+END
+NativeValueConverterFactoryRest.java
+K 25
+svn:wc:ra_dav:version-url
+V 183
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpalfrescobpm/src/main/java/com/wewebu/ow/server/ecmimpl/alfresco/bpm/rest/converters/NativeValueConverterFactoryRest.java
+END
+OwUserInfoNativeValueConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 182
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpalfrescobpm/src/main/java/com/wewebu/ow/server/ecmimpl/alfresco/bpm/rest/converters/OwUserInfoNativeValueConverter.java
+END
+DefaultNativeValueConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpalfrescobpm/src/main/java/com/wewebu/ow/server/ecmimpl/alfresco/bpm/rest/converters/DefaultNativeValueConverter.java
+END
+NativeValueConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpalfrescobpm/src/main/java/com/wewebu/ow/server/ecmimpl/alfresco/bpm/rest/converters/NativeValueConverter.java
+END
+NativeValueConverterFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpalfrescobpm/src/main/java/com/wewebu/ow/server/ecmimpl/alfresco/bpm/rest/converters/NativeValueConverterFactory.java
+END
+DateNativeValueConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpalfrescobpm/src/main/java/com/wewebu/ow/server/ecmimpl/alfresco/bpm/rest/converters/DateNativeValueConverter.java
+END
+ArrayAgregateConverter.java
+K 25
+svn:wc:ra_dav:version-url
+V 174
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpalfrescobpm/src/main/java/com/wewebu/ow/server/ecmimpl/alfresco/bpm/rest/converters/ArrayAgregateConverter.java
+END

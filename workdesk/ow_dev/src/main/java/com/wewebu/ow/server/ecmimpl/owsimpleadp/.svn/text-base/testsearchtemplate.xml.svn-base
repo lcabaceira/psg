@@ -1,0 +1,25 @@
+<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="name" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="MySimpleClass" />
+			</from>
+			<where>
+				<and>
+							<like>
+								<whereprop editproperty="editable" allowwildcard="true" symname="name">
+								</whereprop>
+								<literal></literal>
+							</like>
+				</and>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

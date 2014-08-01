@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model name="owdbpm:owdBPMModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+    <!-- Meta-data about the model -->
+    <description>Alfresco Workdesk - Workflow Model</description>
+    <author>Alfresco Business Solution</author>
+    <version>1.0</version>
+
+    <!--
+        Imports are required to allow references to definitions in other models
+    -->
+    <imports>
+        <!-- Import Alfresco Dictionary Definitions --> 
+        <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d" />
+        <!-- Import Alfresco BPM Definitions -->
+        <import uri="http://www.alfresco.org/model/bpm/1.0" prefix="bpm"/>
+    </imports>
+
+    <!-- Workdesk BPM Namespace -->
+    <namespaces>
+        <namespace uri="http://www.wewebu.org/model/content/bpm/1.0" prefix="owdbpm" />
+    </namespaces>
+    
+    
+<!--===========================================================================================================
+    Types
+============================================================================================================-->
+
+    <types>
+      <type name="owdbpm:adHoc">
+         <parent>bpm:workflowTask</parent>
+         <mandatory-aspects>
+            <aspect>owdbpm:resubmissionDateAspect</aspect>
+            <aspect>owdbpm:jspLayoutAspect</aspect>
+         </mandatory-aspects>
+      </type>
+    </types>
+
+<!--===========================================================================================================
+    Aspects
+============================================================================================================-->
+
+    <aspects>
+        <aspect name="owdbpm:resubmissionDateAspect">             
+            <properties>
+                <property name="owdbpm:resubmissionDate">
+                    <title>Resubmission Date</title>
+                    <type>d:datetime</type>
+                    <mandatory>false</mandatory>
+                </property>
+            </properties>
+        </aspect>
+        <aspect name="owdbpm:jspLayoutAspect">             
+            <properties>
+                <property name="owdbpm:jspStepProcessor">
+                    <title>JSP Page</title>
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                </property>
+            </properties>
+        </aspect>
+    </aspects>
+
+</model>

@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/unittest/testsuites
+END
+OwCCAllTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/unittest/testsuites/OwCCAllTests.java
+END
+OwMockTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 128
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/unittest/testsuites/OwMockTest.java
+END

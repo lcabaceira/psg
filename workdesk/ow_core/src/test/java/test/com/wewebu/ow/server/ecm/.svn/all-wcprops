@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/test/com/wewebu/ow/server/ecm
+END
+OwIntegrationTestSetup.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/test/com/wewebu/ow/server/ecm/OwIntegrationTestSetup.java
+END
+OwIntegrationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/test/com/wewebu/ow/server/ecm/OwIntegrationTest.java
+END
+OwBasicIntegrationTestSetup.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/test/com/wewebu/ow/server/ecm/OwBasicIntegrationTestSetup.java
+END
+OwIntegrationTestSession.java
+K 25
+svn:wc:ra_dav:version-url
+V 138
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/test/com/wewebu/ow/server/ecm/OwIntegrationTestSession.java
+END

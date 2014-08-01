@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/permission
+END
+OwCMISPrivilegeSet.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/permission/OwCMISPrivilegeSet.java
+END
+OwCMISPermissionCollection.java
+K 25
+svn:wc:ra_dav:version-url
+V 166
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/permission/OwCMISPermissionCollection.java
+END
+OwCMISPermissionCollectionImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/permission/OwCMISPermissionCollectionImpl.java
+END
+OwCMISPrivilege.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/permission/OwCMISPrivilege.java
+END
+OwCMISAclDiff.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/permission/OwCMISAclDiff.java
+END
+OwCMISAclDiffImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/main/java/com/wewebu/ow/server/ecmimpl/opencmis/permission/OwCMISAclDiffImpl.java
+END

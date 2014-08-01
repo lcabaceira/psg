@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/scripts/create_postgres_databases
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/scripts/create_postgres_databases/readme.txt
+END
+OwPostgreSQL_CreateAttributeBagTable.sql
+K 25
+svn:wc:ra_dav:version-url
+V 175
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/scripts/create_postgres_databases/OwPostgreSQL_CreateAttributeBagTable.sql
+END
+Create_PostgreSQL_Database.sql
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/scripts/create_postgres_databases/Create_PostgreSQL_Database.sql
+END
+OwPostgreSQL_CreateDBRoleManagerTable.sql
+K 25
+svn:wc:ra_dav:version-url
+V 176
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/scripts/create_postgres_databases/OwPostgreSQL_CreateDBRoleManagerTable.sql
+END
+OwPostgreSQL_CreateDBHistoryManagerTable.sql
+K 25
+svn:wc:ra_dav:version-url
+V 179
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/scripts/create_postgres_databases/OwPostgreSQL_CreateDBHistoryManagerTable.sql
+END
+create_OWDDB.bat
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/db/workdesk/scripts/create_postgres_databases/create_OWDDB.bat
+END

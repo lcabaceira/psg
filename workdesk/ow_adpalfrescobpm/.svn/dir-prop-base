@@ -1,0 +1,22 @@
+K 10
+svn:ignore
+V 37
+.settings
+.classpath
+.project
+target
+
+K 13
+svn:mergeinfo
+V 627
+/mowd/branches/DnDHtml5/trunk/ow_adpalfrescobpm:32805-32879
+/mowd/branches/OWD-5341/trunk/ow_adpalfrescobpm:36505-36550
+/mowd/branches/OWD-5357/trunk/ow_adpalfrescobpm:37024-37047
+/mowd/branches/OWD-5422/trunk/ow_adpalfrescobpm:36952-37018
+/mowd/branches/OWD-5585/trunk/ow_adpalfrescobpm:37708-37725
+/mowd/branches/bpm_assignee/trunk/ow_adpalfrescobpm:34700-34713
+/mowd/branches/new_ldap/trunk/ow_adpalfrescobpm:33303-33344
+/mowd/branches/new_workflow_api/trunk/ow_adpalfrescobpm:34561-34579
+/mowd/branches/opencmis_lazyproploading/ow_adpalfrescobpm:31389-31401
+/mowd/branches/share_like_DnD/trunk/ow_adpalfrescobpm:32965-33005
+END

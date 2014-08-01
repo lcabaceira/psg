@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+			<folders>
+                <!-- <folder pathname="/MySearchPath" searchsubfolders="true" view="readonly">  -->
+				<folder pathname="/" searchsubfolders="true" view="readonly">
+					<objectstore name="Main Repository" />
+				</folder>
+			</folders>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy" sortlevel="2" sortorder="descending" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			<where>
+				<and>
+					<like>
+						<whereprop editproperty="editable" symname="cmis:document.cmis:name" />
+					</like>
+					<between>
+						<whereprop editproperty="editable" symname="cmis:document.cmis:lastModificationDate" />
+					</between>
+				</and>
+			</where>
+			<subclasses>
+				<subclass objecttype="document" name="Document" symname="cmis:document" />
+			</subclasses>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

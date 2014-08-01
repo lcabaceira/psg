@@ -1,0 +1,2012 @@
+/* #OwStandardDialog  */
+/* ---------------------------------- */
+#OwStandardDialog #OwMainLayout_NAVIGATION
+{
+    height: 0;
+    overflow: visible;
+    padding: 0;
+    border-top: 0;
+}
+#OwStandardDialog_PAGENR
+{
+    padding-top: 1px;
+
+}
+
+#OwStandardDialog_SEQUENCEBUTTONS
+{
+    padding-right: 5px;
+}
+#OwStandardDialog_SEQUENCEBUTTONS img
+{
+
+}
+#OwStandardDialog_PAGENR   span.OwEditProperties_Versiontext
+{
+    font-weight: normal;
+    color:#555555;
+    text-align: center;
+}
+
+.floatleft
+{
+	float:left;
+
+}
+#OwMainLayout_DIALOG #OwMainLayout_NAVIGATION
+{
+    background-position: 0 -8px;
+}
+#OwStandardDialog_Header
+{
+	background-color: #f9f9f9;
+    /*background: #f0f0f0 url(../images/OwGuiLayout/bg_function_menu.gif) repeat-x scroll 0 -6px;
+    border-width: 0 2px;
+    border-top: 1px solid #737393;
+    border-bottom: 1px solid #787895;
+    padding-bottom: 5px;*/
+}
+.OwStandardDialog_Header
+{
+    background: #707EA9;
+}
+div#OwStandardDialog_INFO_ICON
+{
+    float: right;
+    padding: 7px 10px 5px 0;
+}
+div#OwRegion_searchtemplate
+{
+	clear:left;
+}
+#OwStandardDialog_BTN
+{
+    padding: 7px 0 4px 10px;
+    float: left;
+}
+#OwStandardDialog_BTN a
+{
+    position: relative;
+    z-index: 10;
+    margin-right: 5px;
+}
+#OwMainLayout_DIALOG td.OwStandardDialog_CLOSE_BTN img ,
+#OwEditPropertiesFormularDialog .OwStandardDialog_CLOSE_BTN img
+{
+    width: 24px;
+    height: 24px;  
+}
+#OwStandardDialog_INFO_ICON span.OwStandardDialog_icon,
+div#OwStandardDialog_BTN span.OwStandardDialog_CLOSE_BTN a span.OwStandardDialog_icon,
+div#OwStandardDialog_BTN span.OwStandardDialog_HELP_BTN a span.OwStandardDialog_icon 
+{
+	display: inline-block;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;  
+}
+div#OwStandardDialog_BTN span.OwStandardDialog_CLOSE_BTN a span.OwStandardDialog_text,
+div#OwStandardDialog_BTN span.OwStandardDialog_HELP_BTN a span.OwStandardDialog_text
+{
+   display: inline-block;
+   font-size: 0;
+   line-height: 0;
+}
+.OwAspect_icon
+{
+    width: 32px;
+    height: 32px;
+    border: 0 none;
+    display: block;
+    left: 15px;
+    position: relative;
+}
+.OwAspect_text
+{
+   display: inline-block;
+   font-size: 0;
+   line-height: 0;
+}
+.OwExtraColumnRows_icon
+{
+	width: 16px;
+    height: 16px;
+	border: 0 none;
+    display: block;
+}
+.OwImageButtonView_text,
+.OwExtraColumnRows_text
+{
+   display: inline-block;
+   font-size: 0;
+   line-height: 0;   
+}
+.OwImageButtonView_icon
+{
+    width: 16px;
+    height: 16px;
+    border: 0 none;
+    display: inline-block;
+}
+#OwStandardDialog_Header h1,
+div.OwStandardDialog_TITLE
+{
+    background-color: transparent;
+    font-weight: normal;
+    position: relative;
+    line-height: 1em;
+    margin-left: 75px;
+    margin-top: 2px;
+}
+#OwStandardDialog_Header h1 span
+{
+    padding-bottom: 5px;
+}
+#OwStandardDialog_Header h1 img
+{
+    margin-right: 4px;
+}
+#OwStandardDialog_Header h1 span.OwEditProperties_Versionheader
+{
+    display: block;
+}
+#OwStandardDialog_Header h1 span.OwEditProperties_Versiontext
+{
+    margin-top: -4px;
+    padding-right: 25px;
+    white-space: nowrap;
+}
+#OwStandardDialog_Header h1 span.OwEditProperties_Versiontext img
+{
+    vertical-align: middle;
+    margin: 0;
+}
+#OwStandardDialog_Header h1 span.OwEditProperties_Versionlinks
+{
+    margin-top: -3px;
+    margin-right: 10px;
+    margin: -2px 0;
+    white-space: nowrap;
+}
+#OwStandardDialog_Header h1 span.OwEditProperties_Versionlinks a
+{
+    margin-right: 10px;
+    background: transparent url(../images/plug/owdocprops/vaccess.png) no-repeat scroll left center;
+    padding-left: 12px;
+}
+div.OwStandardDialog_MENU
+{
+    padding: 3px 10px;
+    overflow: hidden;
+}
+div.OwStandardDialog_MENU ul li
+{
+    float: left;
+    padding: 2px 10px 3px 0;
+    white-space: nowrap;
+}
+div.OwStandardDialog_MENU .OwMainMenuIcon img
+{
+    vertical-align: text-bottom;
+}
+.OwStandardDialog_MENU .OwMainMenuItem
+{
+    padding: 2px 10px 3px 0;
+}
+.OwStandardDialog_MENU .OwMainMenuItem img
+{
+    vertical-align: -3px;
+}
+#OwEditPropertiesFormularDialog
+{
+	overflow: hidden;
+	background-color: transparent;
+}
+#OwEditPropertiesFormularDialog .OwStandardDialog_CLOSE_BTN
+{
+	margin: 5px 5px 0;
+}
+
+/* .OwGeneralList  */
+/* ---------------------------------- */
+.OwGeneralList_table caption
+{
+ 	display: none;
+}
+.OwGeneralList_table th,
+.OwGeneralList_table td
+{
+    vertical-align: middle;
+    font-weight: normal;
+}
+.OwGeneralList_table th
+{
+    padding: 5px 2px;
+}
+.OwGeneralList_table td
+{
+    padding: 1px 2px;
+}
+.OwGeneralList_table thead th,
+.OwObjectPropertyView_PropList thead th,
+.OwGeneralList_table thead td,
+.OwObjectPropertyView_PropList thead td
+{
+    background: #b7b7b7 url(../images/OwGuiLayout/bg_mainnav.gif) repeat-x scroll left top;
+    border-bottom: 1px solid #bbbcce;
+    white-space: nowrap;
+}
+.OwObjectPropertyView_PropList .OwRequired,
+.OwObjectPropertyView_PropList .OwPasteMetadata{
+    width: 1px;
+    text-align: center;
+}
+.OwGeneralList_table thead th *,
+.OwGeneralList_table thead td *
+{
+    font-weight: normal;
+    vertical-align: middle;
+}
+.OwGeneralList_MultiSelectLine
+{
+    margin-bottom: 8px;
+    width: 100%;
+    height: 2px;
+}
+.OwGeneralList_MultiSelect
+{
+    width: 250px;
+    text-align: left;
+}
+
+/* .OwPropertyBlockLayout */
+/* ---------------------------------- */
+.OwPropertyBlockLayout .OwPropertyBlock
+{
+    overflow: hidden;
+}
+.OwPropertyBlockLayout .OwPropertyLabel,
+.OwPropertyBlockLayout .OwPropertyHeadLabel,
+.OwPropertyBlockLayout .OwPropertyAutoLabel,
+.OwPropertyBlockLayout .OwPropertyValue
+{
+    float: left;
+    padding: 2px 0;
+}
+.OwPropertyBlockLayout .OwPropertyLabel
+{
+    margin: 0 5px 0 0 ;
+}
+.OwPropertyBlockLayout .OwPropertyLabel label
+{
+    display: block;
+    float: left;
+    margin: 3px 0 0 0;
+}
+
+/* .OwNowrapLabel */
+/* ---------------------------------- */
+.OwNowrapLabel .OwPropertyLabel
+{
+    width: auto;
+    white-space: nowrap;
+}
+*:first-child+html .OwNowrapLabel td.OwPropertyLabel label
+{
+    display: block;
+    float: left;
+    width: 175px;
+    white-space: nowrap;
+}
+.OwPropertyBlockLayout .OwPropertyValue .OwInputControl
+{
+    float: left;
+    display: inline-block;
+}
+
+/* .OwPropertyControl  */
+/* ---------------------------------- */
+.OwPropertyControl
+{
+    padding-right: 10px;
+}
+.OwPropertyControl img
+{
+    margin-right: 4px;
+    vertical-align: text-top;
+}
+.OwPropertyControl fieldset
+{
+	float: left;
+}
+.OwPropertyControl table
+{
+    width: auto;
+}
+.OwPropertyError
+{
+    display: inline;
+    float: left;
+    line-height: 22px;
+}
+.OwAllFieldErrors
+{
+    background-color: #f4f7fa;
+    border: 1px solid #bbbcce;
+}
+.OwPropertyHelpPath
+{
+    display: inline;
+    float: left;
+}
+.OwComplexPropertyControl
+{
+    display: inline;
+    float: left;
+    margin: 2px;
+}
+.OwComplexPropertyControl_header
+{
+    background-color: #9AA8C2;
+    padding: 2px;
+    margin-bottom: 2px;
+}
+form table td.OwPropertyName, th.OwPropertyName 
+{
+    width: 180px;
+    white-space: normal;
+}
+form table td.OwPropertyName label{
+	display: block;
+	margin-top: 3px;
+}
+form table td.OwPropertyName span{
+    display: block;
+    margin-top: 3px;
+}
+
+form table.OwNowrapLabel td.OwPropertyName
+{
+	width: auto;
+	white-space: nowrap;
+	padding-right: 5px;
+}
+*:first-child+html form table.OwNowrapLabel td.OwPropertyName label
+{
+	display: block;
+	float: left;
+	white-space: nowrap;
+}
+form label.OwPropertyName,
+form .OwPropertyControlBlockLabelLayout label,
+form .blockLabel label
+{
+	display: block;
+	float: left;
+	padding: 2px 0 0 0;
+	margin-right: 5px;
+}
+.OwLoginModuleLogin .blockLabel label
+{
+	width: 120px;
+}
+form .OwPropertyControl .OwPropertyName
+{
+    line-height: 20px;
+}
+form .OwPropertyControl .OwPropertyRadioLabel
+{
+    line-height: 0.78em;
+    margin: 0 0 2px 0;
+}
+form .OwPropertyControl input,
+form .OwPropertyControl .OwInputControl
+{
+    margin: 0 5px 2px 0;
+}
+form .OwPropertyValue .OwInputControlDate,
+form .OwPropertyControl .OwInputControlDate,
+form .OwPropertyValue .x-form-text,
+form .OwPropertyControl .x-form-text
+{
+    margin: 0 0 2px 0;
+}
+form .OwPropertyControl div.owInlineControls
+{
+    overflow: hidden;
+}
+.com_wewebu_ow_fnbpm form .OwPropertyControl div.owInlineControls
+{
+    margin: 0;
+}
+form .OwPropertyControl div.owInlineControls input,
+form .OwPropertyControl div.owInlineControls label,
+form .OwPropertyControl div.owInlineControls span,
+form .OwPropertyControl div.owInlineControls .OwInputControl,
+form .OwPropertyControl div.owInlineControls .OwPropertyName
+{
+    display: inline-block;
+    float: left;
+}
+form .OwPropertyControl div.owInlineControls input[type="radio"]
+{
+    margin-top: 4px;
+}
+*:first-child+html form .OwPropertyControl div.owInlineControls input[type="radio"]
+{
+    margin-top: 1px;
+}
+
+.com_wewebu_ow_fnbpm .OwGeneralList_table input[type="checkbox"]
+{
+	margin-left: 2px;
+}
+
+form .OwPropertyControl div.owInlineControls label
+{
+	margin-right: 5px;
+	line-height: 20px;
+}
+form .OwPropertyControl div.owInlineControls span
+{
+	padding: 4px 4px 0 0;
+}
+*:first-child+html .com_wewebu_ow_Search .OwPropertyControl
+{
+	float: left;
+}
+.OwPropertyControlBlockLabelLayout div.OwPropertyControl
+{
+    overflow: hidden;
+}
+.OwPropertyControlBlockLabelLayout div.OwInputControl
+{
+	float: left;
+}
+
+/* OwObjectPropertyView */
+/* ---------------------------------- */
+table.OwObjectPropertyView
+{
+    border: 0px solid #fff;
+}
+.OwObjectPropertyView_PropList .OwComplexPropertyControl_value .OwComplexPropertyControl
+{
+    margin: 0;
+}
+.OwObjectPropertyView_OddRow .OwPropertyControl .OwGeneralList_RowEven,
+.OwObjectPropertyView_OddRow .OwPropertyControl .OwGeneralList_RowOdd,
+.OwObjectPropertyView_OddEven .OwPropertyControl .OwGeneralList_RowEven,
+.OwObjectPropertyView_OddEven .OwPropertyControl .OwGeneralList_RowOdd
+{
+    background-color: transparent;
+}
+.OwObjectPropertyView_PropList .OwComplexPropertyControl_header
+{
+    padding: 2px 5px 0 5px;
+}
+.OwObjectPropertyView_PropList .OwComplexPropertyControl_value
+{
+    padding: 0 5px 5px 5px;
+    overflow: hidden;
+}
+.OwObjectPropertyView_PropList .OwComplexPropertyControl_value .OwComplexPropertyControl_header,
+.OwObjectPropertyView_PropList .OwComplexPropertyControl_value .OwComplexPropertyControl_value
+{
+    padding: 0;
+}
+div.row,
+.OwObjectPropertyView_EvenRow,
+.OwObjectPropertyView_OddRow
+{
+    height: 25px;
+}
+
+/* .OwSettingsSetView */
+/* ---------------------------------- */
+.OwSettingsSetView_PropertyRow_even,
+.OwSettingsSetView_PropertyRow_odd
+{
+    height: 25px;
+}
+.OwSettingsSetView_subtitle
+{
+    padding-bottom: 1em;
+}
+.OwSettingsSetView_subtitle
+{
+    padding-bottom: 5pt;
+}
+.OwSortOption label
+{
+	padding: 0 2px 0 5px;
+}
+.OwSettingsPropertyRefreshBootConfig .OwInstructionName,
+.OwSettingsPropertyRefreshClassDescriptions .OwInstructionName
+{
+	width: 400px;
+}
+form .OwPropertyControl .OwSettingsPropertyRefreshBootConfig input,
+form .OwPropertyControl .OwSettingsPropertyRefreshClassDescriptions input
+{
+	float: left;
+}
+
+/* .notes  */
+/* ---------------------------------- */
+.notesContainer,
+.notesContainer_short
+{
+    clear: left;
+    float: left;
+    max-height: 300px;
+    height: expression(this.scrollHeight>299?"300px":"auto");
+    overflow-y: auto;
+    overflow-x: hidden;
+    min-width: 350px;
+    width: 100%;
+}
+
+.noteResumee
+{
+    float:left;
+}
+.noteHeader, .noteHeader_short
+{
+    clear:left;
+    float:left;
+    border-bottom:1px solid black;
+    font-weight:bold;
+    min-width:350px;
+}
+.noteContent, .noteContent_short
+{
+    clear:left;
+    float:left;
+    min-width:350px;
+    width:100%;
+    padding-top:5px;
+    padding-bottom:10px;
+    white-space:normal;
+}
+/*short notes */
+.notesContainer_short
+{
+    min-width:200px;
+    width:230px;
+}
+.noteHeader_short
+{
+    min-width:200px;
+}
+.noteContent_short
+{
+    min-width:200px;
+    padding-top:2px;
+    padding-bottom:5px;
+    width:100%;
+}
+
+.OwTooltip .notesContainer,
+.OwTooltip .notesContainer_short,
+.OwTooltip .x-panel .noteHeader,
+.OwTooltip .x-panel .noteHeader_short,
+.OwTooltip .x-panel .noteContent,
+.OwTooltip .x-panel .noteContent_short
+{
+    float: none;
+}
+
+/* .OwNumberBlockPageSelector  */
+/* ---------------------------------- */
+div.OwNumberBlockPageSelector
+{
+    border-bottom: 1px solid #BBBCCE;
+    border-top: 1px solid #D0D1DE;
+    margin-top: 1px;
+    padding: 2px 5px;
+    overflow: hidden;
+}
+div.OwNumberBlockPageSelector_page,
+.OwNumberBlockPageSelector_page_selected
+{
+    float:left;
+    padding: 0 5px;
+    vertical-align: middle;
+
+}
+.OwNumberBlockPageSelector_page a.skip
+{
+    border: 0 none;
+    background-color: transparent;
+    padding: 0;
+}
+
+/* .OwSimplePageSelector  */
+/* ---------------------------------- */
+div.OwSimplePageSelector, div.OwSimplePageSelectorImg
+{
+    float:left;
+    width:auto;
+}
+.OwSimplePageSelector input[type="text"],
+.OwSimplePageSelectorImg input[type="text"]
+{
+    text-align:center;
+    padding: 0 4px;
+    height: 14px;
+}
+div.OwSimplePageSelectorSeparator
+{
+    background: transparent url(../images/grid-split.gif) no-repeat scroll center center;
+    cursor: default;
+    display: block;
+    height: 16px;
+    margin: 0 2px;
+    overflow: hidden;
+    width: 4px;
+    float: left;
+}
+div#OwNextResults_page
+{
+    border-bottom: 1px solid #BBBCCE;
+    border-top: 1px solid #D0D1DE;
+    margin-top: 1px;
+    margin-bottom:0px;
+    padding: 2px 20px 2px 2px;
+    height: 16px;
+}
+
+/* .OwIndividualPageSelection  */
+/* ---------------------------------- */
+.OwIndividualPageSelection,
+.OwIndividualPageSelection_selected {
+    margin: 0;
+    padding: 0;
+}
+div.OwIndividualPageSelection, div.OwIndividualPageSelection_selected
+{
+    float:left;
+    width:auto;
+}
+
+/* .ObjectListView */
+/* ---------------------------------- */
+.OwObjectListViewControl_entry > img,
+.OwButtonControl.OwMaxMinButtonControlView > a > img
+{
+    border: 1px solid #fff;
+}
+.OwObjectListViewControl_entry_selected > img,
+.OwObjectListViewControl_entry_selected > span.OwImageButtonView_icon
+{
+    border: 1px solid black;
+}
+table.OwObjectListViewFilterRow_Filter
+{
+    border-left: 1px solid #9AA8C2;
+    border-right: 1px solid #9AA8C2;
+    padding:2px;
+}
+.OwObjectListViewThumbnails_div,
+.OwObjectListViewThumbnails_divselected
+{
+	display: table-cell;
+    float : left;
+    padding : 3px;
+    padding-bottom:2px;
+    margin: 10px 10px 5px 0;
+    height: auto;
+    border: #dddddd solid 1px;
+}
+.OwObjectListViewThumbnails_table
+{
+    width: 100%;
+}
+.OwObjectListViewThumbnails_headcell
+{
+    padding-bottom: 3px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.OwObjectListViewThumbnails_cell
+{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+#OwObjectListViewFilterRow_Filter
+{
+    border: 1px solid;
+    border-color: #f4f9ff #bdc6d2 #8f9bac #f4f9ff!important;
+}
+.OwObjectListViewThumbnails_ellipsis_name
+{
+	overflow: hidden;
+	text-overflow: ellipsis;
+	-o-text-overflow: ellipsis;
+	white-space: nowrap;
+	width:50%;	
+	padding:2px 2px 2px 2px;
+}
+.OwObjectListViewThumbnails_image
+{
+	border-collapse: separate;
+	box-shadow:0 0 10px #ccc;
+	-moz-box-shadow: 0 0 3px #ccc;
+	-webkit-box-shadow: 0 0 3px #ccc;
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+.OwObjectListViewThumbnails_status{
+	width:20%;
+	float:left;
+	margin-left:2px;
+	margin-right:2px;
+}
+
+.OwObjectListViewThumbnails_dfplugins
+{
+	height:18px;
+	width:60%;
+	float:left;
+	overflow:hidden;
+	display:inline;
+	margin:0 auto;
+}
+
+.OwObjectListViewThumbnails_dfcell
+{
+	width:16px;
+	float:left;
+	margin-left:2px;
+	margin-right:2px;
+}
+
+
+/* BPM component */
+#OwObjectListViewFilterRow_Filter,
+#OwBPMWorkItemListView_SEARCH_CRITERIA_BOX
+{
+    padding: 3px 7px 1px 7px;
+}
+#OwBPMWorkItemListView_SEARCH_CRITERIA_BOX
+{
+	padding: 3px 7px 3px 8px;
+}
+#OwObjectListViewFilterRow_Filter p
+{
+    vertical-align: middle;
+    padding: 0 0 2px;
+}
+#OwObjectListViewFilterRow_Filter
+{
+	overflow: hidden;
+}
+#OwObjectListViewFilterRow_Filter *
+{
+	float: left;
+}
+#OwObjectListViewFilterRow_Filter .OwSmallSubMenuItem,
+#OwObjectListViewFilterRow_Filter select,
+#OwObjectListViewFilterRow_Filter .x-form-field-wrap,
+#OwObjectListViewFilterRow_Filter span
+{
+	margin-right: 5px;
+}
+.OwBPMWorkItemListView_OPTION_MENU .OwSmallSubMenuItem
+{
+    margin-right: 3px;	
+}
+#OwObjectListViewFilterRow_Filter .OwSmallSubMenuItemValue *,
+{
+	float: left;
+}
+.OwBPMWorkItemListView_SEARCH_CRITERIA table *,
+#OwObjectListViewFilterRow_Filter p *
+{
+    vertical-align: middle;
+}
+#OwObjectListViewFilterRow_Filter p img
+{
+    vertical-align: text-bottom;
+}
+#OwObjectListViewFilterRow_Filter a.OwSmallSubMenuItem
+{
+	line-height: 20px;
+}
+
+#OwObjectListViewFilterRow_Filter  a.OwSmallSubMenuItem img
+{
+    margin-top: 4px;	
+}
+div.OwBPMWorkItemListView_WORKITEM_LIST table.OwAttachmentEntry,
+td.OwGeneralList_property table
+{
+	width: 100%;
+}
+.OwBPMWorkItemListView_SEARCH_CRITERIA .OwInputControl,
+#OwObjectListViewFilterRow_Filter .OwInputControl,
+#OwObjectListViewFilterRow_Filter select
+{
+    padding: 0 1px;
+}
+div.OwBPMWorkItemListView_WORKITEM_LIST table.OwGeneralList_table
+{
+    margin-top: 1px;
+}
+div#wrap
+{
+    height: 100%;
+    overflow: auto;
+    /* overflow: hidden; */
+}
+div#sticky_footer_no_use
+{
+	overflow: auto;
+}
+.OwGeneralList_empty div#wrap{
+	overflow: none;
+}
+#grid-panel{
+	height: 100%;
+	width: 100%;
+}
+div#footer
+{
+    height: 20px;
+}
+#OwSubLayout_MAIN #records-grid td
+{
+    padding: 0px;
+}
+/* Thumbnail View */
+.OwObjectListViewThumbnails_table td.OwObjectListViewThumbnails_headcell img
+{
+    float: left;
+}
+.OwObjectListViewThumbnails_table td.OwObjectListViewThumbnails_cell
+{
+    text-align: center;
+}
+
+/* .wPolicyLevelView  */
+/* ---------------------------------- */
+.OwPolicyLevelView
+{
+    padding-top: 10px;
+    padding-left: 10px;
+}
+.OwPolicyLevelView .OwPolicyLevelView_policySet .OwPolicyLevelView_message
+{
+    float:left;
+}
+.OwPolicyLevelView_message {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight:bold;
+}	
+.OwPolicyLevelView .OwPolicyLevelView_addRemove
+{
+    float: left;
+    margin-right: 10px;
+    margin-left: 10px;
+    width: 32px;
+    height: 20px;
+}
+.OwPolicyLevelView_policySet select
+{
+    width:200px;
+    height:200px;
+}
+.OwPolicyLevelView .OwPolicyLevelView_add,
+.OwPolicyLevelView .OwPolicyLevelView_remove
+{
+    background: #fff url(../images/plug/pointer_right.png) left top repeat-x;
+    width: 32px;
+    height: 32px;
+    float: left;
+    clear: left;
+    margin-top: 68px;
+    cursor: pointer;
+}
+.OwPolicyLevelView .OwPolicyLevelView_remove
+{
+    background: #fff url(../images/plug/pointer_left.png) left top repeat-x;
+    margin-top: 5px;
+}
+
+/* .OwSubNavigation  */
+/* ---------------------------------- */
+.OwSubNavigationView
+{
+    height: 100%;
+}
+.OwSubNavigationView_end
+{
+    height: 100%;
+    border-top: 1px solid #889CB5;
+    border-right: 1px solid #011F3D;
+}
+.OwSubNavigationView_delimiter
+{
+    border-top: 1px solid #889CB5;
+    border-right: 1px solid #011F3D;
+}
+
+/* .OwSmallSubNavigation  */
+/* ---------------------------------- */
+.OwSmallSubNavigation
+{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 29px;
+}
+.OwSmallSubNavigation #viewspace
+{
+    float: left;
+    height: 300px;
+    padding-top: 3px;
+    padding-left: 3px;
+}
+.OwSmallSubNavigation #tabspace
+{
+    float: left;
+    width: 100%;
+    height: 25px;
+    background: url(../images/small_sub_tb.gif) left bottom repeat-x;
+    padding-top: 3px;
+}
+.OwSmallSubNavigation #fill
+{
+    float: left;
+    width: 5px;
+    height: 25px;
+    background: url(../images/small_sub_tb.gif) repeat-x scroll left bottom ;
+}
+.OwSmallSubNavigation .OwSmallSubNavigation_tab,
+.OwSmallSubNavigation .OwSmallSubNavigation_selection,
+.OwSmallSubNavigation .OwSmallSubNavigation_disabled
+{
+    float: left;
+    padding-right: 7px;
+}
+.OwSmallSubNavigation .OwSmallSubNavigation_tab,
+.OwSmallSubNavigation .OwSmallSubNavigation_tab a,
+.OwSmallSubNavigation .OwSmallSubNavigation_selection,
+.OwSmallSubNavigation .OwSmallSubNavigation_selection a
+{
+    color:black;
+	cursor: pointer;
+}
+
+.OwSmallSubNavigation .OwSmallSubNavigation_tab,
+.OwSmallSubNavigation .OwSmallSubNavigation_disabled
+{
+    background: url(../images/small_sub_ctr.gif) right top no-repeat;
+    border-bottom: 1px solid #959595;
+}
+.OwSmallSubNavigation .OwSmallSubNavigation_selection
+{
+    background: url(../images/small_sub_ctr_sel.gif) right top no-repeat;
+    border: none;
+}
+.OwSmallSubNavigation .OwSmallSubNavigation_tab #space_left,
+.OwSmallSubNavigation .OwSmallSubNavigation_selection #space_left,
+.OwSmallSubNavigation .OwSmallSubNavigation_disabled #space_left
+{
+    padding-left: 7px;
+    float: left;
+}
+.OwSmallSubNavigation .OwSmallSubNavigation_selection #space_left
+{
+    background: url(../images/small_sub_ctl_sel.gif) no-repeat scroll left top ;
+    height: 25px;
+}
+.OwSmallSubNavigation .OwSmallSubNavigation_tab #space_left,
+.OwSmallSubNavigation .OwSmallSubNavigation_disabled #space_left
+{
+    background: url(../images/small_sub_ctl.gif) left top no-repeat;
+    height: 24px;
+}
+.OwSmallSubNavigation .OwSmallSubNavigation_tab #text,
+.OwSmallSubNavigation .OwSmallSubNavigation_selection #text,
+.OwSmallSubNavigation .OwSmallSubNavigation_disabled #text
+{
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-top: 4px;
+}
+.OwSmallSubNavigation .OwSmallSubNavigation_selection #text
+{
+    background: #fff url(../images/small_sub_tb.gif) left top repeat-x;
+    float: left;
+    height: 21px;
+}
+.OwSmallSubNavigation .OwSmallSubNavigation_tab #text,
+.OwSmallSubNavigation .OwSmallSubNavigation_disabled #text
+{
+    background: url(../images/small_sub_tb.gif) left top repeat-x;
+    float: left;
+    height: 20px;
+}
+
+/* .OwMessageBoxText  */
+/* ---------------------------------- */
+.OwPane,
+.OwMessageBoxText
+{
+    padding: 5pt;
+}
+ul.OwMessageBoxText
+{
+    padding-left: 10pt;
+    list-style-type: disc;
+}
+div.OwMessageBoxButton
+{
+    padding: 5pt;
+}
+
+/* .OwToolView   */
+/* ---------------------------------- */
+.OwToolView .OwToolRow
+{
+    float:left;
+    clear: left;
+    margin-bottom: 40px;
+}
+.OwToolView .OwToolItem
+{
+    width: 400px;
+    float: left;
+    cursor: pointer;
+}
+.OwToolView .OwToolItem_title
+{
+    border-bottom: 1px solid #000000;
+    width: 250px;
+    float:left;
+}
+.OwToolView .OwToolItem_title_icon
+{
+    clear:left;
+    float:left;
+    margin-right: 4px;
+    margin-bottom: 2px;
+}
+.OwToolView .OwToolItem_title_text,
+.OwToolView .OwToolItem_title_text a
+{
+    float:left;
+    margin-top: 5px;
+    color: black;
+    font-weight: normal;
+}
+.OwToolView .OwToolItem_description
+{
+    width: 300px;
+    float: left;
+    clear: left;
+    font-weight: normal;
+}
+
+/* .OwDocumentFunctionIconList (plugfnbpm)  */
+/* ----------------------------------*/
+div.x-grid3-cell-inner.x-grid3-col-col3.x-unselectable table table
+{
+	margin-top: 1px;
+	margin-bottom: 1px;
+}
+
+.OwWorkItemListViewMimeItem a.OwMimeItem
+{
+    vertical-align: top;
+}
+div.OwBPMWorkItemListView_WORKITEM_LIST .OwDocumentFunctionIconList a img.OwFunctionIcon
+{
+    padding: 0px;
+}
+/* .OwTaskView_boxcount (plugbpm)  */
+/* ---------------------------------- */
+.OwTaskView_boxcount
+{
+    padding-left: 3pt;
+    font-weight: normal;
+}
+
+/* .DragAndDropApplet  */
+/* ---------------------------------- */
+.DragAndDropApplet
+{
+    height: 28px;
+    width: 170px;
+    overflow: hidden;
+}
+.OwDragAndDropTarget
+{
+    overflow: hidden;
+}
+.OwDragDropAppletContent
+{
+    padding: 1px;
+    text-align: left;
+    vertical-align: top;
+}
+.OwDragDropHtml5Content
+{
+	text-align: left;
+    vertical-align: top;
+}
+
+/* #OwMainLayout_clipboard  */
+/* .OwClipboardView */
+/* ---------------------------------- */
+#OwMainLayout_clipboard
+{
+    padding: 4px 10px 4px 30px;
+    background: #fffe90 url(../images/clipboard.png) no-repeat scroll 10px 4px;
+    color: #555555;
+}
+#OwMainLayout_clipboard .OwClipboardView ul
+{
+    list-style: none outside;
+    display: inline;
+    margin-right: 10px;
+}
+#OwMainLayout_clipboard .OwClipboardView li
+{
+	display: inline;
+	margin-right: 5px;
+}
+#OwMainLayout_clipboard .OwClipboardView span
+{
+	margin-right: 5px;
+}
+#OwMainLayout_clipboard .OwClipboardView img
+{
+	margin: 0 2px -3px 0;
+}
+
+/* OwHelpView */
+/* ---------------------------------- */
+.OwHelpView
+{
+    border: 1px solid #011F3D;
+    border-right: 0;
+}
+.OwHelpView table.OwChapter td,
+.OwHelpView table.OwChapter th
+{
+    border-bottom: 1px solid #889cb5;
+    vertical-align: top;
+    padding: 1px 0 1px 12px;
+}
+.OwHelpView table.OwChapter th{
+	width: 150px;
+	font-weight: bold;
+}
+
+.OwHelpView .OwHelp_ImageLeft,
+.OwHelpView .OwHelp_ImageRight
+{
+    float: left;
+    margin-right: 40px;
+    margin-left: 40px;
+    margin-bottom: 10px;
+}
+.OwHelpView .OwHelp_ImageRight
+{
+    float: right;
+}
+
+/* .OwLoginView  */
+/* ---------------------------------- */
+.OwLogin #OwMainLayout_NAVIGATION
+{
+    height: 0;
+}
+.OwLoginModule .labelLong label
+{
+    width: 200px;
+}
+.OwLoginModule h2
+{
+    margin-bottom: 10px;
+}
+.OwLoginModule .OwLoginModuleTitle
+{
+    /*background: #eda954 url(../images/OwGuiLayout/bg_function_menu_orange.gif) repeat-x scroll left top;*/
+    background-color: #f7f7f7;
+    /*background-image: linear-gradient(to top, #f4f4f4 15%, #fcfcfc 100%);*/
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f4f4f4), color-stop(100%,#fcfcfc));    
+    background-image: -webkit-linear-gradient(to top, #f4f4f4 15%, #fcfcfc 100%);
+    background-image: -moz-linear-gradient(to top, #f4f4f4 15%, #fcfcfc 100%);
+    /*background-image: -o-linear-gradient(to top, #f4f4f4 15%, #fcfcfc 100%);*/
+    background-image: -ms-linear-gradient(to top, #f4f4f4 15%, #fcfcfc 100%); /* IE10+ */
+    background-image: linear-gradient(to top, #f4f4f4 15%, #fcfcfc 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f4f4f4', endColorstr='#fcfcfc',GradientType=0 );
+    border-bottom: 1px solid #B1BECD;
+    padding: 10px;
+    /*border: 1px solid;
+    border-color: #fff #889CB5 #889CB5 #fff;*/
+    margin-top: 30px;
+    float: left;
+}
+.OwLoginView_loginpart
+{
+    padding-right: 50px;
+}
+/*#OwLoginView
+{
+    border: solid #555582;
+    border-width: 0 2px;
+}*/
+#OwLoginView .OwLoginModule
+{
+    border: 1px solid #889CB5;
+    margin-left: auto;
+    width: 410px;
+}
+#OwLoginView .OwLoginModule .OwLoginModuleTitle
+{
+	float: none;
+	margin-top: 0;
+}
+#OwLoginView .OwLoginModule .OwLoginModuleLogin
+{
+	padding: 10px 10px 0 10px;
+}
+#OwLoginView .OwLoginModule input
+{
+    margin-bottom: 2px;
+}
+.OwLoginModule .OwLoginModuleTitle select
+{
+	margin: 0 5px;
+}
+#OwLoginView_title
+{
+    text-align: right;
+    background-color: #fcfcfc;
+    /*background: #4a6099 url(../images/OwGuiLayout/bg_function_menu.gif) repeat-x scroll 0 -6px;*/
+    padding: 10px 20px 9px;
+    margin: 0;
+    /*border-top: 1px solid #737393;*/
+    border-bottom: 1px solid #b1becd;
+}
+#OwLoginView_title span
+{
+    position: absolute;
+    top: 8px;
+    right: 22px;
+    text-align: right;
+}
+#OwLoginView_LOCALS_REGION
+{
+    position: absolute;
+    right: 20px;
+    top: 9px;
+    font-weight: normal;
+}
+#OwLoginView_LOCALS_REGION *
+{
+    background-color: inherit;
+}
+#OwLoginView_LOCALS_REGION img
+{
+    vertical-align: -4px;
+}
+#OwLoginView_loginpart
+{
+    /*border-top: 1px solid #fff;*/
+    padding: 20px;
+    min-height: 360px;
+}
+#OwLoginView_loginpart #OwMainLayout_ERROR
+{
+	margin: -20px -20px 20px -20px;
+}
+
+#OwLoginView_loginpart form td
+{
+    text-align: left;
+}
+#OwLoginView input[type="text"],
+#OwLoginView input[type="password"]
+{
+	width: 180px;
+}
+
+/* .OwTreeView  */
+/* ---------------------------------- */
+.OwTreeViewFolderImg,
+.OwTreeViewImg
+{
+    border: none;
+}
+.OwTreeView
+{
+    padding: 4px 1px 4px 8px;
+    overflow: auto;
+}
+.OwTreeView a
+{
+    background-color: inherit;
+}
+
+/* .OwRecordTreeView  */
+/* ---------------------------------- */
+span.OwRecordTreeView_EmptyTextMessage
+{
+    display: block;
+    margin: 10px;
+}
+
+/* .OwSearchCriteriaView   */
+/* Search Forms (Table) */
+/* ---------------------------------- */
+
+.OwSearchCriteriaView th,
+.OwSearchCriteriaView td
+{
+    text-align: left;
+}
+
+/* .OwResultListView  */
+/* ---------------------------------- */
+.OwResultListViewTitle
+{
+    display: block;
+    padding: 5px 12px;
+    border-color: #F4F9FF rgb(189, 198, 210) rgb(143, 155, 172) rgb(244, 249, 255);
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* OwMainColumnHeader */
+/* Column Header Line containing Icons for View Type, Min/Max, Back ... */
+/* ---------------------------------- */
+.OwMainColumnHeader
+{
+   overflow: hidden; 
+}
+.OwMainColumnHeader .OwMainColumnHeader_back,
+.OwMainColumnHeader .OwMainColumnHeader_search,
+.OwMainColumnHeader #OwResultListViewSearch,
+.OwMainColumnHeader .owButtons,
+.OwMainColumnHeader #OwResultListViewSearch .OwPropertyName
+{
+    float: left;
+}
+.OwMainColumnHeader .OwButtonControl,
+.OwMainColumnHeader .OwMainColumnHeader_back,
+.OwMainColumnHeader div#OwResultListViewSearch,
+.OwMainColumnHeader #OwResultListViewSearch .OwPropertyName
+{
+    margin-top: 3px;
+}
+.OwMainColumnHeader .owButtons
+{
+	padding: 1px 0 1px 0;
+}
+.OwMainColumnHeader .OwMainColumnHeader_back,
+.OwMainColumnHeader #OwResultListViewSearch input#saveTheSearchAsId
+{
+	margin-left: 8px;
+	margin-right: 10px;
+}
+.OwMainColumnHeader .OwMainColumnHeader_control,
+div.OwMainColumnHeader .OwMaxMinButtonControlView
+{
+	float: right;
+}
+#OwMainColumnHeader_CONTENTVIEW
+{
+	height: auto;
+}
+/* Control Buttons (Min/Max View, List View etc.) */
+div#OwMainColumnHeader_CONTENTVIEW p.OwButtonControl
+{
+	margin-left: 5px;
+}
+div.OwMainColumnHeader #OwObjectListButtonControlView a
+{
+    padding: 0;
+}
+div.OwMainColumnHeader #OwObjectListButtonControlView a.OwObjectListViewControl_entry_selected span
+{
+    border: 0px solid;
+}
+
+/* OwRecordView */
+/* ---------------------------------- */
+.OwRecordSubLayout_SEARCHTEMPLATE
+{
+    border-top: 1px solid #011f3d;
+    border-left: 1px solid #011f3d;
+    border-right: 1px solid #003366;
+    padding: 10px;
+}
+/* eFile Search: 
+#OwRecordSubLayout_SEARCHTEMPLATE
+{
+    border-top: 1px solid #1c257a;
+}*/
+#OwRecordSubLayout_SEARCHTEMPLATE form
+{
+    border-top: 1px solid #8693c4;
+    padding: 4px 10px;
+}
+#OwRecordSubLayout_SEARCHTEMPLATE .OwSearchCriteriaView
+{
+    margin-bottom: 5px;
+}
+#OwRecordSubLayout_SEARCHTEMPLATE .OwScrollable
+{
+	height: 106px;
+	overflow: auto;
+}
+#OwRecordSubLayout_SEARCHTEMPLATE #OwRecordSearchTemplateView_Control
+{
+    position: relative;
+    float: left;
+}
+#OwRecordSubLayout_SEARCHTEMPLATE .OwMaxResultListSize
+{
+	float: left;
+	margin-right: 170px;
+}
+#OwRecordSubLayout_SEARCHTEMPLATE .owButtons
+{
+	float: left;
+}
+#OwRecordSubLayoutRegister_NAVIGATION
+{
+    width: auto;
+    overflow: hidden;
+}
+#OwRecordSubLayoutRegister_NAVIGATION a
+{
+	background: url("../images/OwGuiLayout/bg_mainnav.gif") repeat-x scroll left top #B7B7B7;
+    float: left;
+    padding: 5px 5px 3px 10px;
+
+}
+#OwRecordSubLayoutRegister_NAVIGATION span.OwRegisterViewText,
+#OwRecordSubLayoutRegister_NAVIGATION span.OwRegisterViewTextSelected
+{
+    margin: 2px 0 0 2px;
+}
+
+#OwRecordSubLayoutRegister_NAVIGATION span.OwRegisterViewTextSelected
+{
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0F0), color-stop(100%,#D7D7D7));        
+    background-image: -webkit-linear-gradient(to bottom, #F0F0F0 0%, #D7D7D7 100%);
+    /*background-image: -o-linear-gradient(to bottom, #F0F0F0 0%, #D7D7D7 100%);*/
+    background-image: -ms-linear-gradient(to bottom, #F0F0F0 0%, #D7D7D7 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom, #F0F0F0 0%, #D7D7D7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#d7d7d7',GradientType=0 );
+}
+#OwRecordSubLayoutRegister_NAVIGATION div.OwRegisterViewText span
+{
+    float: left;
+}
+/* .OwSearchTemplateView */
+div.OwSearchTemplateView_MENU
+{
+	padding: 20px 0;
+}
+
+/* .OwObjectClassPreviewView  */
+/* ---------------------------------- */
+.OwObjectClassPreviewView
+{
+    padding-left: 5px;
+}
+.OwObjectClassPreviewView_Icon
+{
+    margin: 2px 0 0 5px;
+}
+.OwObjectClassPreviewView_property
+{
+    padding-left: 10px;
+    padding-top: 5px;
+}
+.OwObjectClassPreviewView_description
+{
+    padding: 10px;
+}
+.OwObjectClassPreviewView
+{
+    border-left: solid gray 2px;
+}
+
+/* #OwRecordPreviewPropertyView   */
+/* ---------------------------------- */
+#OwRecordPreviewPropertyView
+{
+	overflow: auto;
+	min-height:100px;
+}
+#OwRecordPreviewPropertyView th,
+#OwRecordPreviewPropertyView td
+{
+    text-align: left;
+    padding: 1px 3px 1px 3px;
+    border-bottom: 1px solid #ebebeb;
+}
+#OwRecordPreviewPropertyView th img,
+#OwRecordPreviewPropertyView td img
+{
+    margin: 2px 0;
+}
+#OwRecordPreviewPropertyView td.OwWorkItemListViewMimeItem img
+{
+	margin: 0 0 -2px 0;
+}
+#OwRecordPreviewPropertyView td td
+{
+	border-bottom: none;
+}
+
+/* #OwSubNavigationView  */
+/* ---------------------------------- */
+ul#OwSubNavigationView li
+{
+	-moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    border-width: 0 0 1px 0;
+}
+ul#OwSubNavigationView li a,
+ul#OwSubNavigationView li span.OwSubNavigationView_inactive
+{
+    /*display: block;
+    background-color: #FBFBFB;
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F0F0F0), color-stop(100%,#FBFBFB));        
+    background-image: -webkit-linear-gradient(to top, #F0F0F0 10%, #FBFBFB 100%);
+    background-image: -moz-linear-gradient(to top, #F0F0F0 10%, #FBFBFB 100%);
+    background-image: -ms-linear-gradient(to top, #F0F0F0 10%, #FBFBFB 100%);/ * IE10+ * /
+    background-image: linear-gradient(to top, #F0F0F0 10%, #FBFBFB 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#fbfbfb',GradientType=0 );
+    border: 1px solid #fff;
+    border-color: #fff #bdc6d2 #fff #fff;
+    padding: 5px 5px;
+    position: relative;
+    white-space: normal;*/
+
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background-color: #FBFBFB;
+    border-color: #ffffff #bdc6d2 #ffffff #ffffff;
+    border-width: 1px;
+    display: block;
+    margin: 2px;
+    padding: 5px;
+    position: relative;
+    white-space: normal;
+}
+ul#OwSubNavigationView li span.OwSubNavigationView_inactive
+{
+    background-image: url(../images/OwGuiLayout/bg_subnav_item_inactive.gif);
+}
+ul#OwSubNavigationView li span.OwTaskView_boxcount
+{
+    font-weight: normal;
+}
+ul#OwSubNavigationView li a:hover
+{
+    /*background-image: url(../images/OwGuiLayout/bg_subnav_item_hover.gif);
+    background-color: #feffff;*/
+    /*background: #d9d9d9 linear-gradient(to top, #EFEFEF 15%, #D7D7D7 100%);*/
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#EFEFEF), color-stop(100%,#D7D7D7));        
+    background-image: -webkit-linear-gradient(to top, #EFEFEF 15%, #D7D7D7 100%);
+    background-image: -moz-linear-gradient(to top, #EFEFEF 15%, #D7D7D7 100%);
+    /*background-image: -o-linear-gradient(to top, #EFEFEF 15%, #D7D7D7 100%);*/
+    background-image: -ms-linear-gradient(to top, #EFEFEF 15%, #D7D7D7 100%); /* IE10+ */
+    background-image: linear-gradient(to top, #EFEFEF 15%, #D7D7D7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d7d7d7', endColorstr='#f0f0f0',GradientType=0 );
+}
+ul#OwSubNavigationView li a:active,
+ul#OwSubNavigationView li a:focus
+{
+    background: #feffff url(../images/OwGuiLayout/bg_subnav_item_down.gif) no-repeat scroll left bottom;
+    -moz-outline: none;
+    outline: none;
+}
+ul#OwSubNavigationView li img
+{
+    vertical-align: middle;
+    margin: 0 4px 0 0;
+}
+ul#OwSubNavigationView li.OwSubNavigationView_selected a
+{
+    /*background-image: url(../images/OwGuiLayout/bg_subnav_item_active.gif);*/
+    background-color: #d3e0f0;
+    color: inherit;
+}
+ul#OwSubNavigationView a span.OwSubNavigationView_icon
+{
+	background: transparent no-repeat scroll left 0;
+	padding-left: 25px;
+	padding-bottom: 2px;
+	display: block;
+}
+/*ul#OwSubNavigationView li.OwSubNavigationView_delimiter
+{
+    border-top: 1px solid #e4eaf3;
+}*/
+ul#OwSubNavigationView > li.OwSubNavigationView_delimiter
+{
+    height: 10px;
+}
+
+/* .OwSmallSubMenuView  */
+/* ---------------------------------- */
+.OwSmallSubMenuView_Box img
+{
+    vertical-align: text-bottom;
+}
+
+/* .OwBPMWorkItemListView   */
+/* ---------------------------------- */
+#OwBPMWorkItemListView_SEARCH_CRITERIA_BOX {
+    border: 1px solid;
+    border-color: #f4f9ff #bdc6d2 #8f9bac #f4f9ff;
+}
+.OwBPMWorkItemListView_SEARCH_CRITERIA_BUTTON
+{
+    padding: 4px 0;
+}
+
+/* .OwToolsView  */
+/* ---------------------------------- */
+.OwToolsView .OwToolsView_title
+{
+	overflow: hidden;
+	border-bottom: 1px solid #8f9bac;
+	padding: 0 0 2px 0;
+}
+.OwToolsView .OwToolsView_description
+{
+	padding: 2px 0 0 0;
+}
+.OwToolsView .OwToolsView_title img
+{
+	margin: 0 5px 0 0;
+}
+#OwMainLayout_MAIN .OwToolsView .OwToolsView_title h2
+{
+	margin-bottom: 0;
+}
+.OwToolsView .block
+{
+	margin-bottom: 20px;
+}
+/* .OwAccessRights */
+.OwAccessRights .OwButtonBar
+{
+    padding: 10px;
+}
+
+/* .com_wewebu_ow_ShortCuts */
+/* ---------------------------------- */
+.com_wewebu_ow_ShortCuts #OwMainLayout_MAIN h3.OwInvalidText{
+	font-weight: bold;
+	margin: 10px 0 2px 5px;
+}
+.com_wewebu_ow_ShortCuts .OwStoredSearches .a1{
+	width: 100px;
+	padding-left: 10px;
+	padding-right: 10px;
+	white-space: nowrap;
+}
+*:first-child+html .com_wewebu_ow_ShortCuts .OwStoredSearches .a1{
+	width: 25%;
+}
+.com_wewebu_ow_ShortCuts .OwStoredSearches .a3{
+    width: 100px;
+    text-align: center;
+}
+
+
+/* .OwAutoList */
+/* - this wrapper is used for
+   scrollable content with fix height - */
+/* ---------------------------------- */
+.OwAutoList
+{
+    overflow: auto;
+    height: 400px;
+}
+
+
+/* .owButtons , MENU Region*/
+/* ---------------------------------- */
+
+.owButtons input
+{
+    margin-right: 3px;
+}
+.owButtonFile
+{
+    padding: 0 2px;
+}
+.OwInlineMenu{
+    padding: 10px 12px;
+    overflow: hidden;
+}
+
+.OwInlineMenu .owButtons,
+.OwInlineMenu .OwInputControl
+{
+    display: inline;
+    float: left;
+    margin-right: 5px;
+}
+.OwInlineMenu select,
+.OwInlineMenu .x-form-field-wrap
+{
+   margin: 1px 5px 0 0;
+}
+
+/* #OwMainContent  */
+/* should be used to get the right padding for no-list-screens */
+/* ---------------------------------- */
+#OwMainContent p
+{
+    margin: 10px 0;
+}
+
+/* .OwButtonBar  */
+/* - should be used to render a
+     button bar on bottom of a form - */
+/* ---------------------------------- */
+.OwButtonBar
+{
+    margin-top: 10px;
+}
+
+/* .OwInfoBar   */
+/* ---------------------------------- */
+.OwInfoBar
+{
+    border-top: 1px solid #8f9bac;
+    border-bottom: 1px solid #787895;
+    padding: 4px 10px;
+    position: relative;
+    z-index: 20;
+    margin: 0 3px 1px;
+}
+
+/* .OwHotKeyBar   */
+/* ---------------------------------- */
+.OwHotKeyBar
+{
+    padding-left: 5px;
+}
+.OwHotKeyBar_delimiter
+{
+    border-left: 1px solid #bbbcce;
+    border-right: 1px solid #fff;
+    display: inline-block;
+    margin: -4px 4px;
+    padding: 2px 0;
+}
+
+.OwWarningText
+{
+    padding: 5px;
+    display: block;
+}
+
+.OwWorkItemListViewMimeItem
+{
+    white-space: nowrap;
+}
+
+.OwFNCMUIUserSelectModul .blockLabel label, .OwFNCM5UIUserSelectModul .blockLabel label{
+	width: auto;
+}
+
+.OwContextMenu
+{
+    top:                0px;        /* this is so the vertial scroll bar don't appear when it's not needed */
+    left:               0px;
+    position:           fixed;
+    border:             1px outset #B5C6D2;
+    visibility:         hidden;
+    background-color:   white;
+    cursor:             default;
+     z-index:               100;
+     padding: 1px;
+}
+.OwContextMenu table
+{
+    /* border collapse needed for ie7 */
+    border-collapse: separate;
+}
+
+.OwContextMenu_Item
+{
+    background-color:   #ffffff;
+}
+
+.OwContextMenu_Item_sel
+{
+    background-color:   #d7d7d7;
+    border: 1px solid #d0d0d0;
+}
+
+.OwContextMenu_Icon
+{
+    vertical-align: bottom;
+    padding: 3px!important;
+}
+
+td.OwContextMenu_Icon
+{
+    background-color:   #ececec;
+    border-right: 1px solid #d0d0d0;
+}
+
+.OwContextMenu_Label
+{
+    font: menu;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 3px!important;
+}
+
+.OwContextMenu_Label_sel
+{
+    font: menu;
+    vertical-align: middle;
+    white-space: nowrap;
+    padding: 2px!important;
+    border: 1px solid #8bb8f3;
+}
+
+
+
+/* EXTJS components  */
+/* ---------------------------------- */
+#owbody .x-form-text,
+#owbody textarea.x-form-field
+{
+	background-image: none;
+}
+.ext-ie7 input.x-form-text
+{
+	margin: 0 0 2px 0;
+}
+.ext-ie input.x-tbar-page-number
+{
+    margin-top: 0;
+}
+*:first-child+html input.x-tbar-page-number
+{
+    margin-top: 2px;
+}
+
+#owbody .OwPropertyValue .x-form-field-wrap,
+#owbody .OwPropertyControl .x-form-field-wrap
+{
+	float: left;
+	margin-right: 5px;
+}
+*:first-child+html #OwSubLayout_MAIN .x-btn td{
+    height: auto;
+}
+
+#OwStandardDialog_SEQUENCEBUTTONS a
+{
+       margin-right: 0px;
+
+
+}
+.folder-open {
+	background-image:url("../images/OwTreeView/folder_open.png") !important;
+}
+.ow-ext-error {
+	background-image:url("../images/error.png") !important;
+}
+.folder-close {
+	background-image:url("../images/OwTreeView/folder_closed.png") !important;
+}
+.ext-el-mask {
+	opacity:0 !important;
+	filter: alpha(opacity = 0) !important;
+}
+.groupHeader{
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f0f0f0), color-stop(100%,#d7d7d7));     
+    background-image: -webkit-linear-gradient(to bottom, #f0f0f0 0px, #d7d7d7 100%);
+    background-image: -moz-linear-gradient(to bottom, #f0f0f0 0px, #d7d7d7 100%);
+    background-image: -ms-linear-gradient(to bottom, #f0f0f0 0%, #d7d7d7 100%); /* IE10+ */
+    background-image: linear-gradient(to bottom, #f0f0f0 0%, #d7d7d7 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#d7d7d7',GradientType=0 );
+    color: inherit;
+}
+.OwGroupName {
+	font-weight: bold;
+}
+.OwGroupExpanded {
+	background: url(../images/OwObjectPropertyView/navigate_close_down.png) no-repeat;
+}
+.OwGroupCollapsed {
+	background: url(../images/OwObjectPropertyView/navigate_close_right.png) no-repeat;
+}
+.OwGroupBodyCollapsed {
+	display:none;
+}
+.OwGroupBodyExpanded {
+	display:table-row-group;
+}
+/* Use this to hide some empty DIV in IE7 */
+.OwContainerInvisible {
+	min-height:0px;
+	line-height:0em;
+	font-size:0em;
+}
+.OwMessageContainerVisible {
+	height:25px;
+	line-height:1.2em;
+}
+.OwAjaxComponent{
+	min-width:120px;
+}
+.OwAjaxComponentCombo{
+	min-width:139px;
+}
+.OwAdaptorSelection .OwAdaptorSelectionTitle
+{
+    background: #ECECEC;
+    padding: 10px;
+    border: 1px solid;
+    border-color: #889CB5;
+    margin-top: 30px;
+    float: left;
+}
+
+.message_download {
+    line-height: 1em;
+    padding-top: 125px;
+    text-align: center;
+}
+
+/* Link view alignment */
+div.OwObjectLinksViewFilter
+{
+	margin: 3px;
+}
+div.FilterName
+{
+	margin: 4px 5px;
+	float: left;
+}
+/* OwSplitObjectListView */
+div.OwSplitObjectListView
+{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+div.OwSplitObjectListView fieldset
+{
+	padding-bottom: 10px;
+	padding-left: 2px;
+	padding-right: 2px;
+}
+div.OwPane div.row span.label
+{
+	float: left;
+	width: 180px;
+}

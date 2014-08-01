@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy" sortlevel="2" sortorder="descending"/>
+				</selectprops>
+			</select>
+			<from>
+				<class symname="cmis:document" />
+			</from>
+            <veritycontent>
+                <verityitem editproperty="editable" groupaction="any">
+                    <usertext>MyC0ntent</usertext>
+                    <verityitemdata>
+                        <verityany>
+                            <verityunit />
+                        </verityany>
+                    </verityitemdata>
+                </verityitem>
+            </veritycontent>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

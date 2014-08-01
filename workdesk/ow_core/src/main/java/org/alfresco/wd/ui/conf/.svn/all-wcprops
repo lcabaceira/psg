@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/ui/conf
+END
+OwPropertyListConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/ui/conf/OwPropertyListConfiguration.java
+END
+OwPropertySubregion.java
+K 25
+svn:wc:ra_dav:version-url
+V 127
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/ui/conf/OwPropertySubregion.java
+END
+OwUniformParamConfiguration.java
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/ui/conf/OwUniformParamConfiguration.java
+END
+OwSimplePropertySubregion.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/org/alfresco/wd/ui/conf/OwSimplePropertySubregion.java
+END

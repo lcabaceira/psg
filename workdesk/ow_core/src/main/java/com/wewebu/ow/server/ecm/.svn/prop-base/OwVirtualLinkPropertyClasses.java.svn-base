@@ -1,0 +1,12 @@
+K 13
+svn:mergeinfo
+V 900
+/mowd/branches/DnDHtml5/trunk/ow_core/src/main/java/com/wewebu/ow/server/ecm/OwVirtualLinkProperties.java:32805-32879
+/mowd/branches/OWD-3103/trunk/ow_core/src/main/java/com/wewebu/ow/server/ecm/OwVirtualLinkProperties.java:30780-30858
+/mowd/branches/mwd_ext/ow_core/src/main/java/com/wewebu/ow/server/ecm/OwVirtualLinkProperties.java:28179-28798
+/mowd/branches/new_ldap/trunk/ow_core/src/main/java/com/wewebu/ow/server/ecm/OwVirtualLinkProperties.java:33303-33344
+/mowd/branches/opencmis_lazyproploading/ow_core/src/main/java/com/wewebu/ow/server/ecm/OwVirtualLinkProperties.java:31389-31401
+/ow_core/branches/dnd_no_refresh/trunk/src/com/wewebu/ow/server/ecm/OwVirtualLinkProperties.java:23747-23788
+/ow_core/branches/extjs31/trunk/src/com/wewebu/ow/server/ecm/OwVirtualLinkProperties.java:14662-15121
+/ow_core/branches/task2207/src/com/wewebu/ow/server/ecm/OwVirtualLinkProperties.java:12533-13107
+END

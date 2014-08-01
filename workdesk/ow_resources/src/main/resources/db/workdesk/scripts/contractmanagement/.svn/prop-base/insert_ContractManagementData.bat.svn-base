@@ -1,0 +1,6 @@
+K 13
+svn:mergeinfo
+V 296
+/mowd/branches/DnDHtml5/trunk/ow_resources/src/main/resources/db/workdesk/scripts/contractmanagement/insert_ContactManagementData.bat:32805-32879
+/mowd/branches/opencmis_lazyproploading/ow_resources/src/main/resources/db/awd/scripts/contractmanagement/insert_ContactManagementData.bat:31389-31401
+END

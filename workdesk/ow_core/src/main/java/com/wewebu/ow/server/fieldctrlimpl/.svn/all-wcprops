@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl
+END
+OwNextDaysDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwNextDaysDate.java
+END
+OwFieldManagerControlModifiedProperties.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwFieldManagerControlModifiedProperties.java
+END
+OwNextDaysDateControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwNextDaysDateControl.java
+END
+OwLastDaysDateControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 140
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwLastDaysDateControl.java
+END
+OwFieldManagerControlImage.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwFieldManagerControlImage.java
+END
+OwFieldManagerControlClass.java
+K 25
+svn:wc:ra_dav:version-url
+V 145
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwFieldManagerControlClass.java
+END
+OwNumberFieldControl.java
+K 25
+svn:wc:ra_dav:version-url
+V 139
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwNumberFieldControl.java
+END
+OwFieldManagerControlNote.java
+K 25
+svn:wc:ra_dav:version-url
+V 144
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwFieldManagerControlNote.java
+END
+OwLastDaysDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwLastDaysDate.java
+END
+OwRelativeDate.java
+K 25
+svn:wc:ra_dav:version-url
+V 133
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwRelativeDate.java
+END
+OwFieldManagerControlImageInsteadOfValue.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwFieldManagerControlImageInsteadOfValue.java
+END
+OwFieldManagerControlObject.java
+K 25
+svn:wc:ra_dav:version-url
+V 146
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/main/java/com/wewebu/ow/server/fieldctrlimpl/OwFieldManagerControlObject.java
+END

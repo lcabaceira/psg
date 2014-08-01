@@ -1,0 +1,132 @@
+<?xml version="1.0" ?>
+<VirtualFolderDescription>
+
+	<!--
+		(optional) java class name of virtual folder factory to use. Leave
+		empty to use standard:
+		com.wewebu.ow.server.ecm.OwStandardVirtualFolderObjectFactory
+	-->
+	<ClassName />
+
+	<root name="eFile" containsdocs="true">
+
+		<!-- Node contains a search template-->
+		<search versionselection="currentversion">
+			<!--
+				allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions
+			-->
+
+			<!-- Define P8 objectstore here -->
+
+			<objectstores mergeoption="union">
+				<objectstore id="{101A0C74-83E0-43A1-A0BC-F09CE11F7022}" name="DemoStore1" />
+			</objectstores>
+
+			<!-- Define P8 document classes here -->
+
+			<from>
+				<class symname="document" />
+			</from>
+
+			<select>
+				<selectprops>
+					<selectprop symname="ow_Filename" />
+					<selectprop symname="ow_MimeType" />
+				</selectprops>
+			</select>
+
+			<where>
+				<and>
+					<eq>
+						<whereprop editproperty="editable" symname="FaxNumber">
+						</whereprop>
+						<literal />
+					</eq>
+					<eq>
+						<whereprop editproperty="editable" symname="ow_Filename">
+						</whereprop>
+						<literal />
+					</eq>
+					<eq>
+						<whereprop editproperty="editable" symname="ow_MimeType">
+						</whereprop>
+						<literal />
+					</eq>
+					<!--
+						<between>
+							<whereprop datemode="ignoretime" editproperty="editable" symname="ow_Last-Modified">
+							</whereprop>
+							<literal>
+								<value_1>2003-06-06T15:47:00+01:00</value_1>
+								<value_2>2007-06-16T15:47:00+01:00</value_2>
+							</literal>
+						</between>
+					-->
+					<eq>
+						<whereprop datemode="ignoretime" editproperty="editable" symname="ow_Last-Modified">
+						</whereprop>
+						<!-- yyyy-MM-dd'T'HH:mm:ss.S'Z'Z -->
+						<literal>2000-06-06T15:47:00+01:00</literal>
+					</eq>
+				</and>
+			</where>
+			<subclasses>
+				<subclass editproperty="hidden" objecttype="document" name="OwFileSystemFile" symname="OwFileSystemFile" />
+			</subclasses>
+		</search>
+
+		<node name="Construction financing">
+
+			<node name="Loan agreement" containsdocs="true">
+				<refinecriteria>
+					<literal symname="ow_MimeType">Loan agreement</literal>
+					<literal symname="ow_Filename">Construction financing</literal>
+				</refinecriteria>
+			</node>
+
+			<node name="Scheme" containsdocs="true">
+				<refinecriteria>
+					<literal symname="ow_Filename">{userid}</literal>
+					<literal symname="ow_MimeType">Scheme</literal>
+				</refinecriteria>
+			</node>
+
+			<node name="Securities" containsdocs="true">
+				<refinecriteria>
+					<literal symname="ow_Filename">Construction financing</literal>
+					<literal symname="ow_MimeType">Securities</literal>
+				</refinecriteria>
+			</node>
+
+		</node>
+
+		<node name="Depot" containsdocs="true">
+			<refinecriteria>
+				<literal symname="ow_Filename">Depot</literal>
+				<literal symname="ow_MimeType"></literal>
+			</refinecriteria>
+		</node>
+
+		<node name="Checking account" containsdocs="true">
+			<refinecriteria>
+				<literal symname="ow_Filename">Checking account</literal>
+				<literal symname="ow_MimeType"></literal>
+			</refinecriteria>
+		</node>
+
+		<node name="Credit" containsdocs="true">
+			<refinecriteria>
+				<literal symname="ow_Filename">Credit</literal>
+				<literal symname="ow_MimeType"></literal>
+			</refinecriteria>
+		</node>
+
+		<node name="Savings account" containsdocs="true">
+			<refinecriteria>
+				<literal symname="ow_Filename">Savings account</literal>
+				<literal symname="ow_MimeType"></literal>
+			</refinecriteria>
+		</node>
+	</root>
+
+</VirtualFolderDescription>

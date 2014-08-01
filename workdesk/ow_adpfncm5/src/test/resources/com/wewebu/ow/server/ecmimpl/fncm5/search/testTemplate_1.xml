@@ -1,0 +1,68 @@
+<?xml version="1.0" ?>
+<storedsearch xmlns="http://filenet.com/namespaces/wcm/apps/1.0">
+	<searchspec versionselection="releasedversion">
+		<searchtype>
+			<template showandorconditions="false" showmaxrecords="false"
+				showoperators="false" />
+		</searchtype>
+		<objectstores mergeoption="union">
+			<objectstore name="P8ConfigObjectStore" />
+		</objectstores>
+		<searchcriteria>
+			<searchclauses>
+				<searchclause>
+					<select>
+						<selectprops>
+							<selectprop symname="DocumentTitle" sortlevel="1"  sortorder="ascending" />
+							<selectprop symname="DateCreated"  sortlevel="2" sortorder="descending"/>
+						</selectprops>
+					</select>
+					<from>
+						<class symname="document" />
+					</from>
+					<where>
+						<or>
+							<and>
+
+								<like>
+									<whereprop editproperty="editable" symname="DocumentTitle" />
+									<literal>S[project]</literal>
+								</like>
+
+								<between>
+									<whereprop editproperty="editable" symname="DateCreated" />
+									<literal>
+										<value_1>DT[2000-10-17T00:00:00.000+03:00]</value_1>
+										<value_2>DT[2010-10-17T07:35:22.345+03:00]</value_2>
+									</literal>
+								</between>
+
+							</and>
+							<eq>
+								<whereprop editproperty="editable" symname="DocumentTitle" />
+								<literal>S[woohoo]</literal>
+							</eq>
+							<lt>
+								<whereprop editproperty="editable" symname="OfficeNumber" />
+								<literal>L[2231233]</literal>
+							</lt>
+							<lte>
+								<whereprop editproperty="editable" symname="OfficeNumber" />
+								<literal>L[6]</literal>
+							</lte>
+							<gt>
+								<whereprop editproperty="editable" symname="Progress" />
+								<literal>D[0.678]</literal>
+							</gt>
+							<gte>
+								<whereprop editproperty="editable" symname="Progress" />
+								<literal>D[0.6]</literal>
+							</gte>
+						</or>
+					</where>
+				</searchclause>
+			</searchclauses>
+		</searchcriteria>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

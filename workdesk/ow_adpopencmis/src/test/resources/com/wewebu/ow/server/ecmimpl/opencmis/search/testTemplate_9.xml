@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1"
+						sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy"
+						sortlevel="2" sortorder="descending" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="cmis:document" />
+			</from>
+			<where>
+				<or>
+					<between>
+						<whereprop editproperty="editable"
+							symname="cmis:document.cmis:officeNumber" />
+						<literal>
+							<value_1>L[232]</value_1>
+							<value_2>L[689]</value_2>
+						</literal>
+					</between>
+
+					<notbetween>
+						<whereprop editproperty="editable"
+							symname="cmis:document.cmis:officeNumber" />
+						<literal>
+							<value_1>L[232]</value_1>
+							<value_2></value_2>
+						</literal>
+					</notbetween>
+
+					<notbetween>
+						<whereprop editproperty="editable"
+							symname="cmis:document.cmis:officeNumber" />
+						<literal>
+							<value_1>L[400]</value_1>
+							<value_2>L[500]</value_2>
+						</literal>
+					</notbetween>
+				</or>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

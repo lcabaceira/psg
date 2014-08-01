@@ -1,0 +1,148 @@
+<?xml version="1.0" ?>
+<VirtualFolderDescription>
+
+	<!-- (optional) java class name of virtual folder factory to use. Leave 
+		empty to use standard: com.wewebu.ow.server.ecm.OwStandardVirtualFolderObjectFactory -->
+	<ClassName />
+
+	<root name="My Inbox" containsdocs="true">
+		<search versionselection="currentversion">
+			<!-- currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions -->
+			<objectstores mergeoption="union">
+				<objectstore name="Main Repository" />
+			</objectstores>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" />
+					<selectprop symname="cmis:document.cmis:creationDate" />
+					<selectprop symname="cmis:document.cmis:createdBy" />
+					<selectprop symname="cmis:document.cmis:objectTypeId" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="document" />
+			</from>
+			
+			<!-- Define the path to a JSP page used for rendering out the search 
+				template, specified relative to OpenWorkdesk´s used design folder, e.g. <jsppage>demo/JspFormularTest.jsp</jsppage> -->
+			<jsppage />
+			<subclasses>
+				<subclass editproperty="hidden" name="Document" objecttype="document"
+					symname="D:cmg:document" />
+			</subclasses>
+		</search>
+		<node name="My Templates" containsdocs="true">
+			<search versionselection="currentversion">
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:document.cmis:name" />
+						<selectprop symname="cmis:document.cmis:creationDate" />
+						<selectprop symname="cmis:document.cmis:createdBy" />
+						<selectprop symname="cmis:document.cmis:objectTypeId" />
+					</selectprops>
+				</select>
+				<from>
+					<class symname="document" />
+				</from>
+				<where>
+					<and>
+						<eq>
+							<whereprop editproperty="hidden" symname="cmis:document.cmis:createdBy" />
+							<literal>{username}</literal>
+						</eq>
+						<cbr_in>
+							<whereprop editproperty="editable" symname="cmis:document.cmis:name" />
+						</cbr_in>
+					</and>
+				</where>
+				
+				<!-- Define the path to a JSP page used for rendering out the search 
+				template, specified relative to OpenWorkdesk´s used design folder, e.g. <jsppage>demo/JspFormularTest.jsp</jsppage> -->
+				<jsppage />
+				<subclasses>
+					<subclass editproperty="hidden" name="Document"
+						objecttype="document" symname="D:cmg:document" />
+				</subclasses>
+			</search>
+		</node>
+		<node name="Templates by Date" containsdocs="true">
+			<search versionselection="currentversion">
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:document.cmis:name" />
+						<selectprop symname="cmis:document.cmis:creationDate" />
+						<selectprop symname="cmis:document.cmis:createdBy" />
+						<selectprop symname="cmis:document.cmis:objectTypeId" />
+					</selectprops>
+				</select>
+				<from>
+					<class symname="document" />
+				</from>
+				<where>
+					<and>
+						<eq>
+							<whereprop editproperty="readonly" symname="cmis:document.cmis:createdBy" />
+							<literal>{username}</literal>
+						</eq>
+						<eq>
+							<whereprop editproperty="editable"
+								symname="cmis:document.cmis:creationDate" datemode="ignoretime" />
+							<literal />
+						</eq>
+						<gte>
+							<whereprop editproperty="editable"
+								symname="cmis:document.cmis:creationDate" datemode="ignoretime" />
+							<literal />
+						</gte>
+						<lte>
+							<whereprop editproperty="editable"
+								symname="cmis:document.cmis:creationDate" datemode="ignoretime" />
+							<literal />
+						</lte>
+					</and>
+				</where>
+				<!-- Define the path to a JSP page used for rendering out the search 
+				template, specified relative to OpenWorkdesk´s used design folder, e.g. <jsppage>demo/JspFormularTest.jsp</jsppage> -->
+				<jsppage />
+				<subclasses>
+					<subclass editproperty="hidden" name="Document"
+						objecttype="document" symname="D:cmg:document" />
+				</subclasses>
+			</search>
+		</node>
+		<node name="My Checkedout Templates" containsdocs="true">
+			<search versionselection="Checkedoutversion">
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:document.cmis:name" />
+						<selectprop symname="cmis:document.cmis:creationDate" />
+						<selectprop symname="cmis:document.cmis:createdBy" />
+						<selectprop symname="cmis:document.cmis:objectTypeId" />
+					</selectprops>
+				</select>
+				<from>
+					<class symname="document" />
+				</from>
+				<where>
+					<and>
+						<eq>
+							<whereprop editproperty="hidden" symname="cmis:document.cmis:createdBy" />
+							<literal>{username}</literal>
+						</eq>
+						<cbr_in>
+							<whereprop editproperty="editable" symname="cmis:document.cmis:name" />
+						</cbr_in>
+					</and>
+				</where>
+				<!-- Define the path to a JSP page used for rendering out the search 
+				template, specified relative to OpenWorkdesk´s used design folder, e.g. <jsppage>demo/JspFormularTest.jsp</jsppage> -->
+				<jsppage />
+				<subclasses>
+					<subclass editproperty="hidden" name="Document"
+						objecttype="document" symname="D:cmg:document" />
+				</subclasses>
+			</search>
+		</node>
+	</root>
+
+</VirtualFolderDescription>

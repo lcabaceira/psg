@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd_prof/src/main/java/com/wewebu/ow/server/plug/efilekey/pattern
+END
+OwKeyPattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 147
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd_prof/src/main/java/com/wewebu/ow/server/plug/efilekey/pattern/OwKeyPattern.java
+END
+OwKeyPatternImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 151
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd_prof/src/main/java/com/wewebu/ow/server/plug/efilekey/pattern/OwKeyPatternImpl.java
+END
+OwMetadataReference.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd_prof/src/main/java/com/wewebu/ow/server/plug/efilekey/pattern/OwMetadataReference.java
+END
+OwMetadataFormatter.java
+K 25
+svn:wc:ra_dav:version-url
+V 154
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd_prof/src/main/java/com/wewebu/ow/server/plug/efilekey/pattern/OwMetadataFormatter.java
+END
+OwMetadataFormatterImpl.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd_prof/src/main/java/com/wewebu/ow/server/plug/efilekey/pattern/OwMetadataFormatterImpl.java
+END
+OwSingleKeyPattern.java
+K 25
+svn:wc:ra_dav:version-url
+V 153
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_plugstd_prof/src/main/java/com/wewebu/ow/server/plug/efilekey/pattern/OwSingleKeyPattern.java
+END

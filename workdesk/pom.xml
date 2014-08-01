@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.wewebu.ecm</groupId>
+	<artifactId>mowd</artifactId>
+	<version>4.2.0</version>
+	<packaging>pom</packaging>
+	<name>Alfresco Workdesk (AWD) Maven</name>
+	<organization>
+		<name>Alfresco Business Solutions</name>
+		<url>http://www.alfresco.com</url>
+	</organization>
+	<properties>
+		<skipTests>true</skipTests>
+		<skipSeleniumTests>true</skipSeleniumTests>
+		<maven.test.failure.ignore>true</maven.test.failure.ignore>
+		<owdVersion>4.2.0.0_Sprint11</owdVersion>
+		<svnUpdate>false</svnUpdate>
+		<doCheck>false</doCheck>
+		<skipViewerServerTests>true</skipViewerServerTests>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<verbose.level>false</verbose.level>
+		<!--
+		<sonar.dynamicAnalysis>reuseReports</sonar.dynamicAnalysis>
+		<sonar.cobertura.reportPath>target/site/cobertura/coverage.xml</sonar.cobertura.reportPath>
+		-->
+		<spring.version>3.2.4.RELEASE</spring.version>
+		<compiler.version>1.7</compiler.version>
+		<source.version>1.7</source.version>
+		<target.version>1.7</target.version>
+		<aspectj.version>1.7.0</aspectj.version>
+	</properties>
+
+
+
+	<modules>
+		<!-- common modules -->
+		<module>ow_expression</module>
+		<module>ow_core</module>
+		<module>oecmcustomlocalize</module>
+		<module>oecmlocalize</module>
+		<module>ow_dev</module>
+
+		<!-- adaptors -->
+		<module>ow_plugstd</module>
+		<module>ow_plugstd_prof</module>
+		<module>ow_adpopencmis</module>
+		<module>ow_adpfncm5</module>
+		<module>ow_adpalfrescobpm</module>
+
+		<!-- plugins -->
+		<module>ow_roledb</module>
+		<module>ow_histdb</module>
+		<module>ow_plugdms</module>
+		<module>ow_plugrecord</module>
+		<module>ow_plugsearch</module>
+		<module>ow_plugstddocimport</module>
+		<module>ow_plugbpm</module>
+
+		<!-- applets -->
+		<module>ow_clientservices</module>
+		<module>ow_dndupload</module>
+		<module>ow_zidilauncher</module>
+		<module>ow_resources</module>
+		<module>workdesk</module>
+		
+		<!-- contract management solution -->
+        <module>oecmcmglocalize</module>
+		<module>ow_contractmanagement</module>
+	</modules>
+
+	<profiles>
+		<profile>
+			<id>signJars</id>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>createTargetfolder</id>
+								<phase>generate-sources</phase>
+								<configuration>
+									<tasks>
+										<mkdir dir="target" />
+									</tasks>
+								</configuration>
+								<goals>
+									<goal>run</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-jarsigner-plugin</artifactId>
+						<version>1.3.1</version>
+						<executions>
+							<execution>
+								<id>sign</id>
+								<goals>
+									<goal>sign</goal>
+								</goals>
+							</execution>
+							<execution>
+								<id>verify</id>
+								<goals>
+									<goal>verify</goal>
+								</goals>
+							</execution>
+						</executions>
+
+						<configuration>
+							<archiveDirectory>target</archiveDirectory>
+							<phase>prepare-package</phase>
+							<excludes>
+								<exclude>**/ow_vieweribm-*.jar</exclude>
+								<exclude>*/WEB-INF/lib/*</exclude>
+								<exclude>*javadoc.jar</exclude>
+								<exclude>*-sources.jar</exclude>
+								<exclude>*workdesk.war</exclude>
+								<exclude>oecmlocalize*.jar</exclude>
+								<exclude>oecmcustomlocalize*.jar</exclude>
+							</excludes>
+
+							<keystore>${keystore}</keystore>
+							<alias>${alias}</alias>
+							<keypass>${keypass}</keypass>
+							<tsaurl>${tsaurl}</tsaurl>
+							<storepass>${storepass}</storepass>
+							<sigfile>${sigfile}</sigfile>
+							<verify>true</verify>
+							<verbose>${verbose.level}</verbose>
+							<removeExistingSignatures>true</removeExistingSignatures>
+							<processAttachedArtifacts>false</processAttachedArtifacts>
+							<processMainArtifact>false</processMainArtifact>
+						</configuration>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<profile>
+			<id>cobertura</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>cobertura-maven-plugin</artifactId>
+						<version>2.5.2</version>
+						<configuration>
+							<formats>
+								<format>xml</format>
+								<format>html</format>
+							</formats>
+						</configuration>
+						<executions>
+							<execution>
+								<phase>package</phase>
+								<goals>
+									<goal>cobertura</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
+	<scm>
+		<developerConnection>scm:svn:https://svn.alfresco.com/repos/abs-owd_repos/mowd/tags/mowd-4.2.0</developerConnection>
+	</scm>
+
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.tomcat.maven</groupId>
+					<artifactId>tomcat6-maven-plugin</artifactId>
+					<version>2.0-SNAPSHOT</version>
+				</plugin>
+
+
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself. -->
+				<plugin>
+					<groupId>org.eclipse.m2e</groupId>
+					<artifactId>lifecycle-mapping</artifactId>
+					<version>1.0.0</version>
+					<configuration>
+						<lifecycleMappingMetadata>
+
+							<pluginExecutions>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.apache.maven.plugins</groupId>
+										<artifactId>maven-dependency-plugin</artifactId>
+										<versionRange>[2.0,)</versionRange>
+										<goals>
+											<goal>copy-dependencies</goal>
+											<goal>build-classpath</goal>
+											<goal>unpack</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>com.keyboardsamurais.maven</groupId>
+										<artifactId>maven-timestamp-plugin</artifactId>
+										<versionRange>[1.0,)</versionRange>
+										<goals>
+											<goal>create</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>org.appfuse.plugins</groupId>
+										<artifactId>maven-warpath-plugin</artifactId>
+										<versionRange>[2.1.0,)</versionRange>
+										<goals>
+											<goal>add-classes</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+								<pluginExecution>
+									<pluginExecutionFilter>
+										<groupId>
+											org.apache.maven.plugins
+										</groupId>
+										<artifactId>
+											maven-antrun-plugin
+										</artifactId>
+										<versionRange>
+											[1.3,)
+										</versionRange>
+										<goals>
+											<goal>run</goal>
+										</goals>
+									</pluginExecutionFilter>
+									<action>
+										<ignore />
+									</action>
+								</pluginExecution>
+							</pluginExecutions>
+						</lifecycleMappingMetadata>
+					</configuration>
+				</plugin>
+			</plugins>
+		</pluginManagement>
+		<plugins>
+			<plugin>
+				<inherited>true</inherited>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<version>2.1.2</version>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+						<manifestEntries>
+							<Implementation-Vendor>Alfresco Business Solutions</Implementation-Vendor>
+							<Implementation-Title>${project.name} Sources</Implementation-Title>
+							<Implementation-Version>${project.version}-${buildNumber}</Implementation-Version>
+							<Build-Date>${timestamp}</Build-Date>
+							<Built-By>Alfresco Business Solutions Bamboo Server</Built-By>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<inherited>true</inherited>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.8</version>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+				<configuration>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+						<manifestEntries>
+							<Implementation-Vendor>Alfresco Business Solutions</Implementation-Vendor>
+							<Implementation-Title>${project.name} JavaDoc</Implementation-Title>
+							<Implementation-Version>${project.version}-${buildNumber}</Implementation-Version>
+							<Build-Date>${timestamp}</Build-Date>
+							<Built-By>Alfresco Business Solutions Bamboo Server</Built-By>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<fork>true</fork>
+					<compilerVersion>${compiler.version}</compilerVersion>
+					<source>${source.version}</source>
+					<target>${target.version}</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5</version>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>buildnumber-maven-plugin</artifactId>
+				<version>1.2</version>
+				<dependencies>
+					<dependency>
+						<groupId>org.tmatesoft.svnkit</groupId>
+						<artifactId>svnkit</artifactId>
+						<version>1.8.3-1</version>
+					</dependency>
+				</dependencies>
+				<configuration>
+					<doCheck>${doCheck}</doCheck>
+					<doUpdate>${doUpdate}</doUpdate>
+					<providerImplementations>
+						<svn>javasvn</svn>
+					</providerImplementations>
+				</configuration>
+				<executions>
+					<execution>
+						<phase>validate</phase>
+						<goals>
+							<goal>create</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>com.keyboardsamurais.maven</groupId>
+				<artifactId>maven-timestamp-plugin</artifactId>
+				<version>1.0</version>
+				<configuration>
+					<propertyName>timestamp</propertyName>
+					<timestampPattern>dd.MM.yyyy HH:mm</timestampPattern>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>create</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.10</version>
+				<configuration>
+					<argLine>-Xms512m -Xmx1024m</argLine>
+					<skipTests>${skipTests}</skipTests>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<archive>
+						<addMavenDescriptor>false</addMavenDescriptor>
+						<manifestEntries>
+							<Implementation-Vendor>Alfresco Business Solutions</Implementation-Vendor>
+							<Implementation-Title>${project.name}</Implementation-Title>
+							<Implementation-Version>${project.version}-${buildNumber}</Implementation-Version>
+							<Build-Date>${timestamp}</Build-Date>
+							<Built-By>Alfresco Business Solutions Bamboo Server</Built-By>
+						</manifestEntries>
+					</archive>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-deploy-plugin</artifactId>
+				<version>2.8.1</version>
+				<configuration>
+					<uniqueVersion>false</uniqueVersion>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-scm-plugin</artifactId>
+				<version>1.9</version>
+				<configuration>
+					<username>${svn.username}</username>
+					<password>${svn.password}</password>
+				</configuration>
+			</plugin>
+
+		</plugins>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh</artifactId>
+				<version>2.2</version>
+			</extension>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-webdav</artifactId>
+				<version>1.0-beta-2</version>
+			</extension>
+		</extensions>
+		<resources>
+			<resource>
+				<directory>src/main/resources</directory>
+				<filtering>true</filtering>
+			</resource>
+		</resources>
+
+	</build>
+
+	<repositories>
+		<repository>
+			<id>vorburger-releases</id>
+			<url>http://vorburger.github.com/m2p2-repository/maven/releases</url>
+		</repository>
+		<repository>
+			<id>vorburger-snapshots</id>
+			<url>http://vorburger.github.com/m2p2-repository/maven/snapshots</url>
+		</repository>
+		<repository>
+			<id>workdesk-internal</id>
+			<url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>alfresco-internal</id>
+			<name>Internal Maven</name>
+			<url>https://artifacts.alfresco.com/nexus/content/groups/internal/</url>
+		</pluginRepository>
+	</pluginRepositories>
+
+	<distributionManagement>
+		<repository>
+			<id>workdesk-internal</id>
+			<name>RepositoryReleases</name>
+			<url>https://artifacts.alfresco.com/nexus/content/repositories/workdesk-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>workdesk-internal</id>
+			<name>RepositorySnapshots</name>
+			<url>https://artifacts.alfresco.com/nexus/content/repositories/workdesk-snapshots/</url>
+			<uniqueVersion>false</uniqueVersion>
+		</snapshotRepository>
+	</distributionManagement>
+
+	<!-- reporting -->
+	<reporting>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>findbugs-maven-plugin</artifactId>
+				<version>2.3.2</version>
+				<configuration>
+					<findbugsXmlOutput>true</findbugsXmlOutput>
+					<findbugsXmlWithMessages>true</findbugsXmlWithMessages>
+					<threshold>Hi</threshold>
+					<effort>Max</effort>
+					<xmlOutput>true</xmlOutput>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+				<version>2.5.1</version>
+			</plugin>
+		</plugins>
+	</reporting>
+
+</project>

@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec>
+		<searchcriteria>
+			<searchclauses>
+				<searchclause>
+					<select>
+						<selectprops>
+							<selectprop symname="OW_HIST_Time" sortlevel="1"
+								sortorder="descending" />
+							<selectprop symname="OW_HIST_ModifiedProperties" />
+						</selectprops>
+					</select>
+					<from>
+						<class symname="Event" />
+					</from>
+					<where>
+						<and>
+
+							<gte>
+								<whereprop editproperty="editable" symname="OW_HIST_Time">
+								</whereprop>
+								<literal>DT[2000-10-17T00:00:00.000Z]</literal>
+							</gte>
+						</and>
+					</where>
+					<subclasses>
+						<subclass editproperty="hidden" includesubclasses="true" name="SpecialEvent" objecttype="event"
+							symname="SpecialEvent" />
+					</subclasses>
+				</searchclause>
+			</searchclauses>
+		</searchcriteria>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

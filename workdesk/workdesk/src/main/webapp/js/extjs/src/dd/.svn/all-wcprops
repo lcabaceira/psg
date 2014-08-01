@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd
+END
+DragTracker.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd/DragTracker.js
+END
+DragZone.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd/DragZone.js
+END
+ScrollManager.js
+K 25
+svn:wc:ra_dav:version-url
+V 114
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd/ScrollManager.js
+END
+DropTarget.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd/DropTarget.js
+END
+DragSource.js
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd/DragSource.js
+END
+DDCore.js
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd/DDCore.js
+END
+Registry.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd/Registry.js
+END
+StatusProxy.js
+K 25
+svn:wc:ra_dav:version-url
+V 112
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd/StatusProxy.js
+END
+DropZone.js
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/workdesk/src/main/webapp/js/extjs/src/dd/DropZone.js
+END

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="checkedoutversion">
+		<!--
+			currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions
+		-->
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:folder.cmis:name" />
+					<selectprop symname="Dossier.DossierPersonnelNumber" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="Dossier.LastName" />
+					<selectprop symname="Dossier.FirstName" />
+					<selectprop symname="Dossier.DossierStatus" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="folder" />
+			</from>
+			<where>
+				<and>
+					<eq>
+						<whereprop editproperty="editable" symname="Dossier.DossierPersonnelNumber" />
+					</eq>
+					<like>
+						<whereprop editproperty="editable" symname="cmis:folder.cmis:name" />
+					</like>
+					<like>
+						<whereprop editproperty="editable" symname="Dossier.FirstName" />
+					</like>
+					<like>
+						<whereprop editproperty="editable" symname="Dossier.LastName" />
+					</like>
+					<eq>
+						<whereprop editproperty="editable" symname="Dossier.DossierStatus" />
+					</eq>
+				</and>
+			</where>
+			<subclasses>
+				<subclass objecttype="folder" symname="Dossier" />
+			</subclasses>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

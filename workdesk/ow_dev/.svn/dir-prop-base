@@ -1,0 +1,18 @@
+K 10
+svn:ignore
+V 47
+.settings
+.classpath
+.project
+target
+target/**
+
+K 13
+svn:mergeinfo
+V 260
+/mowd/branches/DnDHtml5/trunk/ow_dev:32805-32879
+/mowd/branches/OWD-5432/trunk/ow_dev:37319-37401
+/mowd/branches/new_ldap/trunk/ow_dev:33303-33344
+/mowd/branches/opencmis_lazyproploading/ow_dev:31389-31401
+/mowd/branches/share_like_DnD/trunk/ow_dev:32965-33005
+END

@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/csqlc
+END
+OwWhereClauseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/csqlc/OwWhereClauseTest.java
+END
+OwBetweenPredicateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 126
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/csqlc/OwBetweenPredicateTest.java
+END
+OwComparisonPredicateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 129
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/csqlc/OwComparisonPredicateTest.java
+END
+OwSimpleTableTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/csqlc/OwSimpleTableTest.java
+END
+OwSelectListTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/csqlc/OwSelectListTest.java
+END
+OwFromClauseTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/csqlc/OwFromClauseTest.java
+END
+OwQueryStatementTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 124
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/csqlc/OwQueryStatementTest.java
+END
+OwCCCSQLCTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/csqlc/OwCCCSQLCTests.java
+END

@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration
+END
+OwCMISObjectClassTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISObjectClassTest.java
+END
+OwCMISIntegrationTestsSuite.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISIntegrationTestsSuite.java
+END
+OwCMISServiceAccessTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISServiceAccessTest.java
+END
+OwCMISObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 157
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISObjectTest.java
+END
+OwCMISNetworkSearchTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISNetworkSearchTest.java
+END
+OwCMISRetrievalTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISRetrievalTest.java
+END
+OwCMISExceptionHandlingTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 168
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISExceptionHandlingTest.java
+END
+OwCMISNetworkBigDataTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISNetworkBigDataTest.java
+END
+OwCMISIntegrationTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 162
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISIntegrationTest.java
+END
+OwCMISIntegrationTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISIntegrationTests.java
+END
+OwCMISBasicIntegrationTestSetup.java
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISBasicIntegrationTestSetup.java
+END
+OwCMISLDAPTestSetup.java
+K 25
+svn:wc:ra_dav:version-url
+V 160
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISLDAPTestSetup.java
+END
+OwCMISDocumentObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISDocumentObjectTest.java
+END
+OwCMISAbstractNativeObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 171
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISAbstractNativeObjectTest.java
+END
+OwCMISBigDataTestResources.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISBigDataTestResources.java
+END
+OwCMISNetworkTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISNetworkTest.java
+END
+OwCMISBigDataTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 158
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISBigDataTest.java
+END
+OwCMISNetworkTestCfg.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISNetworkTestCfg.java
+END
+OwCMISPermissionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 161
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISPermissionTest.java
+END
+OwCMISVIIdTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISVIIdTest.java
+END
+OwCMISDeletionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISDeletionTest.java
+END
+OwCMISFolderObjectTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 163
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISFolderObjectTest.java
+END
+OwCMISQueryIterableObjectCollectionConverterTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 189
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISQueryIterableObjectCollectionConverterTest.java
+END
+OwCMISLDAPTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 155
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISLDAPTest.java
+END
+OwCMISFolderBigDataTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISFolderBigDataTest.java
+END
+OwCMISIntegrationFixture.java
+K 25
+svn:wc:ra_dav:version-url
+V 165
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwCMISIntegrationFixture.java
+END
+OwAlfrescoCreateRenditionTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 170
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/integration/OwAlfrescoCreateRenditionTest.java
+END

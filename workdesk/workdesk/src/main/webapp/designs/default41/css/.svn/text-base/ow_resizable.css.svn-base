@@ -1,0 +1,47 @@
+/*
+    This CSS definitions are for the resizable left navigation column (not final).
+    It will not be implemented in version 3.0, so it is deactivated.
+    This file can be removed, if this feature will not be implemented. 
+*/
+.OwAutoList
+{
+    height: auto;
+}
+
+.OwRecordSubLayout_NAVIGATION .OwMainColumnHeader,
+#OwSubLayout_NAVIGATION #OwRecordPreviewPropertyView
+{
+    width: auto;
+}
+
+#OwSubLayout_Div #OwSubLayout_MAIN,
+.OwStandardDialog_MAIN #OwSubLayout_MAIN
+{
+    margin-left: 5px;
+}
+
+
+#OwSubLayout_Div
+{
+    background-image: none;
+}
+
+
+#OwSubLayout_Div #OwSubLayout_NAVIGATION
+{
+    float: none;
+    overflow: auto;
+}
+.xresizable-wrap
+{
+    float: left;
+}
+
+#OwSubLayout_Div #OwMainContent
+{
+    float: left;
+}
+
+.OwSublayout_ContentContainer {
+    width: auto;
+}

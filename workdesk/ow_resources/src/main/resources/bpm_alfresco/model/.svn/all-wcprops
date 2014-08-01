@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/bpm_alfresco/model
+END
+readme.txt
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/bpm_alfresco/model/readme.txt
+END
+owdBPMModel-context.xml
+K 25
+svn:wc:ra_dav:version-url
+V 131
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/bpm_alfresco/model/owdBPMModel-context.xml
+END
+owdBPMModel.xml
+K 25
+svn:wc:ra_dav:version-url
+V 123
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_resources/src/main/resources/bpm_alfresco/model/owdBPMModel.xml
+END

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="checkedoutversion">
+		<!--
+			currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions
+		-->
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="2" sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModificationDate" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy" />
+					<selectprop symname="cmis:document.cmis:contentStreamMimeType" sortlevel="1" sortorder="ascending" />
+				</selectprops>
+			</select>
+			<from>
+				<class symname="cmis:document" />
+			</from>
+			<where>
+				<and>
+					<like>
+						<whereprop editproperty="editable" symname="cmis:document.cmis:name" />
+					</like>
+					<like>
+						<whereprop editproperty="readonly" symname="cmis:document.cmis:contentStreamMimeType" />
+						<literal>image/*</literal>
+					</like>
+				</and>
+			</where>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

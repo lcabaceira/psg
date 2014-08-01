@@ -1,0 +1,179 @@
+<?xml version="1.0" ?>
+<VirtualFolderDescription>
+
+	<!--
+		(optional) java class name of virtual folder factory to use. Leave
+		empty to use standard:
+		com.wewebu.ow.server.ecm.OwStandardVirtualFolderObjectFactory
+	-->
+	<ClassName />
+
+	<root name="Dossiers" containsdocs="true">
+
+		<!-- Node contains a search template-->
+		<search versionselection="checkedoutversion">
+			<!-- currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions -->
+
+			<from>
+				<class symname="document" />
+			</from>
+
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+					<selectprop symname="D:owd:hrdocument.owd:documentPersonnelNumber" />
+					<selectprop symname="D:owd:hrdocument.owd:hrDocumentType" />
+					<selectprop symname="cmis:document.cmis:lastModificationDate" />
+					<selectprop symname="D:owd:hrdocument.owd:documentComment" />
+				</selectprops>
+			</select>
+
+			<where>
+				<and>
+					<eq>
+						<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:documentPersonnelNumber">
+						</whereprop>
+						<literal />
+					</eq>
+					<eq>
+						<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:hrDocumentType">
+						</whereprop>
+						<literal />
+					</eq>
+				</and>
+			</where>
+			<subclasses>
+				<subclass objecttype="document" symname="D:owd:hrdocument" />
+			</subclasses>
+
+		</search>
+
+		<node name="Terms of Employment" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="D:owd:hrdocument.owd:hrDocumentType">Terms of Employment</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Remuneration" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="D:owd:hrdocument.owd:hrDocumentType">Remuneration</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Employment History" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="D:owd:hrdocument.owd:hrDocumentType">Employment History</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Application Paper" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="D:owd:hrdocument.owd:hrDocumentType">Application Paper</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Certificate" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="D:owd:hrdocument.owd:hrDocumentType">Certificate</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Social Security" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="D:owd:hrdocument.owd:hrDocumentType">Social Security</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Sick Certificate" containsdocs="true">
+
+			<refinecriteria>
+				<literal symname="D:owd:hrdocument.owd:hrDocumentType">Sick Certificate</literal>
+			</refinecriteria>
+
+		</node>
+		<node name="Picture" containsdocs="true">
+			<!-- Node contains a search template-->
+			<search versionselection="checkedoutversion">
+				<!-- currentversion,allversions,releasedversion,checkedoutversion,inprocessversion,majorversions,minorversions -->
+
+				<objectstores mergeoption="none">
+					<objectstore name="Main Repository" />
+				</objectstores>
+
+				<from>
+					<class symname="document" />
+				</from>
+
+				<select>
+					<selectprops>
+						<selectprop symname="cmis:document.cmis:name" sortlevel="1" sortorder="ascending" />
+						<selectprop symname="D:owd:hrdocument.owd:documentPersonnelNumber" />
+						<selectprop symname="D:owd:hrdocument.owd:hrDocumentType" />
+						<selectprop symname="cmis:document.cmis:lastModificationDate" />
+						<selectprop symname="D:owd:hrdocument.owd:documentComment" />
+					</selectprops>
+				</select>
+
+				<where>
+					<and>
+						<eq>
+							<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:documentPersonnelNumber">
+							</whereprop>
+							<literal />
+						</eq>
+						<neq>
+							<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:hrDocumentType">
+							</whereprop>
+							<literal>Terms of Employment</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:hrDocumentType">
+							</whereprop>
+							<literal>Remuneration</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:hrDocumentType">
+							</whereprop>
+							<literal>Employment History</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:hrDocumentType">
+							</whereprop>
+							<literal>Application Paper</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:hrDocumentType">
+							</whereprop>
+							<literal>Certificate</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:hrDocumentType">
+							</whereprop>
+							<literal>Social Security</literal>
+						</neq>
+						<neq>
+							<whereprop editproperty="hidden" symname="D:owd:hrdocument.owd:hrDocumentType">
+							</whereprop>
+							<literal>Sick Certificate</literal>
+						</neq>
+					</and>
+				</where>
+
+				<subclasses>
+					<subclass objecttype="document" symname="D:owd:hrdocument" />
+				</subclasses>
+
+			</search>
+
+		</node>
+
+	</root>
+
+</VirtualFolderDescription>                                     
+                                                    

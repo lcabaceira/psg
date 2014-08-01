@@ -1,0 +1,50 @@
+# Alfresco Workdesk
+# Copyright (c) Alfresco Software, Inc. All Rights Reserved.
+
+#This file can be used to override the existing Alfresco Workdesk MimeTypes (OwMimeTypes) 
+#or to map new file extensions to a defined MimeType.
+#
+# The following extensions are already configured in AWD
+#
+owc=ow/customobject
+vst=application/x-visio
+vsd=application/visio
+vnd=application/vnd.visio
+txt=text/plain
+gif=image/gif
+png=image/png
+msg=application/msoutlook
+#
+# To overwrite xls association, delete the xls association made below, and comment out the following line
+# xls=application/vnd.ms-excel
+xls=application/msexcel
+doc=application/msword
+ppt=application/mspowerpoint
+mdb=application/msaccess
+jpg=image/jpeg
+jpeg=image/jpeg
+jpe=image/jpeg
+pdf=application/pdf
+tif=image/tif
+tiff=image/tiff
+afp=application/afp
+htm=text/html
+html=text/html
+shtml=text/html
+rtf=text/rtf
+zip=application/zip
+css=text/css
+rtx=text/richtext
+js=text/javascript
+pnm=image/x-portable-anymap
+pbm=image/x-portable-bitmap
+pgm=image/x-portable-graymap
+ppm=image/x-portable-pixmap
+bmp=image/bmp
+url=text/url
+xml=text/xml
+#
+# New extension added: xfdf
+#
+xfdf=application/vnd.adobe.xfdf
+swf=application/x-shockwave-flash

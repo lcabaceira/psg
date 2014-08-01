@@ -1,0 +1,51 @@
+<?xml version="1.0" ?>
+<storedsearch>
+	<searchspec versionselection="releasedversion">
+		<searchtype>
+			<template showandorconditions="false" showmaxrecords="false"
+				showoperators="false" />
+		</searchtype>
+		<objectstores mergeoption="union">
+			<objectstore name="P8ConfigObjectStore" />
+		</objectstores>
+		<searchcriteria>
+			<searchclauses>
+				<searchclause>
+					<select>
+						<selectprops>
+							<selectprop symname="DeleteStatusFlag" />
+						</selectprops>
+					</select>
+					<objectstores mergeoption="union">
+						<objectstore name="P8ConfigObjectStore"  />
+					</objectstores>
+					<from>
+						<class objecttype="document" symname="Document" />
+						<class objecttype="folder" symname="Folder" />
+					</from>
+					<folders>
+						<folder id="{99FCB35C-F4C5-475C-B064-6E87A06EE19A}"
+							uniquename="testme1" pathname="/Test_3790" searchsubfolders="true"
+							view="hidden">
+							<objectstore name="P8ConfigObjectStore"  />
+						</folder>
+					</folders>
+
+					<where>
+						<and>
+							<eq>
+								<whereprop editproperty="editable" symname="DeleteStatusFlag" />
+								<literal>B[true]</literal>
+							</eq>
+						</and>
+					</where>
+					<subclasses>
+						<subclass objecttype="document" symname="DocMan_DealDoc" />
+						<subclass objecttype="folder" symname="DocManDealSubFolder" />
+					</subclasses>
+				</searchclause>
+			</searchclauses>
+		</searchcriteria>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

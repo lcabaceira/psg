@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<storedsearch>
+	<searchspec versionselection="currentversion">
+		<searchclauses>
+			<select>
+				<selectprops>
+					<selectprop symname="cmis:document.cmis:name" sortlevel="1"
+						sortorder="ascending" />
+					<selectprop symname="cmis:document.cmis:lastModifiedBy"
+						sortlevel="2" sortorder="descending" />
+					<selectprop symname="cm:author.cm:author" sortlevel="3"
+						sortorder="descending" />
+				</selectprops>
+			</select>
+			<from>
+				<class objecttype="document" symname="cmis:document" />
+			</from>
+			<where>
+				<and>
+					<like>
+						<whereprop editproperty="editable" symname="cmis:document.cmis:name" />
+						<literal>S[Whom]</literal>
+					</like>
+					<like>
+                        <whereprop editproperty="editable" symname="ws:paper.ws:reviewers" />
+                        <literal>S[Doe]</literal>
+                    </like>
+					<like>
+						<whereprop editproperty="editable"
+							symname="cmis:document.cmis:lastModifiedBy" />
+							<literal>S[admin]</literal>
+					</like>
+					<like>
+						<whereprop editproperty="editable" symname="cm:author.cm:author" />
+						<literal>S[E. Hemingway]</literal>
+					</like>
+					<like>
+                        <whereprop editproperty="editable" symname="cm:titled.cm:title" />
+                        <literal>S[Bell Tolls]</literal>
+                    </like>
+				</and>
+				<or>
+                    <like>
+                        <whereprop editproperty="editable" symname="ws:article.ws:journal" />
+                        <literal>S[Medicine Today]</literal>
+                    </like>
+                    <like>
+                        <whereprop editproperty="editable" symname="ws:blogPost.ws:url" />
+                        <literal>S[http://blog.b.log]</literal>
+                    </like>
+                </or>
+			</where>
+			<subclasses>
+				<subclass objecttype="document" name="Article" symname="ws:article" />
+				<subclass objecttype="document" name="Journal" symname="ws:blogPost" />
+			</subclasses>
+		</searchclauses>
+		<options maxrecords="100" />
+	</searchspec>
+</storedsearch>

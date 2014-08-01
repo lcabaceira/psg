@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/unittest/search
+END
+OwSearchTemplateLoader.java
+K 25
+svn:wc:ra_dav:version-url
+V 136
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/unittest/search/OwSearchTemplateLoader.java
+END
+OwSearchTestFieldDefinitionProvider.java
+K 25
+svn:wc:ra_dav:version-url
+V 149
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/unittest/search/OwSearchTestFieldDefinitionProvider.java
+END
+OwSearchTestFieldDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/unittest/search/OwSearchTestFieldDefinition.java
+END
+OwSearchTemplateTestContext.java
+K 25
+svn:wc:ra_dav:version-url
+V 141
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/java/com/wewebu/ow/unittest/search/OwSearchTemplateTestContext.java
+END

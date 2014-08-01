@@ -1,0 +1,119 @@
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources
+END
+utils_test.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/utils_test.properties
+END
+dbhistory_mssql.properties
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/dbhistory_mssql.properties
+END
+testobject2.txt
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/testobject2.txt
+END
+dbrole_mssql.properties
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/dbrole_mssql.properties
+END
+dbrole_mssql_goodConfiguration.properties
+K 25
+svn:wc:ra_dav:version-url
+V 135
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/dbrole_mssql_goodConfiguration.properties
+END
+ibmcm_adpimbcm2.properties
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/ibmcm_adpimbcm2.properties
+END
+configuration.properties
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/configuration.properties
+END
+fncm_adpfncm.properties
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/fncm_adpfncm.properties
+END
+fncm_bpm.properties
+K 25
+svn:wc:ra_dav:version-url
+V 113
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/fncm_bpm.properties
+END
+fncm4_adpfncm4.properties
+K 25
+svn:wc:ra_dav:version-url
+V 119
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/fncm4_adpfncm4.properties
+END
+ibmcm_adpimcmod.properties
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/ibmcm_adpimcmod.properties
+END
+testobject.txt
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/testobject.txt
+END
+dbhistory_db2.properties
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/dbhistory_db2.properties
+END
+dbrole_oracle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 118
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/dbrole_oracle.properties
+END
+dbrole_db2.properties
+K 25
+svn:wc:ra_dav:version-url
+V 115
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/dbrole_db2.properties
+END
+dbhistory_oracle.properties
+K 25
+svn:wc:ra_dav:version-url
+V 121
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/dbhistory_oracle.properties
+END
+fncm_history.properties
+K 25
+svn:wc:ra_dav:version-url
+V 117
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/fncm_history.properties
+END
+dbhistory_mssql_custom_filter.properties
+K 25
+svn:wc:ra_dav:version-url
+V 134
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/dbhistory_mssql_custom_filter.properties
+END
+fncm_bpmhistory.properties
+K 25
+svn:wc:ra_dav:version-url
+V 120
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_core/src/test/resources/resources/fncm_bpmhistory.properties
+END

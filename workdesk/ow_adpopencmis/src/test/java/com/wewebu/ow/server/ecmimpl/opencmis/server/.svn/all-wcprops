@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 130
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/server
+END
+OwWildCardHelper.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/server/OwWildCardHelper.java
+END
+OwStandardSearchTemplateTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 164
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/server/OwStandardSearchTemplateTest.java
+END
+OwSearchPathTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 152
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/server/OwSearchPathTest.java
+END
+OwCCSearchTemplateTests.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/server/OwCCSearchTemplateTests.java
+END
+OwCMISSearchTestFieldDefinition.java
+K 25
+svn:wc:ra_dav:version-url
+V 167
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/server/OwCMISSearchTestFieldDefinition.java
+END
+OwSearchObjectStoreTest.java
+K 25
+svn:wc:ra_dav:version-url
+V 159
+/repos/abs-owd_repos/!svn/ver/37993/mowd/tags/mowd-4.2.0/ow_adpopencmis/src/test/java/com/wewebu/ow/server/ecmimpl/opencmis/server/OwSearchObjectStoreTest.java
+END

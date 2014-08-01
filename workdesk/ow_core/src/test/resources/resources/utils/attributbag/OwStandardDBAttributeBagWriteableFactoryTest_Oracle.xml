@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<bootstrap>
+
+	<DefaultDataSource>
+		<JNDIName>java:/OracleDS</JNDIName>
+		<DriverClassName>oracle.jdbc.driver.OracleDriver</DriverClassName>
+		<URL>jdbc:oracle:thin:@abs-dboracle.alfresco.com:1521:LL</URL>
+		<User>SYSTEM</User>
+		<Password>wewebu2003</Password>
+	</DefaultDataSource>
+
+</bootstrap>
+

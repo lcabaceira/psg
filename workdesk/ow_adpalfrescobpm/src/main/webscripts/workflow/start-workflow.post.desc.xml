@@ -1,0 +1,9 @@
+<webscript>
+	<shortname>Start Workflow</shortname>
+	<description>Starts a new workflow.</description>
+	<url>/ow/api/workflow-definitions/{workflowDefinitionId}/start</url>
+	<format default="json" />
+	<authentication>user</authentication>
+	<transaction>required</transaction>
+	<lifecycle>draft</lifecycle>
+</webscript>

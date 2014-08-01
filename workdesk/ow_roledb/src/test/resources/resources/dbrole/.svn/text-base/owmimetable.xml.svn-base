@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mimetable>
+  <!-- ============================================================
+	SELECTIVE AND PLACEHOLDER CONFIGURATION (optional)
+	Please read the documentation carefully if you want to use this feature.
+	=============================================================
+	
+	All scalar tags directly benath the <mime> tags support mandator configuration placeholder's,
+	i.e.: {$<Placeholdername>}.
+		
+
+	All MIME tags support selective configuration via the "optionid" attribute.
+
+	optionid	        An option ID attribute if you define several options for a single configuration node.
+						The ID is selected in the rolemanager via selective configuration.
+						Leave empty if you do not have options.
+						
+=========================================================================== -->
+  <!-- 
+	For each mimetype define a MIME section <mime nocontentcheck="true | false" type="<mimetype>">
+	Within the mimesection define an icon as well as an open action, using the following nodes / attributes:
+	
+	
+	Attributes of <mime...> node
+	============================================================================================
+	
+	optionid	        An option ID if you define several options for a single mimetype.
+						The ID is selected in the rolemanager via selective configuration.
+						Leave empty if you do not have mimetype options.
+	
+	nocontentcheck  	true  = show link always	even if document has no content.
+						false = check for content on document (default).
+
+
+	autoviewermode		5	= call given java script statement
+									
+						4	= use a new viewer for each new document try to arrange for comparison or do not arrange
+							  equal documents share one viewer.
+									
+						3   = use a new viewer for each new document and autoarrange browser and viewer.
+							  equal documents share one viewer.
+										  
+						2  	= use one single viewer for each document and autoarrange browser and viewer.
+									
+						1  	= use application default for viewer mode
+									
+						0  	= open link in new browser without autoarrange (default).
+
+					
+					
+	Subnodes of <mime...> node
+	============================================================================================
+					
+	<icon>			The icon to display for this type.
+					This tag supports mandator configuration placeholder's, i.e.: {$<Placeholdername>}
+
+	<openicon>		(optional) For treeviews, you can also specify a openicon.
+					This tag supports mandator configuration placeholder's, i.e.: {$<Placeholdername>}
+
+	<dwlurl>		(optional) Override the pattern where the content can be uploaded. 
+					E.g. to get it from external servers.
+					If undefined the following default pattern is used:
+					
+						"{baseurl}getContent?dmsid={dmsid}&#38;page={page}&#38;cttyp={contenttype}"
+
+					This tag supports mandator configuration placeholder's, i.e.: {$<Placeholdername>}
+					
+
+	Available open actions (choose one for each mimetype):
+	============================================================================================
+		
+	<viewerservlet>		URL to upload and display the object, usually the getContent servlet.
+
+				You can use the following placeholders to construct a URL:
+
+                {serverurl}             Base-URL of the server, e.g.: http://localhost/
+                {baseurl}               Base-URL of the server and deployment, e.g.: http://localhost/ow/                                    
+				{dmsid}					The DMSID of the object
+				{pagecount}				The number of pages in the object
+				{page}					The page number to display in the viewer
+				{contenttype}			The requested content type as defined in OwContentCollection
+				{dwlurl}				The default URL where the content can be uploaded. 
+				{securitytoken}			A ECM secific security token to enable SSO for deep links.
+				{securitytokenenc}		A encoded ECM secific security token to enable SSO for deep links.
+                {prop:<PropertyName>}   A encoded (URL-encoded) property from the object
+                {prop#<PropertyName>}   A unencoded property from the object (should not be use, because of client-side script injection)
+    
+	<eventhandler type="class | id" openrecord="true | false" >	
+	
+						The ID of  Masterplugin document class, which should receive the open request.
+						This will call onDispatch in the Masterplugin.
+						
+						If type="class" 
+									A masterplugin class will be used to indetify the plugin, 
+									the first found will be used.
+									
+						If type="id" (default) 
+									A masterplugin document ID ("[PluginID].Doc") will be used to indentify the plugin.
+									
+						If openrecord="true"
+									Opens the Record where the object belongs to
+									
+						If openrecord="false"
+									Opens the object directly
+
+	<documentfunction>	The ID of a documentfunction plugin which should open the object
+-->
+  <!-- Default mimetypes (used if mimetype is undefined) -->
+  <!-- Default mimetype for OBJECT_TYPE_DOCUMENT -->
+  <mime optionid="" type="ow_default/OBJECT_TYPE_DOCUMENT">
+    <icon>doc.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <!-- Default mimetype for OBJECT_TYPE_FOLDER -->
+  <mime optionid="" type="ow_default/OBJECT_TYPE_FOLDER">
+    <!-- <icon>{$Icon}</icon> -->
+    <icon>folder.png</icon>
+    <openicon>folder_open.png</openicon>
+    <!-- <eventhandler type="id">com.wewebu.ow.Record.Doc</eventhandler> -->
+    <eventhandler type="class" openrecord="true">com.wewebu.ow.server.plug.owrecord.OwRecordDocument</eventhandler>
+  </mime>
+  <!-- Default mimetype for OBJECT_TYPE_HISTORY -->
+  <mime optionid="" type="ow_default/OBJECT_TYPE_HISTORY">
+    <icon>history.png</icon>
+  </mime>
+  <!-- Default mimetype for OBJECT_TYPE_CUSTOM -->
+  <mime optionid="" type="ow_default/OBJECT_TYPE_CUSTOM">
+    <icon>custom.png</icon>
+  </mime>
+  <!-- Default mimetype for OBJECT_TYPE_FOLDER -->
+  <mime optionid="" type="ow_folder/OwFileSystemDirectory" autoviewermode="1">
+    <icon>folder.png</icon>
+    <openicon>folder_open.png</openicon>
+    <!-- <eventhandler type="id">com.wewebu.ow.Record.Doc</eventhandler> -->
+    <eventhandler type="class" openrecord="true">com.wewebu.ow.server.plug.owrecord.OwRecordDocument</eventhandler>
+  </mime>
+  <!-- FNCM Daeja Viewer P8 -->
+  <!-- example with selective configuration via optionid -->
+  <!-- default option -->
+  <mime optionid="" type="image/tif" autoviewermode="2">
+    <icon>image_tiff.png</icon>
+    <viewerservlet>{baseurl}viewer/fncm/FNCMImageViewer.jsp?dmsid={dmsid}&amp;page={page}</viewerservlet>
+  </mime>
+  <!-- option with option ID = A -->
+  <mime optionid="A" type="image/tif" autoviewermode="2">
+    <icon>image_tiff.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <!-- option with option ID = B -->
+  <mime optionid="B" type="image/tif" autoviewermode="2">
+    <icon>image_tiff.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <!-- option with option ID = C -->
+  <mime optionid="C" type="image/tif" autoviewermode="2">
+    <icon>image_tiff.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="image/bmp">
+    <icon>image_bmp.png</icon>
+    <viewerservlet>{baseurl}viewer/fncm/FNCMImageViewer.jsp?dmsid={dmsid}&amp;page={page}</viewerservlet>
+  </mime>
+  <mime optionid="" type="image/jpeg">
+    <icon>image_jpeg.png</icon>
+    <viewerservlet>{baseurl}viewer/fncm/FNCMImageViewer.jsp?dmsid={dmsid}&amp;page={page}</viewerservlet>
+  </mime>
+  <mime optionid="" type="image/gif">
+    <icon>image_gif.png</icon>
+    <viewerservlet>{baseurl}viewer/fncm/FNCMImageViewer.jsp?dmsid={dmsid}&amp;page={page}</viewerservlet>
+  </mime>
+  <mime optionid="" type="text/url">
+    <icon>text_url.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="text/xml">
+    <icon>xml.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <!-- Office  mimetypes -->
+  <mime optionid="" type="text/plain" autoviewermode="4">
+    <icon>text_plain.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/msoutlook">
+    <icon>application_msoutlook.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <mime optionid="" type="application/msexcel" autoviewermode="0">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+    <!-- 	<viewerservlet>openOfficeDocument('http://<servername>[:<port>]/<zidi_deployment_name>/AllObjects/{dmsid}/{prop#OW_ObjectName}.xls',false);</viewerservlet> -->
+  </mime>
+  <mime optionid="" type="application/vnd.ms-excel" autoviewermode="0">
+    <icon>application_msexcel.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+    <!-- 	<viewerservlet>openOfficeDocument('http://<servername>[:<port>]/<zidi_deployment_name>/AllObjects/{dmsid}/{prop#OW_ObjectName}.xls',false);</viewerservlet> -->
+  </mime>
+  <mime optionid="" type="application/mspowerpoint" autoviewermode="0">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+    <!-- 	<viewerservlet>openOfficeDocument('http://<servername>[:<port>]/<zidi_deployment_name>/AllObjects/{dmsid}/{prop#OW_ObjectName}.ppt',false);</viewerservlet> -->
+  </mime>
+  <mime optionid="" type="application/vnd.ms-powerpoint" autoviewermode="0">
+    <icon>application_mspowerpoint.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+    <!-- 	<viewerservlet>openOfficeDocument('http://<servername>[:<port>]/<zidi_deployment_name>/AllObjects/{dmsid}/{prop#OW_ObjectName}.ppt',false);</viewerservlet> -->
+  </mime>
+  <mime optionid="" type="application/msword" autoviewermode="0">
+    <icon>application_msword.png</icon>
+    <!-- Standard link -->
+    <!-- <viewerservlet>{dwlurl}</viewerservlet> -->
+    <!-- Link for dummy adapter "ow_Filename" and "EmployeeNumber" properties in office window title -->
+    <viewerservlet>{baseurl}getContent/{prop#ow_Filename} - {prop#EmployeeNumber}?dmsid={dmsid}</viewerservlet>
+    <!-- Link for ZIDI integration -->
+    <!-- 	<viewerservlet>openOfficeDocument('http://<servername>[:<port>]/<zidi_deployment_name>/AllObjects/{dmsid}/{prop#OW_ObjectName}.doc',false);</viewerservlet> -->
+  </mime>
+  <mime optionid="" type="application/vnd.ms-word" autoviewermode="0">
+    <icon>application_msword.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+    <!-- 	<viewerservlet>openOfficeDocument('http://<servername>[:<port>]/<zidi_deployment_name>/AllObjects/{dmsid}/{prop#OW_ObjectName}.doc',false);</viewerservlet> -->
+  </mime>
+  <mime optionid="" type="application/pdf">
+    <icon>application_pdf.png</icon>
+    <viewerservlet>{dwlurl}</viewerservlet>
+  </mime>
+  <!-- Workflow mimetypes -->
+  <mime optionid="" type="ow_workitem/item">
+    <icon>fncm/workitem.png</icon>
+    <documentfunction>com.wewebu.owfnbpm.JspProcessor</documentfunction>
+  </mime>
+  <mime optionid="" type="ow_workitem/proxy">
+    <icon>fncm/workproxy.png</icon>
+    <documentfunction>com.wewebu.owfnbpm.JspProcessor</documentfunction>
+  </mime>
+  <!--	P8 Tracker, forwarded to P8 Workplace
+			TODO: Insert your FileNet P8 Workplace base URL here 
+		
+		    If you want to use Single SignOn (SSO) between Alfresco Workdesk and P8 Workplace,
+		    you need to add an additional User token (parameter 'ut') to the URL and pass
+		    the security token to P8 Workplace. Append this to the viewservlet URL:
+		    &#38;ut={securitytokenenc}
+		    You will also have your Workplace configured to accept user tokens (Admin ->
+		    site preferences) and make sure, that AWD and Workplace use the same encryption
+		    key file (configured in WcmApiConfig.properties).
+	-->
+  <mime optionid="" nocontentcheck="true" type="ow_workitem/tracker">
+    <icon>fncm/worktracker.png</icon>
+    <viewerservlet>http://wewebu.dyndns.org/Workplace/eprocess/WcmTracker.jsp?queueName={prop:F_QueueName}&amp;wobNum={prop:F_WobNum}&amp;setWindowId=mainWindow</viewerservlet>
+  </mime>
+  <mime optionid="" type="ow_workitem/roster">
+    <icon>fncm/workroster.png</icon>
+  </mime>
+  <mime optionid="" type="ow_root/filenet_bpm">
+    <icon>fncm/bpmroot.png</icon>
+    <openicon>fncm/bpmroot.png</openicon>
+  </mime>
+  <mime optionid="" type="ow_workitemcontainer/public">
+    <icon>fncm/publicqueue.png</icon>
+    <openicon>fncm/publicqueue.png</openicon>
+  </mime>
+  <mime optionid="" type="ow_workitemcontainer/system">
+    <icon>fncm/sysqueue.png</icon>
+    <openicon>fncm/sysqueue.png</openicon>
+  </mime>
+  <mime optionid="" type="ow_workitemcontainer/user">
+    <icon>fncm/userqueue.png</icon>
+    <openicon>fncm/userqueue.png</openicon>
+  </mime>
+  <mime optionid="" type="ow_workitemcontainer/cross">
+    <icon>fncm/crossqueue.png</icon>
+    <openicon>fncm/crossqueue.png</openicon>
+  </mime>
+  <mime optionid="" type="ow_workitemcontainer/proxy">
+    <icon>fncm/proxyqueue.png</icon>
+    <openicon>fncm/proxyqueue.png</openicon>
+  </mime>
+  <mime optionid="" type="ow_workitemcontainer/tracker">
+    <icon>fncm/trackerqueue.png</icon>
+    <openicon>fncm/trackerqueue.png</openicon>
+  </mime>
+  <mime optionid="" type="ow_workitemcontainer/roster">
+    <icon>fncm/roster.png</icon>
+    <openicon>fncm/roster.png</openicon>
+  </mime>
+  <!-- Mimetypes for the demo -->
+  <mime optionid="" type="ow/customobject">
+    <icon>dummy/address.png</icon>
+    <documentfunction>com.wewebu.ow.owdemo.oweditformularpropertiesdemo</documentfunction>
+  </mime>
+  <mime optionid="" type="ow/demoaddress">
+    <icon>dummy/address.png</icon>
+    <documentfunction>com.wewebu.ow.owdemo.oweditformularpropertiesdemo</documentfunction>
+  </mime>
+</mimetable>
+

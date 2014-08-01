@@ -19,18 +19,8 @@
        | For more available properties see the alfresco-sdk-parent POM. 
        -->
     <properties>
-        <!-- 
-            | Defines the Alfresco GroupId \ Edition to work against. Allowed values are: org.alfresco | org.alfresco.enterprise
-            | NOTE: Please Refer to Alfresco Support for access to Enterprise artifacts -->
-        <alfresco.groupId>org.alfresco</alfresco.groupId>
         <!-- Defines the Alfresco version to work against. Allowed values are: org.alfresco | org.alfresco.enterprise -->
-        <alfresco.version>4.2.e</alfresco.version>
-        <!-- This control the root logging level for all apps -->
-        <app.log.root.level>WARN</app.log.root.level>
-        <!-- This controls the default data location for dir.root -->
-        <alfresco.data.location>alf_data_dev</alfresco.data.location>
-        <!-- This controls which properties will be picked in multi-enviromment build -->
-        <env>local</env>
+        <alfresco.version>4.2.2</alfresco.version>
     </properties>
     
     
@@ -126,6 +116,14 @@
             <id>alfresco-private-snapshots</id>
             <url>https://artifacts.alfresco.com/nexus/content/groups/private-snapshots</url>
         </repository>
+        
+         <repository>
+            <id>workdesk-internal</id>
+            <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
+        </repository>
+        
+        
+        
     </repositories>
     
    

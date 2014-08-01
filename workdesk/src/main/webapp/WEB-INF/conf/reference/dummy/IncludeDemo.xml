@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+Alfresco Workdesk
+Copyright (c) Alfresco Software, Inc. All Rights Reserved.
+-->
+<SubPlugIn>
+		<Name>Demo</Name>
+		<id>com.wewebu.ow.Demo</id>
+		<Description>Predefined plugin for plugin development</Description>
+		<Vendor>Alfresco Business Solutions</Vendor>
+		<Version>4.2.0</Version>
+		<ClassName>com.wewebu.ow.server.plug.owdemo.owmain.OwDemoDocument</ClassName>
+		<ViewClassName>com.wewebu.ow.server.plug.owdemo.owmain.OwDemoView</ViewClassName>
+		<helppath>owdemo/default.jsp</helppath>
+		<!-- icon to display for the plugin -->
+    	<icon>/images/tools.png</icon>
+		<settingsset>
+			<borderwidth type="com.wewebu.ow.server.settingsimpl.OwSettingsPropertyInteger" scope="user" edit="true" list="false" displayname="Rahmenbreite" helppath="">
+				<property>2</property>
+			</borderwidth>
+		</settingsset>
+</SubPlugIn>

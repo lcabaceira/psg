@@ -1,0 +1,10 @@
+/bootstrap/EcmAdapter/AtomPub
+/bootstrap/EcmAdapter/WSDLRepository
+/bootstrap/EcmAdapter/WSDLNavigation
+/bootstrap/EcmAdapter/WSDLObject
+/bootstrap/EcmAdapter/WSDLMultifiling
+/bootstrap/EcmAdapter/WSDLDiscovery
+/bootstrap/EcmAdapter/WSDLVersioning
+/bootstrap/EcmAdapter/WSDLRelationship
+/bootstrap/EcmAdapter/WSDLPolicy
+/bootstrap/EcmAdapter/WSDLACL

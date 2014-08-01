@@ -12,10 +12,9 @@
     
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>alfresco</artifactId>
-    <name>Alfresco Repository and Explorer Client</name>
+    <artifactId>workdesk</artifactId>
+    <name>Alfresco Workdesk War overlay</name>
     <packaging>war</packaging>
-    <description>Alfresco Repository and Explorer Client</description>
 
     <parent>
         <groupId>org.alfresco.consulting.releasemanagement.demo</groupId>
@@ -25,24 +24,11 @@
 
     <dependencies>
         <dependency>
-            <groupId>${alfresco.groupId}</groupId>
-            <artifactId>alfresco</artifactId>
-            <type>war</type>
-        </dependency>
-        <!-- Demonstrating the dependency on the repo AMP developed in the 'amp' module -->
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>amp</artifactId>
-            <version>${project.version}</version>
-            <type>amp</type>
-        </dependency>
-        <!-- Demonstrating the usage of a well known GA AMP (SharePoint Protocol Support) -->
-        <dependency>
-            <groupId>${alfresco.groupId}</groupId>
-            <artifactId>alfresco-spp</artifactId>
-            <version>${alfresco.version}</version>
-            <type>amp</type>
-        </dependency>
+  			<groupId>com.wewebu.ecm</groupId>
+ 			 <artifactId>workdesk</artifactId>
+ 			 <version>4.2.0.0_Sprint9</version>
+  			 <type>war</type>
+		</dependency>
     </dependencies>
 
     <build>
@@ -59,86 +45,17 @@
                     <overlays>
                         <!-- Current project customizations -->
                         <overlay />
-                        <!-- The Alfresco WAR -->
+                        <!-- The Workdesk WAR -->
                         <overlay>
-                            <groupId>${alfresco.groupId}</groupId>
-                            <artifactId>alfresco</artifactId>
+                            <groupId>com.wewebu.ecm</groupId>
+ 			 				<artifactId>workdesk</artifactId>
                             <type>war</type>
                             <!-- To allow inclusion of META-INF -->
                             <excludes />
-                        </overlay>
-                        <!-- Add / order your AMPs here -->
-                        <overlay>
-                            <groupId>${project.groupId}</groupId>
-                            <artifactId>amp</artifactId>
-                            <type>amp</type>
-                        </overlay>
-                        <overlay>
-                            <groupId>${alfresco.groupId}</groupId>
-                            <artifactId>alfresco-spp</artifactId>
-                            <type>amp</type>
                         </overlay>
                     </overlays>
                 </configuration>
             </plugin>
         </plugins>
     </build>
-    <profiles>
-        <!-- Overrides the run profile to disable securecomms -->
-        <profile>
-            <id>run</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <artifactId>maven-war-plugin</artifactId>
-                        <executions>
-                            <execution>
-                                <id>prepare-exploded-war</id>
-                                <goals>
-                                    <goal>exploded</goal>
-                                </goals>
-                                <phase>prepare-package</phase>
-                            </execution>
-                            <execution>
-                                <id>default-war</id>
-                                <configuration>
-                                    <webXml>${project.build.directory}/${project.build.finalName}-nossl/WEB-INF/web.xml</webXml>
-                                </configuration>
-                            </execution>
-                        </executions>
-                    </plugin>
-                    <!-- Replaces web.xml where applicable, commenting out the security-constraints -->
-                    <plugin>
-                        <groupId>com.google.code.maven-replacer-plugin</groupId>
-                        <artifactId>replacer</artifactId>
-                        <executions>
-                            <execution>
-                                <id>disable-securecomms</id>
-                                <phase>prepare-package</phase>
-                                <goals>
-                                    <goal>replace</goal>
-                                </goals>
-                            </execution>
-                        </executions>
-                        <configuration>
-                            <ignoreErrors>true</ignoreErrors>
-                            <file>${project.build.directory}/${project.build.finalName}/WEB-INF/web.xml</file>
-                            <outputDir>${project.build.directory}/${project.build.finalName}-nossl/WEB-INF/</outputDir>
-                            <preserveDir>false</preserveDir>
-                            <replacements>
-                                <replacement>
-                                    <token><![CDATA[<!-- Toggle securecomms placeholder start -->]]></token>
-                                    <value><![CDATA[<!--]]></value>
-                                </replacement>
-                                <replacement>
-                                    <token><![CDATA[<!-- Toggle securecomms placeholder end -->]]></token>
-                                    <value><![CDATA[-->]]></value>
-                                </replacement>
-                            </replacements>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
-    </profiles>
 </project>

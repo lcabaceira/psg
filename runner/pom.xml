@@ -57,6 +57,14 @@
                                     <asWebapp>true</asWebapp>
                                     <contextPath>share</contextPath>
                                 </webapp>
+                                 <webapp>
+                                    <groupId>${project.groupId}</groupId>
+                                    <artifactId>workdesk</artifactId>
+                                    <version>${project.version}</version>
+                                    <type>war</type>
+                                    <asWebapp>true</asWebapp>
+                                    <contextPath>workdesk</contextPath>
+                                </webapp>
                             </webapps> 
                         </configuration>
                     </plugin>

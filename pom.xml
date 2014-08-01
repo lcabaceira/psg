@@ -135,6 +135,7 @@
     <module>alfresco</module>
     <module>solr</module>
     <module>share</module>
+    <module>workdesk</module>
     <module>runner</module>
   </modules>
 </project>

@@ -167,9 +167,9 @@
 		</profile>
 	</profiles>
 
-	<scm>
+	<!--<scm>
 		<developerConnection>scm:svn:https://svn.alfresco.com/repos/abs-owd_repos/mowd/tags/mowd-4.2.0</developerConnection>
-	</scm>
+	</scm>-->
 
 	<build>
 		<pluginManagement>
@@ -181,7 +181,7 @@
 				</plugin>
 
 
-				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself. -->
+				<!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself. 
 				<plugin>
 					<groupId>org.eclipse.m2e</groupId>
 					<artifactId>lifecycle-mapping</artifactId>
@@ -254,7 +254,8 @@
 							</pluginExecutions>
 						</lifecycleMappingMetadata>
 					</configuration>
-				</plugin>
+				</plugin>-->
+				
 			</plugins>
 		</pluginManagement>
 		<plugins>

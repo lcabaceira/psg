@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Custom Model -->
+
+<!-- Note: This model is pre-configured to load at startup of the Repository.  So, all custom -->
+<!--       types and aspects added here will automatically be registered -->
+
+<model name="custom:customModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+
+   <!-- Optional meta-data about the model -->   
+   <description>Custom Model</description>
+   <author></author>
+   <version>1.0</version>
+
+   <imports>
+   	  <!-- Import Alfresco Dictionary Definitions -->
+      <import uri="http://www.alfresco.org/model/dictionary/1.0" prefix="d"/>
+      <!-- Import Alfresco Content Domain Model Definitions -->
+      <import uri="http://www.alfresco.org/model/content/1.0" prefix="cm"/>
+   </imports>
+
+   <!-- Introduction of new namespaces defined by this model -->
+   <!-- NOTE: The following namespace custom.model should be changed to reflect your own namespace -->
+   <namespaces>
+      <namespace uri="custom.model" prefix="custom"/>
+   </namespaces>
+   <constraints>
+        <constraint name="custom:docstatus" type="LIST">
+            <parameter name="allowedValues">
+                <list>
+                    <value>Draft</value>
+                    <value>Pending for review</value>
+                    <value>Waiting for modification</value>
+                    <value>Pending for evaluation</value>
+                    <value>Waiting for improvement</value>
+                    <value>Pending for publication</value>
+                    <value>Published</value>
+                </list>
+            </parameter>
+        </constraint>
+    </constraints>
+ <types>
+ 		<type name="custom:document">
+            <title>Superclass Document</title>
+            <description>My Custom Document Superclass</description>
+            <parent>cm:content</parent>
+            <properties>
+                <!--  key -->
+                <property name="custom:docCode">
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <multiple>false</multiple>
+                </property>
+                <!--  key -->
+                <property name="custom:sector">
+                    <type>d:text</type>
+                    <mandatory>true</mandatory>
+                    <multiple>false</multiple>
+                </property>
+                <property name="custom:notes">
+                    <type>d:text</type>
+                    <mandatory>false</mandatory>
+                    <multiple>false</multiple>
+                </property>
+            </properties>
+            <associations>
+            	<association name="custom:owner">
+           		 <title>The current responsables for this document</title>
+            	 <target>
+            		<class>cm:person</class>
+            		<mandatory>false</mandatory>
+            	     <many>false</many>
+            	 </target>  
+            	</association>
+            	<association name="custom:relatedDoc">
+           		 <title>The related document to the current document</title>
+            	 <target>
+            		<class>cm:content</class>
+            		<mandatory>false</mandatory>
+            	    <many>false</many>
+            	 </target>
+            	 
+            	</association>
+            </associations>
+        </type>
+ </types>     
+  <aspects>
+        <!-- Status property is used to manage workflow approval -->
+        <aspect name="custom:document_state">
+            <title>Document Status</title>
+            <properties>
+                <property name="custom:docstate">
+                    <title>State</title>
+                    <type>d:text</type>
+                    <default>Draft</default>
+                    <constraints>
+                        <constraint ref="custom:docstatus" />
+                    </constraints>
+                </property>
+                <property name="custom:docstatusdate">
+                    <title>State Date</title>
+                    <type>d:datetime</type>
+                </property>
+            </properties>
+        </aspect>
+    </aspects>
+</model>

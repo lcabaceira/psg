@@ -129,7 +129,7 @@
    
         
   <modules>
-    <module>amp</module>
+    <module>psg-content-model-repo-amp</module>
     <module>alfresco</module>
     <module>solr</module>
     <module>share</module>

@@ -19,6 +19,16 @@
 -->
 <beans>
     
+    <!-- Registration of new models -->	
+    <bean id="${project.artifactId}_dictionaryBootstrap" parent="dictionaryModelBootstrap" depends-on="dictionaryBootstrap">
+        <property name="models">
+            <list>
+                <value>alfresco/module/${project.artifactId}/model/customModel.xml</value>
+            </list>
+        </property>
+    </bean>
+    
+    
     <!-- A simple class that is initialized by Spring -->
     <bean id="changeMe.exampleBean" class="org.alfresco.demoamp.Demo" init-method="init" />
     
@@ -31,4 +41,5 @@
         <property name="appliesFromVersion" value="2.0" />
     </bean>
     
+  
 </beans>

@@ -1,13 +1,8 @@
-Share overlay Readme
+Alfresco Sdk Runner Module Readme
 ===
 
 
-The alfresco share overlay module
+The alfresco sdk runner module 
 
-This module allows to perfom overlays to the Alfresco share web-application.
-It can :<br/>
+This module allows an aggregated run of existing modules modules.
 
-<ul>
-<li>Run the Alfresco share with your overlays applied</li>
-<li>Run the Alfresco share with your custom amp (<b>psg-ui-customization-share-amp</b>) deployed</li>
-</ul>

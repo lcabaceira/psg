@@ -5,7 +5,9 @@ application overlay Readme
 The alfresco share overlay module
 
 This module allows to perfom overlays to the Alfresco share web-application.
-It can :
+It can :<br/>
 
-Run the Alfresco share with your overlays applied
-Run the Alfresco share with your custom amp file deployed
+<ul>
+<li>Run the Alfresco share with your overlays applied</li>
+<li>Run the Alfresco share with your custom amp file deployed</li>
+</ul>

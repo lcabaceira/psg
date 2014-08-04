@@ -8,8 +8,8 @@
 <model name="custom:customModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
 
    <!-- Optional meta-data about the model -->   
-   <description>Custom Model</description>
-   <author></author>
+   <description>Custom Model for demo the PSG development mechanism</description>
+   <author>Luis Cabaceira</author>
    <version>1.0</version>
 
    <imports>

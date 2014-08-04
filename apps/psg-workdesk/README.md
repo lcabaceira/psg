@@ -1,4 +1,4 @@
-app Readme
+workdesk application Overlay Readme
 ===
 
 Psg workdesk module

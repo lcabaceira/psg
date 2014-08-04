@@ -1,6 +1,7 @@
-psg
+Amp Readme file
 ===
 
-Release Management and Application Livecycle Demo
+Every amp shoud have a README.md file explaining the objectives of the amp extension
 
-This is the demo project for the suggested Release Management processes and Application Livecycle..
+Target      : repository
+Description : This is the amp demo module for the suggested Release Management and Application Livecycle processes. It generates a .amp file and has the ability of running alfresco with the custom amp file deployed. 

@@ -1,4 +1,4 @@
-application overlay Readme
+Alfresco share overlay Readme
 ===
 
 

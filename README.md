@@ -7,3 +7,5 @@ This project illustrates a Release Management and Application Livecycle approach
 
 Pre-Requirements
 -------
+ 
+You need to have login credentials at Alfresco Nexus repository (artifacts.alfresco.com)

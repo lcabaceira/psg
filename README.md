@@ -8,15 +8,17 @@ This project illustrates a Release Management and Application Livecycle approach
 Pre-Requirements
 -------
  
-1 - You need to have login credentials on the Alfresco Nexus repository (artifacts.alfresco.com). You can request login credentials on the Alfresco support portal.
+<u>1 - Credentials</u><br/>
 
-2 - Software requirements
+You need to have login credentials on the Alfresco Nexus repository (artifacts.alfresco.com). You can request login credentials on the Alfresco support portal.
+
+<u>2 - Software requirements</u><br/>
 <ul>
 <li>JDK 1.7 </li>
 <li>Apache Maven 3</li>
 </ul>
 
-3 - Configuration requirements
+<u>3 - Configuration requirements</u>
 During the installation of maven, a new file name settings.xml was created. This file is our entry point to the your local maven settings configuration, including the remote maven repositories.
 Edit your settings.xml file and update the server’s section including the alfresco server id and your credentials.
 

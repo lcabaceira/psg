@@ -18,7 +18,7 @@ You need to have login credentials on the Alfresco Nexus repository (artifacts.a
 <li>Apache Maven 3</li>
 </ul>
 
-<u>3 - Configuration requirements</u><br/>
+<u>3 - Configuration requirements</u><br/><br/>
 During the installation of maven, a new file name settings.xml was created. This file is our entry point to the your local maven settings configuration, including the remote maven repositories.
 Edit your settings.xml file and update the server’s section including the alfresco server id and your credentials.
 

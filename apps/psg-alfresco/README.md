@@ -3,7 +3,7 @@ Alfresco repository overlay Readme
 
 The alfresco repository overlay module
 
-This module allows to perfom overlays to the Alfresco repository web-application.<br/> 
+This module allows to perfom overlays to the Alfresco repository web-application.<br/> <br/>
 It can :
 
 <ul>

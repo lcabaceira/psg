@@ -23,6 +23,21 @@ During the installation of maven, a new file name settings.xml was created. This
 Edit your settings.xml file and update the server’s section including the alfresco server id and your credentials.
 
 Note that the root pom.xml references 3 different repositories : <b>alfresco-private</b>, <b>alfresco-private-snapshots</b> and <b>workdesk-internal</b>. The id of each repository must match with a server id on your settings.xml (where you specify your credentials for that server).
+```xml
+        <repository>
+            <id>alfresco-private</id>
+            <url>https://artifacts.alfresco.com/nexus/content/groups/private</url>
+        </repository>
+        <repository>
+            <id>alfresco-private-snapshots</id>
+            <url>https://artifacts.alfresco.com/nexus/content/groups/private-snapshots</url>
+        </repository>
+        
+         <repository>
+            <id>workdesk-internal</id>
+            <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
+        </repository> 
+```
 
 
 

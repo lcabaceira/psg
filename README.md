@@ -22,7 +22,7 @@ You need to have login credentials on the Alfresco Nexus repository (artifacts.a
 During the installation of maven, a new file name settings.xml was created. This file is our entry point to the your local maven settings configuration, including the remote maven repositories.
 Edit your settings.xml file and update the server’s section including the alfresco server id and your credentials.
 
-Note that the root pom.xml references 3 different repositories : alfresco-private, alfresco-private-snapshots and workdesk-internal. The id of this repository must match with the server id on your settings.xml (where you specify your credentials for that server).
+Note that the root pom.xml references 3 different repositories : <b>alfresco-private</b>, <b>alfresco-private-snapshots</b> and <b>workdesk-internal</b>. The id of each repository must match with a server id on your settings.xml (where you specify your credentials for that server).
 
 
 

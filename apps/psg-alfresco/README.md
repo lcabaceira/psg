@@ -1,6 +1,6 @@
-psg
+application overlay Readme
 ===
 
-Release Management and Application Livecycle Demo
+This is the alfresco repository overlay module
 
-This is the demo project for the suggested Release Management processes and Application Livecycle..
+This module allows to perfom overlays to the Alfresco repository web-application. 

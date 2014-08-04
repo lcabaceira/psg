@@ -1,6 +1,6 @@
-psg
+app Readme
 ===
 
-Release Management and Application Livecycle Demo
+Solr configuration module
 
-This is the demo project for the suggested Release Management processes and Application Livecycle..
+The Solr module provides the capability to override the default solr_home contents and use it for running locally, it also has pre-configured logic for packaging the result of the overlay into a distributable archive (ie zip).

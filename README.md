@@ -1,4 +1,4 @@
-psg project root Readme
+psg project main Readme
 ===
 
 Release Management and Application Livecycle on Alfresco

@@ -1,4 +1,4 @@
-Alfresco repository application overlay Readme
+Alfresco repository overlay Readme
 ===
 
 The alfresco repository overlay module

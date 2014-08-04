@@ -67,6 +67,22 @@ Section from the root pom.xml
  ...
 ```
 
+configuration for developers 
+-------
+Each developer must be able to commit, checkout and perform operations on de source code, for that he needs to have a valid username on the source control and permissions on the target project.
+Configure your source control mechanims and credentials on the scm section of the root pom.xml. 
+The default configuration uses my git username and our git project, adapt your username accordingly.
+
+```xml
+ <scm>
+      <connection>scm:git:git@github.com:lcabaceira/psg.git</connection>
+      <url>scm:git:git@github.com:lcabaceira/psg.git</url>
+      <developerConnection>scm:git:git@github.com:lcabaceira/psg.git</developerConnection>
+      <tag>HEAD</tag>
+    </scm>
+```
+
+
 Extra configuration for  release managers
 -------
 If you are the release manager or member of the release management team you need to configure the maven repository that will be used to store your released artifacts whenever you do a release. You need to configure two new repositories on the parent pom and 2 servers on your local settings.xml file.

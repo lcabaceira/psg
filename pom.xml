@@ -120,10 +120,7 @@
          <repository>
             <id>workdesk-internal</id>
             <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
-        </repository>
-        
-        
-        
+        </repository>  
     </repositories>
     
    
@@ -133,6 +130,7 @@
     <module>alfresco</module>
     <module>solr</module>
     <module>share</module>
+    <module>psg-ui-customization-share-amp</module>
     <module>workdesk</module>
     <module>runner</module>
   </modules>

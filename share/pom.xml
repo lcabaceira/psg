@@ -42,8 +42,13 @@
                             <type>war</type>
                             <!-- To allow inclusion of META-INF -->
                             <excludes />
+                        </overlay> 
+                         <!-- Add / order your Share AMPs here -->
+                        <overlay>
+                            <groupId>${project.groupId}</groupId>
+                            <artifactId>psg-ui-customization-share-amp</artifactId>
+                            <type>amp</type>
                         </overlay>
-                        <!-- Add / order here the Share AMPs declared above -->
                     </overlays>
                 </configuration>
             </plugin>

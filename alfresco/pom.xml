@@ -32,7 +32,7 @@
         <!-- Demonstrating the dependency on the repo AMP developed in the 'amp' module -->
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>amp</artifactId>
+            <artifactId>psg-content-model-repo-amp</artifactId>
             <version>${project.version}</version>
             <type>amp</type>
         </dependency>
@@ -70,7 +70,7 @@
                         <!-- Add / order your AMPs here -->
                         <overlay>
                             <groupId>${project.groupId}</groupId>
-                            <artifactId>amp</artifactId>
+                            <artifactId>psg-content-model-repo-amp</artifactId>
                             <type>amp</type>
                         </overlay>
                         <overlay>

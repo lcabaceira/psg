@@ -1,6 +1,9 @@
-psg
+psg project root Readme
 ===
 
-Release Management and Application Livecycle Demo
+Release Management and Application Livecycle on Alfresco
 
-This is the demo project for the suggested Release Management processes and Application Livecycle..
+This project illustrates a Release Management and Application Livecycle approach to an Alfresco project.
+
+Pre-Requirements
+-------

@@ -8,5 +8,5 @@ It can :
 
 <ul>
 <li>Run the Alfresco Repository with your overlays applied </li>
-<li>Run the Alfresco Repository with your custom amp file deployed </li> 
+<li>Run the Alfresco Repository with your custom amp (psg-content-model-repo-amp) deployed </li> 
 </ul>

@@ -126,12 +126,12 @@
    
         
   <modules>
-    <module>psg-content-model-repo-amp</module>
-    <module>alfresco</module>
-    <module>solr</module>
-    <module>share</module>
-    <module>psg-ui-customization-share-amp</module>
-    <module>workdesk</module>
+    <module>amps/psg-content-model-repo-amp</module>
+    <module>amps/psg-ui-customization-share-amp</module>
+    <module>apps/psg-alfresco</module>
+    <module>apps/psg-solr-configuration</module>
+    <module>apps/psg-share</module>
+    <module>apps/psg-workdesk</module>
     <module>runner</module>
   </modules>
 </project>

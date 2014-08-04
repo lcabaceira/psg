@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>share</artifactId>
+    <artifactId>psg-share</artifactId>
     <name>Alfresco Share Client</name>
     <packaging>war</packaging>
     <description>Alfresco Share Client</description>
@@ -10,6 +10,7 @@
         <groupId>org.alfresco.consulting.releasemanagement.demo</groupId>
         <artifactId>psg-demo-project</artifactId>
         <version>1.3-SNAPSHOT</version>
+        <relativePath>../../pom.xml</relativePath>
     </parent>
 
     <dependencies>
@@ -18,8 +19,13 @@
             <artifactId>share</artifactId>
             <type>war</type>
         </dependency>
-        <!-- Here you can add your Share AMP dependencies -->
-       
+       <!-- Demonstrating the dependency on the Share AMP developed in the 'amp' module -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>psg-ui-customization-share-amp</artifactId>
+            <version>${project.version}</version>
+            <type>amp</type>
+        </dependency>
     </dependencies>
     <build>
         <plugins>

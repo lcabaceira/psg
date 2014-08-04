@@ -1,4 +1,4 @@
-app Readme
+Solr Configuration overlay Readme
 ===
 
 Solr configuration module

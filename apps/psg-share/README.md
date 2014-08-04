@@ -9,5 +9,5 @@ It can :<br/>
 
 <ul>
 <li>Run the Alfresco share with your overlays applied</li>
-<li>Run the Alfresco share with your custom amp (psg-ui-customization-share-amp) deployed</li>
+<li>Run the Alfresco share with your custom amp (<b>psg-ui-customization-share-amp</b>) deployed</li>
 </ul>

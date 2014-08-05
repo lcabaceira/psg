@@ -139,15 +139,15 @@ What is included in this project build ?
 <ul>
 <li>````applications````(apps folder)</li>
 <ul>
-<li>[alfresco respository overlay module] (https://github.com/lcabaceira/psg/tree/master/amps/psg-content-model-repo-amp)  </li>
+<li>alfresco respository overlay module  </li>
 <li>alfresco share overlay module </li>
 <li>alfresco workdesk overlay module </li>
 <li>alfresco solr configuration overlay module </li>
 </ul>
 <li>alfresco module packages(amps folder)</li>
 <ul>
-<li>alfresco respository extension amp module </li>
-<li>alfresco share extension amp module </li>
+<li>alfresco respository extension amp module (https://github.com/lcabaceira/psg/tree/master/amps/psg-content-model-repo-amp) </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/amps/psg-ui-customization-share-amp">alfresco share extension amp module </a></li>
 </ul>
 </ul>
 

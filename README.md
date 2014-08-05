@@ -146,7 +146,7 @@ What is included in this project build ?
 </ul>
 <li>alfresco module packages(amps folder)</li>
 <ul>
-<li>alfresco respository extension amp module (https://github.com/lcabaceira/psg/tree/master/amps/psg-content-model-repo-amp) </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/amps/psg-content-model-repo-amp">alfresco respository extension amp module </a> </li>
 <li><a href="https://github.com/lcabaceira/psg/tree/master/amps/psg-ui-customization-share-amp">alfresco share extension amp module </a></li>
 </ul>
 </ul>

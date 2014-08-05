@@ -15,7 +15,7 @@ You need to have login credentials on the Alfresco Nexus repository (artifacts.a
 <b>2 - Software requirements</b><br/>
 <ul>
 <li>JDK 1.7 </li>
-<li>Apache Maven 3</li>
+<li>Apache Maven 3.0.4+</li>
 </ul>
 
 <b>3 - Configuration requirements</b><br/><br/>
@@ -137,17 +137,18 @@ On the projects root folder you have the heart of the project, the parent pom.xm
 What is included in this project build ?
 -------
 <ul>
-<li>applications(apps folder)</li>
+<li>
+applications(apps folder)</li>
 <ul>
-<li>alfresco respository overlay module </li>
-<li>alfresco share overlay module </li>
-<li>alfresco workdesk overlay module </li>
-<li>alfresco solr configuration overlay module </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-alfresco">alfresco respository overlay module</a> </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-share">alfresco share overlay module </a></li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-workdesk">alfresco workdesk overlay module</a> </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-solr-configuration">alfresco solr configuration overlay module </a></li>
 </ul>
 <li>alfresco module packages(amps folder)</li>
 <ul>
-<li>alfresco respository extension amp module </li>
-<li>alfresco share extension amp module </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/amps/psg-content-model-repo-amp">alfresco respository extension amp module </a> </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/amps/psg-ui-customization-share-amp">alfresco share extension amp module </a></li>
 </ul>
 </ul>
 

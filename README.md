@@ -140,10 +140,10 @@ What is included in this project build ?
 <li>
 applications(apps folder)</li>
 <ul>
-<li>alfresco respository overlay module [details](https://github.com/lcabaceira/psg/tree/master/apps/psg-alfresco)  </li>
-<li>alfresco share overlay module </li>
-<li>alfresco workdesk overlay module </li>
-<li>alfresco solr configuration overlay module </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-alfresco">alfresco respository overlay module</a> </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-share">alfresco share overlay module </a></li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-workdesk">alfresco workdesk overlay module</a> </li>
+<li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-solr-configuration">alfresco solr configuration overlay module </a></li>
 </ul>
 <li>alfresco module packages(amps folder)</li>
 <ul>

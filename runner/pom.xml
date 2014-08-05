@@ -43,7 +43,7 @@
                             <webapps>
                                 <webapp>
                                     <groupId>${project.groupId}</groupId>
-                                    <artifactId>alfresco</artifactId>
+                                    <artifactId>psg-alfresco</artifactId>
                                     <version>${project.version}</version>
                                     <type>war</type>
                                     <asWebapp>true</asWebapp>
@@ -51,7 +51,7 @@
                                 </webapp>
                                 <webapp>
                                     <groupId>${project.groupId}</groupId>
-                                    <artifactId>share</artifactId>
+                                    <artifactId>psg-share</artifactId>
                                     <version>${project.version}</version>
                                     <type>war</type>
                                     <asWebapp>true</asWebapp>
@@ -59,7 +59,7 @@
                                 </webapp>
                                  <webapp>
                                     <groupId>${project.groupId}</groupId>
-                                    <artifactId>workdesk</artifactId>
+                                    <artifactId>psg-workdesk</artifactId>
                                     <version>${project.version}</version>
                                     <type>war</type>
                                     <asWebapp>true</asWebapp>

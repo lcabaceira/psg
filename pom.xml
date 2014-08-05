@@ -121,6 +121,9 @@
             <id>workdesk-internal</id>
             <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
         </repository>  
+        
+     
+        
     </repositories>
     
    

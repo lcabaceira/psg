@@ -134,11 +134,30 @@ Root pom.xml
 -------
 On the projects root folder you have the heart of the project, the parent pom.xml. This is the file that aggregates your full build, including all the modules and overlays to the different applications and generates deployable artifacts ready for your release.
 
-How to run with maven
+What is included in this project build ?
+-------
+<ul>
+<li>applications(apps folder)</li>
+<ul>
+<li>alfresco respository overlay module </li>
+<li>alfresco share overlay module </li>
+<li>alfresco workdesk overlay module </li>
+<li>alfresco solr configuration overlay module </li>
+</ul>
+<li>alfresco module packages(amps folder)</li>
+<ul>
+<li>alfresco respository extension amp module </li>
+<li>alfresco share extension amp module </li>
+</ul>
+</ul>
+
+How to run with maven ?
 -------
 Issue the following maven command to run the project from the root
 
 <b>mvn clean install -Prun</b> <br/>
 
 This will build and run all the modules and it's the easiest way to build the project
+
+
 

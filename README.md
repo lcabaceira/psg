@@ -137,7 +137,8 @@ On the projects root folder you have the heart of the project, the parent pom.xm
 What is included in this project build ?
 -------
 <ul>
-<li>````applications````(apps folder)</li>
+<li>````xml
+applications````(apps folder)</li>
 <ul>
 <li>alfresco respository overlay module  </li>
 <li>alfresco share overlay module </li>

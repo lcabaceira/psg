@@ -15,7 +15,7 @@ You need to have login credentials on the Alfresco Nexus repository (artifacts.a
 <b>2 - Software requirements</b><br/>
 <ul>
 <li>JDK 1.7 </li>
-<li>Apache Maven 3</li>
+<li>Apache Maven 3.0.4+</li>
 </ul>
 
 <b>3 - Configuration requirements</b><br/><br/>
@@ -137,9 +137,9 @@ On the projects root folder you have the heart of the project, the parent pom.xm
 What is included in this project build ?
 -------
 <ul>
-<li>applications(apps folder)</li>
+<li>````applications````(apps folder)</li>
 <ul>
-<li>alfresco respository overlay module </li>
+<li>[alfresco respository overlay module] (https://github.com/lcabaceira/psg/tree/master/amps/psg-content-model-repo-amp)  </li>
 <li>alfresco share overlay module </li>
 <li>alfresco workdesk overlay module </li>
 <li>alfresco solr configuration overlay module </li>

@@ -137,10 +137,10 @@ On the projects root folder you have the heart of the project, the parent pom.xm
 What is included in this project build ?
 -------
 <ul>
-<li>````xml
-applications````(apps folder)</li>
+<li>
+applications(apps folder)</li>
 <ul>
-<li>alfresco respository overlay module  </li>
+<li>alfresco respository overlay module [details](https://github.com/lcabaceira/psg/tree/master/apps/psg-alfresco)  </li>
 <li>alfresco share overlay module </li>
 <li>alfresco workdesk overlay module </li>
 <li>alfresco solr configuration overlay module </li>

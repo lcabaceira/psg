@@ -25,9 +25,9 @@
     
     
     <scm>
-      <connection>scm:git:git@github.com:lcabaceira/psg.git</connection>
-      <url>scm:git:git@github.com:lcabaceira/psg.git</url>
-      <developerConnection>scm:git:git@github.com:lcabaceira/psg.git</developerConnection>
+      <connection>scm:git:git@github.com:joebujok/psg.git</connection>
+      <url>scm:git:git@github.com:joebujok/psg.git</url>
+      <developerConnection>scm:git:git@github.com:joebujok/psg.git</developerConnection>
       <tag>HEAD</tag>
     </scm>
     

@@ -30,6 +30,16 @@
  			 <version>4.2.0</version>
   			 <type>war</type>
 		</dependency>
+		
+		<!-- Demonstrating the dependency on the workdesk jar developed in the 'amps/psg-workdesk-extension-jar' module -->
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>psg-workdesk-extension</artifactId>
+            <version>${project.version}</version>
+            <type>jar</type>
+        </dependency>
+        
+        
     </dependencies>
 
     <build>

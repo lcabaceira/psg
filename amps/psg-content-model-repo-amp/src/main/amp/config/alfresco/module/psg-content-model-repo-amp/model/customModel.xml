@@ -5,11 +5,11 @@
 <!-- Note: This model is pre-configured to load at startup of the Repository.  So, all custom -->
 <!--       types and aspects added here will automatically be registered -->
 
-<model name="custom:customModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
+<model name="psdoc:documentModel" xmlns="http://www.alfresco.org/model/dictionary/1.0">
 
    <!-- Optional meta-data about the model -->   
-   <description>Custom Model for demo the PSG development mechanism</description>
-   <author>Luis Cabaceira</author>
+   <description>Punter Southall Custom Content Model </description>
+   <author>Joe Bujok</author>
    <version>1.0</version>
 
    <imports>
@@ -22,10 +22,10 @@
    <!-- Introduction of new namespaces defined by this model -->
    <!-- NOTE: The following namespace custom.model should be changed to reflect your own namespace -->
    <namespaces>
-      <namespace uri="custom.model" prefix="custom"/>
+      <namespace uri="custom.model-jb" prefix="psdoc"/>
    </namespaces>
    <constraints>
-        <constraint name="custom:docstatus" type="LIST">
+        <!-- <constraint name="custom:docstatus" type="LIST">
             <parameter name="allowedValues">
                 <list>
                     <value>Draft</value>
@@ -37,33 +37,33 @@
                     <value>Published</value>
                 </list>
             </parameter>
-        </constraint>
+        </constraint> -->
     </constraints>
  <types>
- 		<type name="custom:document">
-            <title>Superclass Document</title>
-            <description>My Custom Document Superclass</description>
+ 		<type name="psdoc:document">
+            <title>PS Superclass Document</title>
+            <description>Main Document Superclass</description>
             <parent>cm:content</parent>
             <properties>
                 <!--  key -->
-                <property name="custom:docCode">
+                <property name="psdoc:type">
                     <type>d:text</type>
                     <mandatory>true</mandatory>
                     <multiple>false</multiple>
                 </property>
                 <!--  key -->
-                <property name="custom:sector">
+                <property name="psdoc:title">
                     <type>d:text</type>
                     <mandatory>true</mandatory>
                     <multiple>false</multiple>
                 </property>
-                <property name="custom:notes">
-                    <type>d:text</type>
-                    <mandatory>false</mandatory>
+                <property name="psdoc:docdate">
+                    <type>d:date</type>
+                    <mandatory>true</mandatory>
                     <multiple>false</multiple>
                 </property>
             </properties>
-            <associations>
+           <!--  <associations>
             	<association name="custom:owner">
            		 <title>The current responsables for this document</title>
             	 <target>
@@ -80,12 +80,12 @@
             	    <many>false</many>
             	 </target>
             	 
-            	</association>
-            </associations>
+            	</association> 
+            </associations>	-->
         </type>
  </types>     
-  <aspects>
-        <!-- Status property is used to manage workflow approval -->
+<!--   <aspects>
+        Status property is used to manage workflow approval
         <aspect name="custom:document_state">
             <title>Document Status</title>
             <properties>
@@ -103,5 +103,5 @@
                 </property>
             </properties>
         </aspect>
-    </aspects>
+    </aspects> -->
 </model>

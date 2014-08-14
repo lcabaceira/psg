@@ -25,9 +25,9 @@
     
     
     <scm>
-      <connection>scm:git:git@github.com:joebujok/psg.git</connection>
-      <url>scm:git:git@github.com:joebujok/psg.git</url>
-      <developerConnection>scm:git:git@github.com:joebujok/psg.git</developerConnection>
+      <connection>scm:git:git@github.com:lcabaceira/psg.git</connection>
+      <url>scm:git:git@github.com:lcabaceira/psg.git</url>
+      <developerConnection>scm:git:git@github.com:lcabaceira/psg.git</developerConnection>
       <tag>HEAD</tag>
     </scm>
     
@@ -71,11 +71,11 @@
     <distributionManagement>
         <repository>
           <id>cloudbees-private-release-repository</id>
-          <url>dav:https://repository-lcabacei.forge.cloudbees.com/release/</url>
+          <url>dav:https://repository-joebujok.forge.cloudbees.com/release/</url>
         </repository>
         <snapshotRepository>
           <id>cloudbees-private-snapshot-repository</id>
-          <url>dav:https://repository-lcabacei.forge.cloudbees.com/snapshot/</url>
+          <url>dav:https://repository-joebujok.forge.cloudbees.com/snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
     
@@ -117,10 +117,10 @@
             <url>https://artifacts.alfresco.com/nexus/content/groups/private-snapshots</url>
         </repository>
         
-         <repository>
+  <!--         <repository>
             <id>workdesk-internal</id>
-            <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
-        </repository>     
+            <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk</url>
+        </repository>      --> 
     </repositories>
     
    
@@ -131,7 +131,7 @@
     <module>apps/psg-alfresco</module>
     <module>apps/psg-solr-configuration</module>
     <module>apps/psg-share</module>
-    <module>apps/psg-workdesk</module>
+<!--     <module>apps/psg-workdesk</module> -->
     <module>runner</module>
   </modules>
 </project>

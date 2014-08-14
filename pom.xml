@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.alfresco.consulting.releasemanagement.demo</groupId>
     <artifactId>psg-demo-project</artifactId>
-    <version>1.8-SNAPSHOT</version>
+    <version>1.8.1</version>
     <name>Quickstart of Alfresco and Share with DB and runner embedded</name>
     <description>This All-in-One project allows to manage all the components involved in Alfresco development (Repo, Share, Solr, AMPs) in one project</description>
     <packaging>pom</packaging>    
@@ -25,10 +25,10 @@
     
     
     <scm>
-      <connection>scm:git:git@github.com:lcabaceira/psg.git</connection>
-      <url>scm:git:git@github.com:lcabaceira/psg.git</url>
-      <developerConnection>scm:git:git@github.com:lcabaceira/psg.git</developerConnection>
-      <tag>HEAD</tag>
+      <connection>scm:git:git@github.com:joebujok/psg.git</connection>
+      <url>scm:git:git@github.com:joebujok/psg.git</url>
+      <developerConnection>scm:git:git@github.com:joebujok/psg.git</developerConnection>
+      <tag>1.8.1</tag>
     </scm>
     
     <build>
@@ -71,11 +71,11 @@
     <distributionManagement>
         <repository>
           <id>cloudbees-private-release-repository</id>
-          <url>dav:https://repository-lcabacei.forge.cloudbees.com/release/</url>
+          <url>dav:https://repository-joebujok.forge.cloudbees.com/release/</url>
         </repository>
         <snapshotRepository>
           <id>cloudbees-private-snapshot-repository</id>
-          <url>dav:https://repository-lcabacei.forge.cloudbees.com/snapshot/</url>
+          <url>dav:https://repository-joebujok.forge.cloudbees.com/snapshot/</url>
         </snapshotRepository>
     </distributionManagement>
     
@@ -117,10 +117,10 @@
             <url>https://artifacts.alfresco.com/nexus/content/groups/private-snapshots</url>
         </repository>
         
-         <repository>
+  <!--         <repository>
             <id>workdesk-internal</id>
-            <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
-        </repository>     
+            <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk</url>
+        </repository>      --> 
     </repositories>
     
    
@@ -132,7 +132,7 @@
     <module>apps/psg-alfresco</module>
     <module>apps/psg-solr-configuration</module>
     <module>apps/psg-share</module>
-    <module>apps/psg-workdesk</module>
+<!--     <module>apps/psg-workdesk</module> -->
     <module>runner</module>
   </modules>
 </project>

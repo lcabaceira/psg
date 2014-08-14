@@ -22,7 +22,7 @@
    <!-- Introduction of new namespaces defined by this model -->
    <!-- NOTE: The following namespace custom.model should be changed to reflect your own namespace -->
    <namespaces>
-      <namespace uri="custom.model-jb" prefix="psdoc"/>
+      <namespace uri="custom.model.jb" prefix="psdoc"/>
    </namespaces>
    <constraints>
         <!-- <constraint name="custom:docstatus" type="LIST">

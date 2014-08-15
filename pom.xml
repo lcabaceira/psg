@@ -117,9 +117,14 @@
             <url>https://artifacts.alfresco.com/nexus/content/groups/private-snapshots</url>
         </repository>
         
-         <repository>
+       <!--  <repository>
             <id>workdesk-internal</id>
             <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
+        </repository> -->  
+        
+         <repository>
+            <id>workdesk-internal</id>
+            <url>https://artifacts.alfresco.com/nexus/content/repositories/workdesk-releases/</url>
         </repository>     
     </repositories>
     

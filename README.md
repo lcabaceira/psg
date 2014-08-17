@@ -39,7 +39,7 @@ Section from the settings.xml maven configuration file
         
          <repository>
             <id>workdesk-internal</id>
-            <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
+            <url>https://artifacts.alfresco.com/nexus/content/repositories/workdesk-releases/</url>
         </repository> 
  ...
 ```

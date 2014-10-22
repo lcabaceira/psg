@@ -2267,6 +2267,51 @@ Copyright (c) Alfresco Software, Inc. All Rights Reserved.
       <!--<name>document</name>-->
     </objectclasses>
   </PlugIn>
+  
+  
+  
+   <PlugIn type="ow_docfunction">
+    <Name>Take Ownership</Name>
+    <id>com.psg.ow.takeOwnership</id>
+    <Description>Edit properties of all selected objects in one step</Description>
+    <Vendor>Alfresco Business Solutions</Vendor>
+    <Version>4.2.0</Version>
+    <ClassName>org.alfresco.psgextension.OwTakeOwnershipDocumentFunction</ClassName>
+    <!-- optional small (16x16 pixels) icon for the plugin, leave empty to use default. -->
+    <icon />
+    <!-- optional small (24x24 pixels) icon for the plugin, leave empty to use default. -->
+    <iconbig />
+    <!-- Allow multiple document selection or just one single document -->
+    <Multiselect>true</Multiselect>
+    <!-- Display the plugin in the context menu. -->
+    <ContextMenu>true</ContextMenu>
+    <!-- Display in object editing dialogs like OwEditPropertiesDialog. -->
+    <ShowInEditViews>false</ShowInEditViews>
+    <!-- Display the plugin next to object in a object listview. -->
+    <ObjectInstance>false</ObjectInstance>
+    <!-- Create a own column for plugin with given title, or display without columntitle. -->
+    <ColumnTitle />
+    <!-- true = the latest version is edited, even if a older version was opened, false = edit the selected version -->
+    <AlwaysUseLatestVersion>true</AlwaysUseLatestVersion>
+    <!--  display the selected objects and there current properties -->
+    <DocumentListView>true</DocumentListView>
+    <!-- close the dialog upon save -->
+    <CloseOnSave>true</CloseOnSave>
+    <!-- list of names with properties to edit  -->
+    <EditPropertyList>
+      <property>cmis:document.cmis:name</property>
+    </EditPropertyList>
+    <!-- enable the paste button for metadata from clipboard -->
+    <EnablePasteMetadata>true</EnablePasteMetadata>
+    <!-- Object types to work on as defined in OwObjectReference.OBJECT_TYPE_...-->
+    <objecttypes>
+      <type>OBJECT_TYPE_DOCUMENT</type>
+    </objecttypes>
+    <!-- Enable plugin only for the given object class names, leave empty to enable for all classes -->
+    <objectclasses>
+      <!--<name>document</name>-->
+    </objectclasses>
+  </PlugIn>
   <!-- ==================================================== FUNCTIONAL PLUGINS END ====================================================== -->
 </PluginDescriptor>
 

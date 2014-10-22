@@ -498,6 +498,8 @@ _______________________________________________________________________________
                         <FieldControl fieldclass="com.wewebu.ow.server.fieldctrlimpl.OwFieldManagerControlNote" objecttype="D:bpm:task.bpm:comment" >
                         </FieldControl>
 
+                        <FieldControl fieldclass="org.alfresco.psgextension.OwGenerateIDControl" objecttype="D:custom:document.custom:sector" >
+                        </FieldControl>
                 </FieldControls>
 
         </FieldManager>
@@ -980,10 +982,10 @@ _______________________________________________________________________________
 			true = override defaultlocal
 			false = use defaultlocal     
 	-->
-	<defaultlocal detectbrowserlocale="true">en</defaultlocal>
+	<defaultlocal detectbrowserlocale="false">en</defaultlocal>
 
     <!-- The available language which the user can select from (must be installed with resource bundle) -->
-    <availablelocals display='true'>
+    <availablelocals display='false'>
         <lang displayname="English">en</lang>
         <lang displayname="Français">fr</lang>
         <lang displayname="Deutsch">de</lang>

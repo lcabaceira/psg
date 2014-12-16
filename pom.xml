@@ -71,11 +71,11 @@
     <distributionManagement>
         <repository>
           <id>cloudbees-private-release-repository</id>
-          <url>dav:https://repository-lcabacei.forge.cloudbees.com/psg/release/</url>
+          <url>dav:https://repository-cabaceira-psg.forge.cloudbees.com/psg/</url>
         </repository>
         <snapshotRepository>
           <id>cloudbees-private-snapshot-repository</id>
-          <url>dav:https://repository-lcabacei.forge.cloudbees.com/psg/snapshot/</url>
+          <url>dav:https://repository-cabaceira-psg.forge.cloudbees.com/psg/</url>
         </snapshotRepository>
     </distributionManagement>
     

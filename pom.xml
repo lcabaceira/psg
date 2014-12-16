@@ -133,16 +133,7 @@
             <id>alfresco-private-snapshots</id>
             <url>https://artifacts.alfresco.com/nexus/content/groups/private-snapshots</url>
         </repository>
-        
-       <!--  <repository>
-            <id>workdesk-internal</id>
-            <url>https://artifacts.alfresco.com/nexus/content/groups/workdesk/</url>
-        </repository> -->  
-        
-         <repository>
-            <id>workdesk-internal</id>
-            <url>https://artifacts.alfresco.com/nexus/content/repositories/workdesk-releases/</url>
-        </repository>     
+    
     </repositories>
     
    
@@ -150,11 +141,9 @@
   <modules>
     <module>amps/psg-content-model-repo-amp</module>
     <module>amps/psg-ui-customization-share-amp</module>
-    <module>amps/psg-workdesk-extension</module>
     <module>apps/psg-alfresco</module>
     <module>apps/psg-solr-configuration</module>
     <module>apps/psg-share</module>
-    <module>apps/psg-workdesk</module>
     <module>runner</module>
   </modules>
 </project>

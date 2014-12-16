@@ -59,11 +59,6 @@ Section from the root pom.xml
             <password>YOUR_PASSWORD</password>
         </server>
         
-        <server>
-            <id>workdesk-internal</id>
-            <username>YOUR_USERNAME</username>
-            <password>YOUR_PASSWORD</password>
-        </server> 
  ...
 ```
 
@@ -142,7 +137,6 @@ applications(apps folder)</li>
 <ul>
 <li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-alfresco">alfresco respository overlay module</a> </li>
 <li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-share">alfresco share overlay module </a></li>
-<li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-workdesk">alfresco workdesk overlay module</a> </li>
 <li><a href="https://github.com/lcabaceira/psg/tree/master/apps/psg-solr-configuration">alfresco solr configuration overlay module </a></li>
 </ul>
 <li>alfresco module packages(amps folder)</li>

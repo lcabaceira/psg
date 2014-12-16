@@ -50,6 +50,7 @@
             <arguments>-Ppurge</arguments>
             <goals>deploy</goals>
             <autoVersionSubmodules>true</autoVersionSubmodules>
+            <argLine>-Xmx1024m</argLine>
           </configuration>
         </plugin>
         

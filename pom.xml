@@ -51,9 +51,6 @@
             <goals>deploy</goals>
             <autoVersionSubmodules>true</autoVersionSubmodules>
           </configuration>
-          
-          
-           
         </plugin>
         
       </plugins>
@@ -67,7 +64,18 @@
         </extensions>
         
     </build>
-    
+   <reporting>
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <configuration>
+          <maxmemory>512M</maxmemory>
+        </configuration>
+      </plugin>
+    </plugins>
+  </reporting>
+  
     <distributionManagement>
         <repository>
           <id>cloudbees-private-release-repository</id>

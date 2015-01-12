@@ -22,7 +22,7 @@ You need to have login credentials on the Alfresco Nexus repository (artifacts.a
 During the installation of maven, a new file name settings.xml was created. This file is our entry point to the your local maven settings configuration, including the remote maven repositories.
 Edit your settings.xml file and update the server’s section including the alfresco server id and your credentials.
 
-Note that the root pom.xml references 3 different repositories : <b>alfresco-private</b>, <b>alfresco-private-snapshots</b>. The id of each repository must match with a server id on your settings.xml (where you specify your credentials for that server).
+Note that the root pom.xml references 2 different repositories : <b>alfresco-private</b>, <b>alfresco-private-snapshots</b>. The id of each repository must match with a server id on your settings.xml (where you specify your credentials for that server).
 
 Section from the settings.xml maven configuration file
 
@@ -64,7 +64,7 @@ Section from the root pom.xml
 
 configuration for developers 
 -------
-Each developer must be able to commit, checkout and perform operations on de source code, for that he needs to have a valid username on the source control and permissions on the target project.
+Each developer must be able to commit, checkout and perform operations on the source code, for that he needs to have a valid username on the source control and permissions on the target project.
 Configure your source control mechanims and credentials on the scm section of the root pom.xml. 
 The default configuration uses my git username and our git project, adapt your username accordingly.
 

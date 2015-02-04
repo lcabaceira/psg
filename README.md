@@ -37,10 +37,7 @@ Section from the settings.xml maven configuration file
             <url>https://artifacts.alfresco.com/nexus/content/groups/private-snapshots</url>
         </repository>
         
-         <repository>
-            <id>workdesk-internal</id>
-            <url>https://artifacts.alfresco.com/nexus/content/repositories/workdesk-releases/</url>
-        </repository> 
+
  ...
 ```
 
